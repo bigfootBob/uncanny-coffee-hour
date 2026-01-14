@@ -1,0 +1,20 @@
+{
+    "app": {
+      "title": "Uncanny Coffee Hour",
+      "tagline": "Tales of the Paranormal & The Perfect Brew",
+      "skip_link": "Skip to main content"
+    },
+    "episode": {
+      "hosts_label": "Hosts",
+      "read_transcript": "Read Transcript",
+      "hide_transcript": "Hide Transcript",
+      "transcript_a11y": "for {{title}}"
+    },
+    "team": {
+      "title": "Meet the Hosts"
+    },
+    "footer": {
+      "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
+      "rights": "All rights reserved."
+    }
+  }

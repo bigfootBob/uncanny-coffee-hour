@@ -1,0 +1,30 @@
+[
+    {
+      "id": "host-bob",
+      "name": "Odd Bob",
+      "role": "The Explorer & Hiker",
+      "bio": "Bob finds the uncanny in the Willamette fog.",
+      "avatar": "/images/bob-avatar.jpg"
+    },
+    {
+      "id": "host-kitsune",
+      "name": "Dr. Kitsune",
+      "role": "The Intellectual Anchor",
+      "bio": "Expert in the esoteric and the strange. (Note: Allergic to coffee; fueled by tea.)",
+      "avatar": "/images/kitsune-avatar.jpg"
+    },
+    {
+      "id": "host-soercia",
+      "name": "Soercia",
+      "role": "The Puca",
+      "bio": "The Irish spirit providing the AI voice of the beyond.",
+      "avatar": "/images/soercia-avatar.jpg"
+    },
+    {
+      "id": "host-guest",
+      "name": "Guest",
+      "role": "The Story",
+      "bio": "Fascinated by the unknown.",
+      "avatar": "/images/guest-avatar.jpg"
+    }
+  ]

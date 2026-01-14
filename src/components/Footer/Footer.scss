@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.site-footer {
+  background-color: $brand-roast;
+  color: $text-inverse;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto; // CRITICAL: This pushes the footer to the bottom of the viewport
+  border-top: 4px solid $brand-puca;
+
+  .footer-text {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .footer-subtext {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    color: $brand-mist;
+    opacity: 0.8;
+  }
+}

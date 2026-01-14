@@ -1,0 +1,38 @@
+@import '../../styles/mixins';
+
+.episode-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  
+  @include motion-safe-transition(transform 0.2s ease, box-shadow 0.2s ease);
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  &__player {
+    width: 100%;
+    margin-top: 1rem;
+    
+    // Ensure native controls have focus rings
+    @include focus-ring;
+  }
+
+  &__transcript-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4a4a4a;
+    text-decoration: underline;
+    
+    @include focus-ring;
+  }
+  
+  // Usage of sr-only class
+  .sr-only {
+    @include sr-only;
+  }
+}

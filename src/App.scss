@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.app-container {
+  background-color: var(--obsidian-dark);
+  color: var(--latte-parchment);
+  min-height: 100vh;
+}
+
+.frosted-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: var(--mist-glass);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid var(--puca-teal);
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(10,10,11,0.7), rgba(10,10,11,0.7)), url('your-hero-image.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--espresso-gold);
+  text-shadow: 0 0 20px var(--puca-teal);
+}
+
+.team-grid, .support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 5%;
+}
+
+.team-card, .support-card {
+  background: var(--roasted-bean);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--puca-teal);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px var(--spectral-cyan);
+}
+
+.app-container {
+  min-height: 100vh;      // 1. Force container to be at least full screen height
+  display: flex;          // 2. Turn on Flexbox
+  flex-direction: column; // 3. Stack items vertically
+}

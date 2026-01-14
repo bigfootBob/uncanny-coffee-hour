@@ -1,0 +1,69 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.error-boundary-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $brand-latte;
+  color: $brand-espresso;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-content {
+  max-width: 500px;
+  background: white;
+  padding: 3rem;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-top: 6px solid $color-error; 
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $brand-espresso;
+  }
+
+  p {
+    color: $text-secondary;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}
+
+.error-details {
+  margin-bottom: 2rem;
+  text-align: left;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: $color-error;
+  
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.reload-btn {
+  background-color: $brand-puca;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius-md;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  @include focus-ring;
+  @include motion-safe-transition(background-color 0.2s);
+
+  &:hover {
+    background-color: darken($brand-puca, 10%);
+  }
+}

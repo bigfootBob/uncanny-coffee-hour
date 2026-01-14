@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.language-select {
+  background: transparent;
+  border: 1px solid $brand-mist;
+  color: $text-inverse; // Assuming this lives in the dark header
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: $font-stack-body;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $text-inverse;
+  }
+  
+  // Dark background support for options
+  option {
+    color: $brand-espresso;
+  }
+}

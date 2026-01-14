@@ -1,0 +1,30 @@
+[
+    {
+      "id": "uch-003",
+      "title": "The Puca and the Pour-Over",
+      "publishDate": "2025-10-15",
+      "duration": "45:30",
+      "description": "Odd Bob and Mitch discuss the intricacies of pour-over coffee, while Soercia shares the lore of the shapeshifting Puca.",
+      "hosts": ["Odd Bob", "Mitch", "Soercia"],
+      "audioUrl": "/audio/uch-003.mp3",
+      "transcriptUrl": "/transcripts/uch-003.html",
+      "coverArt": {
+        "src": "/images/uch-003-cover.jpg",
+        "alt": "Illustration of a Puca holding a coffee carafe in a foggy forest."
+      }
+    },
+    {
+      "id": "uch-002",
+      "title": "Dr. Kitsune's Guide to Espresso",
+      "publishDate": "2025-10-01",
+      "duration": "42:15",
+      "description": "Dr. Kitsune explains the science of pressure while Mitch sips his tea. We also cover the latest local hauntings.",
+      "hosts": ["Odd Bob", "Dr. Kitsune", "Mitch"],
+      "audioUrl": "/audio/uch-002.mp3",
+      "transcriptUrl": "/transcripts/uch-002.html",
+      "coverArt": {
+        "src": "/images/uch-002-cover.jpg",
+        "alt": "Neon sign reading Uncanny Coffee Hour with a fox tail behind it."
+      }
+    }
+  ]

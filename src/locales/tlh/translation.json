@@ -1,0 +1,20 @@
+{
+  "app": {
+    "title": "Huj qa'vIn rep",
+    "tagline": "lutmey le'be' 'ej qa'vIn pup",
+    "skip_link": "potlh'a' yIghoS"
+  },
+  "episode": {
+    "hosts_label": "ra'wI'pu'",
+    "read_transcript": "ghItlh yIlaD",
+    "hide_transcript": "ghItlh yISo'",
+    "transcript_a11y": "{{title}}vaD"
+  },
+  "team": {
+    "title": "ra'wI'pu' tIghom"
+  },
+  "footer": {
+    "copyright": "© {{year}} Huj qa'vIn rep. DevwI'pu': Odd Bob, Dr Kitsuné, Soercia je.",
+    "rights": "Hoch yIbmey pol."
+  }
+}

@@ -1,0 +1,86 @@
+// src/styles/_variables.scss
+
+// =========================================
+// BRAND PALETTE 
+// =========================================
+$brand-espresso: #2c241b; 
+$brand-roast:    #4a3b32;
+$brand-latte:    #fdfbf7; 
+
+$brand-kitsune:  #d9534f;
+$brand-puca:     #557c66;
+$brand-mist:     #e0e6ed;
+$brand-void:     #1a1a1a; 
+
+$color-error:    #de0909;
+
+  // THEMES
+:root {
+  // LIGHT THEME (Default)
+  --bg-body:        #{$brand-latte};
+  --bg-surface:     #ffffff;
+  --bg-surface-alt: #f5f5f5;
+  
+  --text-primary:   #{$brand-espresso};
+  --text-secondary: #{$brand-roast};
+  --text-inverse:   #{$brand-latte};
+  
+  --border-color:   #ddd;
+  --accent-color:   #{$brand-puca};
+
+/* Uncanny Coffee Hour - Official Brand Palette */
+// =========================================
+    /* Primary Backgrounds */
+    --obsidian-dark: #0A0A0B;       /* Deepest shadows, used for main backgrounds */
+    --forest-noir: #141814;         /* A very dark, desaturated green for secondary sections */
+
+    /* The "Coffee" Tones */
+    --roasted-bean: #2C1B14;        /* Dark coffee brown for cards/overlays */
+    --espresso-gold: #C28E42;       /* The rich, crema-colored gold for CTA buttons and active links */
+    --latte-parchment: #D9D2C5;     /* Soft, off-white for body text to reduce eye strain */
+
+    /* The "Uncanny" Highlights */
+    --puca-teal: #1E4D4E;           /* Deep teal for ghostly glows and accents */
+    --spectral-cyan: #7FFFD4;       /* A bright, ethereal highlight for icons or "hover" states */
+
+    /* Borders & Accents */
+    --mist-glass: rgba(255, 255, 255, 0.1); /* Frosted glass effect for the header */
+    --copper-accent: #8B4513;       /* A metallic warmth for subtle borders */
+}
+
+// DARK THEME
+[data-theme='dark'] {
+  --bg-body:        #{$brand-void};
+  --bg-surface:     #{$brand-espresso};
+  --bg-surface-alt: #{$brand-roast};
+  
+  --text-primary:   #{$brand-latte}; // Text flips to light
+  --text-secondary: #{$brand-mist};
+  --text-inverse:   #{$brand-espresso};
+  
+  --border-color:   #{$brand-roast};
+  --accent-color:   #{$brand-kitsune}; // Switch accent to Red/Orange in dark mode for "spooky" vibe
+}
+
+// =========================================
+// HELPER VARS
+// =========================================
+$bg-body:        var(--bg-body);
+$bg-surface:     var(--bg-surface);
+$text-primary:   var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-inverse:   var(--text-inverse);
+$color-focus:    #005fcc; 
+
+// Fonts & Spacing 
+$font-stack-heading: 'Merriweather', serif;
+$font-stack-body:    'Inter', sans-serif;
+$border-radius-md:   8px;
+$border-radius-lg:   12px;
+$bp-tablet:          768px;
+
+$spacing-unit:       8px; // The 8pt grid system (standard in design)
+
+// Breakpoints (Mobile First!)
+$bp-tablet:          768px;
+$bp-desktop:         1024px;

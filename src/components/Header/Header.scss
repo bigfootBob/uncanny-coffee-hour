@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+
+@keyframes spinOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.site-header {
+  background-color: $brand-latte; // Light background now!
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0; // Slimmer profile
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-family: $font-stack-heading;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $brand-espresso;
+    letter-spacing: -1px;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: auto; // Pushes the controls (Language/Theme) to the far right
+
+  // ANCHOR TAG (The Link)
+  a {
+    display: flex;       // Removes the default "text" spacing below images
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    border: none;        // Removes default link borders if any
+    
+    // INTERACTION: Trigger animation on hover
+    &:hover {
+      .logo-image {
+        // Run animation: 0.7s duration, smooth easing, play 1 time
+        animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
+
+        // A11y: Stop spinning if user requested "Reduced Motion"
+        @media (prefers-reduced-motion: reduce) {
+          animation: none;
+          opacity: 0.7; // Subtle feedback instead of movement
+        }
+      }
+    }
+    
+    // INTERACTION: Also spin on keyboard focus for accessibility
+    &:focus-visible {
+      .logo-image {
+        animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
+      }
+    }
+  }
+
+  // THE IMAGE ITSELF
+  .logo-image {
+    // Aspect Ratio Safety
+    height: auto; 
+    width: auto;
+    object-fit: contain; // Ensures it never gets squished
+    
+    // RESPONSIVE SIZING
+    // Mobile: Keep it small and tidy
+    @media (max-width: 768px) {
+      max-height: 40px; 
+    }
+
+    // Desktop: Let it breathe a bit more
+    @media (min-width: 769px) {
+      max-height: 55px; 
+    }
+    
+    // Optimization for animation performance
+    // This tells the browser to expect changes to 'transform', 
+    // so it puts the logo on its own GPU layer.
+    will-change: transform;
+  }
+
+  a:hover {
+    .logo-image {
+      animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
+      // ACCESSIBILITY OVERRIDE (Crucial!) — If the user has requested reduced motion in their OS settings, turn off the spin.
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+        opacity: 0.7;
+        transition: opacity 0.2s ease;
+      }
+    }
+  }
+}
