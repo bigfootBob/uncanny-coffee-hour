@@ -36,6 +36,7 @@ const Header = () => {
             <li><Link to="/episodes">{t('navtext.episodes')}</Link></li>
             <li><Link to="/coven">{t('navtext.coven')}</Link></li>
             <li><Link to="/about">{t('navtext.about')}</Link></li>
+            <li><Link to="/shop">{t('navtext.shop')}</Link></li>
             <li><Link to="/submit" className="nav-cta">{t('navtext.submit_story')}</Link></li>
           </ul>
         </nav>

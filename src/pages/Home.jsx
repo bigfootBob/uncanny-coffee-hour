@@ -6,8 +6,9 @@ import Team from '../components/Team/Team';
 import './Home.scss';
 
 // todo: get images
-// import coffeeIcon from '../assets/images/coffee-cup.png.jpg'; 
+import coffeeIcon from '../assets/images/bmc-logo-no-background.png'; 
 // import mugProduct from '../assets/images/shop-mug.jpg';
+// https://media.giphy.com/media/o7RZbs4KAA6tvM4H6j/giphy.gif
 
 const Home = () => {
   const { t } = useTranslation();
@@ -153,7 +154,15 @@ const Home = () => {
         <div className="action-card glass-panel coffee-card">
           <h3>Buy the Crew a Round</h3>
           <span className="sub-label">(Buy Me a Coffee)</span>
-          {/* <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" /> */}
+          <a 
+            href="https://buymeacoffee.com/uncannycoffee" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="coffee-icon-container"
+            aria-label="Support us on Buy Me a Coffee"
+          >
+            <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" />
+          </a>
         </div>
 
         <div className="action-card glass-panel shop-card">

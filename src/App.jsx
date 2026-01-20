@@ -6,10 +6,11 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home';
-import Episodes from './pages/Episodes';
-import SubmitStory from './pages/SubmitStory';
 import About from './pages/About';
 import Coven from './pages/Coven';
+import Episodes from './pages/Episodes';
+import Shop from './pages/Shop';
+import SubmitStory from './pages/SubmitStory';
 
 import './App.scss';
 
@@ -27,10 +28,11 @@ function App() {
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/episodes" element={<Episodes />} />
-          <Route path="/submit" element={<SubmitStory />} />
           <Route path="/about" element={<About />} />
           <Route path="/coven" element={<Coven />} />
+          <Route path="/episodes" element={<Episodes />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/submit" element={<SubmitStory />} />
           <Route path="*" element={<div>404 - {t('misctext.lostroute')}</div>} />
         </Routes>
       </main>

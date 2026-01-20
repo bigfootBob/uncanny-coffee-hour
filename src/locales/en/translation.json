@@ -9,10 +9,10 @@
       "subtext": "A podcast is the digital evolution of oral tradition. Uncanny Coffee Hour bridges ancient folklore and modern curiosity—one sip at a time."
     },
     "navtext": {
-      "episodes": "Episodes",
-      "coven": "Coven",
       "about": "About",
-      "vault": "Vault",
+      "coven": "Coven",
+      "episodes": "Episodes",
+      "shop": "Shop",
       "submit_story": "Submit a Story"
     },
     "misctext": {
