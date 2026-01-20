@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './ThemeSwitcher.scss';
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
-    // 1. Check local storage first (did they visit before?)
+    // Check local storage first (did they visit before?)
     const savedTheme = localStorage.getItem('theme');
-    
-    // 2. Check system preference (OS Dark Mode)
+    // Check system preference (OS Dark Mode)
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (savedTheme) {
@@ -19,9 +18,8 @@ const ThemeSwitcher = () => {
   }, []);
 
   useEffect(() => {
-    // Apply the theme to the <html> tag
     document.documentElement.setAttribute('data-theme', theme);
-    // Save to local storage
+    // local storage
     localStorage.setItem('theme', theme);
   }, [theme]);
 
@@ -35,7 +33,6 @@ const ThemeSwitcher = () => {
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
-      {/* Simple Icons using Emoji or SVG */}
       {theme === 'light' ? '🌙' : '☀️'}
     </button>
   );

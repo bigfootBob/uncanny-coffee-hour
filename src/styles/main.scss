@@ -1,28 +1,41 @@
-/* src/styles/main.scss */
-
-// Variables first so Mixins can see them
 @import 'variables';
 @import 'mixins';
 
-body {
-    background-color: $bg-body; 
-    color: $text-primary;
-    font-family: $font-stack-body;
-    transition: background-color 0.3s ease, color 0.3s ease;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: transparent; 
+  color: $text-primary;
+  font-family: $font-stack-body;
 
-    .cta-button {
-        background-color: var(--espresso-gold);
-        color: var(--obsidian-dark);
-        font-family: $font-stack-heading; 
-        border: 1px solid var(--copper-accent);
-        padding: 0.5rem 1rem; 
-        cursor: pointer;
-        transition: all 0.3s ease;
+  .cta-button {
+    background-color: var(--espresso-gold);
+    color: var(--obsidian-dark);
+    font-family: $font-stack-heading; 
+    border: 1px solid var(--copper-accent);
+    padding: 0.5rem 1rem; 
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-        &:hover {
-            background-color: var(--spectral-cyan);
-            box-shadow: 0 0 15px var(--puca-teal);
-            color: var(--forest-noir);
-        }
+    &:hover {
+        background-color: var(--spectral-cyan);
+        box-shadow: 0 0 15px var(--puca-teal);
+        color: var(--forest-noir);
     }
+  }
+  #root {
+    min-height: 100vh;
+    background: transparent; 
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* forces links to use var colors */
+  }
+  
+  .app-container {
+    position: relative;
+    z-index: 1;
+  }
 }

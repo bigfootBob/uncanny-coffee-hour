@@ -7,7 +7,6 @@ const Transcript = ({ url, title }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentId = useId();
 
-  // Toggle handler
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
@@ -16,18 +15,15 @@ const Transcript = ({ url, title }) => {
         type="button"
         className="transcript-toggle"
         onClick={toggleOpen}
-        // A11y: Tells SR users if the panel is currently open
         aria-expanded={isOpen}
-        // A11y: Connects this button to the specific content div below
         aria-controls={contentId}
       >
-        {/* Visual icon that rotates */}
         <span className={`icon ${isOpen ? 'rotate' : ''}`} aria-hidden="true">
           ▼
         </span>
         <span className="label">
           {isOpen ? 'Hide Transcript' : 'Read Transcript'}
-          {/* Screen reader only text for context */}
+          {/* Screen reader only text */}
           <span className="sr-only">
             {t('episode.transcript_a11y', { title: title })}
           </span>

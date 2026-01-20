@@ -2,7 +2,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// translation files (common locations for downloads)
 import de from './locales/de/translation.json';
 import en from './locales/en/translation.json';
 import ga from './locales/ga/translation.json';
@@ -30,9 +29,9 @@ i18n
         sv: { translation: sv },
         tlh: { translation: tlh }
     },
-    fallbackLng: 'en', // Default if no lg found
+    fallbackLng: 'en', // Default
     interpolation: {
-      escapeValue: false // React already handles XSS safety
+      escapeValue: false // React handles XSS safety
     }
   });
 

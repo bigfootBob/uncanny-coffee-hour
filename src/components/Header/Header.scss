@@ -1,103 +1,177 @@
 @import '../../styles/variables';
 
 @keyframes spinOnce {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .site-header {
-  background-color: $brand-latte; // Light background now!
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 0; // Slimmer profile
+  position: fixed; 
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers perfectly */
   
+  width: 95%;
+  max-width: 1200px;
+  height: 70px;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* inner content container */
+
   .header-inner {
+    margin: 0; 
+    width: 100%;
+    padding: 0 2rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .logo-text {
-    font-family: $font-stack-heading;
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: $brand-espresso;
-    letter-spacing: -1px;
-  }
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin-right: auto; // Pushes the controls (Language/Theme) to the far right
-
-  // ANCHOR TAG (The Link)
-  a {
-    display: flex;       // Removes the default "text" spacing below images
-    align-items: center;
     height: 100%;
-    text-decoration: none;
-    border: none;        // Removes default link borders if any
-    
-    // INTERACTION: Trigger animation on hover
-    &:hover {
-      .logo-image {
-        // Run animation: 0.7s duration, smooth easing, play 1 time
-        animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
 
-        // A11y: Stop spinning if user requested "Reduced Motion"
-        @media (prefers-reduced-motion: reduce) {
-          animation: none;
-          opacity: 0.7; // Subtle feedback instead of movement
+    .header-logo {
+      display: flex;
+      margin-right: auto; 
+      align-items: center;
+      height: 100%;
+      flex-shrink: 0; 
+
+      .logo-image {
+        width: auto;
+        height: auto;
+        max-height: 40px; 
+        
+        @media (min-width: 768px) {
+          max-height: 55px;
+        }
+
+        will-change: transform;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        &:hover .logo-image {
+          animation: spinOnce 0.6s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
+          @media (prefers-reduced-motion: reduce) {
+            animation: none;
+          }
         }
       }
     }
-    
-    // INTERACTION: Also spin on keyboard focus for accessibility
-    &:focus-visible {
-      .logo-image {
-        animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
+
+    .header-nav .nav-list {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        color: #e0e6ed;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffbf75;
+        }
+      }
+      
+      .header-nav {
+        margin-right: 2rem; 
+      }
+      
+      .nav-cta {
+        border: 1px solid #ffbf75;
+        padding: 8px 20px;
+        border-radius: 20px;
+        color: #ffbf75;
+        
+        &:hover {
+          background: #ffbf75;
+          color: #1a1a1a;
+        }
       }
     }
-  }
 
-  // THE IMAGE ITSELF
-  .logo-image {
-    // Aspect Ratio Safety
-    height: auto; 
-    width: auto;
-    object-fit: contain; // Ensures it never gets squished
-    
-    // RESPONSIVE SIZING
-    // Mobile: Keep it small and tidy
-    @media (max-width: 768px) {
-      max-height: 40px; 
-    }
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: nowrap; 
 
-    // Desktop: Let it breathe a bit more
-    @media (min-width: 769px) {
-      max-height: 55px; 
-    }
-    
-    // Optimization for animation performance
-    // This tells the browser to expect changes to 'transform', 
-    // so it puts the logo on its own GPU layer.
-    will-change: transform;
-  }
+      label {
+        display: none; 
+      }
+      
+      .language-switcher { 
+        display: flex;
+        align-items: center;
 
-  a:hover {
-    .logo-image {
-      animation: spinOnce 0.7s cubic-bezier(0.4, 0.0, 0.2, 1) 1;
-      // ACCESSIBILITY OVERRIDE (Crucial!) — If the user has requested reduced motion in their OS settings, turn off the spin.
-      @media (prefers-reduced-motion: reduce) {
-        animation: none;
-        opacity: 0.7;
-        transition: opacity 0.2s ease;
+        select {
+          background: rgba(0, 0, 0, 0.3);
+          color: var(--text-primary);
+          border: 1px solid var(--border-color);
+          padding: 6px 12px;
+          border-radius: 20px;
+          cursor: pointer;
+          font-family: inherit;
+          font-size: 0.9rem;
+          margin-left: 2rem;
+          appearance: none; 
+          text-align: center;
+
+          &:focus {
+            outline: none;
+            border-color: #ffbf75;;
+          }
+
+          &:hover {
+            outline: none;
+            border-color: #ffbf75;;
+          }
+
+         /* Dark option background for dropdown menu */
+          // option {
+          //   background: #1a1a1a;
+          //   color: #fff;
+          // }
+        }
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border-radius: 50%;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: rotate(15deg) scale(1.1);
+          background: rgba(255, 255, 255, 0.1);
+        }
       }
     }
+
+  } 
+
+  @media (max-width: 768px) {
+    top: 0;
+    width: 100%;
+    border-radius: 0; /* Full width bar on mobile */
+    .header-inner .header-nav { display: none; } /* Hide links on mobile for now */
   }
 }

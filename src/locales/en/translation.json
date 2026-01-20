@@ -4,6 +4,21 @@
       "tagline": "Tales of the Paranormal & The Perfect Brew",
       "skip_link": "Skip to main content"
     },
+    "hero": {
+      "title": "Modern Hearthside Stories",
+      "subtext": "A podcast is the digital evolution of oral tradition. Uncanny Coffee Hour bridges ancient folklore and modern curiosity—one sip at a time."
+    },
+    "navtext": {
+      "episodes": "Episodes",
+      "coven": "Coven",
+      "about": "About",
+      "vault": "Vault",
+      "submit_story": "Submit a Story"
+    },
+    "misctext": {
+      "return": "Return to Homepage",
+      "lostroute": "Lost in the fog"
+    },
     "episode": {
       "hosts_label": "Hosts",
       "read_transcript": "Read Transcript",
@@ -11,7 +26,7 @@
       "transcript_a11y": "for {{title}}"
     },
     "team": {
-      "title": "Meet the Hosts"
+      "title": "Meet the Hosts not needed"
     },
     "footer": {
       "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",

@@ -1,5 +1,3 @@
-// src/styles/_variables.scss
-
 // =========================================
 // BRAND PALETTE 
 // =========================================
@@ -11,10 +9,11 @@ $brand-kitsune:  #d9534f;
 $brand-puca:     #557c66;
 $brand-mist:     #e0e6ed;
 $brand-void:     #1a1a1a; 
+$brand-obsidian: #0A0A0B; 
 
 $color-error:    #de0909;
 
-  // THEMES
+  // THEMES - todo fix dark default from quick hack
 :root {
   // LIGHT THEME (Default)
   --bg-body:        #{$brand-latte};
@@ -50,7 +49,7 @@ $color-error:    #de0909;
 
 // DARK THEME
 [data-theme='dark'] {
-  --bg-body:        #{$brand-void};
+  --bg-body:        #{$brand-obsidian};
   --bg-surface:     #{$brand-espresso};
   --bg-surface-alt: #{$brand-roast};
   
@@ -72,15 +71,12 @@ $text-secondary: var(--text-secondary);
 $text-inverse:   var(--text-inverse);
 $color-focus:    #005fcc; 
 
-// Fonts & Spacing 
 $font-stack-heading: 'Merriweather', serif;
 $font-stack-body:    'Inter', sans-serif;
 $border-radius-md:   8px;
 $border-radius-lg:   12px;
-$bp-tablet:          768px;
 
 $spacing-unit:       8px; // The 8pt grid system (standard in design)
 
-// Breakpoints (Mobile First!)
 $bp-tablet:          768px;
 $bp-desktop:         1024px;

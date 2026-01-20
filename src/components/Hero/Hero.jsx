@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import './Hero.scss';
 
 // responsive heros
@@ -11,12 +10,9 @@ import heroMobileWebP from '../../assets/images/hero-mobile.webp';
 import heroMobileJpg from '../../assets/images/hero-mobile.jpg';
 
 const Hero = () => {
-  const { t } = useTranslation();
-
   return (
-    <section className="hero-section" aria-labelledby="hero-title">
-      <div className="hero-background">
-        <picture>
+    <div className="hero-background-layer">
+      <picture>
           {/* =========================================
               MOBILE (Max-width: 767px)
           ========================================= */}
@@ -53,28 +49,16 @@ const Hero = () => {
             type="image/webp" 
           />
           
-          <img 
-            src={heroDesktopJpg} 
-            alt="Foggy morning in the Valley, East of Springfield, with a steaming cup of coffee"
-            className="hero-image"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </picture>
-        
-        <div className="hero-overlay"></div>
-      </div>
-
-      <div className="container hero-content">
-        <h1 id="hero-title" className="hero-title">
-          {t('app.title')}
-        </h1>
-        <p className="hero-tagline">
-          {t('app.tagline')}
-        </p>
-      </div>
-
-    </section>
+        <img 
+          src={heroDesktopJpg} 
+          alt="" // Empty alt - decorative
+          className="hero-image"
+          loading="eager"
+        />
+      </picture>
+      
+      <div className="hero-overlay"></div>
+    </div>
   );
 };
 
