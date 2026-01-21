@@ -5,7 +5,8 @@ $brand-espresso: #2c241b;
 $brand-roast:    #4a3b32;
 $brand-latte:    #fdfbf7; 
 
-$brand-kitsune:  #d9534f;
+// $brand-kitsune:  #d9534f;
+$brand-kitsune:  #ffbf75;
 $brand-puca:     #557c66;
 $brand-mist:     #e0e6ed;
 $brand-void:     #1a1a1a; 
@@ -22,7 +23,9 @@ $color-error:    #de0909;
   
   --text-primary:   #{$brand-espresso};
   --text-secondary: #{$brand-roast};
-  --text-inverse:   #{$brand-latte};
+  // --text-inverse:   #{$brand-latte};
+  --text-inverse:   #{$brand-mist};
+ 
   
   --border-color:   #ddd;
   --accent-color:   #{$brand-puca};
@@ -76,7 +79,7 @@ $font-stack-body:    'Inter', sans-serif;
 $border-radius-md:   8px;
 $border-radius-lg:   12px;
 
-$spacing-unit:       8px; // The 8pt grid system (standard in design)
+$spacing-unit:       8px;
 
 $bp-tablet:          768px;
 $bp-desktop:         1024px;

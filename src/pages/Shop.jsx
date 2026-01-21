@@ -1,30 +1,26 @@
 import React from 'react';
-import './About.scss';
+import './Shop.scss';
 import Hero from '../components/Hero/Hero'; 
+import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const Shop = () => {
+  const { t } = useTranslation();
   return (
     <>
-    <Hero />
+      <Hero />
       
-    <div className="container page-content">
-      <h1>Submit Your Paranormal Tale</h1>
-      <p>Have you seen the Puca? Did your coffee taste like ectoplasm? Tell us.</p>
-      
-      <form className="story-form">
-         <label>
-            Your Name (or Alias)
-            <input type="text" name="name" />
-         </label>
-         <label>
-            Your Story
-            <textarea rows="8" name="story"></textarea>
-         </label>
-         <button type="submit" className="cta-button">Send to the Vault</button>
-      </form>
-    </div>
+      <div className="episodes-page">
+        <div className="episodes-header glass-panel">
+          <h1>Welcome to the Emporium</h1>
+          <p>Browse Our Curiosities, Oddities & Wares</p>
+        </div>
+
+        <div className="player-wrapper glass-panel">
+          more amazing items to come:  <a href="https://uncannycoffee.threadless.com/">Threadless Shop</a>
+        </div>
+      </div>
     </>
   );
 };
 
-export default About;
+export default Shop;

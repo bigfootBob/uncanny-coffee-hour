@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero/Hero'; 
 import './Episodes.scss';
+import { useTranslation } from 'react-i18next';
 
 const Episodes = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     if (document.getElementById('buzzsprout-script')) return;
 

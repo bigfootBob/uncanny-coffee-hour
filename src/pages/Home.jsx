@@ -7,7 +7,7 @@ import './Home.scss';
 
 // todo: get images
 import coffeeIcon from '../assets/images/bmc-logo-no-background.png'; 
-// import mugProduct from '../assets/images/shop-mug.jpg';
+import mugProduct from '../assets/images/emporium-coffeemug.png';
 // https://media.giphy.com/media/o7RZbs4KAA6tvM4H6j/giphy.gif
 
 const Home = () => {
@@ -78,13 +78,12 @@ const Home = () => {
                 src={latestEpisode.coverArt} 
                 alt="Episode Art" 
                 className="player-art"
-                style={{ width: 48, height: 48, borderRadius: 4, objectFit: 'cover' }}
               />
             ) : (
               <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.1)', borderRadius: 4 }}></div>
             )}
             <div className="player-text">
-              <span className="player-label">Latest Brew ({latestEpisode?.pubDate || '...'}) | <Link to="/episodes">All Episodes</Link></span>
+              <span className="player-label">Latest Brew ({latestEpisode?.pubDate || '...'}) • <Link to="/episodes">all episodes</Link></span>
               <span className="player-title">
                 {latestEpisode ? latestEpisode.title : 'Loading latest episode...'}
               </span>
@@ -145,9 +144,6 @@ const Home = () => {
                 $18/mo. Brownie Benefactor!
               </Link>
             </div>
-             {/* <button className="tier-btn active">$3/mo. Loving Longma</button>
-             <button className="tier-btn">$6/mo. Sustaining spirit!</button>
-             <button className="tier-btn">$18/mo. Brownie Benefactor!</button> */}
           </div>
         </div>
 
@@ -168,9 +164,10 @@ const Home = () => {
         <div className="action-card glass-panel shop-card">
           <div className="shop-text">
             <h3>Emporium</h3>
+            <p className="sub-label">Curiosities, Oddities & Wares</p>
             <Link to="/shop" className="shop-btn">Shop Now</Link>
           </div>
-          {/* <img src={mugProduct} alt="Octopus Mug" className="shop-image" /> */}
+          <img src={mugProduct} alt="Uncanny Mug" className="shop-image" />
         </div>
       </section>
 

@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero/Hero'; 
 import './Coven.scss';
+import { useTranslation } from 'react-i18next';
 
 const Coven = () => {
+  const { t } = useTranslation();
   const location = useLocation();
 
   useEffect(() => {
@@ -19,14 +21,19 @@ const Coven = () => {
   }, [location]);
 
   return (
-    <>
-      <Hero /> 
+      <>
+      <Hero />
       
-     <div className="container page-content">
-      <h1>Submit Your Paranormal Tale</h1>
-      <p>Have you seen the Puca? Did your coffee taste like ectoplasm? Tell us.</p>
-      
+      <div className="episodes-page">
+        <div className="episodes-header glass-panel">
+          <h1>ONE OF US! ONE OF US!</h1>
+          <p>Every strange tale and spilled cup, listed in chronological order.</p>
         </div>
+
+        <div className="player-wrapper glass-panel">
+          things to come
+        </div>
+      </div>
     </>
   );
 };
