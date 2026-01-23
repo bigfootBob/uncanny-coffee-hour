@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Hero from '../components/Hero/Hero'; 
+import Hero from '../components/Hero/Hero';
+import Team from '../components/Team/Team';
 import './Coven.scss';
 import { useTranslation } from 'react-i18next';
 
@@ -32,6 +33,7 @@ const Coven = () => {
 
         <div className="player-wrapper glass-panel">
           things to come
+          <Team />
         </div>
       </div>
     </>

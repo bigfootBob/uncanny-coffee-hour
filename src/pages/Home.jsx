@@ -54,6 +54,10 @@ const Home = () => {
         </p>
       </section>
 
+      <section className="dashboard-row team-row">
+        <Team />
+      </section>
+
       <section className="dashboard-row player-row glass-panel">
         
         {latestEpisode && (
@@ -178,9 +182,6 @@ const Home = () => {
         </Link>
       </section>
 
-      <section className="dashboard-row team-row">
-        <Team />
-      </section>
     </div>
     </>
   );

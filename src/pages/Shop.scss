@@ -1,2 +1,161 @@
 @import '../styles/variables';
 @import '../styles/mixins'; 
+
+.shop-page {
+  padding: 4rem 2rem;
+  max-width: 1400px; // Wide container for 5 items
+  margin: 0 auto;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  h1 { font-family: var(--font-serif); font-size: 3rem; color: var(--espresso-gold); }
+}
+
+// --- THE GRID SYSTEM ---
+.shop-grid {
+  display: grid;
+  gap: 2rem; // Space between tiles
+  
+  // OPTION A: Fully Responsive (Recommended)
+  // This fits as many 220px cards as possible. 
+  // On big screens it might be 5 or 6, on tablets 3, on phones 1.
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+  // OPTION B: Strict "5 Columns" (If you really want 5 across on desktop)
+  // grid-template-columns: repeat(2, 1fr); // Mobile: 2 across
+  
+  // @media (min-width: 768px) {
+  //   grid-template-columns: repeat(3, 1fr); // Tablet: 3 across
+  // }
+  
+  // @media (min-width: 1200px) {
+  //   grid-template-columns: repeat(5, 1fr); // Desktop: 5 across
+  // }
+}
+
+// --- THE CARD ---
+.product-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column; // Keeps button at bottom
+
+  &:hover {
+    transform: translateY(-5px); // Lift effect
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .card-image-wrapper {
+    position: relative;
+    height: 250px; // Fixed height for consistency
+    background: #eee;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Crucial: Crops image to fit the square
+    }
+
+    .price-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--brand-puca); // Green background
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+  }
+
+  .card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--font-serif);
+    }
+    
+    p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex-grow: 1; // Pushes button down
+    }
+
+    .add-btn {
+      width: 100%;
+      padding: 0.8rem;
+      background: var(--espresso-gold);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background 0.2s;
+
+      &:hover {
+        background: darken(#C28E42, 10%);
+      }
+    }
+  }
+}
+
+.shop-grid {
+  display: grid;
+  gap: 2rem;
+  
+  // Responsive Grid Logic:
+  // Mobile: 1 column
+  // Tablet: 2 columns
+  // Desktop: 3 columns (perfect for 6 items)
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.product-card {
+  // ... (previous card styles remain the same) ...
+
+  // Remove blue link underline from the image wrapper
+  .card-image-link {
+    display: block; 
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-content {
+    // ... previous styles ...
+
+    // REPLACED .add-btn WITH .buy-btn
+    .buy-btn {
+      display: block; // Link needs to behave like a block
+      width: 100%;
+      text-align: center; // Center text in button
+      text-decoration: none; // Remove underline
+      padding: 0.8rem;
+      background: var(--espresso-gold);
+      color: white;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background 0.2s, transform 0.2s;
+
+      &:hover {
+        background: darken(#C28E42, 10%);
+        transform: translateY(-2px); // Subtle click feedback
+      }
+    }
+  }
+}

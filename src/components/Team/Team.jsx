@@ -1,25 +1,53 @@
-import React from 'react';
-import bioData from '../../data/bios.json';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './Team.scss';
 
 const Team = () => {
+  const { t } = useTranslation('bios'); 
+  const teamData = t('teamMembers', { returnObjects: true });
+  const members = Array.isArray(teamData) ? teamData : [];
+  const [imageErrors, setImageErrors] = useState({});
+
+  const handleImageError = (index) => { // show letter if fails
+    setImageErrors((prev) => ({ ...prev, [index]: true }));
+  };
+
   return (
     <section className="team-section" aria-labelledby="team-heading">
       <div className="container">
         <ul className="team-grid">
-          {bioData.map((member) => (
-            <li key={member.id} className="team-card">
-              <div className="team-card__avatar">
-                <div className="avatar-placeholder" aria-hidden="true">
-                  {member.name.charAt(0)}
+          {members.map((member, index) => (
+            <li key={index} className="team-card">
+              <Link 
+                to={`/coven#${member.id}`} 
+                className="team-card-link"
+                aria-label={`Read more about ${member.name}`}
+              >
+                <div className="team-card__avatar">
+
+                  {imageErrors[index] ? (
+                    <div className="avatar-placeholder" aria-hidden="true">
+                      {member.name.charAt(0)}
+                    </div>
+                  ) : (
+                    <div className="avatar-img">
+                      <img 
+                        src={`/assets/images/bios/${member.avatar}`}
+                        alt={member.name} 
+                        className="avatar-img-element"
+                        onError={() => handleImageError(index)}
+                      />
+                    </div>
+                  )}
                 </div>
-              </div>
-              
-              <div className="team-card__content">
-                <h3 className="team-card__name">{member.name}</h3>
-                <p className="team-card__role">{member.role}</p>
-                <p className="team-card__bio">{member.bio}</p>
-              </div>
+                
+                <div className="team-card__content">
+                  <h3 className="team-card__name">{member.name}</h3>
+                  <p className="team-card__role">{member.role}</p>
+                  <p className="team-card__bio">{member.bio}</p>
+                </div>
+              </Link>
             </li>
           ))}
         </ul>

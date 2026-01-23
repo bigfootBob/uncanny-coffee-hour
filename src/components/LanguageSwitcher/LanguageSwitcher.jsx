@@ -23,8 +23,7 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="language-switcher">
-      <label htmlFor="lang-select" className="sr-only">Choose Language</label> 
-      {/* todo: remove this label */}
+
       <select
         id="lang-select"
         value={i18n.resolvedLanguage}

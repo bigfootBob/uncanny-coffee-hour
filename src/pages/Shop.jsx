@@ -1,25 +1,44 @@
 import React from 'react';
 import './Shop.scss';
-import Hero from '../components/Hero/Hero'; 
-import { useTranslation } from 'react-i18next';
+import products from '../data/inventory.json';
 
 const Shop = () => {
-  const { t } = useTranslation();
   return (
-    <>
-      <Hero />
-      
-      <div className="episodes-page">
-        <div className="episodes-header glass-panel">
-          <h1>Welcome to the Emporium</h1>
-          <p>Browse Our Curiosities, Oddities & Wares</p>
-        </div>
+    <div className="shop-page">
+      <header className="shop-header">
+        <h1>Provisions for the Body, Curios for the Mind</h1>
+        <p>Support the podcast. Essential Wares & Uncommon Finds.</p>
+      </header>
 
-        <div className="player-wrapper glass-panel">
-          more amazing items to come:  <a href="https://uncannycoffee.threadless.com/">Threadless Shop</a>
-        </div>
+      <div className="shop-grid">
+        {products.map((item) => (
+          <article key={item.id} className="product-card">
+
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-image-link">
+              <div className="card-image-wrapper">
+                <img src={`/assets/images/inventory/${item.image}`} alt={item.name} />
+                <span className="price-tag">{item.price}</span>
+              </div>
+            </a>
+            
+            <div className="card-content">
+              <h3>{item.name}</h3>
+              <p>{item.desc}</p>
+ 
+              <a 
+                href={item.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="buy-btn"
+              >
+                {/* Buy {item.vendor} &rarr; */}
+                More Details
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

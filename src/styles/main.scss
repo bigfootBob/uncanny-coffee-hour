@@ -37,5 +37,26 @@ html, body {
   .app-container {
     position: relative;
     z-index: 1;
+
+    .page-header {
+      @include glass-panel;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      
+      h1 {
+        font-family: $font-stack-heading;
+        font-size: 2.5rem;
+        margin: 0 0 0.5rem 0;
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      }
+      
+      p {
+        color: $brand-mist;
+        font-size: 1.1rem;
+        margin: 0;
+        opacity: 0.9;
+      }
+    }
   }
 }

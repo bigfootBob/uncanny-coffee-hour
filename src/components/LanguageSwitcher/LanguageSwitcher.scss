@@ -3,11 +3,15 @@
 .language-select {
   background: transparent;
   border: 1px solid $brand-mist;
-  color: $text-inverse; // Assuming this lives in the dark header
   padding: 4px 8px;
   border-radius: 4px;
-  font-family: $font-stack-body;
   cursor: pointer;
+  color: #e0e6ed;
+  font-family: $font-stack-ui;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
 
   &:focus {
     outline: 2px solid $text-inverse;
