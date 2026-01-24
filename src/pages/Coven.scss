@@ -1,2 +1,91 @@
 @import '../styles/variables';
 @import '../styles/mixins'; 
+
+#coven-page {
+
+  .tiers-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .tier-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        border-color: rgba(144, 238, 144, 0.6); 
+        
+        box-shadow: 0 0 35px 10px rgba(120, 168, 120, 0.4);
+      }
+      &.highlight {
+        border-color: rgba(144, 238, 144, 0.5);
+        box-shadow: 0 0 20px 5px rgba(144, 238, 144, 0.2);
+      }
+
+      .tier-visual {
+        margin-bottom: 1.5rem;
+        
+        .tier-image {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid #d4af37; 
+          box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+      }
+
+      .tier-content {
+        h3 {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+          font-weight: 700;
+        }
+
+        .tier-price {
+          font-size: 1.2rem;
+          color: #78a878;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        .tier-desc {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          opacity: 0.9;
+          margin-bottom: 2rem;
+          flex-grow: 1; 
+        }
+
+        .tier-cta {
+          display: inline-block;
+          background-color: #556b4f;
+          color: white;
+          padding: 12px 24px;
+          border-radius: 30px;
+          text-decoration: none;
+          font-weight: bold;
+          letter-spacing: 1px;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: #6a8563;
+          }
+        }
+      }
+    }
+  }
+}
+

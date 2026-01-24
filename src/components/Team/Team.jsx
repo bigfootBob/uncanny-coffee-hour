@@ -3,10 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Team.scss';
 
-const Team = () => {
+const Team = ({ limit = null }) => {
   const { t } = useTranslation('bios'); 
   const teamData = t('teamMembers', { returnObjects: true });
   const members = Array.isArray(teamData) ? teamData : [];
+  const membersToDisplay = limit ? members.slice(0, limit) : members;
   const [imageErrors, setImageErrors] = useState({});
 
   const handleImageError = (index) => { // show letter if fails
@@ -17,7 +18,7 @@ const Team = () => {
     <section className="team-section" aria-labelledby="team-heading">
       <div className="container">
         <ul className="team-grid">
-          {members.map((member, index) => (
+          {membersToDisplay.map((member, index) => (
             <li key={index} className="team-card">
               <Link 
                 to={`/coven#${member.id}`} 

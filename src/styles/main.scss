@@ -24,6 +24,7 @@ html, body {
         color: var(--forest-noir);
     }
   }
+
   #root {
     min-height: 100vh;
     background: transparent; 
@@ -31,12 +32,23 @@ html, body {
   
   a {
     text-decoration: none;
-    color: inherit; /* forces links to use var colors */
+    color: inherit;
   }
   
   .app-container {
     position: relative;
     z-index: 1;
+
+    .page-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 120px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+      z-index: 1;
+    }
 
     .page-header {
       @include glass-panel;

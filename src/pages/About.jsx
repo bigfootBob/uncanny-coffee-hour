@@ -1,7 +1,8 @@
 import React from 'react';
-import './About.scss';
-import Hero from '../components/Hero/Hero'; 
+import Hero from '../components/Hero/Hero';
+import Team from '../components/Team/Team';
 import { useTranslation } from 'react-i18next';
+import './About.scss';
 
 const About = () => {
   const { t } = useTranslation();
@@ -9,15 +10,16 @@ const About = () => {
       <>
       <Hero />
       
-      <div className="episodes-page">
-        <div className="episodes-header glass-panel">
+      <div id="about-page" className="page-container">
+        <div className="page-header glass-panel">
           <h1>About The Show</h1>
           <p>Every strange tale and spilled cup, listed in chronological order.</p>
         </div>
 
-        <div className="player-wrapper glass-panel">
-          things to come
+        <div className="team-section-wrapper">
+          <Team limit={3} />
         </div>
+    
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './SubmitStory.scss';
 import Hero from '../components/Hero/Hero'; 
 import { useTranslation } from 'react-i18next';
+import './SubmitStory.scss';
 
 const SubmitStory = () => {
   const { t } = useTranslation();
@@ -68,13 +68,13 @@ const SubmitStory = () => {
     <>
       <Hero />
       
-      <div className="episodes-page">
-        <div className="episodes-header glass-panel">
+      <div id="submit-story-page" className="page-container">
+        <div className="page-header glass-panel">
           <h1>Submit Your Paranormal Tale</h1>
           <p>Have you seen the Puca? Did your coffee taste like ectoplasm? Tell us.</p>
         </div>
 
-        <div className="player-wrapper parchment-panel">
+        <div className="parchment-panel">
           {status === 'success' ? (
             <div className="success-message" style={{ textAlign: 'center' }}>
               <h2>Received.</h2>

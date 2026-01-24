@@ -1,11 +1,18 @@
 import React from 'react';
-import './Shop.scss';
 import products from '../data/inventory.json';
+import { useTranslation } from 'react-i18next';
+import Hero from '../components/Hero/Hero'; 
+import './Shop.scss';
 
 const Shop = () => {
+
+  const { t } = useTranslation();
   return (
-    <div className="shop-page">
-      <header className="shop-header">
+    <>
+    <Hero />
+
+    <div id="shop-page" className="page-container">
+      <header className="page-header glass-panel">
         <h1>Provisions for the Body, Curios for the Mind</h1>
         <p>Support the podcast. Essential Wares & Uncommon Finds.</p>
       </header>
@@ -39,6 +46,7 @@ const Shop = () => {
         ))}
       </div>
     </div>
+  </>
   );
 };
 

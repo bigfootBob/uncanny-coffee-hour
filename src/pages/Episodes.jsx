@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero/Hero'; 
-import './Episodes.scss';
 import { useTranslation } from 'react-i18next';
+import './Episodes.scss';
 
 const Episodes = () => {
   const { t } = useTranslation();
@@ -33,7 +33,7 @@ const Episodes = () => {
       <Hero />
       
       <div className="episodes-page">
-        <div className="episodes-header glass-panel">
+        <div className="page-header glass-panel">
           <h1>The Complete Collection</h1>
           <p>Every strange tale and spilled cup, listed in chronological order.</p>
         </div>

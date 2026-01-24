@@ -175,11 +175,23 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="dashboard-row submission-row">
+      {/* <section id="whispering-well" className="dashboard-row parchment-panel">
+        <h1>Have An Uncanny Tale Of Your Own?</h1>
+        <h2>Use our Whispering Well and we may use it on the podcast.</h2>
         <Link to="/submit" className="parchment-banner">
-          <h2>Whispering Well</h2>
           <span>Submission Form</span>
         </Link>
+      </section> */}
+
+      <section id="whispering-well" className="dashboard-row parchment-panel">
+        <div className="panel-content">
+          <h1>Have An Uncanny Tale Of Your Own?</h1>
+          <h2>Use our Whispering Well and we may use it on the podcast.</h2>
+          
+          <Link to="/submit" className="parchment-btn">
+            Submission Form
+          </Link>
+        </div>
       </section>
 
     </div>
