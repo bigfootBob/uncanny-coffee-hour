@@ -2,16 +2,16 @@
   { 
     "id": "1", 
     "name": "Long Sleeve Tees", 
-    "price": "$18.00", 
+    "price": "NEW!", 
     "image": "longsleeve.jpg", 
-    "desc": "This baseball triblend t-shirt features a soft combination of cotton, polyester, and rayon blend and 3/4 sleeves. 50% Polyester, 25% 32-single, 4.3 oz. Combed & Ring-spun cotton, 25% Triblend jersey. Unisex sizing to fit most people.", 
+    "desc": "This baseball triblend t-shirt features a soft combination of cotton, polyester, and rayon blend and 3/4 sleeves.", 
     "link": "https://uncannycoffee.threadless.com/designs/uncanny-coffee-logo/womens/longsleeve-t-shirt/baseball-triblend?color=tri-blue_sleeves", 
     "vendor": "Threadless"
   },
   { 
     "id": "2", 
     "name": "Hats and Mugs", 
-    "price": "$18.00", 
+    "price": "NEW!", 
     "image": "mugshats.jpg", 
     "desc": "Hats, Stickers, Mugs, Buttons, Bags, Magnets, Notebooks, phone cases and more!", 
     "link": "https://uncannycoffee.threadless.com/accessories/", 
@@ -20,45 +20,45 @@
   { 
     "id": "3", 
     "name": "Stickers", 
-    "price": "$18.00", 
+    "price": "NEW!", 
     "image": "stickers.jpg", 
-    "desc": "Dark roast. Hints of blackberry.", 
+    "desc": "Stickers are printed on 3 mil. glossy white vinyl with an eco-solvent printer & ink.", 
     "link": "https://uncannycoffee.threadless.com/accessories/sticker/white", 
     "vendor": "Threadless"
   },
   { 
     "id": "4", 
     "name": "Sweatshirts", 
-    "price": "Check link", 
+    "price": "WARM!", 
     "image": "sweatshirt.jpg", 
-    "desc": "Dark roast. Hints of blackberry.", 
+    "desc": "Warm and soft for those chilly stories.", 
     "link": "https://uncannycoffee.threadless.com/", 
     "vendor": "Threadless"
   },
   { 
     "id": "5", 
     "name": "Tanktops", 
-    "price": "Check link", 
+    "price": "NEW!", 
     "image": "tanktops.jpg", 
-    "desc": "Dark roast. Hints of blackberry.", 
+    "desc": "Amazing tanktops are here for summer! Make your fashion statement say you love the weirdos", 
     "link": "https://uncannycoffee.threadless.com/", 
     "vendor": "Threadless"
   },
   { 
     "id": "6", 
     "name": "Tee Shirts", 
-    "price": "Check link", 
+    "price": "$22.95 starting", 
     "image": "tees.jpg", 
-    "desc": "An easy-wearing unisex fit makes the regular t-shirt perfect for every body, with combed ring spun cotton the shirt has a mid-weight fabric with an extra-comfortable touch. This is a staple shirt for every mood.", 
+    "desc": "An easy-wearing unisex fit makes the regular t-shirt perfect for every body. A staple shirt for every mood.", 
     "link": "https://uncannycoffee.threadless.com/womens/t-shirt/regular-unisex", 
     "vendor": "Threadless"
   },
   { 
     "id": "7", 
     "name": "V-Neck Tees", 
-    "price": "Check link", 
+    "price": "HOT!", 
     "image": "vtees.jpg", 
-    "desc": "Dark roast. Hints of blackberry.", 
+    "desc": "If you prefer the v-neck we have the shirts for you!", 
     "link": "https://uncannycoffee.threadless.com/", 
     "vendor": "Threadless"
   }

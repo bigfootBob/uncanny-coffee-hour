@@ -1,24 +1,124 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero';
 import Team from '../components/Team/Team';
-import { useTranslation } from 'react-i18next';
+import FriendData from '../data/friends.json';
 import './About.scss';
 
+import aboutPicDesktop from '../assets/images/about-toon-desktop.webp';
+import aboutPicMobile from '../assets/images/about-toon-mobile.webp';
+
 const About = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('translation');
+  const location = useLocation();
+  const aboutText = t('aboutpage.about_text', { returnObjects: true });
+  const safeAboutText = Array.isArray(aboutText) ? aboutText : [];
+
+  useEffect(() => {
+    const targetId = location.state?.selectedSection;
+    if (targetId) {
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn(`Attempted to scroll to ID "${targetId}" but it was not found.`);
+      }
+    }
+  }, [location]);
+
   return (
-      <>
+    <>
       <Hero />
       
       <div id="about-page" className="page-container">
-        <div className="page-header glass-panel">
-          <h1>About The Show</h1>
-          <p>Every strange tale and spilled cup, listed in chronological order.</p>
-        </div>
+        <section className="page-header glass-panel">
+          <h1>{t('app.title')}</h1>
+          <p>{t('aboutpage.subhead')}</p>
+        </section>
 
-        <div className="team-section-wrapper">
+        <section id="aboutus" className="about-text glass-panel">
+          <h1>{t('aboutpage.about')}</h1>
+          
+          {safeAboutText.map((paragraph, i) => (
+            <p key={i} className="about-paragraph">
+              {paragraph}
+            </p>
+          ))}
+        </section>
+
+        <section id="friends" className="about-text glass-panel">
+          <h1>{t('aboutpage.friendo_title')}</h1>
+          <p>
+            {t('aboutpage.friendo_desc')}
+          </p>
+
+          <div className="friends-grid">
+            
+            {FriendData.map((friend, index) => (
+              <a 
+                key={friend.id || index}
+                href={friend.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="friend-card"
+              >
+                <div className="friend-info">
+                  <h3>{friend.name}</h3>
+                  {friend.desc && <p>{friend.desc}</p>}
+                </div>
+
+                <div className="friend-icon">
+                  {friend.icon ? (
+                    <img src={`/assets/images/icons/${friend.icon}`} alt="" />
+                  ) : (
+                    <span className="generic-arrow">➔</span> 
+                  )}
+                </div>
+              </a>
+            ))}
+
+          </div>
+        </section>
+
+        <section id="whatisit" className="about-text glass-panel">
+          <h1>{t('aboutpage.what_podcast')}</h1>
+          <p>
+            {t('aboutpage.what_podtext')}
+          </p>
+        </section>
+
+        <section id="ai" className="about-text glass-panel">
+          <h1>{t('aboutpage.aititle')}</h1>
+          <p>
+            {t('aboutpage.aitext')}
+          </p>
+        </section>
+
+        <section className="team-section-wrapper">
           <Team limit={3} />
-        </div>
+        </section>
+
+        <section className="outro-toon">
+          <picture>
+            <source 
+              media="(max-width: 767px)" 
+              srcSet={aboutPicMobile} 
+              type="image/webp" 
+            />
+            <source 
+              srcSet={aboutPicDesktop} 
+              type="image/webp" 
+            />
+            <img 
+              src={aboutPicDesktop} 
+              alt="Cartoon outro image of the team."
+              className="about-image"
+              loading="eager"
+            />
+          </picture>
+        </section>
     
       </div>
     </>

@@ -34,8 +34,8 @@ const Episodes = () => {
       
       <div className="episodes-page">
         <div className="page-header glass-panel">
-          <h1>The Complete Collection</h1>
-          <p>Every strange tale and spilled cup, listed in chronological order.</p>
+          <h1>{t('eppage.title')}</h1>
+          <p>{t('eppage.subhead')}</p>
         </div>
 
         <div className="player-wrapper glass-panel">

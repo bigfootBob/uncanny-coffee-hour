@@ -43,6 +43,7 @@ const Header = () => {
 
         <div className="header-controls">
           <LanguageSwitcher />
+          {/* todo: update colors for themes */}
           <ThemeSwitcher />
         </div>
       </div>

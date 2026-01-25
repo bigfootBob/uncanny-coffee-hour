@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Footer.scss';
+import { Link } from 'react-router-dom';
+import humanAIimg from '../../assets/images/human_ai_assist.png';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -15,6 +17,13 @@ const Footer = () => {
         <p className="footer-subtext">
           {t('footer.rights')}
         </p>
+        
+        <Link 
+          to="/about" 
+          state={{ selectedSection: 'ai' }} 
+        >
+          <img src={humanAIimg} alt="Human & AI co-created" className='human-ai-img' />
+        </Link>
       </div>
     </footer>
   );

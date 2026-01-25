@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "name": "Weird Fiction Quarterly",
+    "desc": "Publishing original weird flash fiction four times a year!",
+    "link": "https://weirdfictionquarterly.com",
+    "image": "tbd"
+  },
+  {
+    "id": "2",
+    "name": "Stolen Bike Closure",
+    "desc": "Our weird friends doing spirituality work in the 2 wheeled realm.",
+    "link": "https://www.stolenbikeclosure.com",
+    "image": "tbd"
+  },
+  {
+    "id": "3",
+    "name": "Don't Whistle At Night",
+    "desc": "Irish spirit providing the voice to the beyond. (Note: Loves whiskey)",
+    "link": "soercia-avatar.jpg",
+    "image": "tbd"
+  },
+  {
+    "id": "4",
+    "name": "Fast Lane Coffee",
+    "desc": "Fueling the uncanny with hemp milk latte's since 2020",
+    "link": "bob-avatar.jpg",
+    "image": "tbd"
+  },
+  {
+    "id": "5",
+    "name": "North American Bigfoot Center",
+    "desc": "The best place to learn about Sasquatch in the PNW.",
+    "link": "https://northamericanbigfootcenter.com/"
+  }
+]

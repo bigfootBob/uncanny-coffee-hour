@@ -26,8 +26,8 @@ const Coven = () => {
       
       <div id="coven-page" className="page-container">
         <div className="page-header glass-panel">
-          <h1>{t('coven.title', 'ONE OF US! ONE OF US!')}</h1>
-          <p>{t('coven.subtitle', 'Every strange tale and spilled cup, listed in chronological order.')}</p>
+          <h1>{t('covenpage.title')}</h1>
+          <p>{t('covenpage.subhead')}</p>
         </div>
 
         <div className="tiers-grid-wrapper">
@@ -56,7 +56,7 @@ const Coven = () => {
                   rel="noopener noreferrer" 
                   className="tier-cta"
                 >
-                  WALK WITH US
+                  {t('covenpage.btn')}
                 </a>
               </div>
             </div>

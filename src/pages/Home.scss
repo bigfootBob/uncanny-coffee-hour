@@ -10,7 +10,7 @@
 .home-dashboard {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 420px 20px 40px; 
+  padding: 370px 20px 40px; 
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -127,7 +127,7 @@
       
         @for $i from 1 through 40 {
           &:nth-child(#{$i}) {
-            height: #{30 + random(70)}%;
+            height: (30 + random(70)) * 1%;
             animation-duration: #{0.8 + (random(5) / 10)}s;
           }
         }

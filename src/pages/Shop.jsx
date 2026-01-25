@@ -38,8 +38,7 @@ const Shop = () => {
                 rel="noopener noreferrer" 
                 className="buy-btn"
               >
-                {/* Buy {item.vendor} &rarr; */}
-                More Details
+                Details
               </a>
             </div>
           </article>

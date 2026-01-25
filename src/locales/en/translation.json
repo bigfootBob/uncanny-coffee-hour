@@ -1,12 +1,56 @@
 {
+    "aboutpage": {
+      "subhead": "Your caffeinated escape from the ordinary.",
+      "about": "About the Show",
+      "about_text": [
+        "Welcome to the Uncanny Coffee Hour, where the steam from our mugs swirls with the mists of the unknown. We are a gathering place for the high strangeness of the world—where the ancient pathways of the Fae cross with the twilight realm of the Yokai.",
+        "Hosted by Odd Bob and Dr. Kitsuné (Mitch), our perspectives are as deep as our roots. Dr. Kitsune walks the bridge between Native wisdom and the spirit-filled folklore of Japan, guiding us through the world of Yokai and Indigenous legend. Odd Bob brings an American wanderers heart with a soul tethered to the Celtic mysteries, forever chasing the impish magic of the Fae. Together with Soercia, our resident Puca, we walk the line between the researched and the impossible.",
+        "We believe that every legend holds a heartbeat of truth. With a blend of irreverence and deep respect, we prioritize the oldest voices among us, encouraging a profound look at Indigenous perspectives. We are here to give a voice to the voiceless and explore the philosophical threads that connect us all.",
+        "This project has been brewing in our minds for years. The drinks are hot, the shadows long, and the stories waiting.",
+        "Pull up a chair."
+      ],
+      "friendo_title": "Friends and recommendations",
+      "friendo_desc": "Here are a few of the friends of the show or otherwise essential entities we would liek to give a shout out to:",
+      "aititle": "How much AI help do you use?",
+      "aitext": "That depends. We (for now) have full time obligations to keep food and shelter and such in a cruel world. In our perfect scenario... we would do this full time, however, we have to look for ways to move faster here and there and AI has really helped us speed along some of the storytelling & special effects audio you enjoy. The episode art is typically a combination of human and AI help and it varies from episode to episode. ",
+      "what_podcast": "What is a podcast?",
+      "what_podtext": "Think of it like a radio show of days gone by… like sitting around the radio and listening to Buck Rogers or The Shadow… but instead of tuning in at a specific time, you can listen whenever you want! So crowd around the ‘ol computer or mobile phone… warm up those vacuum tubes… and listen in!"
+    },
+    "covenpage": {
+      "title": "Join us! Support the show!",
+      "subhead": "Every member becomes part of the coven and supports telling the stories we all need right now.",
+      "btn": "WALK WITH US"
+    },
+    "eppage": {
+      "title":"The Complete Collection",
+      "subhead": "Every strange tale and spilled cup, listed in chronological order."
+    },
     "app": {
       "title": "Uncanny Coffee Hour",
       "tagline": "Tales of the Paranormal & The Perfect Brew",
       "skip_link": "Skip to main content"
     },
+    "episode": {
+      "hosts_label": "Hosts",
+      "read_transcript": "Read Transcript",
+      "hide_transcript": "Hide Transcript",
+      "transcript_a11y": "for {{title}}"
+    },
+    "footer": {
+      "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
+      "rights": "All rights reserved."
+    },
     "hero": {
       "title": "Modern Hearthside Stories",
       "subtext": "A podcast is the digital evolution of oral tradition. Uncanny Coffee Hour bridges ancient folklore and modern curiosity... one sip at a time."
+    },
+    "misctext": {
+      "return": "Return to Homepage",
+      "lostroute": "Lost in the fog",
+      "error": "Something Uncanny Happened...",
+      "error_text": "It seems a puca has been playing tricks on our code! The connection to the spirit world (or the server) was interrupted.",
+      "error_details": "Technical Details",
+      "try_again": "Try Again (Reload)"
     },
     "navtext": {
       "about": "About",
@@ -15,21 +59,7 @@
       "shop": "Shop",
       "submit_story": "Submit a Story"
     },
-    "misctext": {
-      "return": "Return to Homepage",
-      "lostroute": "Lost in the fog"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
     "team": {
       "title": "Meet the Hosts not needed"
-    },
-    "footer": {
-      "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
-      "rights": "All rights reserved."
     }
   }

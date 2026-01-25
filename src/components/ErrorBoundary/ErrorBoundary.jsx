@@ -1,4 +1,5 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 import './ErrorBoundary.scss';
 
 class ErrorBoundary extends React.Component {
@@ -20,23 +21,23 @@ class ErrorBoundary extends React.Component {
   };
 
   render() {
+    const { t } = this.props;
     if (this.state.hasError) {
       return (
         <div className="error-boundary-container">
           <div className="error-content">
-            <h1>Something Uncanny Happened...</h1>
+            <h1>{t('misctext.error')}</h1>
             <p>
-              It seems a puca has been playing tricks on our code!
-              The connection to the spirit world (or the server) was interrupted.
+              {t('misctext.error_text')}
             </p>
             
             <details className="error-details">
-              <summary>Technical Details</summary>
+              <summary>{t('misctext.error_details')}</summary>
               {this.state.error && this.state.error.toString()}
             </details>
 
             <button onClick={this.handleReload} className="reload-btn">
-              Try Again (Reload)
+              {t('misctext.try_again')}
             </button>
           </div>
         </div>
@@ -47,4 +48,4 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation()(ErrorBoundary);

@@ -21,7 +21,7 @@ const Team = ({ limit = null }) => {
           {membersToDisplay.map((member, index) => (
             <li key={index} className="team-card">
               <Link 
-                to={`/coven#${member.id}`} 
+                to={`/about#${member.id}`} 
                 className="team-card-link"
                 aria-label={`Read more about ${member.name}`}
               >

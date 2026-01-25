@@ -1,23 +1,58 @@
 @import '../../styles/variables';
 
 .site-footer {
-  background-color: $brand-roast;
+  background-color: var(--forest-noir);
   color: $text-inverse;
   padding: 2rem 0;
   text-align: center;
   margin-top: auto;
-  border-top: 4px solid $brand-puca;
-  border-radius: 60px;
+  border: 4px solid $brand-puca;
+  border-radius: 40px;
 
-  .footer-text {
-    margin: 0;
-    font-weight: 600;
-  }
+  .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 1rem; 
 
-  .footer-subtext {
-    margin: 0.5rem 0 0;
-    font-size: 0.85rem;
-    color: $brand-mist;
-    opacity: 0.8;
+    .footer-text {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .footer-subtext {
+      margin: 0.5rem 0 0;
+      font-size: 0.85rem;
+      color: $brand-mist;
+      opacity: 0.8;
+    }
+
+    .human-ai-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: block;
+      
+      opacity: 0.90;
+      filter: grayscale(90%);
+      transform: scale(1);
+      cursor: help; 
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+
+      &:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: scale(1.15) rotate(3deg);
+        box-shadow: 0 0 15px $brand-puca; 
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
   }
 }
