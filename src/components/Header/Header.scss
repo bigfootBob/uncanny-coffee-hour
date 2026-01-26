@@ -120,7 +120,7 @@
         align-items: center;
 
         select {
-          background: rgba(0, 0, 0, 0.3);
+          background: var(--select-background); 
           color: var(--text-primary);
           border: 1px solid var(--border-color);
           padding: 6px 12px;

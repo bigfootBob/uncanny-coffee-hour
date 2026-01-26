@@ -36,6 +36,9 @@
     "buycoffee": "クルーに一杯おごる",
     "buycoffeesub": "(Buy Me a Coffee)",
     "buycoffeesupport": "Buy Me a Coffeeでサポート",
+    "emporium": "エンポリアム",
+    "odditiesetc": "骨董、奇妙な品々、そして雑貨",
+    "shopnow": "今すぐ購入",
     "whisperwellhead": "あなた自身の不気味な物語はありますか？",
     "whisperwellsubhead": "「囁きの井戸」を使ってください。ポッドキャストで紹介するかもしれません。",
     "whisperwellsubform": "投稿フォーム"
@@ -57,7 +60,7 @@
     "transcript_a11y": "{{title}} のために"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. ホスト Odd Bob, Dr Kitsuné, & Soercia.",
     "rights": "無断転載を禁じます。"
   },
   "hero": {

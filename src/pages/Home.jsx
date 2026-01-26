@@ -167,9 +167,9 @@ const Home = () => {
 
         <div className="action-card glass-panel shop-card">
           <div className="shop-text">
-            <h3>Emporium</h3>
-            <p className="sub-label">Curiosities, Oddities & Wares</p>
-            <Link to="/shop" className="shop-btn">Shop Now</Link>
+            <h3>{t("homepage.emporium")}</h3>
+            <p className="sub-label">{t("homepage.odditiesetc")}</p>
+            <Link to="/shop" className="shop-btn">{t("homepage.shopnow")}</Link>
           </div>
           <img src={mugProduct} alt="Uncanny Mug" className="shop-image" />
         </div>

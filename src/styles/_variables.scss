@@ -45,7 +45,8 @@ $color-error:    #de0909;
   --text-inverse:   #{$brand-mist};
  
   --border-color:   #ddd;
-  --accent-color:   #{$brand-puca};    
+  --accent-color:   #{$brand-puca};
+  --select-background: rgba(255, 255, 255, 0.5);
 }
 
 // DARK THEME
@@ -54,12 +55,13 @@ $color-error:    #de0909;
   --bg-surface:     #{$brand-espresso};
   --bg-surface-alt: #{$brand-roast};
   
-  --text-primary:   #{$brand-latte}; // Text flips to light
+  --text-primary:   #{$brand-latte}; 
   --text-secondary: #{$brand-mist};
   --text-inverse:   #{$brand-mist};
   
   --border-color:   #{$brand-roast};
   --accent-color:   #{$brand-homer}; 
+  --select-background:  rgba(0, 0, 0, 0.3);
 }
 
 // =========================================
