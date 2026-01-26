@@ -3,30 +3,30 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "The Explorer & Hiker",
-      "bio": "Finding the bigfoot within himself. (Note: hippie coffee lover)",
-      "avatar": "/images/bios/bob-avatar.jpg"
+      "role": "An Taiscéalaí & An Siúlóir",
+      "bio": "Ag aimsiú an Bigfoot ann féin. (Nóta: hippie a bhfuil grá aige do chaifé)",
+      "avatar": "bob-avatar.jpg"
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "The Intellectual Anchor",
-      "bio": "Expert in the esoteric and the strange. (Note: Allergic to coffee)",
-      "avatar": "/images/bios/kitsune-avatar.jpg"
+      "role": "An tAncaire Intleachtúil",
+      "bio": "Saineolaí ar an gcoimhthíoch agus ar an aisteach. (Nóta: Ailléirgeach le caifé)",
+      "avatar": "kitsune-avatar.jpg"
     },
     {
       "id": "host-soercia",
       "name": "Soercia",
-      "role": "The Puca",
-      "bio": "Irish spirit providing the voice to the beyond. (Note: Loves whiskey)",
-      "avatar": "/images/bios/soercia-avatar.jpg"
+      "role": "An Púca",
+      "bio": "Spiorad Éireannach a thugann guth don taobh thall. (Nóta: Is breá léi fuisce)",
+      "avatar": "soercia-avatar.jpg"
     },
     {
       "id": "host-guest",
-      "name": "Guest",
-      "role": "The Story",
-      "bio": "Fascinated by the unknown. Your picture here.",
-      "avatar": "/images/bios/guest-avatar.jpg"
+      "name": "Aoi",
+      "role": "An Scéal",
+      "bio": "Faoi dhraíocht ag an anaithnid. Do phictiúr anseo.",
+      "avatar": "guest-avatar.jpg"
     }
   ]
 }

@@ -3,30 +3,30 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "The Explorer & Hiker",
-      "bio": "Finding the bigfoot within himself. (Note: hippie coffee lover)",
-      "avatar": "/images/bios/bob-avatar.jpg"
+      "role": "Исследователь и Путешественник",
+      "bio": "В поисках снежного человека внутри себя. (Примечание: любитель хиппи-кофе)",
+      "avatar": "bob-avatar.jpg"
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "The Intellectual Anchor",
-      "bio": "Expert in the esoteric and the strange. (Note: Allergic to coffee)",
-      "avatar": "/images/bios/kitsune-avatar.jpg"
+      "role": "Интеллектуальный Якорь",
+      "bio": "Эксперт по эзотерике и странностям. (Примечание: аллергия на кофе)",
+      "avatar": "kitsune-avatar.jpg"
     },
     {
       "id": "host-soercia",
       "name": "Soercia",
-      "role": "The Puca",
-      "bio": "Irish spirit providing the voice to the beyond. (Note: Loves whiskey)",
-      "avatar": "/images/bios/soercia-avatar.jpg"
+      "role": "Пука (The Puca)",
+      "bio": "Ирландский дух, дающий голос потустороннему миру. (Примечание: любит виски)",
+      "avatar": "soercia-avatar.jpg"
     },
     {
       "id": "host-guest",
-      "name": "Guest",
-      "role": "The Story",
-      "bio": "Fascinated by the unknown. Your picture here.",
-      "avatar": "/images/bios/guest-avatar.jpg"
+      "name": "Гость",
+      "role": "История",
+      "bio": "Очарован неизведанным. Ваше фото здесь.",
+      "avatar": "guest-avatar.jpg"
     }
   ]
 }

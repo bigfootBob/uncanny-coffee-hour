@@ -1,16 +1,85 @@
 {
-    "app": {
-      "title": "Uncanny Coffee Hour",
-      "tagline": "Tales of the Paranormal & The Perfect Brew",
-      "skip_link": "Skip to main content"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
-    "team": {
-      "title": "Meet the Hosts"
-    }
+  "aboutpage": {
+    "subhead": "Edraith lîn o'n raew.",
+    "about": "O Narn",
+    "about_text": [
+      "Mae govannen na Uncanny Coffee Hour. Im gwaith e-dú.",
+      "Gwaith Odd Bob a Dr. Kitsuné (Mitch). Dr. Kitsune pada i-iant im ist a narn. Odd Bob togo gûr e-randir. Ma Soercia, i-Puca, padathanc i-raew a i-ú-raew.",
+      "Savanc i narn garb vîn.",
+      "I-yulna 'lûg, i-dú land.",
+      "Havo."
+    ],
+    "friendo_title": "Mellyn",
+    "friendo_desc": "Hen mellyn e-narn:",
+    "aititle": "Man I-Golodh?",
+    "aitext": "Ú-iston. Si, ma gwaith. I-Golodh (AI) togo narn vîn.",
+    "what_podcast": "Man i-Ghogh?",
+    "what_podtext": "Sui narn e-iaur. Lasto lû a lû."
+  },
+  "covenpage": {
+    "title": "Gwaith! Berio Narn!",
+    "subhead": "Gwaith a narn.",
+    "btn": "PADO AS GWAITH"
+  },
+  "eppage": {
+    "title": "Gwaith Pân",
+    "subhead": "Narn a yulna, ne lû."
+  },
+  "homepage": {
+    "latestbrew": "Yulna Set",
+    "allep": "Narn Pân",
+    "innercircle": "E-Gwaith",
+    "subpatreon": "(Patreon)",
+    "pata": "Longma Mel",
+    "patb": "Faer Berio!",
+    "patc": "Hiry ann!",
+    "buycoffee": "Yulna na Gwaith",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Berio Gwaith",
+    "whisperwellhead": "Garog Narn Dú?",
+    "whisperwellsubhead": "Peth i-eithel.",
+    "whisperwellsubform": "Ment Narn"
+  },
+  "shop": {
+    "title": "Boch na Rhaw, I-Ist na Ind",
+    "subhead": "Narn e-Dú & Yulna Maer",
+    "details": "De"
+  },
+  "app": {
+    "title": "Uncanny Coffee Hour",
+    "tagline": "Narn e-Dú & Yulna Maer",
+    "skip_link": "Pado na De"
+  },
+  "episode": {
+    "hosts_label": "Hîr",
+    "read_transcript": "Trenarno",
+    "hide_transcript": "Ceno Trenarn",
+    "transcript_a11y": "an {{title}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Soercia.",
+    "rights": "Pân tûr."
+  },
+  "hero": {
+    "title": "Narn e-Ruinhu",
+    "subtext": "I-ghogh narn e-iaur."
+  },
+  "misctext": {
+    "return": "Ad-bado",
+    "lostroute": "Misty",
+    "error": "Ú-maer...",
+    "error_text": "Puca!",
+    "error_details": "Ist",
+    "try_again": "Ad-echad"
+  },
+  "navtext": {
+    "about": "O Gwaith",
+    "coven": "Gwaith",
+    "episodes": "Narn",
+    "shop": "Bach",
+    "submit_story": "Narn"
+  },
+  "team": {
+    "title": "Hîr Narn"
   }
+}

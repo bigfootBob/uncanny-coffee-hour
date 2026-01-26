@@ -1,16 +1,85 @@
 {
-    "app": {
-      "title": "Uncanny Coffee Hour",
-      "tagline": "Tales of the Paranormal & The Perfect Brew",
-      "skip_link": "Skip to main content"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
-    "team": {
-      "title": "Meet the Hosts"
-    }
+  "aboutpage": {
+    "subhead": "平凡からのカフェイン入り脱出。",
+    "about": "番組について",
+    "about_text": [
+      "Uncanny Coffee Hourへようこそ。ここでは、マグカップからの湯気が未知の霧と共に渦巻いています。私たちは世界の「大いなる奇妙さ」が集まる場所です。",
+      "オッド・ボブとドクター・キツネ（ミッチ）がお届けします。ドクター・キツネは、先住民の知恵と日本の精霊豊かな民間伝承の架け橋となります。オッド・ボブは、ケルトの謎に魂を繋げたアメリカの放浪者の心を持ち、常に妖精のいたずらな魔法を追い求めています。",
+      "私たちは、すべての伝説には真実の鼓動が宿っていると信じています。不遜さと深い敬意を混ぜ合わせ、私たちは先人たちの声を優先し、声なき者に声を与えるためにここにいます。",
+      "飲み物は熱く、影は長く、物語が待っています。",
+      "椅子を引いて、お座りください。"
+    ],
+    "friendo_title": "友達とおすすめ",
+    "friendo_desc": "番組の友人や、私たちが感謝を伝えたい重要な存在たちです：",
+    "aititle": "AIの助けをどれくらい使っていますか？",
+    "aitext": "場合によります。今のところ、私たちにはフルタイムの仕事があります。理想的なシナリオでは...これをフルタイムで行いたいのですが、AIはストーリーテリングや特殊音響効果のスピードアップに大いに役立っています。エピソードのアートは通常、人間とAIの組み合わせです。",
+    "what_podcast": "ポッドキャストとは？",
+    "what_podtext": "昔のラジオ番組のようなものだと考えてください...ラジオを囲んでバック・ロジャースやザ・シャドウを聴くような。でも、特定の時間に合わせるのではなく、好きな時に聴くことができます！"
+  },
+  "covenpage": {
+    "title": "参加しよう！番組をサポート！",
+    "subhead": "すべてのメンバーはカヴン（集会）の一部となり、私たちが必要とする物語を伝えることを支援します。",
+    "btn": "私たちと共に歩む"
+  },
+  "eppage": {
+    "title": "完全コレクション",
+    "subhead": "すべての奇妙な物語とこぼれたカップを時系列でリストアップ。"
+  },
+  "homepage": {
+    "latestbrew": "最新のブリュー",
+    "allep": "全エピソード",
+    "innercircle": "インナーサークル",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/月。愛する龍馬",
+    "patb": "$6/月。維持する精霊！",
+    "patc": "$18/月。ブラウニーの恩人！",
+    "buycoffee": "クルーに一杯おごる",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Buy Me a Coffeeでサポート",
+    "whisperwellhead": "あなた自身の不気味な物語はありますか？",
+    "whisperwellsubhead": "「囁きの井戸」を使ってください。ポッドキャストで紹介するかもしれません。",
+    "whisperwellsubform": "投稿フォーム"
+  },
+  "shop": {
+    "title": "身体への糧、心への骨董",
+    "subhead": "超常現象の物語 & 完璧な一杯",
+    "details": "詳細"
+  },
+  "app": {
+    "title": "Uncanny Coffee Hour",
+    "tagline": "超常現象の物語 & 完璧な一杯",
+    "skip_link": "メインコンテンツへスキップ"
+  },
+  "episode": {
+    "hosts_label": "ホスト",
+    "read_transcript": "トランスクリプトを読む",
+    "hide_transcript": "トランスクリプトを隠す",
+    "transcript_a11y": "{{title}} のために"
+  },
+  "footer": {
+    "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
+    "rights": "無断転載を禁じます。"
+  },
+  "hero": {
+    "title": "現代の囲炉裏端の物語",
+    "subtext": "ポッドキャストは口承伝承のデジタル進化形です。Uncanny Coffee Hourは、古代の民間伝承と現代の好奇心を橋渡しします...一口ずつ。"
+  },
+  "misctext": {
+    "return": "ホームページに戻る",
+    "lostroute": "霧の中で迷子",
+    "error": "何か不気味なことが起きました...",
+    "error_text": "プーカが私たちのコードにいたずらをしたようです！",
+    "error_details": "技術的詳細",
+    "try_again": "再試行"
+  },
+  "navtext": {
+    "about": "アバウト",
+    "coven": "カヴン",
+    "episodes": "エピソード",
+    "shop": "ショップ",
+    "submit_story": "物語を投稿"
+  },
+  "team": {
+    "title": "ホスト紹介"
   }
+}

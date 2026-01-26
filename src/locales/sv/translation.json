@@ -1,16 +1,85 @@
 {
-    "app": {
-      "title": "Uncanny Coffee Hour",
-      "tagline": "Tales of the Paranormal & The Perfect Brew",
-      "skip_link": "Skip to main content"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
-    "team": {
-      "title": "Meet the Hosts"
-    }
+  "aboutpage": {
+    "subhead": "Din koffeinhaltiga flykt från vardagen.",
+    "about": "Om showen",
+    "about_text": [
+      "Välkommen till Uncanny Coffee Hour, där ångan från våra muggar virvlar med det okändas dimmor. Vi är en samlingsplats för världens stora märkligheter – där älvornas uråldriga stigar korsas med Yokais skymningsrike.",
+      "Värdarna Odd Bob och Dr. Kitsuné (Mitch) har perspektiv lika djupa som våra rötter. Dr. Kitsuné vandrar på bron mellan ursprunglig visdom och Japans andefyllda folklore. Odd Bob bidrar med en amerikansk vandrares hjärta med en själ bunden till de keltiska mysterierna, och jagar ständigt älvornas spjuveraktiga magi. Tillsammans med Soercia, vår hus-Púca, vandrar vi på gränsen mellan det utforskade och det omöjliga.",
+      "Vi tror att varje legend bär på ett hjärtslag av sanning. Med en blandning av vördnadslöshet och djup respekt prioriterar vi de äldsta rösterna ibland oss. Vi är här för att ge en röst åt de röstlösa.",
+      "Det här projektet har bryggts i våra sinnen i åratal. Dryckerna är varma, skuggorna långa och berättelserna väntar.",
+      "Dra fram en stol."
+    ],
+    "friendo_title": "Vänner och rekommendationer",
+    "friendo_desc": "Här är några av showens vänner eller andra viktiga väsen som vi vill uppmärksamma:",
+    "aititle": "Hur mycket AI-hjälp använder ni?",
+    "aitext": "Det beror på. Vi har (för närvarande) heltidsåtaganden för att säkra mat och husrum i en grym värld. I vårt perfekta scenario... skulle vi göra detta på heltid, men vi måste leta efter sätt att röra oss snabbare här och där, och AI har verkligen hjälpt oss att snabba på en del av berättandet och de speciella ljudeffekterna.",
+    "what_podcast": "Vad är en podcast?",
+    "what_podtext": "Tänk på det som en radioshow från förr i tiden... som att sitta runt radion. Men istället för att ställa in en viss tid kan du lyssna när du vill!"
+  },
+  "covenpage": {
+    "title": "Gå med oss! Stötta showen!",
+    "subhead": "Varje medlem blir en del av covenet och stöttar berättandet av de historier vi alla behöver just nu.",
+    "btn": "VANDRA MED OSS"
+  },
+  "eppage": {
+    "title": "Den kompletta samlingen",
+    "subhead": "Varje märklig saga och utspilld kopp, listad i kronologisk ordning."
+  },
+  "homepage": {
+    "latestbrew": "Senaste brygden",
+    "allep": "alla avsnitt",
+    "innercircle": "Den inre kretsen",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/mån. Kärleksfull Longma",
+    "patb": "$6/mån. Uppehållande Ande!",
+    "patc": "$18/mån. Brownie-välgörare!",
+    "buycoffee": "Köp en runda till gänget",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Stötta oss på Buy Me a Coffee",
+    "whisperwellhead": "Har du en egen kuslig berättelse?",
+    "whisperwellsubhead": "Använd vår Viskande Brunn så kanske vi använder den i podcasten.",
+    "whisperwellsubform": "Inskicksformulär"
+  },
+  "shop": {
+    "title": "Proviant för kroppen, kuriosa för sinnet",
+    "subhead": "Berättelser om det paranormala & den perfekta brygden",
+    "details": "Detaljer"
+  },
+  "app": {
+    "title": "Uncanny Coffee Hour",
+    "tagline": "Berättelser om det paranormala & den perfekta brygden",
+    "skip_link": "Hoppa till huvudinnehållet"
+  },
+  "episode": {
+    "hosts_label": "Värdar",
+    "read_transcript": "Läs transkription",
+    "hide_transcript": "Dölj transkription",
+    "transcript_a11y": "för {{title}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} Uncanny Coffee Hour. Värdar: Odd Bob, Dr Kitsuné, & Soercia.",
+    "rights": "Alla rättigheter förbehållna."
+  },
+  "hero": {
+    "title": "Moderna berättelser vid härden",
+    "subtext": "En podcast är den digitala evolutionen av muntlig tradition. Uncanny Coffee Hour bygger en bro mellan uråldrig folklore och modern nyfikenhet... en klunk i taget."
+  },
+  "misctext": {
+    "return": "Återvänd till startsidan",
+    "lostroute": "Vilse i dimman",
+    "error": "Något kusligt hände...",
+    "error_text": "Det verkar som att en Púca har spelat oss ett spratt i koden!",
+    "error_details": "Tekniska detaljer",
+    "try_again": "Försök igen"
+  },
+  "navtext": {
+    "about": "Om oss",
+    "coven": "Coven",
+    "episodes": "Avsnitt",
+    "shop": "Butik",
+    "submit_story": "Skicka in berättelse"
+  },
+  "team": {
+    "title": "Träffa värdarna"
   }
+}

@@ -13,8 +13,8 @@ const Shop = () => {
 
     <div id="shop-page" className="page-container">
       <header className="page-header glass-panel">
-        <h1>Provisions for the Body, Curios for the Mind</h1>
-        <p>Support the podcast. Essential Wares & Uncommon Finds.</p>
+        <h1>{t("shop.title")}</h1>
+        <p>{t("shop.subhead")}</p>
       </header>
 
       <div className="shop-grid">
@@ -38,7 +38,7 @@ const Shop = () => {
                 rel="noopener noreferrer" 
                 className="buy-btn"
               >
-                Details
+                {t("shop.details")}
               </a>
             </div>
           </article>

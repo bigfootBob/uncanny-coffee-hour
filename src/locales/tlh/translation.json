@@ -1,20 +1,85 @@
 {
+  "aboutpage": {
+    "subhead": "nItebHa' qa'vIn.",
+    "about": "lut",
+    "about_text": [
+      "nuqneH. naDev Uncanny Coffee Hour.",
+      "Odd Bob Dr. Kitsuné (Mitch) je. Dr. Kitsune leng. Odd Bob leng. Soercia, Puca, maH tlhej.",
+      "maH Har.",
+      "qa'vIn tuj, Hurgh nI'.",
+      "yIba'."
+    ],
+    "friendo_title": "jup",
+    "friendo_desc": "naDev jup:",
+    "aititle": "De'wI' boQ?",
+    "aitext": "De'wI' lut boQ.",
+    "what_podcast": "nuq 'oH?",
+    "what_podtext": "QIn rur. bI'reS."
+  },
+  "covenpage": {
+    "title": "yImuv! yIboQ!",
+    "subhead": "Hoch boQ.",
+    "btn": "yIleng"
+  },
+  "eppage": {
+    "title": "Hoch",
+    "subhead": "Hoch lut, poH."
+  },
+  "homepage": {
+    "latestbrew": "qa'vIn chu'",
+    "allep": "Hoch lut",
+    "innercircle": "jup",
+    "subpatreon": "(Patreon)",
+    "pata": "Longma parmaq",
+    "patb": "qa' boQ!",
+    "patc": "Brownie!",
+    "buycoffee": "qa'vIn yIje'",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "yIboQ",
+    "whisperwellhead": "bIghung'a'?",
+    "whisperwellsubhead": "yIja'.",
+    "whisperwellsubform": "yIngeH"
+  },
+  "shop": {
+    "title": "Soj, De'",
+    "subhead": "lut & qa'vIn",
+    "details": "De'"
+  },
   "app": {
-    "title": "Huj qa'vIn rep",
-    "tagline": "lutmey le'be' 'ej qa'vIn pup",
-    "skip_link": "potlh'a' yIghoS"
+    "title": "Uncanny Coffee Hour",
+    "tagline": "lut & qa'vIn",
+    "skip_link": "yIghoS"
   },
   "episode": {
-    "hosts_label": "ra'wI'pu'",
-    "read_transcript": "ghItlh yIlaD",
-    "hide_transcript": "ghItlh yISo'",
-    "transcript_a11y": "{{title}}vaD"
-  },
-  "team": {
-    "title": "ra'wI'pu' tIghom"
+    "hosts_label": "ra'wI'",
+    "read_transcript": "yIlaD",
+    "hide_transcript": "So'",
+    "transcript_a11y": "vaD {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Huj qa'vIn rep. DevwI'pu': Odd Bob, Dr Kitsuné, Soercia je.",
-    "rights": "Hoch yIbmey pol."
+    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Soercia.",
+    "rights": "Hoch."
+  },
+  "hero": {
+    "title": "qul lut",
+    "subtext": "lut De'wI'."
+  },
+  "misctext": {
+    "return": "juH",
+    "lostroute": "lIgh",
+    "error": "Qagh...",
+    "error_text": "Puca!",
+    "error_details": "De'",
+    "try_again": "qaqa"
+  },
+  "navtext": {
+    "about": "De'",
+    "coven": "boQ",
+    "episodes": "lut",
+    "shop": "beQ",
+    "submit_story": "lut"
+  },
+  "team": {
+    "title": "ra'wI'"
   }
 }

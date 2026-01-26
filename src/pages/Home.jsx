@@ -87,7 +87,7 @@ const Home = () => {
               <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.1)', borderRadius: 4 }}></div>
             )}
             <div className="player-text">
-              <span className="player-label">Latest Brew ({latestEpisode?.pubDate || '...'}) • <Link to="/episodes">all episodes</Link></span>
+              <span className="player-label">{t("homepage.latestbrew")} ({latestEpisode?.pubDate || '...'}) • <Link to="/episodes">{t("homepage.allep")}</Link></span>
               <span className="player-title">
                 {latestEpisode ? latestEpisode.title : 'Loading latest episode...'}
               </span>
@@ -120,8 +120,8 @@ const Home = () => {
 
       <section className="dashboard-row action-grid">
         <div className="action-card glass-panel patreon-card">
-          <h3>The Inner Circle</h3>
-          <span className="sub-label">(Patreon)</span>
+          <h3>{t("homepage.innercircle")}</h3>
+          <span className="sub-label">{t("homepage.subpatreon")}</span>
           <div className="tier-list">
             <div className="tier-list">
               <Link 
@@ -129,7 +129,7 @@ const Home = () => {
                 state={{ selectedTier: '3' }} 
                 className="tier-btn active"
               >
-                $3/mo. Loving Longma
+                {t("homepage.pata")}
               </Link>
               
               <Link 
@@ -137,7 +137,7 @@ const Home = () => {
                 state={{ selectedTier: '6' }} 
                 className="tier-btn"
               >
-                $6/mo. Sustaining spirit!
+                {t("homepage.patb")}
               </Link>
               
               <Link 
@@ -145,21 +145,21 @@ const Home = () => {
                 state={{ selectedTier: '18' }} 
                 className="tier-btn"
               >
-                $18/mo. Brownie Benefactor!
+                {t("homepage.patc")}
               </Link>
             </div>
           </div>
         </div>
 
         <div className="action-card glass-panel coffee-card">
-          <h3>Buy the Crew a Round</h3>
-          <span className="sub-label">(Buy Me a Coffee)</span>
+          <h3>{t("homepage.buycoffee")}</h3>
+          <span className="sub-label">{t("homepage.buycoffeesub")}</span>
           <a 
             href="https://buymeacoffee.com/uncannycoffee" 
             target="_blank" 
             rel="noopener noreferrer"
             className="coffee-icon-container"
-            aria-label="Support us on Buy Me a Coffee"
+            aria-label={t("homepage.buycoffeesupport")}
           >
             <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" />
           </a>
@@ -175,21 +175,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section id="whispering-well" className="dashboard-row parchment-panel">
-        <h1>Have An Uncanny Tale Of Your Own?</h1>
-        <h2>Use our Whispering Well and we may use it on the podcast.</h2>
-        <Link to="/submit" className="parchment-banner">
-          <span>Submission Form</span>
-        </Link>
-      </section> */}
-
       <section id="whispering-well" className="dashboard-row parchment-panel">
         <div className="panel-content">
-          <h1>Have An Uncanny Tale Of Your Own?</h1>
-          <h2>Use our Whispering Well and we may use it on the podcast.</h2>
+          <h1>{t("homepage.whisperwellhead")}</h1>
+          <h2>{t("homepage.whisperwellsubhead")}</h2>
           
           <Link to="/submit" className="parchment-btn">
-            Submission Form
+            {t("homepage.whisperwellsubform")}
           </Link>
         </div>
       </section>

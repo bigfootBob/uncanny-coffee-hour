@@ -1,16 +1,85 @@
 {
-    "app": {
-      "title": "Uncanny Coffee Hour",
-      "tagline": "Tales of the Paranormal & The Perfect Brew",
-      "skip_link": "Skip to main content"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
-    "team": {
-      "title": "Meet the Hosts"
-    }
+  "aboutpage": {
+    "subhead": "La tua fuga caffeinata dall'ordinario.",
+    "about": "Informazioni sullo Show",
+    "about_text": [
+      "Benvenuti all'Uncanny Coffee Hour, dove il vapore delle nostre tazze turbina con le nebbie dell'ignoto.",
+      "Condotto da Odd Bob e Dr. Kitsuné (Mitch). Dr. Kitsune cammina sul ponte tra la saggezza dei nativi e il folklore pieno di spiriti del Giappone. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici. Insieme a Soercia, il nostro Puca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
+      "Crediamo che ogni leggenda contenga un battito di verità. Con una miscela di irriverenza e profondo rispetto, diamo priorità alle voci più antiche tra noi. Siamo qui per dare voce a chi non ne ha.",
+      "Questo progetto sta fermentando nelle nostre menti da anni. Le bevande sono calde, le ombre lunghe e le storie in attesa.",
+      "Prendi una sedia."
+    ],
+    "friendo_title": "Amici e Raccomandazioni",
+    "friendo_desc": "Ecco alcuni amici dello show che vorremmo salutare:",
+    "aititle": "Quanto aiuto AI usate?",
+    "aitext": "Dipende. Per ora abbiamo obblighi a tempo pieno. Nel nostro scenario ideale... faremmo questo a tempo pieno, tuttavia, l'AI ci ha davvero aiutato a velocizzare parte della narrazione e degli effetti audio speciali.",
+    "what_podcast": "Cos'è un podcast?",
+    "what_podtext": "Pensalo come uno spettacolo radiofonico dei tempi passati... ma invece di sintonizzarti a un'ora specifica, puoi ascoltare quando vuoi!"
+  },
+  "covenpage": {
+    "title": "Unisciti a noi! Sostieni lo show!",
+    "subhead": "Ogni membro diventa parte della congrega e supporta il racconto delle storie di cui tutti abbiamo bisogno.",
+    "btn": "CAMMINA CON NOI"
+  },
+  "eppage": {
+    "title": "La Collezione Completa",
+    "subhead": "Ogni strana storia e tazza versata, elencate in ordine cronologico."
+  },
+  "homepage": {
+    "latestbrew": "Ultima Miscela",
+    "allep": "tutti gli episodi",
+    "innercircle": "Il Cerchio Interno",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/mese. Longma Amorevole",
+    "patb": "$6/mese. Spirito Nutriente!",
+    "patc": "$18/mese. Benefattore Brownie!",
+    "buycoffee": "Offri un giro alla Crew",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Sostienici su Buy Me a Coffee",
+    "whisperwellhead": "Hai una storia misteriosa tutta tua?",
+    "whisperwellsubhead": "Usa il nostro Pozzo dei Sussurri e potremmo usarla nel podcast.",
+    "whisperwellsubform": "Modulo di Invio"
+  },
+  "shop": {
+    "title": "Provviste per il Corpo, Curiosità per la Mente",
+    "subhead": "Racconti del Paranormale & La Miscela Perfetta",
+    "details": "Dettagli"
+  },
+  "app": {
+    "title": "Uncanny Coffee Hour",
+    "tagline": "Racconti del Paranormale & La Miscela Perfetta",
+    "skip_link": "Vai al contenuto principale"
+  },
+  "episode": {
+    "hosts_label": "Conduttori",
+    "read_transcript": "Leggi Trascrizione",
+    "hide_transcript": "Nascondi Trascrizione",
+    "transcript_a11y": "per {{title}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} Uncanny Coffee Hour. Condotto da Odd Bob, Dr Kitsuné, & Soercia.",
+    "rights": "Tutti i diritti riservati."
+  },
+  "hero": {
+    "title": "Storie Moderne del Focolare",
+    "subtext": "Un podcast è l'evoluzione digitale della tradizione orale. Uncanny Coffee Hour unisce folklore antico e curiosità moderna... un sorso alla volta."
+  },
+  "misctext": {
+    "return": "Ritorna alla Home",
+    "lostroute": "Perso nella nebbia",
+    "error": "Qualcosa di strano è accaduto...",
+    "error_text": "Sembra che un puca stia giocando brutti scherzi al nostro codice!",
+    "error_details": "Dettagli Tecnici",
+    "try_again": "Riprova"
+  },
+  "navtext": {
+    "about": "Chi Siamo",
+    "coven": "Congrega",
+    "episodes": "Episodi",
+    "shop": "Negozio",
+    "submit_story": "Invia Storia"
+  },
+  "team": {
+    "title": "Incontra i Conduttori"
   }
+}

@@ -72,3 +72,16 @@ html, body {
     }
   }
 }
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Your current default */
+}
+:lang(sjn) {
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: 0.5px; /* Looks better slightly spaced */
+}
+:lang(tlh) {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase; /* Klingon looks more aggressive in caps */
+  letter-spacing: 1px;
+}

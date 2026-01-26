@@ -25,6 +25,26 @@
       "title":"The Complete Collection",
       "subhead": "Every strange tale and spilled cup, listed in chronological order."
     },
+     "homepage": {
+      "latestbrew":"Latest Brew",
+      "allep": "all episodes",
+      "innercircle": "The Inner Circle",
+      "subpatreon": "(Patreon)",
+      "pata": "$3/mo. Loving Longma",
+      "patb": "$6/mo. Sustaining spirit!",
+      "patc": "$18/mo. Brownie Benefactor!",
+      "buycoffee": "Buy the Crew a Round",
+      "buycoffeesub": "(Buy Me a Coffee)",
+      "buycoffeesupport": "Support us on Buy Me a Coffee",
+      "whisperwellhead": "Have An Uncanny Tale Of Your Own?",
+      "whisperwellsubhead": "Use our Whispering Well and we may use it on the podcast.",
+      "whisperwellsubform": "Submission Form"
+    },
+    "shop": {
+      "title": "Provisions for the Body, Curios for the Mind",
+      "subhead": "Tales of the Paranormal & The Perfect Brew",
+      "details": "Details"
+    },
     "app": {
       "title": "Uncanny Coffee Hour",
       "tagline": "Tales of the Paranormal & The Perfect Brew",

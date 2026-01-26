@@ -3,30 +3,30 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "The Explorer & Hiker",
-      "bio": "Finding the bigfoot within himself. (Note: hippie coffee lover)",
-      "avatar": "/images/bios/bob-avatar.jpg"
+      "role": "L'Esploratore ed Escursionista",
+      "bio": "Trovare il Bigfoot dentro di sé. (Nota: amante del caffè hippie)",
+      "avatar": "bob-avatar.jpg"
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "The Intellectual Anchor",
-      "bio": "Expert in the esoteric and the strange. (Note: Allergic to coffee)",
-      "avatar": "/images/bios/kitsune-avatar.jpg"
+      "role": "L'Ancora Intellettuale",
+      "bio": "Esperta nell'esoterico e nello strano. (Nota: allergica al caffè)",
+      "avatar": "kitsune-avatar.jpg"
     },
     {
       "id": "host-soercia",
       "name": "Soercia",
-      "role": "The Puca",
-      "bio": "Irish spirit providing the voice to the beyond. (Note: Loves whiskey)",
-      "avatar": "/images/bios/soercia-avatar.jpg"
+      "role": "Il Puca",
+      "bio": "Spirito irlandese che dà voce all'aldilà. (Nota: ama il whisky)",
+      "avatar": "soercia-avatar.jpg"
     },
     {
       "id": "host-guest",
-      "name": "Guest",
-      "role": "The Story",
-      "bio": "Fascinated by the unknown. Your picture here.",
-      "avatar": "/images/bios/guest-avatar.jpg"
+      "name": "Ospite",
+      "role": "La Storia",
+      "bio": "Affascinato dall'ignoto. La tua foto qui.",
+      "avatar": "guest-avatar.jpg"
     }
   ]
 }
