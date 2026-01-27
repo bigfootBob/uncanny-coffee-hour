@@ -1,0 +1,78 @@
+.memory-game {
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    background-color: transparent;
+    width: 100%;
+    aspect-ratio: 1; /* Keeps it square */
+    perspective: 1000px;
+    cursor: pointer;
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      border-radius: 8px;
+    }
+
+    /* Flip Effect */
+    &.active .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .card-front {
+      background: rgba(0,0,0,0.5); /* Dark back of card */
+      color: var(--brand-puca, #5cb85c); /* Use your green color */
+      font-weight: bold;
+    }
+
+    .card-back {
+      background: rgba(255,255,255,0.1);
+      transform: rotateY(180deg);
+    }
+  }
+
+  .winner-message {
+    margin-top: 2rem;
+    
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      background: var(--brand-puca, green);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

@@ -1,41 +1,78 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import './LanguageSwitcher.scss';
 
+const GlobeIcon = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+  </svg>
+);
+
 const languages = [
   { code: 'en', label: 'English' },
-  { code: 'de', label: 'Deutsch' },       // German
-  { code: 'ga', label: 'Gaeilge' },       // Irish
-  { code: 'it', label: 'Italiano' },      // Italian
-  { code: 'ja', label: '日本語' },         // Japanese
-  { code: 'ru', label: 'Русский' },       // Russian
-  { code: 'sv', label: 'Svenska' },       // Swedish
-  { code: 'sjn', label: 'Edhellen' },     // Sindarin (Elvish)
-  { code: 'tlh', label: 'tlhIngan Hol' }  // Klingon
+  { code: 'de', label: 'Deutsch' },
+  { code: 'ga', label: 'Gaeilge' },
+  { code: 'it', label: 'Italiano' },
+  { code: 'ja', label: '日本語' },
+  { code: 'ru', label: 'Русский' },
+  { code: 'sv', label: 'Svenska' },
+  { code: 'sjn', label: 'Edhellen' },
+  { code: 'tlh', label: 'tlhIngan Hol' }
 ];
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
-  return (
-    <div className="language-switcher">
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [wrapperRef]);
 
-      <select
-        id="lang-select"
-        value={i18n.resolvedLanguage}
-        onChange={(e) => i18n.changeLanguage(e.target.value)}
-        className="language-select"
+  const handleLanguageChange = (code) => {
+    i18n.changeLanguage(code);
+    setIsOpen(false);
+  };
+
+  return (
+    <div className="language-switcher" ref={wrapperRef}>
+      <button 
+        className={`globe-btn ${isOpen ? 'active' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Select Language"
+        aria-expanded={isOpen}
       >
-        {languages.map((lang) => (
-          <option key={lang.code} value={lang.code}>
-            {lang.label}
-          </option>
-        ))}
-      </select>
+        <GlobeIcon />
+      </button>
+
+      <div className={`lang-dropdown ${isOpen ? 'open' : ''}`}>
+        <ul>
+          {languages.map((lang) => (
+            <li key={lang.code}>
+              <button
+                className={i18n.resolvedLanguage === lang.code ? 'current' : ''}
+                onClick={() => handleLanguageChange(lang.code)}
+              >
+                {lang.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

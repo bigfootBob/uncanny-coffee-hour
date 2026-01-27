@@ -1,23 +1,75 @@
 @import '../../styles/variables';
 
-.language-select {
-  background: transparent;
-  border: 1px solid $brand-mist;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #e0e6ed;
-  font-family: $font-stack-ui;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1rem;
+.language-switcher {
+  position: relative;
+  display: inline-block;
 
-  &:focus {
-    outline: 2px solid $text-inverse;
+  .globe-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--brand-puca, #5cb85c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    &:hover, &.active {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.1);
+    }
   }
-  
-  option {
-    color: $brand-espresso;
+
+  .lang-dropdown {
+    position: absolute;
+    top: 120%; 
+    right: -10px;
+    background-color: #1a1a1a; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    min-width: 160px;
+    z-index: 2000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0.5rem 0;
+      margin: 0;
+    }
+
+    li button {
+      width: 100%;
+      text-align: left;
+      padding: 0.5rem 1rem;
+      background: none;
+      border: none;
+      color: #ccc;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      &.current {
+        color: var(--brand-puca, #5cb85c);
+        font-weight: bold;
+      }
+    }
   }
 }
