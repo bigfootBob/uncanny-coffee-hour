@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero/Hero'; 
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO/SEO';
 import './Episodes.scss';
 
 const Episodes = () => {
@@ -30,6 +31,12 @@ const Episodes = () => {
 
   return (
     <>
+
+      <SEO 
+        title="Uncanny Coffee Hour Past Episodes" 
+        description="Listen to Odd Bob, Dr. Kitsune & Soercia, the voices behind the madness."
+      />
+
       <Hero />
       
       <div className="episodes-page">

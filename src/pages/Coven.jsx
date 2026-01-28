@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
 import PatreonData from '../data/patreon.json';
+import SEO from '../components/SEO/SEO';
 import './Coven.scss';
 
 const Coven = () => {
@@ -22,6 +23,12 @@ const Coven = () => {
 
   return (
     <>
+
+      <SEO 
+        title="Join the community!" 
+        description="Join Odd Bob and Dr. Kitsune, the voices behind the madness."
+      />
+
       <Hero />
       
       <div id="coven-page" className="page-container">

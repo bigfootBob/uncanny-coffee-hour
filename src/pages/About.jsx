@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero';
 import Team from '../components/Team/Team';
 import FriendData from '../data/friends.json';
+import SEO from '../components/SEO/SEO';
 import './About.scss';
 
 import aboutPicDesktop from '../assets/images/about-toon-desktop.webp';
@@ -30,6 +31,11 @@ const About = () => {
 
   return (
     <>
+      <SEO 
+        title="About the Hosts" 
+        description="Meet Odd Bob and Dr. Kitsune, the voices behind the madness."
+      />
+      
       <Hero />
       
       <div id="about-page" className="page-container">

@@ -2,6 +2,7 @@ import React from 'react';
 import products from '../data/inventory.json';
 import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero'; 
+import SEO from '../components/SEO/SEO';
 import './Shop.scss';
 
 const Shop = () => {
@@ -9,6 +10,12 @@ const Shop = () => {
   const { t } = useTranslation();
   return (
     <>
+
+    <SEO 
+      title="Shop Uncanny Coffee Hour" 
+      description="Odds and ends from the voices behind the madness."
+    />
+
     <Hero />
 
     <div id="shop-page" className="page-container">

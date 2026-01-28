@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Hero from '../components/Hero/Hero'; 
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO/SEO';
 import './SubmitStory.scss';
 
 const SubmitStory = () => {
@@ -66,6 +67,10 @@ const SubmitStory = () => {
 
   return (
     <>
+      <SEO 
+        title="Uncanny Coffee Hour: Submit a story" 
+        description="Share a story for Odd Bob and Dr. Kitsune, the voices behind the madness."
+      />
       <Hero />
       
       <div id="submit-story-page" className="page-container">
