@@ -16,7 +16,7 @@
     "what_podcast": "Cos'è un podcast?",
     "what_podtext": "Pensalo come uno spettacolo radiofonico dei tempi passati... ma invece di sintonizzarti a un'ora specifica, puoi ascoltare quando vuoi!"
   },
-  "covenpage": {
+  "lodgepage": {
     "title": "Unisciti a noi! Sostieni lo show!",
     "subhead": "Ogni membro diventa parte della congrega e supporta il racconto delle storie di cui tutti abbiamo bisogno.",
     "btn": "CAMMINA CON NOI"
@@ -77,7 +77,7 @@
   },
   "navtext": {
     "about": "Chi Siamo",
-    "coven": "Congrega",
+    "lodge": "Congrega",
     "episodes": "Episodi",
     "shop": "Negozio",
     "submit_story": "Invia Storia"

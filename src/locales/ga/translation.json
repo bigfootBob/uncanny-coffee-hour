@@ -16,7 +16,7 @@
     "what_podcast": "Cad is podchraoladh ann?",
     "what_podtext": "Smaoinigh air mar sheó raidió ón am atá thart... cosúil le suí timpeall an raidió. Ach in ionad éisteacht ag am faoi leith, is féidir leat éisteacht aon uair is mian leat!"
   },
-  "covenpage": {
+  "lodgepage": {
     "title": "Bígí Linn! Tacaigh leis an Seó!",
     "subhead": "Éiríonn gach ball ina chuid den choven agus tacaíonn siad leis na scéalta a theastaíonn uainn go léir a insint.",
     "btn": "SIÚL LINN"
@@ -77,7 +77,7 @@
   },
   "navtext": {
     "about": "Fúinn",
-    "coven": "Coven",
+    "lodge": "lodge",
     "episodes": "Eipeasóidí",
     "shop": "Siopa",
     "submit_story": "Cuir Scéal Isteach"

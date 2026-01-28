@@ -16,7 +16,7 @@
     "what_podcast": "Man i-Ghogh?",
     "what_podtext": "Sui narn e-iaur. Lasto lû a lû."
   },
-  "covenpage": {
+  "lodgepage": {
     "title": "Gwaith! Berio Narn!",
     "subhead": "Gwaith a narn.",
     "btn": "PADO AS GWAITH"
@@ -77,7 +77,7 @@
   },
   "navtext": {
     "about": "O Gwaith",
-    "coven": "Gwaith",
+    "lodge": "Gwaith",
     "episodes": "Narn",
     "shop": "Bach",
     "submit_story": "Narn"

@@ -43,9 +43,10 @@ const Header = () => {
         <nav className="header-nav desktop-nav">
           <ul className="nav-list">
             <li><Link to="/episodes">{t('navtext.episodes')}</Link></li>
-            <li><Link to="/coven">{t('navtext.coven')}</Link></li>
+            <li><Link to="/lodge">{t('navtext.lodge')}</Link></li>
             <li><Link to="/about">{t('navtext.about')}</Link></li>
             <li><Link to="/shop">{t('navtext.shop')}</Link></li>
+            <li><Link to="/games">{t('navtext.games')}</Link></li>
             <li><Link to="/submit" className="nav-cta">{t('navtext.submit_story')}</Link></li>
           </ul>
         </nav>
@@ -72,8 +73,9 @@ const Header = () => {
         <nav className="mobile-links">
           <Link to="/" onClick={closeMobile}>{t('navtext.home') || 'Home'}</Link>
           <Link to="/episodes" onClick={closeMobile}>{t('navtext.episodes')}</Link>
-          <Link to="/coven" onClick={closeMobile}>{t('navtext.coven')}</Link>
+          <Link to="/lodge" onClick={closeMobile}>{t('navtext.lodge')}</Link>
           <Link to="/about" onClick={closeMobile}>{t('navtext.about')}</Link>
+          <Link to="/games" onClick={closeMobile}>{t('navtext.games')}</Link>
           <Link to="/shop" onClick={closeMobile}>{t('navtext.shop')}</Link>
           <Link to="/submit" onClick={closeMobile}>{t('navtext.submit_story')}</Link>
           <Link to="/contact" onClick={closeMobile}>{t('navtext.contact') || 'Contact'}</Link>

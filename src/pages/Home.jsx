@@ -125,7 +125,7 @@ const Home = () => {
           <div className="tier-list">
             <div className="tier-list">
               <Link 
-                to="/coven" 
+                to="/lodge" 
                 state={{ selectedTier: '3' }} 
                 className="tier-btn active"
               >
@@ -133,7 +133,7 @@ const Home = () => {
               </Link>
               
               <Link 
-                to="/coven" 
+                to="/lodge" 
                 state={{ selectedTier: '6' }} 
                 className="tier-btn"
               >
@@ -141,7 +141,7 @@ const Home = () => {
               </Link>
               
               <Link 
-                to="/coven" 
+                to="/lodge" 
                 state={{ selectedTier: '18' }} 
                 className="tier-btn"
               >

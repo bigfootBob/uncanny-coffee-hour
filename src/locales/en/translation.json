@@ -16,10 +16,10 @@
       "what_podcast": "What is a podcast?",
       "what_podtext": "Think of it like a radio show of days gone by… like sitting around the radio and listening to Buck Rogers or The Shadow… but instead of tuning in at a specific time, you can listen whenever you want! So crowd around the ‘ol computer or mobile phone… warm up those vacuum tubes… and listen in!"
     },
-    "covenpage": {
+    "lodgepage": {
       "title": "Join us! Support the show!",
-      "subhead": "Every member becomes part of the coven and supports telling the stories we all need right now.",
-      "btn": "WALK WITH US"
+      "subhead": "Every member becomes part of the lodge and supports telling the stories we all need right now.",
+      "btn": "Join us, won't you?"
     },
     "eppage": {
       "title":"The Complete Collection",
@@ -77,9 +77,10 @@
     },
     "navtext": {
       "about": "About",
-      "coven": "Coven",
+      "lodge": "Lodge",
       "episodes": "Episodes",
       "shop": "Shop",
+      "games": "Games",
       "submit_story": "Submit a Story"
     },
     "team": {

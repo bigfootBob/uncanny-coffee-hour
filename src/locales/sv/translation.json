@@ -16,9 +16,9 @@
     "what_podcast": "Vad är en podcast?",
     "what_podtext": "Tänk på det som en radioshow från förr i tiden... som att sitta runt radion. Men istället för att ställa in en viss tid kan du lyssna när du vill!"
   },
-  "covenpage": {
+  "lodgepage": {
     "title": "Gå med oss! Stötta showen!",
-    "subhead": "Varje medlem blir en del av covenet och stöttar berättandet av de historier vi alla behöver just nu.",
+    "subhead": "Varje medlem blir en del av lodgeet och stöttar berättandet av de historier vi alla behöver just nu.",
     "btn": "VANDRA MED OSS"
   },
   "eppage": {
@@ -77,7 +77,7 @@
   },
   "navtext": {
     "about": "Om oss",
-    "coven": "Coven",
+    "lodge": "lodge",
     "episodes": "Avsnitt",
     "shop": "Butik",
     "submit_story": "Skicka in berättelse"

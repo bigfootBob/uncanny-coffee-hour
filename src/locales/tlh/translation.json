@@ -16,7 +16,7 @@
     "what_podcast": "nuq 'oH?",
     "what_podtext": "QIn rur. bI'reS."
   },
-  "covenpage": {
+  "lodgepage": {
     "title": "yImuv! yIboQ!",
     "subhead": "Hoch boQ.",
     "btn": "yIleng"
@@ -77,7 +77,7 @@
   },
   "navtext": {
     "about": "De'",
-    "coven": "boQ",
+    "lodge": "boQ",
     "episodes": "lut",
     "shop": "beQ",
     "submit_story": "lut"

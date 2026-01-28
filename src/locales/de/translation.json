@@ -16,10 +16,10 @@
     "what_podcast": "Was ist ein Podcast?",
     "what_podtext": "Stell es dir vor wie eine Radiosendung vergangener Tage… wie das Sitzen um das Radio herum. Aber anstatt zu einer bestimmten Zeit einzuschalten, kannst du zuhören, wann immer du willst! Also versammelt euch um den alten Computer… wärmt die Röhren auf… und hört zu!"
   },
-  "covenpage": {
-    "title": "Mach mit! Unterstütze die Show!",
-    "subhead": "Jedes Mitglied wird Teil des Zirkels und unterstützt das Erzählen der Geschichten, die wir alle gerade brauchen.",
-    "btn": "WANDERE MIT UNS"
+  "lodgepage": {
+    "title": "Die Uncanny Coffee Hour Loge",
+    "subhead": "Jedes Mitglied wird Teil der Loge und unterstützt das Erzählen der Geschichten, die wir gerade jetzt alle brauchen.",
+    "btn": "Verweile doch..."
   },
   "eppage": {
     "title": "Die komplette Sammlung",
@@ -77,7 +77,8 @@
   },
   "navtext": {
     "about": "Über uns",
-    "coven": "Zirkel",
+    "lodge": "Die Loge",
+    "games": "Spiele",
     "episodes": "Episoden",
     "shop": "Laden",
     "submit_story": "Geschichte einreichen"

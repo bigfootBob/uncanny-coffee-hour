@@ -4,9 +4,9 @@ import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
 import PatreonData from '../data/patreon.json';
 import SEO from '../components/SEO/SEO';
-import './Coven.scss';
+import './lodge.scss';
 
-const Coven = () => {
+const lodge = () => {
   const { t } = useTranslation();
   const location = useLocation();
 
@@ -31,10 +31,10 @@ const Coven = () => {
 
       <Hero />
       
-      <div id="coven-page" className="page-container">
+      <div id="lodge-page" className="page-container">
         <div className="page-header glass-panel">
-          <h1>{t('covenpage.title')}</h1>
-          <p>{t('covenpage.subhead')}</p>
+          <h1>{t('lodgepage.title')}</h1>
+          <p>{t('lodgepage.subhead')}</p>
         </div>
 
         <div className="tiers-grid-wrapper">
@@ -63,7 +63,7 @@ const Coven = () => {
                   rel="noopener noreferrer" 
                   className="tier-cta"
                 >
-                  {t('covenpage.btn')}
+                  {t('lodgepage.btn')}
                 </a>
               </div>
             </div>
@@ -74,4 +74,4 @@ const Coven = () => {
   );
 };
 
-export default Coven;
+export default lodge;
