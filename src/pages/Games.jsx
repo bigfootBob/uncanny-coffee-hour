@@ -4,8 +4,11 @@ import Hero from '../components/Hero/Hero';
 import SEO from '../components/SEO/SEO';
 import GameModal from '../components/Games/GameModal'; 
 import OracleCup from '../components/Games/OracleCup';
+import LoreMasterTrivia from '../components/Games/LoreMasterTrivia';
 import CryptidMatch from '../components/Games/CryptidMatch';
 import ConspiracyBoard from '../components/Games/ConspiracyBoard';
+import CryptidEvolution from '../components/Games/CryptidEvolution';
+import SaucerGame from '../components/Games/SaucerGame';
 import './Games.scss';
 
 const Games = () => {
@@ -16,7 +19,6 @@ const Games = () => {
       id: 'oracle',
       title: 'The Oracle Cup',
       description: 'Gaze into the coffee grounds. Let the dregs reveal your fortune.',
-      component: <OracleCup />,
       status: 'active', 
       icon: '☕'
     },
@@ -24,41 +26,36 @@ const Games = () => {
       id: 'conspiracy',
       title: 'Conspiracy Board',
       description: 'Connect the clues. Group the cryptids. Uncover the truth.',
-      component: <ConspiracyBoard />,
       status: 'active',
       icon: '📌'
     },
     {
-      id: 'snap',
-      title: 'Cryptid Snap',
-      description: 'Capture photographic evidence of the paranormal before it vanishes.',
-      component: null,
-      status: 'coming-soon',
-      icon: '📸'
+      id: 'evolution',
+      title: 'Cryptid Evolution',
+      description: 'Capture photographic evidence of the paranormal before it jjj vanishes.',
+      status: 'active',
+      icon: '🧬'
     },
     {
       id: 'trivia',
       title: 'Lore Master Trivia',
       description: 'Test your knowledge of the Uncanny Coffee Hour deep lore.',
-      component: null,
-      status: 'coming-soon',
+      status: 'active',
       icon: '❓'
     },
      {
-      id: 'run',
+      id: 'match',
       title: 'Cryptid Match',
       description: 'Escape the Pacific Northwest forest before your coffee spills.',
-      component: <CryptidMatch />,
       status: 'active',
       icon: '🌲'
     },
     {
-      id: 'tycoon',
-      title: 'Cafe Tycoon',
-      description: 'Manage a haunted coffee shop. Serve ghouls, earn souls.',
-      component: null,
-      status: 'coming-soon',
-      icon: '💰'
+      id: 'saucer',
+      title: 'Midnight Harvest',
+      description: 'Pilot the saucer. Abduct the livestock.',
+      status: 'active',
+      icon: '🛸'
     }
   ];
 
@@ -109,7 +106,14 @@ const Games = () => {
 
       {activeGame && (
         <GameModal isOpen={!!activeGame} onClose={closeGame}>
-          {activeGame.component}
+          
+          {activeGame.id === 'conspiracy' && <ConspiracyBoard />}
+          {activeGame.id === 'evolution' && <CryptidEvolution />}
+          {activeGame.id === 'match' && <CryptidMatch />}
+          {activeGame.id === 'oracle' && <OracleCup />}
+          {activeGame.id === 'saucer' && <SaucerGame />}
+          {activeGame.id === 'trivia' && <LoreMasterTrivia />}
+
         </GameModal>
       )}
     </div>

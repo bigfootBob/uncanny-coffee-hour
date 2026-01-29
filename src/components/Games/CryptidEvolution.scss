@@ -1,0 +1,104 @@
+.cryptid-evolution {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .score-box {
+      background: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-align: left;
+      
+      span { display: block; font-size: 0.7rem; color: #aaa; text-transform: uppercase; }
+      strong { font-size: 1.5rem; color: #fff; }
+    }
+
+    .reset-btn {
+      background: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      &:hover { background: #777; }
+    }
+  }
+
+  .game-grid {
+    background: #bbada0;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      
+      h3 { margin: 0 0 1rem 0; font-size: 2rem; }
+      &.win { color: #ffd700; }
+      &.lose { color: #ff5252; }
+    }
+
+    .grid-row {
+      display: flex;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .grid-cell {
+      flex: 1;
+      background: rgba(238, 228, 218, 0.35);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      transition: all 0.1s ease;
+      position: relative;
+
+      .tile-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: popIn 0.2s ease;
+
+        .icon { font-size: 1.8rem; line-height: 1; margin-bottom: 2px; }
+        .name { font-size: 0.6rem; text-transform: uppercase; max-width: 100%; overflow: hidden; white-space: nowrap;}
+      }
+    }
+  }
+
+  .controls-hint {
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

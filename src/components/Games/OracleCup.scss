@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   
-  padding: 3rem 1rem;
+  padding: 4rem 4rem 3rem 0rem;
   background-color: #eee;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
@@ -28,6 +28,7 @@
     min-height: 1.5rem;
     text-align: center;
     font-weight: 600;
+    z-index: 20;
   }
 }
 
@@ -48,7 +49,7 @@
   width: 90vmin;
   height: 90vmin;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -75,7 +76,7 @@
 }
 
 .stain {
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: 1;
   filter: sepia(200%) brightness(360%) contrast(130%) hue-rotate(-15deg) grayscale(20%);
   mix-blend-mode: darken; 
@@ -85,13 +86,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-5deg);
+  transform: translate(-50%, -50%) rotate(-5deg) scale(0.8);
+  
   width: 100%;
   text-align: center;
-  
   filter: none; 
   mix-blend-mode: normal;
-  
   font-family: 'Courier New', monospace;
   font-weight: 900;
   font-size: 4.5vmin;
@@ -99,10 +99,14 @@
   text-shadow: 0 0 5px rgba(255,255,255,0.5);
   z-index: 10;
   opacity: 0;
-  transition: opacity 1s ease 0.5s;
+
+  transition: 
+    opacity 0.5s ease, 
+    transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 
   &.visible {
     opacity: 1;
+    transform: translate(-50%, -50%) rotate(-5deg) scale(1.4);
   }
 }
 
@@ -132,10 +136,10 @@
 }
 
 .splash-stain {
-  width: 12vmin;
+  width: 8vmin;
   aspect-ratio: 1;
   top: -1%;
-  left: 63%;
+  left: 53%;
   border-radius: 50%;
   
   background:

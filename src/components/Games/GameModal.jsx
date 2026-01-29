@@ -4,7 +4,6 @@ import './GameModal.scss';
 const GameModal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
-  // Close on "Escape" key
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === 'Escape') onClose();

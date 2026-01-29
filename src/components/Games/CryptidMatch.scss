@@ -1,20 +1,21 @@
 .memory-game {
   text-align: center;
   padding: 2rem;
-  max-width: 500px;
-  margin: 2rem auto;
+  width: 600px;      
+  max-width: 90vw;   
+  margin: 0 auto;
 
   .game-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;       
     margin-top: 1rem;
   }
 
   .card {
     background-color: transparent;
     width: 100%;
-    aspect-ratio: 1; /* Keeps it square */
+    aspect-ratio: 1;
     perspective: 1000px;
     cursor: pointer;
 
@@ -25,10 +26,10 @@
       text-align: center;
       transition: transform 0.6s;
       transform-style: preserve-3d;
-      border-radius: 8px;
+      border-radius: 12px; 
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
     }
 
-    /* Flip Effect */
     &.active .card-inner {
       transform: rotateY(180deg);
     }
@@ -41,14 +42,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.2);
+      font-size: 3.5rem; 
+      border-radius: 12px;
+      border: 2px solid rgba(255,255,255,0.2);
     }
 
     .card-front {
-      background: rgba(0,0,0,0.5); /* Dark back of card */
-      color: var(--brand-puca, #5cb85c); /* Use your green color */
+      background: rgba(0,0,0,0.5);
+      color: var(--brand-puca, #5cb85c);
       font-weight: bold;
     }
 
@@ -59,16 +60,23 @@
   }
 
   .winner-message {
-    margin-top: 2rem;
+    margin-top: 3rem;
     
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
     button {
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
+      padding: 1rem 2rem; 
+      font-size: 1.2rem;
+      border-radius: 30px;
       background: var(--brand-puca, green);
       color: white;
       border: none;
       cursor: pointer;
       font-weight: bold;
+      transition: opacity 0.2s;
       
       &:hover {
         opacity: 0.9;
