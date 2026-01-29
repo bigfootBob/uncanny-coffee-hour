@@ -106,7 +106,7 @@ const Home = () => {
           </button>
 
           <div className="waveform-visualizer">
-            {Array.from({ length: 40 }).map((_, i) => (
+            {Array.from({ length: 50 }).map((_, i) => (
               <span 
                   key={i} 
                   className={isPlaying ? "bar active" : "bar"}

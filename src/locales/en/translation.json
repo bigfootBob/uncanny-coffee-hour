@@ -60,8 +60,11 @@
       "transcript_a11y": "for {{title}}"
     },
     "footer": {
-      "copyright": "© {{year}} Uncanny Coffee Hour. Hosted by Odd Bob, Dr Kitsuné, & Soercia.",
-      "rights": "All rights reserved."
+      "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+      "rights": "All rights reserved.",
+      "humanai": "Human Imagination × Artificial Intelligence",
+      "collaboration": "Collaboration",
+      "hosted": "Hosted by"
     },
     "hero": {
       "title": "Modern Hearthside Stories",
