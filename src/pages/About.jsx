@@ -36,9 +36,9 @@ const About = () => {
         description="Meet Odd Bob and Dr. Kitsune, the voices behind the madness."
       />
       
-      <Hero />
-      
       <div id="about-page" className="page-container">
+        <Hero />
+        
         <section className="page-header glass-panel">
           <h1>{t('app.title')}</h1>
           <p>{t('aboutpage.subhead')}</p>

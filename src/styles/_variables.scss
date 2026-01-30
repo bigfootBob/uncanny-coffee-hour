@@ -17,12 +17,14 @@ $color-error:    #de0909;
 // =========================================
 :root {
   /* use for headers */
-  --font-serif: 'Alegreya', serif; 
+  // --font-serif: 'Alegreya', serif;     
+  --font-serif: 'Cinzel Decorative', cursive;
   /* Nav, Subheads, Buttons */
   --font-sans: 'Alegreya Sans', sans-serif;
   /* Artifacts */
   --font-mono: 'Special Elite', monospace;
-  --font-body: 'Special Elite', monospace; // todo - fix this
+  // "Necto Mono"
+  --font-body: 'Space Mono', sans-serif;
   
   /* Uncanny Coffee Hour - Official Brand Palette */
   --obsidian-dark:   #0A0A0B;       
@@ -75,7 +77,6 @@ $text-inverse:   var(--text-inverse);
 $color-focus:    #005fcc; 
 
 // --- FONT STACKS ---
-
 // Use this for H1, H2, and long paragraphs of story text
 $font-stack-heading: var(--font-serif); 
 // Use this for Nav, H3/H4, Buttons, and UI Labels
@@ -83,7 +84,7 @@ $font-stack-ui:      var(--font-sans);
 // typewriter for the form
 $font-stack-mono:    var(--font-mono);
 
-$font-stack-body:    var(--body-font);   
+$font-stack-body:    var(--font-body);   
 
 $border-radius-md:   8px;
 $border-radius-lg:   12px;

@@ -39,32 +39,6 @@
       }
     }
   }
-
-  // img {
-  //   &.human-ai-img {
-  //     width: 50px; 
-  //     height: auto;
-  //     display: block; 
-  //     margin-bottom: 1rem;
-  //     filter: drop-shadow(0 0 15px rgba(255, 191, 117, 0.15));
-  //     transition: opacity 0.2s ease;
-  //   }
-  //   &.logo-for-light {
-  //     display: none;
-  //   }
-  //   &.logo-for-dark {
-  //     display: block;
-  //   }
-  // }
-
-  // :global(html[data-theme='light']) & {
-  //   img.logo-for-light {
-  //     display: block; 
-  //   }
-  //   img.logo-for-dark {
-  //     display: none;
-  //   }
-  // }
   
   .stamp-label {
     font-size: 0.65rem;
@@ -84,6 +58,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  z-index: 10;
 
   background: linear-gradient(
     to top, 

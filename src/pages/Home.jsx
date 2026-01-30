@@ -47,7 +47,7 @@ const Home = () => {
     <>
     <Hero />
     <div className="home-dashboard">
-      <section className="hero-text-layer">
+      <section className="hero-text-layer page-header">
         <h1>{t('hero.title')}</h1>
         <p>
           {t('hero.subtext')}
