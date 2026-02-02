@@ -1,3 +1,5 @@
+// todo: this needs cleaned up
+
 // =========================================
 // BRAND PALETTE 
 // =========================================
@@ -7,7 +9,9 @@ $brand-latte:    #fdfbf7;
 $brand-homer :   #ffbf75;
 $brand-kitsune:  #d9534f;
 $brand-puca:     #557c66;
+$brand-ecto:     #5cb85c;
 $brand-mist:     #e0e6ed;
+$brand-ghost:    #e0e0e0;
 $brand-void:     #1a1a1a; 
 $brand-obsidian: #0A0A0B; 
 $color-error:    #de0909;
@@ -93,3 +97,37 @@ $spacing-unit:       8px;
 
 $bp-tablet:          768px;
 $bp-desktop:         1024px;
+
+// glass
+
+:root {
+  /* --- DEFAULT (DARK MODE) --- */
+  /* Dark, semi-transparent espresso background */
+  --glass-bg: rgba(15, 11, 8, 0.75); 
+  /* Subtle gold border to pop against the dark */
+  --glass-border: rgba(194, 142, 66, 0.25); 
+  /* Deep shadow for depth */
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  /* Text color */
+  --glass-text: #e0e0e0;
+
+  --cta-border: #{$brand-puca};
+  --cta-button: #{$brand-ecto};
+  --footer-hosts: #{$brand-ghost};
+}
+
+html[data-theme='light'] {
+  /* --- LIGHT MODE --- */
+  /* Milky white semi-transparent background */
+  --glass-bg: rgba(255, 255, 255, 0.6); 
+  /* White border looks very premium in light mode ("Apple" style) */
+  --glass-border: rgba(255, 255, 255, 0.6); 
+  /* Softer, more diffused shadow */
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Dark text */
+  --glass-text: #1a1a1a;
+
+  --cta-border: #{$brand-kitsune};
+  --cta-button: #{$brand-espresso};
+  --footer-hosts: #{$brand-roast};
+}

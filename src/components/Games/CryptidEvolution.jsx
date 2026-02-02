@@ -152,7 +152,6 @@ const CryptidEvolution = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (gameOver || won) return;
-      // Prevent default scrolling for arrow keys
       if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
         e.preventDefault();
       }
@@ -179,8 +178,20 @@ const CryptidEvolution = () => {
       </div>
 
       <div className="game-grid">
-        {gameOver && <div className="overlay lose"><h3>Grid Overrun</h3><p>The cryptids have escaped.</p></div>}
-        {won && <div className="overlay win"><h3>Containment Achieved!</h3><p>You summoned The Púca!</p></div>}
+        {gameOver && (
+          <div className="overlay lose">
+            <h3>Overrun</h3>
+            <p>The cryptids have escaped.</p>
+            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>Try Again</button>
+          </div>
+        )}
+        {won && (
+          <div className="overlay win">
+            <h3>Containment Achieved!</h3>
+            <p>You summoned The Púca!</p>
+            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>Play Again</button>
+          </div>
+        )}
         
         {board && board.map((row, r) => (
           <div key={r} className="grid-row">
@@ -188,7 +199,7 @@ const CryptidEvolution = () => {
               const data = getTileData(val);
               return (
                 <div 
-                  key={c} 
+                  key={`${r}-${c}-${val}`} 
                   className={`grid-cell tier-${val}`} 
                   style={val ? { backgroundColor: data.color } : {}}
                 >

@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .games-page {
   padding: 8rem 1rem 4rem;
@@ -112,5 +113,102 @@
       letter-spacing: 1px;
       color: #ccc;
     }
+  }
+
+  .instruction-link {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+    color: var(--accent-color, #c28e42);
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+  }
+
+  .instruction-modal-overlay {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .instruction-modal {
+    @include glass(20px);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    color: var(--glass-text);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: var(--accent-color, #c28e42);
+        font-family: 'Cinzel', serif;
+    }
+
+    .instruction-body {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        white-space: pre-wrap;
+    }
+
+    .close-btn {
+        background: var(--accent-color, #c28e42);
+        color: #0f0b08;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+        margin: 2rem auto 0;
+        
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+  }
+
+  .tile-icon {
+    width: 220px; 
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+
+    .game-icon-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .game-tile:hover .game-icon-img {
+    transform: scale(1.1);
   }
 }

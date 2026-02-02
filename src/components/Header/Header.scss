@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 @keyframes spinOnce {
   from { transform: rotate(0deg); }
@@ -17,13 +18,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  // glass
-  background: rgba(20, 20, 20, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  @include glass(14px);
   border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 
   .header-inner {
     width: 100%;
@@ -76,7 +73,7 @@
         align-items: center;
 
         li a {
-          color: #e0e6ed;
+          color: var(--glass-text);
           font-family: $font-stack-ui;
           font-weight: 500;
           text-transform: uppercase;
@@ -91,15 +88,9 @@
         }
         
         .nav-cta {
-          border: 1px solid var(--brand-puca, #5cb85c);
           padding: 8px 20px;
           border-radius: 20px;
-          color: var(--brand-puca, #5cb85c);
-          
-          &:hover {
-            background: var(--brand-puca, #5cb85c);
-            color: #fff;
-          }
+          @include nav-cta;
         }
       }
     }

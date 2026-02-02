@@ -1,3 +1,6 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .collaboration-stamp {
   display: flex;
   flex-direction: column; 
@@ -67,6 +70,16 @@
     rgba(15, 11, 8, 0) 100% 
   );
 
+  html[data-theme='light'] & {
+    background: linear-gradient(
+      to top, 
+      #ffffff 20%, 
+      rgba(255, 255, 255, 0.432) 60%, 
+      rgba(255, 255, 255, 0) 100% 
+    );
+    border-top: 1px solid rgba(0,0,0,0.05); 
+  }
+
   padding: 5rem 0 3rem; 
   margin-top: auto; 
   overflow-x: hidden; 
@@ -101,10 +114,9 @@
       display: flex;
       gap: 1.5rem;
       align-items: center;
-      
       font-family: 'Cinzel', serif; 
       font-size: 1.8rem;
-      color: #e0e0e0;
+      color: var(--footer-hosts);
       text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 
       .separator {
@@ -118,12 +130,16 @@
   }
 
   .footer-legal {
-    border-top: 1px solid rgba(194, 142, 66, 0.2);
     padding-top: 2rem;
     margin-top: 1rem;
     width: 100%;
     max-width: 500px;
-    
+    border-top: 1px solid rgba(194, 142, 66, 0.2);
+
+    html[data-theme='light'] & {
+      border-top: 1px solid rgba(194, 142, 66, 0.8);
+    }
+      
     p {
       font-size: 0.8rem;
       color: #666;

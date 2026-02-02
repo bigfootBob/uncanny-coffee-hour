@@ -12,50 +12,46 @@ import SaucerGame from '../components/Games/SaucerGame';
 import './Games.scss';
 
 const Games = () => {
+  const { t } = useTranslation('games'); 
   const [activeGame, setActiveGame] = useState(null);
+  const [instructionData, setInstructionData] = useState(null);
 
   const games = [
     {
       id: 'oracle',
-      title: 'The Oracle Cup',
-      description: 'Gaze into the coffee grounds. Let the dregs reveal your fortune.',
       status: 'active', 
-      icon: '☕'
+      icon: '☕',
+      image: '/assets/images/games/oracle.jpg'
     },
     {
       id: 'conspiracy',
-      title: 'Conspiracy Board',
-      description: 'Connect the clues. Group the cryptids. Uncover the truth.',
       status: 'active',
-      icon: '📌'
+      icon: '📌',
+      image: '/assets/images/games/conspiracy.jpg'
     },
     {
       id: 'evolution',
-      title: 'Cryptid Evolution',
-      description: 'Capture photographic evidence of the paranormal before it jjj vanishes.',
       status: 'active',
-      icon: '🧬'
+      icon: '🧬',
+      image: '/assets/images/games/evolution.jpg'
     },
     {
       id: 'trivia',
-      title: 'Lore Master Trivia',
-      description: 'Test your knowledge of the Uncanny Coffee Hour deep lore.',
       status: 'active',
-      icon: '❓'
+      icon: '❓',
+      image: '/assets/images/games/trivia.jpg'
     },
      {
       id: 'match',
-      title: 'Cryptid Match',
-      description: 'Escape the Pacific Northwest forest before your coffee spills.',
       status: 'active',
-      icon: '🌲'
+      icon: '🌲',
+      image: '/assets/images/games/match.jpg'
     },
     {
       id: 'saucer',
-      title: 'Midnight Harvest',
-      description: 'Pilot the saucer. Abduct the livestock.',
       status: 'active',
-      icon: '🛸'
+      icon: '🛸',
+      image: '/assets/images/games/saucer.jpg'
     }
   ];
 
@@ -67,6 +63,11 @@ const Games = () => {
 
   const closeGame = () => {
     setActiveGame(null);
+  };
+
+  const handleOpenInstructions = (e, game) => {
+    e.stopPropagation(); // no start bitte
+    setInstructionData(game);
   };
 
   return (
@@ -81,8 +82,8 @@ const Games = () => {
 
     <div className="games-page container">
       <div className="games-header">
-        <h1 className="page-title">The Arcade</h1>
-        <p className="page-subtitle">Pass the time while your coffee brews.</p>
+        <h1 className="page-title">{t(`page.title`)}</h1>
+        <p className="page-subtitle">{t(`page.subtitle`)}</p>
       </div>
       
       <div className="games-grid">
@@ -94,11 +95,26 @@ const Games = () => {
             role="button"
             tabIndex={game.status === 'active' ? 0 : -1}
           >
-            <div className="tile-icon">{game.icon}</div>
+            <div className="tile-icon">
+              <img 
+                src={game.image} 
+                alt={t(`${game.id}.title`)} 
+                className="game-icon-img" 
+              />
+              </div>
+
             <div className="tile-content">
-              <h3>{game.title}</h3>
-              <p>{game.description}</p>
+              <h3>{t(`${game.id}.title`)}</h3>
+              <p>{t(`${game.id}.description`)}</p>
               {game.status === 'coming-soon' && <span className="badge">Coming Soon</span>}
+              {game.status === 'active' && (
+                    <button 
+                        className='instruction-link' 
+                        onClick={(e) => handleOpenInstructions(e, game)}
+                    >
+                        {t('page.instructionsLabel')}
+                    </button>
+              )}
             </div>
           </div>
         ))}
@@ -106,15 +122,27 @@ const Games = () => {
 
       {activeGame && (
         <GameModal isOpen={!!activeGame} onClose={closeGame}>
-          
           {activeGame.id === 'conspiracy' && <ConspiracyBoard />}
           {activeGame.id === 'evolution' && <CryptidEvolution />}
           {activeGame.id === 'match' && <CryptidMatch />}
           {activeGame.id === 'oracle' && <OracleCup />}
           {activeGame.id === 'saucer' && <SaucerGame />}
           {activeGame.id === 'trivia' && <LoreMasterTrivia />}
-
         </GameModal>
+      )}
+
+      {instructionData && (
+        <div className="instruction-modal-overlay" onClick={() => setInstructionData(null)}>
+            <div className="instruction-modal" onClick={(e) => e.stopPropagation()}>
+                <h2>{t(`${instructionData.id}.title`)}</h2>
+                <div className="instruction-body">
+                    <p>{t(`${instructionData.id}.instructions`)}</p>
+                </div>
+                <button className="close-btn" onClick={() => setInstructionData(null)}>
+                    {t('status.close')}
+                </button>
+            </div>
+        </div>
       )}
     </div>
     </>

@@ -22,12 +22,14 @@ import sjnBios from './locales/sjn/bios.json';
 import svBios from './locales/sv/bios.json';
 import tlhBios from './locales/tlh/bios.json';
 
+import enGames from './locales/en/games.json';
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-        en: { translation: enTrans, bios: enBios },
+        en: { translation: enTrans, bios: enBios, games: enGames },
         de: { translation: deTrans, bios: deBios },
         ga: { translation: gaTrans, bios: gaBios },
         it: { translation: itTrans, bios: itBios },
@@ -42,7 +44,7 @@ i18n
     interpolation: {
       escapeValue: false 
     },
-    ns: ['translation', 'bios'],
+    ns: ['translation', 'bios', 'games'],
     defaultNS: 'translation', 
   });
 

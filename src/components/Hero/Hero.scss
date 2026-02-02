@@ -22,5 +22,10 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+
+  html[data-theme='light'] & {
+    background: rgba(80, 80, 80, 0.5);
+  }
+
   z-index: 0;
 }

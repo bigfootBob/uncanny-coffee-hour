@@ -1,6 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './SaucerGame.scss';
 
+const AUDIO_SRC = {
+  hover: '/assets/sounds/saucer-hover.mp3',
+  beam: '/assets/sounds/tractor-beam.mp3',
+  moo: '/assets/sounds/cow-moo.mp3',
+  crash: '/assets/sounds/crash.mp3',
+  splat: '/assets/sounds/splat.mp3',
+  gunshot: '/assets/sounds/gunshot.mp3',
+  scream: '/assets/sounds/scream.mp3'
+};
+
 const GAME_WIDTH = 800;
 const GAME_HEIGHT = 500;
 const GROUND_LEVEL = GAME_HEIGHT - 60;
@@ -10,13 +20,13 @@ const GRAVITY = 2;
 const FARMER_VARIANTS = ['👨‍🌾', '👩‍🌾', '👨🏻‍🌾', '👩🏿‍🌾', '👨🏾‍🌾', '👩🏻‍🌾', '👴', '👵'];
 
 const LEVELS = [
-  { level: 1, target: 500, drainRate: 0.05, spawnRate: 1 },    // Easy
-  { level: 2, target: 1500, drainRate: 0.08, spawnRate: 2 },   // Medium
-  { level: 3, target: 3000, drainRate: 0.12, spawnRate: 3 }    // Hard
+  { level: 1, target: 500, drainRate: 0.05, spawnRate: 1 },    
+  { level: 2, target: 1500, drainRate: 0.08, spawnRate: 2 },   
+  { level: 3, target: 3000, drainRate: 0.12, spawnRate: 3 }    
 ];
 
 const SaucerGame = () => {
-  const [gameState, setGameState] = useState('start'); // start, playing, gameover, win
+  const [gameState, setGameState] = useState('start'); 
   const [score, setScore] = useState(0);
   const [health, setHealth] = useState(100);
   const [fuel, setFuel] = useState(100);
@@ -24,7 +34,6 @@ const SaucerGame = () => {
   const [crashed, setCrashed] = useState(false);
   const [, setTick] = useState(0);
 
-  // REFS
   const saucerRef = useRef({ x: 350, y: 100, width: 80, height: 40 });
   const cowsRef = useRef([]);
   const farmersRef = useRef([]);
@@ -37,6 +46,40 @@ const SaucerGame = () => {
   const fuelRef = useRef(100);
   const levelRef = useRef(1); 
   const gameLoopRef = useRef();
+
+  // --- AUDIO REFS ---
+  const hoverAudio = useRef(new Audio(AUDIO_SRC.hover));
+  const beamAudio = useRef(new Audio(AUDIO_SRC.beam));
+  const mooAudio = useRef(new Audio(AUDIO_SRC.moo));
+  const crashAudio = useRef(new Audio(AUDIO_SRC.crash));
+  const splatAudio = useRef(new Audio(AUDIO_SRC.splat));
+  const gunshotAudio = useRef(new Audio(AUDIO_SRC.gunshot));
+  const screamAudio = useRef(new Audio(AUDIO_SRC.scream));
+
+  useEffect(() => {
+    hoverAudio.current.loop = true;
+    hoverAudio.current.volume = 0.3;
+    beamAudio.current.loop = true;
+    beamAudio.current.volume = 0.5;
+
+    // Cleanup
+    return () => {
+      hoverAudio.current.pause();
+      hoverAudio.current.currentTime = 0; 
+      beamAudio.current.pause();
+      beamAudio.current.currentTime = 0; 
+      crashAudio.current.pause();
+      crashAudio.current.currentTime = 0; 
+      gunshotAudio.current.pause();
+      gunshotAudio.current.currentTime = 0;
+      splatAudio.current.pause();
+      splatAudio.current.currentTime = 0;
+      mooAudio.current.pause();
+      mooAudio.current.currentTime = 0;
+      screamAudio.current.pause();
+      screamAudio.current.currentTime = 0;
+    };
+  }, []);
 
   // --- INIT ---
   const startGame = () => {
@@ -60,45 +103,99 @@ const SaucerGame = () => {
     spawnCow(); spawnCow(); spawnCow();
     spawnFarmer();
 
+    hoverAudio.current.currentTime = 0;
+    hoverAudio.current.play().catch(e => console.log("Audio play failed (interact first):", e));
+
     if (gameLoopRef.current) clearInterval(gameLoopRef.current);
     gameLoopRef.current = setInterval(gameLoop, 1000 / 60); 
   };
 
   const stopGame = useCallback((result = 'gameover') => {
-    clearInterval(gameLoopRef.current);
+
+    if (gameLoopRef.current) {
+      clearInterval(gameLoopRef.current);
+    }
+    
+    hoverAudio.current.pause();
+    hoverAudio.current.currentTime = 0; 
+    
+    beamAudio.current.pause();
+    beamAudio.current.currentTime = 0; 
+    
+    crashAudio.current.pause();
+    crashAudio.current.currentTime = 0; 
+    
+    gunshotAudio.current.pause();
+    gunshotAudio.current.currentTime = 0;
+    
+    splatAudio.current.pause();
+    splatAudio.current.currentTime = 0;
+    
+    mooAudio.current.pause();
+    mooAudio.current.currentTime = 0;
+    
+    screamAudio.current.pause();
+    screamAudio.current.currentTime = 0;
+
+
+    if (result === 'gameover') {
+        crashAudio.current.play();
+    }
+
     setGameState(result);
   }, []);
 
   const triggerCrash = () => {
     clearInterval(gameLoopRef.current);
     setCrashed(true);
+    
+    hoverAudio.current.pause();
+    beamAudio.current.pause();
+    crashAudio.current.play();
 
     setTimeout(() => {
         setGameState('gameover');
     }, 1500);
   };
 
-  // --- INPUT HANDLING ---
+  // --- INPUT ---
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Prevent scrolling for game keys
       if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code)) {
         e.preventDefault();
       }
       keysPressed.current[e.code] = true;
-      if (e.code === 'Space') isBeamingRef.current = true;
+      
+      if (e.code === 'Space') {
+          isBeamingRef.current = true;
+          // Play beam sound if not already playing
+          if (beamAudio.current.paused && gameState === 'playing') {
+              beamAudio.current.play().catch(e => {});
+          }
+      }
     };
+    
     const handleKeyUp = (e) => {
       keysPressed.current[e.code] = false;
-      if (e.code === 'Space') isBeamingRef.current = false;
+      
+      if (e.code === 'Space') {
+          isBeamingRef.current = false;
+          beamAudio.current.pause();
+          beamAudio.current.currentTime = 0;
+          beamAudio.current.playbackRate = 1.0; 
+      }
     };
+
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('keyup', handleKeyUp);
+
+    // CLEANUP
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
-      clearInterval(gameLoopRef.current);
     };
-  }, []);
+  }, [gameState]);
 
   const spawnCow = () => {
     const livingCows = cowsRef.current.filter(c => c.state !== 'splat').length;
@@ -166,50 +263,93 @@ const SaucerGame = () => {
         height: GAME_HEIGHT - saucer.y
     };
 
-    cows.forEach((cow, index) => {
-        if (isBeamingRef.current && checkCollision(cow, beamRect) && cow.state !== 'splat') {
-            cow.state = 'beaming';
-            cow.y -= BEAM_POWER;
-            if (checkCollision(cow, saucer)) {
-              // --- ABDUCTION SUCCESS ---
-              scoreRef.current += 100;
-              setScore(scoreRef.current);
-              
-              // REFILL FUEL (Cap at 100)
-              fuelRef.current = Math.min(100, fuelRef.current + 20);
-
-              // CHECK LEVEL UP
-              if (scoreRef.current >= currentLevelConfig.target) {
-                if (levelRef.current < 3) {
-                   levelRef.current += 1;
-                   setLevel(levelRef.current);
-                   spawnFarmer();
-                } else {
-                   stopGame('win');
-                   return;
-                }
-              }
-              
-              cows.splice(index, 1); 
-              spawnCow(); 
-              spawnFarmer();
-            }
+    const isLiftingSomething = cows.some(c => c.state === 'beaming');
+    
+    if (isBeamingRef.current && !beamAudio.current.paused) {
+        if (isLiftingSomething) {
+            // Labored Sound
+            beamAudio.current.playbackRate = 0.6; 
         } else {
-            if (cow.y < GAME_HEIGHT / 2 && cow.state !== 'splat') cow.state = 'falling-death';
-
-            if (cow.state !== 'falling-death' && cow.state !== 'splat') cow.state = 'grazing';
-
-            if (cow.y < GROUND_LEVEL - 30) {
-                const fallSpeed = cow.state === 'falling-death' ? GRAVITY * 1.5 : GRAVITY;
-                cow.y = Math.min(GROUND_LEVEL - 30, cow.y + fallSpeed);
-            } else {
-                if (cow.state === 'falling-death') {
-                    cow.state = 'splat';
-                    spawnCow(); // Respawn on death
-                }
-            }
+            // Normal Sound
+            beamAudio.current.playbackRate = 1.0;
         }
+    }
+
+    cows.forEach((cow, index) => {
+      if (isBeamingRef.current && checkCollision(cow, beamRect) && cow.state !== 'splat') {
+          // --- BEAMING UP LOGIC ---
+          cow.state = 'beaming';
+          cow.y -= BEAM_POWER;
+          if (checkCollision(cow, saucer)) {
+            scoreRef.current += 100;
+            setScore(scoreRef.current);
+            
+            mooAudio.current.currentTime = 0;
+            mooAudio.current.volume = 0.3; 
+            mooAudio.current.play();
+
+            fuelRef.current = Math.min(100, fuelRef.current + 20);
+
+            if (scoreRef.current >= currentLevelConfig.target) {
+              if (levelRef.current < 3) {
+                  levelRef.current += 1;
+                  setLevel(levelRef.current);
+                  spawnFarmer();
+              } else {
+                  stopGame('win');
+                  return;
+              }
+            }
+            
+            cows.splice(index, 1); 
+            spawnCow(); 
+            spawnFarmer();
+          }
+      } else {
+          // --- FALLING / GRAZING LOGIC ---
+          if (cow.y < GAME_HEIGHT / 2 && cow.state !== 'splat') cow.state = 'falling-death';
+          if (cow.state !== 'falling-death' && cow.state !== 'splat') cow.state = 'grazing';
+          
+          // Check for Cow Bombing (While in air)
+          if (cow.y < GROUND_LEVEL - 30) {
+              for (let f = farmers.length - 1; f >= 0; f--) {
+                  if (checkCollision(cow, farmers[f])) {
+                      // CRUSH THE FARMER
+                      farmers.splice(f, 1); 
+                      
+                      scoreRef.current += 50; 
+                      setScore(scoreRef.current);
+                      
+                      screamAudio.current.currentTime = 0;
+                      screamAudio.current.volume = 0.5; 
+                      screamAudio.current.play().catch(e => {});
+
+                      splatAudio.current.currentTime = 0;
+                      splatAudio.current.volume = 0.4; 
+                      splatAudio.current.play().catch(e => {});
+
+                      cow.state = 'falling-death';
+                  }
+              }
+          }
+
+          if (cow.y < GROUND_LEVEL - 30) {
+              const fallSpeed = cow.state === 'falling-death' ? GRAVITY * 1.5 : GRAVITY;
+              cow.y = Math.min(GROUND_LEVEL - 30, cow.y + fallSpeed);
+          } else {
+              if (cow.state === 'falling-death') {
+                  cow.state = 'splat';
+
+                  splatAudio.current.currentTime = 0; 
+                  splatAudio.current.volume = 0.6; 
+                  splatAudio.current.play().catch(e => {});
+
+                  spawnCow();
+              }
+          }
+      }
     });
+
 
     const now = Date.now();
     farmers.forEach(farmer => {
@@ -220,6 +360,10 @@ const SaucerGame = () => {
         if (now - farmer.lastShot > 2000) {
             bullets.push({ x: farmer.x + farmer.width/2, y: farmer.y, speed: 8 });
             farmer.lastShot = now;
+
+            gunshotAudio.current.currentTime = 0;
+            gunshotAudio.current.volume = 0.6; 
+            gunshotAudio.current.play().catch(e => {});
         }
     });
 
