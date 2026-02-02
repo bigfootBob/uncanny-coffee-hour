@@ -1,11 +1,12 @@
-// todo: this needs cleaned up
+// todo: this needs cleaned up 
 
 // =========================================
 // BRAND PALETTE 
 // =========================================
 $brand-espresso: #2c241b; 
 $brand-roast:    #4a3b32;
-$brand-latte:    #fdfbf7; 
+$brand-latte:    #fdfbf7;
+$brand-foam:     #cccccc;
 $brand-homer :   #ffbf75;
 $brand-kitsune:  #d9534f;
 $brand-puca:     #557c66;
@@ -114,6 +115,15 @@ $bp-desktop:         1024px;
   --cta-border: #{$brand-puca};
   --cta-button: #{$brand-ecto};
   --footer-hosts: #{$brand-ghost};
+
+  --font-bodytext: #{$brand-ghost};
+  --header-color: #{$brand-ghost};
+  --subheader-color: #{$brand-mist};
+  --smalltext-color: #{$brand-foam};
+  --team-header: #C28E42;
+  --player-label-text: #ffbf75;
+  --game-title: #{$brand-ecto};
+  --game-shadow: rgba(92, 184, 92, 0.3);
 }
 
 html[data-theme='light'] {
@@ -127,7 +137,15 @@ html[data-theme='light'] {
   /* Dark text */
   --glass-text: #1a1a1a;
 
-  --cta-border: #{$brand-kitsune};
+  --cta-border: #ffbf75;
   --cta-button: #{$brand-espresso};
   --footer-hosts: #{$brand-roast};
+  --font-bodytext: #{$brand-obsidian};
+  --header-color: #{$brand-obsidian};
+  --subheader-color: #{$brand-obsidian};
+  --smalltext-color: #{$brand-espresso};
+  --team-header: #{$brand-espresso};
+  --player-label-text: #{$brand-puca};
+  --game-title: #{$brand-obsidian};
+  --game-shadow: rgba(2, 2, 2, 0.8);
 }

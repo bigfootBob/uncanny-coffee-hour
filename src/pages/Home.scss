@@ -61,7 +61,7 @@
         
         .player-label { 
           font-size: 0.75rem; 
-          color: #ffbf75; 
+          color: var(--player-label-text); 
           text-transform: uppercase; 
           a {
             text-transform: lowercase;
@@ -281,12 +281,12 @@
     .shop-btn {
       display: inline-block;
       padding: 8px 24px;
-      border: 1px solid var(--accent-color); /* Use variable! */
+      border: 1px solid var(--accent-color);
       color: var(--accent-color);
       text-decoration: none;
       border-radius: 20px;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 700;
       transition: all 0.3s ease; 
       background: transparent;
 

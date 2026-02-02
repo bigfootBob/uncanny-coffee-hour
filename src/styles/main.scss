@@ -59,12 +59,12 @@ html, body {
         font-family: $font-stack-heading;
         font-size: 2.5rem;
         margin: 0 0 0.5rem 0;
-        color: #fff;
+        color: var (--header-color);
         text-shadow: 0 2px 4px rgba(0,0,0,0.5);
       }
       
       p {
-        color: $brand-mist;
+        color: var(--subheader-color);
         font-size: 1.1rem;
         margin: 0;
         opacity: 0.9;

@@ -88,5 +88,27 @@
     },
     "team": {
       "title": "Meet the Hosts not needed"
+    },
+    "patreon": {
+      "common": {
+        "month": "/ month",
+        "join": "Learn More"
+      },
+      "1": {
+        "title": "The Loving Longma",
+        "desc": "Ad-free episodes, The Lodge Discord access, On-air shoutout."
+      },
+      "2": {
+        "title": "The Sustaining Spirit",
+        "desc": "Tier 1 benefits PLUS: Soercia's Secret Stash (bonus episodes), extended Fae Banter & a vote on topics."
+      },
+      "3": {
+        "title": "The Brownie Benefactor", 
+        "desc": "Tier 1 & 2 benefits PLUS: Executive producer verbal credit, Physical Merch (Bi-Annually), Coffee with the Hosts quarterly Zoom hangout."
+      },
+      "4": {
+        "title": "Friends of Kitsune and Tanuki!",
+        "desc": "All tier benefits PLUS We create a custom Yokai for you and announce its mythos on air."
+      }
     }
   }

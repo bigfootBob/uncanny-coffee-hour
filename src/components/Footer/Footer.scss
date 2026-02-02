@@ -47,10 +47,17 @@
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #ccc;
+    color: var(--smalltext-color);
     font-family: sans-serif;
     font-weight: 300;
     text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    padding: 4px;
+
+    html[data-theme='light'] & {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      background-color: rgba(254, 254, 254, 0.4);
+      
+    }
   }
 }
 
@@ -105,9 +112,13 @@
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.5);
       font-family: sans-serif;
       font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
+
+      html[data-theme='light'] & {
+        color: rgba(0, 0, 0, 0.5);
+      }
     }
 
     .hosts {

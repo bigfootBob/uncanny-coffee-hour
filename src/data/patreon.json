@@ -1,34 +1,26 @@
 [
   { 
     "id": "1", 
-    "name": "Tier 1: The Loving Longma", 
-    "price": "$3 / month", 
+    "price": "3", 
     "image": "longma.jpg", 
-    "desc": "7 days free trial. Help to sustain the podcast! We use this to buy equipment and/or coffee & tea.", 
     "link": "https://www.patreon.com/13604357/join"
   },
   { 
-    "id": "2", 
-    "name": "Tier 2: The Sustaining Spirit", 
-    "price": "$6 / month", 
+    "id": "2",  
+    "price": "8", 
     "image": "sustaining.jpg", 
-    "desc": "Access to exclusive content and behind the scenes content and an on the air shout out! You help sustain our work and allow us to tell the cultural stories that matter to all of us.", 
     "link": "https://www.patreon.com/13604357/join"
   },
     { 
     "id": "3", 
-    "name": "Tier 3: The Brownie Benefactor", 
-    "price": "$18 / month", 
+    "price": "20", 
     "image": "brownie.jpg", 
-    "desc": "7 days free trial. Help to sustain the podcast! We use this to buy equipment and/or coffee & tea.", 
     "link": "https://www.patreon.com/13604357/join"
   },
     { 
-    "id": "4", 
-    "name": "Tier 4: Friends of Kitsune and Tanuki!", 
-    "price": "$50 / month", 
+    "id": "4",  
+    "price": "50", 
     "image": "friends.jpg", 
-    "desc": "7 days free trial. Help to sustain the podcast! We use this to buy equipment and/or coffee & tea.", 
     "link": "https://www.patreon.com/13604357/join"
   }
 ]

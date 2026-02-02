@@ -28,7 +28,7 @@
   text-align: center;
   border: 1px solid transparent;
   list-style: none;
-  padding: 0; 
+  padding: 0;
   overflow: hidden;
 
   .team-card-link {
@@ -41,8 +41,13 @@
     height: 100%; 
     transition: transform 0.2s ease;
 
+    .team-card__name {
+      color: var(--team-header);
+    }
+
     &:hover {
       transform: translateY(-5px);
+
       .team-card__name {
         color: var(--espresso-gold);
       }

@@ -14,12 +14,12 @@
       font-family: 'Cinzel Decorative', cursive;
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      color: var(--brand-puca, #5cb85c); 
-      text-shadow: 0 0 10px rgba(92, 184, 92, 0.3);
+      color: var(--game-title);
+      text-shadow: 0 0 10px var(--game-shadow);
     }
     
     .page-subtitle {
-      color: #aaa;
+      color: var(--glass-text);
       font-size: 1.1rem;
     }
   }

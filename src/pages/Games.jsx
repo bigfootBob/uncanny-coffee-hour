@@ -82,7 +82,7 @@ const Games = () => {
 
     <div className="games-page container">
       <div className="games-header">
-        <h1 className="page-title">{t(`page.title`)}</h1>
+        <h1 className="page-title">{t(`page.title`)}</h1> 
         <p className="page-subtitle">{t(`page.subtitle`)}</p>
       </div>
       

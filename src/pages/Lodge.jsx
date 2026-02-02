@@ -42,20 +42,24 @@ const lodge = () => {
             <div 
               key={tier.id} 
               id={`tier-${tier.id}`} 
-              className={`tier-card glass-panel }`}
+              className="tier-card glass-panel"
             >
               <div className="tier-visual">
                 <img 
                   src={`/assets/images/tiers/${tier.image}`} 
-                  alt={tier.name} 
+                  alt={t(`patreon.${tier.id}.title`)}
                   className="tier-image" 
                 />
               </div>
               
               <div className="tier-content">
-                <h3>{tier.name}</h3>
-                <div className="tier-price">{tier.price}</div>
-                <p className="tier-desc">{tier.desc}</p>
+                <h3>{t(`patreon.${tier.id}.title`)}</h3>
+                
+                <div className="tier-price">
+                    ${tier.price} <span className="period">{t('patreon.common.month')}</span>
+                </div>
+                
+                <p className="tier-desc">{t(`patreon.${tier.id}.desc`)}</p>
                 
                 <a 
                   href={tier.link} 
@@ -63,12 +67,13 @@ const lodge = () => {
                   rel="noopener noreferrer" 
                   className="tier-cta"
                 >
-                  {t('lodgepage.btn')}
+                  {t('patreon.common.join')} 
                 </a>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </>
   );

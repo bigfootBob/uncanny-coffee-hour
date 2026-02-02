@@ -50,6 +50,12 @@ const Episodes = () => {
           <div id='buzzsprout-large-player'></div>
           <div id='buzzsprout-script-container' style={{ display: 'none' }}></div>
         </div>
+
+        <a href="https://uncannycoffeehour.buzzsprout.com/2450457/episodes" target="_blank" rel="noopener noreferrer" className="transcript-link">
+          <div>
+            <u>Transcripts</u> are available on buzzsprout (look for the transcript link on the episode).
+          </div>
+        </a>
       </div>
     </>
   );

@@ -10,6 +10,10 @@
   gap: 2rem;
   position: relative;
   z-index: 1;
+
+  .transcript-link {
+    color: var(--smalltext-color);
+  }
 }
 
 .episodes-header {
