@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "groups": [
+      { "category": "Coffee Roasts", "items": ["Blonde", "City", "French", "Espresso"], "difficulty": 1 },
+      { "category": "Cryptids with Wings", "items": ["Mothman", "Jersey Devil", "Thunderbird", "Owlman"], "difficulty": 2 },
+      { "category": "Podcast Hosts", "items": ["Odd Bob", "Dr. Kitsune", "Barnaby", "Saoirse"], "difficulty": 3 },
+      { "category": "Types of Yokai", "items": ["Tengu", "Kappa", "Oni", "Tako Nyudo"], "difficulty": 4 }
+    ]
+  },
+  {
+    "id": 2,
+    "groups": [
+      { "category": "Sea Monsters", "items": ["Kraken", "Leviathan", "Hydra", "Siren"], "difficulty": 1 },
+      { "category": "Types of ghosts", "items": ["Poltergeist", "Revenant", "Wraith", "Specter"], "difficulty": 2 },
+      { "category": "Brewing Methods", "items": ["Pour Over", "French Press", "Aeropress", "Siphon"], "difficulty": 3 },
+      { "category": "Irish Fairies", "items": ["Puca", "Banshee", "Leprechaun", "Dullahan"], "difficulty": 4 }
+    ]
+  },
+  {
+    "id": 3,
+    "groups": [
+      { "category": "Synonyms for 'Strange'", "items": ["Uncanny", "Eerie", "Weird", "Odd"], "difficulty": 1 },
+      { "category": "Bigfoot Aliases", "items": ["Sasquatch", "Yeti", "Skunk Ape", "Yowie"], "difficulty": 2 },
+      { "category": "Forest Animals", "items": ["Bear", "Deer", "Elk", "Badger"], "difficulty": 3 },
+      { "category": "Alien Races", "items": ["Greys", "Reptilians", "Nordics", "Insectoids"], "difficulty": 4 }
+    ]
+  },
+  {
+    "id": 4,
+    "groups": [
+      { "category": "Lost Lands", "items": ["Atlantis", "El Dorado", "Avalon", "Lemuria"], "difficulty": 1 },
+      { "category": "Japanese Urban Legends", "items": ["Teke Teke", "Kuchisake-onna", "Aka Manto", "Hanako-san"], "difficulty": 2 },
+      { "category": "Coffee Sweeteners", "items": ["Sugar", "Honey", "Stevia", "Agave"], "difficulty": 3 },
+      { "category": "UFO Shapes", "items": ["Saucer", "Cigar", "Triangle", "Orb"], "difficulty": 4 }
+    ]
+  },
+  {
+    "id": 5,
+    "groups": [
+      { "category": "Psychic Abilities", "items": ["Telepathy", "Telekinesis", "Clairvoyance", "Pyrokinesis"], "difficulty": 1 },
+      { "category": "Types of Tea", "items": ["Earl Grey", "Matcha", "Oolong", "Chai"], "difficulty": 2 },
+      { "category": "Video Game Genres", "items": ["RPG", "FPS", "RTS", "MMO"], "difficulty": 3 },
+      { "category": "Specific Cryptids", "items": ["Bigfoot", "Nessie", "Chupacabra", "Yeti"], "difficulty": 4 }
+    ]
+  },
+  {
+    "id": 6,
+    "groups": [
+      { "category": "Coffee Drinks", "items": ["Latte", "Cappuccino", "Mocha", "Macchiato"], "difficulty": 1 },
+      { "category": "Classic Curses", "items": ["Mummy", "Werewolf", "Vampire", "Zombie"], "difficulty": 2 },
+      { "category": "Famous Hoaxes", "items": ["Fiji Mermaid", "Cardiff Giant", "Piltdown Man", "Alien Autopsy"], "difficulty": 3 },
+      { "category": "Haunted Locations", "items": ["Graveyard", "Asylum", "Attic", "Basement"], "difficulty": 4 }
+    ]
+  }
+]

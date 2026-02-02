@@ -21,7 +21,7 @@ const QUESTIONS = [
     lore: "Despite co-hosting a coffee podcast, poor Mitch is allergic to the bean itself. A tragic irony."
   },
   {
-    question: "In Irish folklore, what type of creature is 'Soercia' (the AI character)?",
+    question: "In Irish folklore, what type of creature is 'Saoirse' (the AI character)?",
     options: ["A Banshee", "A Púca", "A Leprechaun", "A Selkie"],
     answer: "A Púca",
     lore: "A Púca is a shape-shifter from Celtic folklore, known for being a trickster spirit that can bring both good and bad fortune."

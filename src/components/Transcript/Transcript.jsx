@@ -39,7 +39,7 @@ const Transcript = ({ url, title }) => {
           <p><em>[Placeholder: In a real app, we would fetch the HTML from {url} here.]</em></p>
           <p><strong>Mitch:</strong> (Sipping tea) I still don't understand how people drink that bean water.</p>
           <p><strong>Odd Bob:</strong> It's the nectar of the gods, Mitch! Anyway, welcome to the Uncanny Coffee Hour...</p>
-          <p><strong>Soercia:</strong> <em>*Eerie wind noises*</em></p>
+          <p><strong>Saoirse:</strong> <em>*Eerie wind noises*</em></p>
         </div>
       </div>
     </div>

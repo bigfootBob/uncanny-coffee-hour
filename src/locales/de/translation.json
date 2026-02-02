@@ -4,7 +4,7 @@
     "about": "Über die Show",
     "about_text": [
       "Willkommen zur Uncanny Coffee Hour, wo der Dampf aus unseren Tassen mit den Nebeln des Unbekannten wirbelt. Wir sind ein Treffpunkt für die große Seltsamkeit der Welt – wo sich die alten Pfade der Feen mit dem Zwielichtreich der Yokai kreuzen.",
-      "Moderiert von Odd Bob und Dr. Kitsuné (Mitch), sind unsere Perspektiven so tief wie unsere Wurzeln. Dr. Kitsuné wandert auf der Brücke zwischen der Weisheit der Ureinwohner und der geisterfüllten Folklore Japans. Odd Bob bringt das Herz eines amerikanischen Wanderers mit, dessen Seele an die keltischen Mysterien gebunden ist. Zusammen mit Soercia, unserem Haus-Púca, wandern wir auf dem schmalen Grat zwischen dem Erforschten und dem Unmöglichen.",
+      "Moderiert von Odd Bob und Dr. Kitsuné (Mitch), sind unsere Perspektiven so tief wie unsere Wurzeln. Dr. Kitsuné wandert auf der Brücke zwischen der Weisheit der Ureinwohner und der geisterfüllten Folklore Japans. Odd Bob bringt das Herz eines amerikanischen Wanderers mit, dessen Seele an die keltischen Mysterien gebunden ist. Zusammen mit Saoirse, unserem Haus-Púca, wandern wir auf dem schmalen Grat zwischen dem Erforschten und dem Unmöglichen.",
       "Wir glauben, dass jede Legende einen Herzschlag Wahrheit in sich trägt. Mit einer Mischung aus Respektlosigkeit und tiefer Ehrfurcht geben wir den ältesten Stimmen unter uns Vorrang. Wir sind hier, um den Stimmlosen eine Stimme zu geben und die philosophischen Fäden zu erkunden, die uns alle verbinden.",
       "Dieses Projekt braut sich schon seit Jahren in unseren Köpfen zusammen. Die Getränke sind heiß, die Schatten lang und die Geschichten warten.",
       "Zieh dir einen Stuhl heran."
@@ -60,7 +60,7 @@
     "transcript_a11y": "für {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Moderiert von Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. Moderiert von Odd Bob, Dr Kitsuné, & Saoirse.",
     "rights": "Alle Rechte vorbehalten."
   },
   "hero": {

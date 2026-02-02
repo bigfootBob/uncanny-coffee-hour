@@ -4,7 +4,7 @@
     "about": "Om showen",
     "about_text": [
       "Välkommen till Uncanny Coffee Hour, där ångan från våra muggar virvlar med det okändas dimmor. Vi är en samlingsplats för världens stora märkligheter – där älvornas uråldriga stigar korsas med Yokais skymningsrike.",
-      "Värdarna Odd Bob och Dr. Kitsuné (Mitch) har perspektiv lika djupa som våra rötter. Dr. Kitsuné vandrar på bron mellan ursprunglig visdom och Japans andefyllda folklore. Odd Bob bidrar med en amerikansk vandrares hjärta med en själ bunden till de keltiska mysterierna, och jagar ständigt älvornas spjuveraktiga magi. Tillsammans med Soercia, vår hus-Púca, vandrar vi på gränsen mellan det utforskade och det omöjliga.",
+      "Värdarna Odd Bob och Dr. Kitsuné (Mitch) har perspektiv lika djupa som våra rötter. Dr. Kitsuné vandrar på bron mellan ursprunglig visdom och Japans andefyllda folklore. Odd Bob bidrar med en amerikansk vandrares hjärta med en själ bunden till de keltiska mysterierna, och jagar ständigt älvornas spjuveraktiga magi. Tillsammans med Saoirse, vår hus-Púca, vandrar vi på gränsen mellan det utforskade och det omöjliga.",
       "Vi tror att varje legend bär på ett hjärtslag av sanning. Med en blandning av vördnadslöshet och djup respekt prioriterar vi de äldsta rösterna ibland oss. Vi är här för att ge en röst åt de röstlösa.",
       "Det här projektet har bryggts i våra sinnen i åratal. Dryckerna är varma, skuggorna långa och berättelserna väntar.",
       "Dra fram en stol."
@@ -60,7 +60,7 @@
     "transcript_a11y": "för {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Värdar: Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. Värdar: Odd Bob, Dr Kitsuné, & Saoirse.",
     "rights": "Alla rättigheter förbehållna."
   },
   "hero": {

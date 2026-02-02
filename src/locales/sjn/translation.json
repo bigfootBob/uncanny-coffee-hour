@@ -4,7 +4,7 @@
     "about": "O Narn",
     "about_text": [
       "Mae govannen na Uncanny Coffee Hour. Im gwaith e-dú.",
-      "Gwaith Odd Bob a Dr. Kitsuné (Mitch). Dr. Kitsune pada i-iant im ist a narn. Odd Bob togo gûr e-randir. Ma Soercia, i-Puca, padathanc i-raew a i-ú-raew.",
+      "Gwaith Odd Bob a Dr. Kitsuné (Mitch). Dr. Kitsune pada i-iant im ist a narn. Odd Bob togo gûr e-randir. Ma Saoirse, i-Puca, padathanc i-raew a i-ú-raew.",
       "Savanc i narn garb vîn.",
       "I-yulna 'lûg, i-dú land.",
       "Havo."
@@ -60,7 +60,7 @@
     "transcript_a11y": "an {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Saoirse.",
     "rights": "Pân tûr."
   },
   "hero": {

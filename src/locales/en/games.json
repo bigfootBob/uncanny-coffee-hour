@@ -1,4 +1,4 @@
-{
+{ 
   "oracle": {
     "title": "The Oracle Cup",
     "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
@@ -7,7 +7,15 @@
   "conspiracy": {
     "title": "Conspiracy Board",
     "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit."
+    "instructions": "Click 4 items that belong in the same category and click submit.",
+    "short-instructions": "Group the 16 items into 4 categories.",
+    "mistakes": "Mistakes Remaining: ",
+    "btn-deselect": "Deselect",
+    "btn-submit": "Submit",
+    "btn-tryanother": "Try Another",
+    "btn-nextcase": "Next Case",
+    "lost": "The Truth Escaped You.",
+    "won": "Case Closed. Excellent Work."
   },
   "evolution": {
     "title": "Cryptid Evolution",

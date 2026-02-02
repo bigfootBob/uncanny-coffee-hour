@@ -4,7 +4,7 @@
     "about": "Informazioni sullo Show",
     "about_text": [
       "Benvenuti all'Uncanny Coffee Hour, dove il vapore delle nostre tazze turbina con le nebbie dell'ignoto.",
-      "Condotto da Odd Bob e Dr. Kitsuné (Mitch). Dr. Kitsune cammina sul ponte tra la saggezza dei nativi e il folklore pieno di spiriti del Giappone. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici. Insieme a Soercia, il nostro Puca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
+      "Condotto da Odd Bob e Dr. Kitsuné (Mitch). Dr. Kitsune cammina sul ponte tra la saggezza dei nativi e il folklore pieno di spiriti del Giappone. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici. Insieme a Saoirse, il nostro Puca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
       "Crediamo che ogni leggenda contenga un battito di verità. Con una miscela di irriverenza e profondo rispetto, diamo priorità alle voci più antiche tra noi. Siamo qui per dare voce a chi non ne ha.",
       "Questo progetto sta fermentando nelle nostre menti da anni. Le bevande sono calde, le ombre lunghe e le storie in attesa.",
       "Prendi una sedia."
@@ -60,7 +60,7 @@
     "transcript_a11y": "per {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Condotto da Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. Condotto da Odd Bob, Dr Kitsuné, & Saoirse.",
     "rights": "Tutti i diritti riservati."
   },
   "hero": {

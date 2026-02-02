@@ -34,7 +34,7 @@ const Footer = () => {
               <span className="separator">•</span>
               <span className="host-name">Dr Kitsuné</span>
               <span className="separator">•</span>
-              <span className="host-name">Soercia</span>
+              <span className="host-name">Saoirse</span>
             </div>
           </div>
 

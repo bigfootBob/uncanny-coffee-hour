@@ -4,7 +4,7 @@
     "about": "Faoi an Seó",
     "about_text": [
       "Fáilte go dtí an Uncanny Coffee Hour. Is áit chruinnithe muid don aisteachas ard sa domhan—áit a dtrasnaíonn cosáin ársa na Sióg le réimse leathsholais na Yokai.",
-      "Óstáilte ag Odd Bob agus an Dr. Kitsuné (Mitch), tá ár bpeirspictíochtaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas na Seapáine. Tugann Odd Bob croí fánaí Meiriceánach leis, le hanam ceangailte do rúndiamhra na gCeilteach. In éineacht le Soercia, ár bPúca cónaitheach, siúlaimid an líne idir an méid atá taighde déanta air agus an rud dodhéanta.",
+      "Óstáilte ag Odd Bob agus an Dr. Kitsuné (Mitch), tá ár bpeirspictíochtaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas na Seapáine. Tugann Odd Bob croí fánaí Meiriceánach leis, le hanam ceangailte do rúndiamhra na gCeilteach. In éineacht le Saoirse, ár bPúca cónaitheach, siúlaimid an líne idir an méid atá taighde déanta air agus an rud dodhéanta.",
       "Creidimid go bhfuil buille croí na fírinne i ngach finscéal. Le meascán d'easpa urraime agus meas domhain, tugaimid tús áite do na guthanna is sine inár measc. Táimid anseo chun guth a thabhairt dóibh siúd gan ghuth.",
       "Tá an tionscadal seo á ghrúdú inár n-intinn le blianta. Tá na deochanna te, na scáileanna fada, agus na scéalta ag fanacht.",
       "Tarraing chugat cathaoir."
@@ -60,7 +60,7 @@
     "transcript_a11y": "le haghaidh {{title}}"
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Óstáilte ag Odd Bob, Dr Kitsuné, & Soercia.",
+    "copyright": "© {{year}} Uncanny Coffee Hour. Óstáilte ag Odd Bob, Dr Kitsuné, & Saoirse.",
     "rights": "Gach ceart ar cosaint."
   },
   "hero": {

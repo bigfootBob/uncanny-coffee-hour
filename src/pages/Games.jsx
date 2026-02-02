@@ -75,7 +75,7 @@ const Games = () => {
 
     <SEO 
       title="Uncanny Coffee Hour Past Episodes" 
-      description="Listen to Odd Bob, Dr. Kitsune & Soercia, the voices behind the madness."
+      description="Listen to Odd Bob, Dr. Kitsune & Saoirse, the voices behind the madness."
     />
 
     <Hero />
