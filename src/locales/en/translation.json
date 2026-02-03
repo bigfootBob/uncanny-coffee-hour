@@ -16,16 +16,29 @@
       "what_podcast": "What is a podcast?",
       "what_podtext": "Think of it like a radio show of days gone by… like sitting around the radio and listening to Buck Rogers or The Shadow… but instead of tuning in at a specific time, you can listen whenever you want! So crowd around the ‘ol computer or mobile phone… warm up those vacuum tubes… and listen in!"
     },
-    "lodgepage": {
-      "title": "Join us! Support the show!",
-      "subhead": "Every member becomes part of the lodge and supports telling the stories we all need right now.",
-      "btn": "Join us, won't you?"
+    "app": {
+      "title": "Uncanny Coffee Hour",
+      "tagline": "Tales of the Paranormal & The Perfect Brew",
+      "skip_link": "Skip to main content"
     },
     "eppage": {
       "title":"The Complete Collection",
+      "transcript": "Transcripts are available on buzzsprout (look for the transcript link on the episode).",
       "subhead": "Every strange tale and spilled cup, listed in chronological order."
     },
-     "homepage": {
+    "footer": {
+      "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+      "rights": "All rights reserved.",
+      "humanai": "Human Imagination × Artificial Intelligence",
+      "humanai_alt": "Human & AI co-created",
+      "collaboration": "Collaboration",
+      "hosted": "Hosted by"
+    },
+    "hero": {
+      "title": "Modern Hearthside Stories",
+      "subtext": "A podcast is the digital evolution of oral tradition. Uncanny Coffee Hour bridges ancient folklore and modern curiosity... one sip at a time."
+    },
+    "homepage": {
       "latestbrew":"Latest Brew",
       "allep": "all episodes",
       "innercircle": "The Inner Circle",
@@ -43,32 +56,10 @@
       "whisperwellsubhead": "Use our Whispering Well and we may use it on the podcast.",
       "whisperwellsubform": "Submission Form"
     },
-    "shop": {
-      "title": "Provisions for the Body, Curios for the Mind",
-      "subhead": "Tales of the Paranormal & The Perfect Brew",
-      "details": "Details"
-    },
-    "app": {
-      "title": "Uncanny Coffee Hour",
-      "tagline": "Tales of the Paranormal & The Perfect Brew",
-      "skip_link": "Skip to main content"
-    },
-    "episode": {
-      "hosts_label": "Hosts",
-      "read_transcript": "Read Transcript",
-      "hide_transcript": "Hide Transcript",
-      "transcript_a11y": "for {{title}}"
-    },
-    "footer": {
-      "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
-      "rights": "All rights reserved.",
-      "humanai": "Human Imagination × Artificial Intelligence",
-      "collaboration": "Collaboration",
-      "hosted": "Hosted by"
-    },
-    "hero": {
-      "title": "Modern Hearthside Stories",
-      "subtext": "A podcast is the digital evolution of oral tradition. Uncanny Coffee Hour bridges ancient folklore and modern curiosity... one sip at a time."
+    "lodgepage": {
+      "title": "Join us! Support the show!",
+      "subhead": "Every member becomes part of the lodge and supports telling the stories we all need right now.",
+      "btn": "Join us, won't you?"
     },
     "misctext": {
       "return": "Return to Homepage",
@@ -87,9 +78,6 @@
       "shop": "Shop",
       "games": "Games",
       "submit_story": "Submit a Story"
-    },
-    "team": {
-      "title": "Meet the Hosts not needed"
     },
     "patreon": {
       "common": {
@@ -112,5 +100,27 @@
         "title": "Friends of Kitsune and Tanuki!",
         "desc": "All tier benefits PLUS We create a custom Yokai for you and announce its mythos on air."
       }
+    },
+    "shop": {
+      "title": "Provisions for the Body, Curios for the Mind",
+      "subhead": "Tales of the Paranormal & The Perfect Brew",
+      "details": "Details"
+    },
+    "storypage": {
+      "title": "Submit Your Paranormal Tale",
+      "subhead": "Have you seen the Puca? Did your coffee taste like ectoplasm? Tell us",
+      "submit_status": "Received.",
+      "submit_message": "Your tale has been whispered into the void.",
+      "btn_another": "Send Another",
+      "whis_well": "Whispering Well",
+      "instructions": "Leave your tale for the void...",
+      "form_name": "Your Name (or Alias)",
+      "form_name_ph": "Unknown Traveler",
+      "form_story": "Your Story",
+      "form_ie": "It was a dark and stormy night...",
+      "form_btn": "Send to the Vault",
+      "form_btn_send": "Sending...",
+      "form_blank": "Please write a story first.",
+      "form_error": "The spirits rejected your message. Try again."
     }
   }

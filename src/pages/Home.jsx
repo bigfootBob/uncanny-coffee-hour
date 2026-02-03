@@ -5,16 +5,14 @@ import Hero from '../components/Hero/Hero';
 import Team from '../components/Team/Team';
 import './Home.scss';
 
-// todo: get images
 import coffeeIcon from '../assets/images/bmc-logo-no-background.png'; 
 import mugProduct from '../assets/images/emporium-coffeemug.png';
-// https://media.giphy.com/media/o7RZbs4KAA6tvM4H6j/giphy.gif
 
 const Home = () => {
   const { t } = useTranslation();
   const [latestEpisode, setLatestEpisode] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null); // the hidden <audio> tag
+  const audioRef = useRef(null); // hidden <audio> tag
 
   useEffect(() => {
     const FEED_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://feeds.buzzsprout.com/2450457.rss';

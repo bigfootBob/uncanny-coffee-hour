@@ -9,7 +9,7 @@ const LoreMasterTrivia = () => {
   const [currentQ, setCurrentQ] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null); // Changed to Index
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -101,7 +101,7 @@ const LoreMasterTrivia = () => {
                 <button 
                   key={index} 
                   className={btnClass} 
-                  onClick={() => handleAnswer(index)} // Pass Index
+                  onClick={() => handleAnswer(index)} // Pass da index
                   disabled={isAnswered}
                 >
                   {option}

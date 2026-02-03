@@ -52,8 +52,8 @@ const Episodes = () => {
         </div>
 
         <a href="https://uncannycoffeehour.buzzsprout.com/2450457/episodes" target="_blank" rel="noopener noreferrer" className="transcript-link">
-          <div>
-            <u>Transcripts</u> are available on buzzsprout (look for the transcript link on the episode).
+          <div className='transcript-note'>
+            {t('eppage.transcript')}
           </div>
         </a>
       </div>

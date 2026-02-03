@@ -535,8 +535,8 @@ const SaucerGame = () => {
           </div>
         ))}
          
-         {bulletsRef.current.map((bullet, i) => (
-            <div key={i} className="entity bullet" style={{ left: bullet.x, top: bullet.y }}></div>
+        {bulletsRef.current.map((bullet, i) => (
+          <div key={i} className="entity bullet" style={{ left: bullet.x, top: bullet.y }}></div>
         ))}
 
         <div className="ground" style={{ top: GROUND_LEVEL, height: GAME_HEIGHT - GROUND_LEVEL }}></div>
@@ -559,7 +559,7 @@ const SaucerGame = () => {
               onTouchStart={() => handleTouchStart('Space')} 
               onTouchEnd={() => handleTouchEnd('Space')}
             >
-              BEAM
+              {t('saucer.beam')}
             </button>
           </div>
         </div>

@@ -11,7 +11,7 @@ const lodge = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Handle deep linking to specific tiers
+    // Handle deep linking - todo: look at refactor
     if (location.state?.selectedTier) {
       const tierId = location.state.selectedTier;
       const element = document.getElementById(`tier-${tierId}`);

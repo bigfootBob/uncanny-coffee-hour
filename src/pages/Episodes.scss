@@ -12,7 +12,39 @@
   z-index: 1;
 
   .transcript-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
     color: var(--smalltext-color);
+    
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--brand-puca, #5cb85c);
+    border-radius: 4px; 
+    
+    color: var(--brand-puca, #5cb85c);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    transition: all 0.3s ease;
+
+    .transcript-note {
+      display: block;
+      line-height: 1;
+    }
+
+    &:hover {
+      background: var(--brand-puca, #5cb85c);
+      color: #0f0b08;
+      box-shadow: 0 0 20px rgba(92, 184, 92, 0.4);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
 

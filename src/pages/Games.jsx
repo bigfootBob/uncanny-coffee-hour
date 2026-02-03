@@ -106,13 +106,13 @@ const Games = () => {
             <div className="tile-content">
               <h3>{t(`${game.id}.title`)}</h3>
               <p>{t(`${game.id}.description`)}</p>
-              {game.status === 'coming-soon' && <span className="badge">Coming Soon</span>}
+              {game.status === 'coming-soon' && <span className="badge">{t('status.comingSoon')}</span>}
               {game.status === 'active' && (
                     <button 
                         className='instruction-link' 
                         onClick={(e) => handleOpenInstructions(e, game)}
                     >
-                        {t('page.instructionsLabel')}
+                      {t('page.instructionsLabel')}
                     </button>
               )}
             </div>

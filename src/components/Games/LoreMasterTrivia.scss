@@ -90,13 +90,13 @@
     }
 
     &.correct {
-      background-color: rgba(92, 184, 92, 0.2); /* Green tint */
+      background-color: rgba(92, 184, 92, 0.2);
       border-color: #5cb85c;
       color: #5cb85c;
     }
 
     &.wrong {
-      background-color: rgba(217, 83, 79, 0.2); /* Red tint */
+      background-color: rgba(217, 83, 79, 0.2);
       border-color: #d9534f;
       color: #d9534f;
     }

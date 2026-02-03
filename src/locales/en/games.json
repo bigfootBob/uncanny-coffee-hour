@@ -66,6 +66,7 @@
   "saucer": {
     "title": "Midnight Harvest",
     "description": "Pilot the saucer. Abduct the livestock.",
+    "beam": "BEAM",
     "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
   },
   "page": {

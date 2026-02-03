@@ -5,7 +5,7 @@ import SEO from '../components/SEO/SEO';
 import './SubmitStory.scss';
 
 const SubmitStory = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); 
 
   const [formData, setFormData] = useState({ name: '', story: '' });
   const [status, setStatus] = useState(null); // 'submitting', 'success', 'error'
@@ -20,13 +20,13 @@ const SubmitStory = () => {
 
     if (botField) return;
     if (!formData.story.trim()) {
-      alert("Please write a story first.");
+      alert( t('storypage.form_blank') );
       return;
     }
 
     setStatus('submitting');
 
-    // for local 
+    // for local tests
     const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
     if (isLocal) {
       console.log("--- LOCAL DEV MODE ---");
@@ -61,7 +61,7 @@ const SubmitStory = () => {
       console.error("Network Exception:", error);
       setStatus('error');
     } finally {
-      //  console.log("Attempt finished.");
+      //  console.log("Attempt finished."); -- testing
     }
 };
 
@@ -75,28 +75,28 @@ const SubmitStory = () => {
       
       <div id="submit-story-page" className="page-container">
         <div className="page-header glass-panel">
-          <h1>Submit Your Paranormal Tale</h1>
-          <p>Have you seen the Puca? Did your coffee taste like ectoplasm? Tell us.</p>
+          <h1>{t('storypage.title')}</h1>
+          <p>{t('storypage.subhead')}</p>
         </div>
 
         <div className="parchment-panel">
           {status === 'success' ? (
             <div className="success-message" style={{ textAlign: 'center' }}>
-              <h2>Received.</h2>
-              <p>Your tale has been whispered into the void.</p>
+              <h2>{t('storypage.submit_status')}</h2>
+              <p>{t('storypage.submit_message')}</p>
               <button 
                 className="cta-button" 
                 onClick={() => setStatus(null)}
                 style={{ marginTop: '2rem' }}
               >
-                Send Another
+                {t('storypage.btn_another')}
               </button>
             </div>
           ) : (
             <form className="story-form" onSubmit={handleSubmit}>
               <div className="form-header">
-                <h2>Whispering Well</h2>
-                <p>Leave your tale for the void...</p>
+                <h2>{t('storypage.whis_well')}</h2>
+                <p>{t('storypage.instructions')}</p>
               </div>
               {/* for bots */}
               <div style={{ display: 'none' }}> 
@@ -110,22 +110,22 @@ const SubmitStory = () => {
               </div>
               
               <label>
-                  <span>Your Name (or Alias)</span>
+                  <span>{t('storypage.form_name')}</span>
                   <input 
                     type="text" 
                     name="name" 
-                    placeholder="Unknown Traveler"
+                    placeholder={t('storypage.form_name_ph')}
                     value={formData.name} 
                     onChange={handleChange}
                   />
               </label>
               
               <label>
-                  <span>Your Story</span>
+                  <span>{t('storypage.form_story')}</span>
                   <textarea 
                     rows="8" 
                     name="story" 
-                    placeholder="It was a dark and stormy night..."
+                    placeholder={t('storypage.form_ie')}
                     value={formData.story}
                     onChange={handleChange}
                   ></textarea>
@@ -140,12 +140,12 @@ const SubmitStory = () => {
                   cursor: status === 'submitting' ? 'wait' : 'pointer'
                 }}
               >
-                {status === 'submitting' ? 'Sending...' : 'Send to the Vault'}
+                {status === 'submitting' ? t('storypage.form_btn_send') : t('storypage.form_btn')}
               </button>
-              
+      
               {status === 'error' && (
                 <p style={{color: '#8b0000', marginTop: '1rem'}}>
-                  The spirits rejected your message. Try again.
+                  {t('storypage.form_error')}
                 </p>
               )}
             </form>

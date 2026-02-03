@@ -16,8 +16,8 @@ const Footer = () => {
           to="/about" 
           state={{ selectedSection: 'ai' }} 
         >
-          <img src={badgeImage} alt="Human & AI co-created" className="human-ai-img logo-for-dark" />
-          <img src={badgeImageBlk} alt="Human & AI co-created" className="human-ai-img logo-for-light" />
+          <img src={badgeImage} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-dark" />
+          <img src={badgeImageBlk} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-light" />
         </Link>
         
         <span className="stamp-label">{t('footer.humanai')}</span>
