@@ -1,13 +1,35 @@
+
+.game-wrapper {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #000;
+}
+
 .saucer-game-container {
   position: relative;
-  margin: 2rem auto;
+  // margin: 2rem auto;
   background: linear-gradient(to bottom, #050520 0%, #240445 70%, #cf1735 100%);
   border: 4px solid #333;
   border-radius: 8px;
   overflow: hidden;
   font-family: 'Courier New', monospace;
   user-select: none;
-  margin-top: 65px;
+  // margin-top: 65px;
+
+  transform-origin: center center;
+  transition: transform 0.2s ease-out;
+
+  &.portrait-mode {
+    transform-origin: center center;
+    rotate: 90deg;
+  }
+
+
+
 
   .stars {
     position: absolute;
@@ -312,6 +334,75 @@
       background: yellow;
       border-radius: 4px;
   }
+
+  .mobile-controls {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 50;
+    justify-content: space-between;
+    align-items: flex-end;
+    pointer-events: none; 
+    touch-action: none; 
+    user-select: none;
+
+    .d-pad, .action-btn {
+        pointer-events: auto; 
+    }
+
+    .d-pad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        button {
+            width: 60px; height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: white;
+            backdrop-filter: blur(4px);
+            touch-action: manipulation; /* Prevent zoom on double tap */
+            
+            &:active { background: rgba(255, 255, 255, 0.5); }
+        }
+
+        .horizontal {
+            display: flex; gap: 60px; /* Space for thumb */
+        }
+    }
+
+    .action-btn {
+        button {
+            width: 90px; height: 90px;
+            background: rgba(92, 184, 92, 0.4); /* Green tint */
+            border: 3px solid #5cb85c;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 15px rgba(92, 184, 92, 0.4);
+            
+            &.active {
+                background: #5cb85c;
+                transform: scale(0.95);
+            }
+        }
+    }
+  }
+
+  /* Show controls on touch devices or small screens */
+  @media (hover: none) and (pointer: coarse) {
+    .mobile-controls { display: flex; }
+  }
+
+
+
 }
 
 @keyframes pulseBeam {
@@ -345,5 +436,6 @@
     transform: rotate(720deg) scale(0.5); 
     top: 450px; 
     opacity: 0;
-  }
+  } 
 }
+

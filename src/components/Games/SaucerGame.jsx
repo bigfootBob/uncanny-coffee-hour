@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import './SaucerGame.scss';
 
 const AUDIO_SRC = {
@@ -26,6 +27,7 @@ const LEVELS = [
 ];
 
 const SaucerGame = () => {
+  const { t } = useTranslation('games');
   const [gameState, setGameState] = useState('start'); 
   const [score, setScore] = useState(0);
   const [health, setHealth] = useState(100);
@@ -33,6 +35,10 @@ const SaucerGame = () => {
   const [level, setLevel] = useState(1);
   const [crashed, setCrashed] = useState(false);
   const [, setTick] = useState(0);
+
+  // Scaling
+  const [scale, setScale] = useState(1);
+  const [isPortrait, setIsPortrait] = useState(false);
 
   const saucerRef = useRef({ x: 350, y: 100, width: 80, height: 40 });
   const cowsRef = useRef([]);
@@ -81,6 +87,51 @@ const SaucerGame = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const winW = window.innerWidth;
+      const winH = window.innerHeight;
+      const isVert = winH > winW;
+      
+      setIsPortrait(isVert);
+
+      const availableWidth = isVert ? winH : winW;
+      const availableHeight = isVert ? winW : winH;
+
+      const scaleX = availableWidth / GAME_WIDTH;
+      const scaleY = availableHeight / GAME_HEIGHT;
+      const newScale = Math.min(scaleX, scaleY) * 0.95;
+
+      setScale(newScale);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Init
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handleTouchStart = (key) => {
+    if (e.cancelable) e.preventDefault();
+    keysPressed.current[key] = true;
+
+    if (key === 'Space') {
+      isBeamingRef.current = true;
+      if (beamAudio.current.paused && gameState === 'playing') {
+        beamAudio.current.play().catch(e => {});
+      }
+    }
+  };
+
+  const handleTouchEnd = (key) => {
+    keysPressed.current[key] = false;
+    if (key === 'Space') {
+      isBeamingRef.current = false;
+      beamAudio.current.pause();
+      beamAudio.current.currentTime = 0;
+      beamAudio.current.playbackRate = 1.0; 
+    }
+  };
+
   // --- INIT ---
   const startGame = () => {
     setGameState('playing');
@@ -111,7 +162,6 @@ const SaucerGame = () => {
   };
 
   const stopGame = useCallback((result = 'gameover') => {
-
     if (gameLoopRef.current) {
       clearInterval(gameLoopRef.current);
     }
@@ -137,9 +187,8 @@ const SaucerGame = () => {
     screamAudio.current.pause();
     screamAudio.current.currentTime = 0;
 
-
     if (result === 'gameover') {
-        crashAudio.current.play();
+      crashAudio.current.play();
     }
 
     setGameState(result);
@@ -154,7 +203,7 @@ const SaucerGame = () => {
     crashAudio.current.play();
 
     setTimeout(() => {
-        setGameState('gameover');
+      setGameState('gameover');
     }, 1500);
   };
 
@@ -300,7 +349,7 @@ const SaucerGame = () => {
                   return;
               }
             }
-            
+
             cows.splice(index, 1); 
             spawnCow(); 
             spawnFarmer();
@@ -312,44 +361,51 @@ const SaucerGame = () => {
           
           // Check for Cow Bombing (While in air)
           if (cow.y < GROUND_LEVEL - 30) {
-              for (let f = farmers.length - 1; f >= 0; f--) {
-                  if (checkCollision(cow, farmers[f])) {
-                      // CRUSH THE FARMER
-                      farmers.splice(f, 1); 
-                      
-                      scoreRef.current += 50; 
-                      setScore(scoreRef.current);
-                      
-                      screamAudio.current.currentTime = 0;
-                      screamAudio.current.volume = 0.5; 
-                      screamAudio.current.play().catch(e => {});
+            for (let f = farmers.length - 1; f >= 0; f--) {
+              if (checkCollision(cow, farmers[f])) {
+                // CRUSH THE FARMER
+                farmers.splice(f, 1); 
+                
+                scoreRef.current += 50; 
+                setScore(scoreRef.current);
+                
+                screamAudio.current.currentTime = 0;
+                screamAudio.current.volume = 0.5; 
+                screamAudio.current.play().catch(e => {});
 
-                      splatAudio.current.currentTime = 0;
-                      splatAudio.current.volume = 0.4; 
-                      splatAudio.current.play().catch(e => {});
+                splatAudio.current.currentTime = 0;
+                splatAudio.current.volume = 0.4; 
+                splatAudio.current.play().catch(e => {});
 
-                      cow.state = 'falling-death';
-                  }
+                cow.state = 'falling-death';
               }
+            }
           }
 
           if (cow.y < GROUND_LEVEL - 30) {
-              const fallSpeed = cow.state === 'falling-death' ? GRAVITY * 1.5 : GRAVITY;
-              cow.y = Math.min(GROUND_LEVEL - 30, cow.y + fallSpeed);
+            const fallSpeed = cow.state === 'falling-death' ? GRAVITY * 1.5 : GRAVITY;
+            cow.y = Math.min(GROUND_LEVEL - 30, cow.y + fallSpeed);
           } else {
-              if (cow.state === 'falling-death') {
-                  cow.state = 'splat';
+            if (cow.state === 'falling-death') {
+              cow.state = 'splat';
 
-                  splatAudio.current.currentTime = 0; 
-                  splatAudio.current.volume = 0.6; 
-                  splatAudio.current.play().catch(e => {});
+              splatAudio.current.currentTime = 0; 
+              splatAudio.current.volume = 0.6; 
+              splatAudio.current.play().catch(e => {});
 
-                  spawnCow();
-              }
+              spawnCow();
+            }
           }
       }
     });
 
+    const playSound = (audioRef) => {
+      if (audioRef.current) {
+        const clone = audioRef.current.cloneNode();
+        clone.volume = audioRef.current.volume;
+        clone.play().catch(e => {}); 
+      }
+    };
 
     const now = Date.now();
     farmers.forEach(farmer => {
@@ -363,7 +419,8 @@ const SaucerGame = () => {
 
             gunshotAudio.current.currentTime = 0;
             gunshotAudio.current.volume = 0.6; 
-            gunshotAudio.current.play().catch(e => {});
+            // gunshotAudio.current.play().catch(e => {});
+            playSound(gunshotAudio);
         }
     });
 
@@ -483,6 +540,30 @@ const SaucerGame = () => {
         ))}
 
         <div className="ground" style={{ top: GROUND_LEVEL, height: GAME_HEIGHT - GROUND_LEVEL }}></div>
+
+        <div className="mobile-controls">
+          <div className="d-pad">
+            <button 
+              onTouchStart={(e) => handleTouchStart(e, 'ArrowUp')} 
+              onTouchEnd={(e) => handleTouchEnd(e, 'ArrowUp')}
+            >⬆️</button>
+            <div className="horizontal">
+              <button onTouchStart={() => handleTouchStart('ArrowLeft')} onTouchEnd={() => handleTouchEnd('ArrowLeft')}>⬅️</button>
+              <button onTouchStart={() => handleTouchStart('ArrowRight')} onTouchEnd={() => handleTouchEnd('ArrowRight')}>➡️</button>
+            </div>
+            <button onTouchStart={() => handleTouchStart('ArrowDown')} onTouchEnd={() => handleTouchEnd('ArrowDown')}>⬇️</button>
+          </div>
+          <div className="action-btn">
+            <button 
+              className={isBeamingRef.current ? 'active' : ''}
+              onTouchStart={() => handleTouchStart('Space')} 
+              onTouchEnd={() => handleTouchEnd('Space')}
+            >
+              BEAM
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   );

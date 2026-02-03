@@ -4,15 +4,23 @@ import puzzleData from '../../data/conspiracyPuzzles.json';
 import './ConspiracyBoard.scss';
 
 const ConspiracyBoard = () => {
+  const { t } = useTranslation('games');
+  
   const [gridItems, setGridItems] = useState([]);
   const [selected, setSelected] = useState([]);
   const [solvedGroups, setSolvedGroups] = useState([]);
   const [mistakes, setMistakes] = useState(4);
   const [gameStatus, setGameStatus] = useState('playing');
   const [activePuzzle, setActivePuzzle] = useState([]);
-  const { t } = useTranslation('games'); 
 
-  useEffect(() => {
+  const initGame = () => {
+    // Reset game states
+    setSolvedGroups([]);
+    setMistakes(4);
+    setGameStatus('playing');
+    setSelected([]);
+
+    // random puzzle
     const randomBoardIndex = Math.floor(Math.random() * puzzleData.length);
     const selectedBoard = puzzleData[randomBoardIndex].groups;
     
@@ -26,14 +34,21 @@ const ConspiracyBoard = () => {
       }))
     );
 
-    // Fisher-Yates Shuffle
     for (let i = allItems.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
     }
     
     setGridItems(allItems);
+  };
+
+  useEffect(() => {
+    initGame();
   }, []);
+
+  const handleReset = () => {
+    initGame();
+  };
 
   const handleSelect = (item) => {
     if (gameStatus !== 'playing') return;
@@ -74,14 +89,6 @@ const ConspiracyBoard = () => {
     }
   };
 
-  const handleReset = () => {
-    setSolvedGroups([]);
-    setMistakes(4);
-    setGameStatus('playing');
-    setSelected([]);
-    window.location.reload(); // todo: refactor logic into a function
-  };
-
   return (
     <div className="conspiracy-board">
       <h2 className="game-title">{t('conspiracy.title')}</h2>
@@ -119,12 +126,8 @@ const ConspiracyBoard = () => {
         
         {gameStatus === 'playing' && (
           <div className="buttons">
-            <button onClick={() => setSelected([])} disabled={selected.length === 0}>
-              {t('conspiracy.btn-deselect')}
-            </button>
-            <button onClick={handleSubmit} disabled={selected.length !== 4} className="submit-btn">
-              {t('conspiracy.btn-submit')}
-            </button>
+            <button onClick={() => setSelected([])} disabled={selected.length === 0}>{t('conspiracy.btn-deselect')}</button>
+            <button onClick={handleSubmit} disabled={selected.length !== 4} className="submit-btn">{t('conspiracy.btn-submit')}</button>
           </div>
         )}
 
@@ -138,7 +141,7 @@ const ConspiracyBoard = () => {
         )}
         {gameStatus === 'won' && (
             <div className="result-msg win">
-                {t('conspiracy.won')}
+                {t('conspiracy.won') || "Case Closed. Excellent Work."}
                 <button className="retry-btn" onClick={handleReset}>
                   {t('conspiracy.btn-nextcase')}
                 </button>

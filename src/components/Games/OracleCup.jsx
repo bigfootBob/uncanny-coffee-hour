@@ -1,29 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './OracleCup.scss';
 
-const ANSWERS = [
-  "The Puca nods yes.",
-  "Bigfoot believes.",
-  "Signs point to Mothman",
-  "Baaaaa... BAAAAAA!!",
-  "Does bigfoot go in the woods?",
-  "This makes Bigfoot sad.",
-  "Hemp milk is grand.",
-  "Unclear... try tea.",
-  "Ask Dr. Kitsune.",
-  "Stars align!",
-  "Don't bet on it.",
-  "A dark omen.",
-  "Mists are thick.",
-  "Uncanny!",
-  "Fae fear nae...",
-  "Gnomes point to yes!",
-  "Mitch says no."
-];
-
 const OracleCup = () => {
+  const { t } = useTranslation('games');
+  const pullAnswers = t('oracle.answers', { returnObjects: true });
+  const ANSWERS = Array.isArray(pullAnswers) ? pullAnswers : [];
   const [answer, setAnswer] = useState(null);
   const [status, setStatus] = useState('idle');
+  const lastIndex = useRef(null);
 
   const handleConsult = () => {
     if (status === 'consulting') {
@@ -32,8 +17,17 @@ const OracleCup = () => {
       return;
     }
 
-    const random = Math.floor(Math.random() * ANSWERS.length);
-    setAnswer(ANSWERS[random]);
+    if (ANSWERS.length === 0) return;
+
+    let newIndex = Math.floor(Math.random() * ANSWERS.length);
+
+    if (newIndex === lastIndex.current) {
+      newIndex = (newIndex + 1) % ANSWERS.length;
+    }
+
+    lastIndex.current = newIndex;
+
+    setAnswer(ANSWERS[newIndex]);
     setStatus('consulting');
   };
 
@@ -44,11 +38,11 @@ const OracleCup = () => {
 
   return (
     <div className="oracle-wrapper">
-      <h2 className="oracle-title">The Oracle Cup</h2>
+      <h2 className="oracle-title">{t('oracle.title')}</h2>
       <p className="oracle-instructions">
         {status === 'idle' 
-          ? "Tap the cup to reveal your fate..." 
-          : "Tap the stain to reset."}
+          ? t('oracle.idle-new')
+          : t('oracle.idle-reset')}
       </p>
 
       <div className="art-scale-container">

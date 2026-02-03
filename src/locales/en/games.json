@@ -2,10 +2,31 @@
   "oracle": {
     "title": "The Oracle Cup",
     "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!",
+    "answers": [
+      "The Puca nods yes.",
+      "Bigfoot believes.",
+      "Signs point to Mothman",
+      "Baaaaa... BAAAAAA!!",
+      "Does bigfoot go in the woods?",
+      "This makes Bigfoot sad.",
+      "Hemp milk is grand.",
+      "Unclear... try tea.",
+      "Ask Dr. Kitsune.",
+      "Stars align!",
+      "Don't bet on it.",
+      "A dark omen.",
+      "Mists are thick.",
+      "Uncanny!",
+      "Fae fear nae...",
+      "Gnomes point to yes!",
+      "Mitch says no."
+    ],
+    "idle-new": "Tap the cup to reveal your fate...",
+    "idle-reset": "Tap the stain to reset."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
+    "title": "The Conspiracy Board",
     "description": "Connect the clues. Group the cryptids. Uncover the truth.",
     "instructions": "Click 4 items that belong in the same category and click submit.",
     "short-instructions": "Group the 16 items into 4 categories.",

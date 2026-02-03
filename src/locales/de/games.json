@@ -2,7 +2,26 @@
   "oracle": {
     "title": "The Oracle Cup",
     "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!",
+    "answers": [
+      "The Puca nods yes.",
+      "Bigfoot believes.",
+      "Signs point to Mothman",
+      "Baaaaa... BAAAAAA!!",
+      "Does bigfoot go in the woods?",
+      "This makes Bigfoot sad.",
+      "Hemp milk is grand.",
+      "Unclear... try tea.",
+      "Ask Dr. Kitsune.",
+      "Stars align!",
+      "Don't bet on it.",
+      "A dark omen.",
+      "Mists are thick.",
+      "Uncanny!",
+      "Fae fear nae...",
+      "Gnomes point to yes!",
+      "Mitch says no."
+    ]
   },
   "conspiracy": {
     "title": "Conspiracy Board",
