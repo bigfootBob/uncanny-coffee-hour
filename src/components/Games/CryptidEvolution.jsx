@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { useTranslation } from 'react-i18next';
 import './CryptidEvolution.scss';
 
 const SIZE = 4;
@@ -18,6 +19,7 @@ const TIERS = [
 ];
 
 const CryptidEvolution = () => {
+  const { t } = useTranslation('games');
   const [board, setBoard] = useState(
     Array(SIZE).fill().map(() => Array(SIZE).fill(0))
   );
@@ -170,26 +172,26 @@ const CryptidEvolution = () => {
   return (
     <div className="cryptid-evolution" {...handlers}>
       <div className="game-header">
-        <div className="score-box">
-          <span>Containment Level</span>
+        <div className="score-box"> 
+          <span>{t('evolution.containment')}</span>
           <strong>{score}</strong>
         </div>
-        <button className="reset-btn" onClick={initGame}>Reset</button>
+        <button className="reset-btn" onClick={initGame}>{t('evolution.reset')}</button>
       </div>
 
       <div className="game-grid">
         {gameOver && (
           <div className="overlay lose">
-            <h3>Overrun</h3>
-            <p>The cryptids have escaped.</p>
-            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>Try Again</button>
+            <h3>{t('evolution.overrun')}</h3>
+            <p>{t('evolution.escape')}</p>
+            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>{t('evolution.tryagain')}</button>
           </div>
         )}
         {won && (
           <div className="overlay win">
-            <h3>Containment Achieved!</h3>
-            <p>You summoned The Púca!</p>
-            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>Play Again</button>
+            <h3>{t('evolution.contained')}</h3>
+            <p>{t('evolution.summoned')}</p>
+            <button className="reset-btn" style={{marginTop: '1rem'}} onClick={initGame}>{t('evolution.playagain')}</button>
           </div>
         )}
         
@@ -215,7 +217,7 @@ const CryptidEvolution = () => {
           </div>
         ))}
       </div>
-      <p className="controls-hint">Use Arrow Keys or Swipe to Merge</p>
+      <p className="controls-hint">{t('evolution.control-hint')}</p>
     </div>
   );
 };

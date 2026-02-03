@@ -41,7 +41,16 @@
   "evolution": {
     "title": "Cryptid Evolution",
     "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!",
+    "containment": "Containment Level",
+    "reset": "Reset",
+    "overrun": "Overrun",
+    "escape": "The cryptids have escaped.",
+    "tryagain": "Try Again",
+    "playagain": "Play Again",
+    "contained": "Containment Achieved!",
+    "summoned": "You summoned The Púca!",
+    "control-hint": "Use Arrow Keys or Swipe to Merge"
   },
   "trivia": {
     "title": "Lore Master Trivia",
@@ -50,6 +59,7 @@
   },
   "match": {
     "title": "Cryptid Match",
+    "uncanny": "Uncanny Skill!",
     "description": "Escape the Pacific Northwest forest before your coffee spills.",
     "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
   },
@@ -66,5 +76,8 @@
   "status": {
     "comingSoon": "Coming Soon",
     "close": "Close"
+  },
+  "common": {
+    "playagain": "Play Again"
   }
 }

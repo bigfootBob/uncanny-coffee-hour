@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './CryptidMatch.scss';
 
-// The items to match
 const CARDS = [
   { id: 1, content: '👣', name: 'Bigfoot' },
   { id: 2, content: '🛸', name: 'UFO' },
@@ -12,14 +12,13 @@ const CARDS = [
 ];
 
 const CryptidMatch = () => {
+  const { t } = useTranslation('games');
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
   const [solved, setSolved] = useState([]);
   const [disabled, setDisabled] = useState(false);
 
-  // Initialize Game
   const shuffleCards = () => {
-    // Duplicate cards to make pairs
     const deck = [...CARDS, ...CARDS]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, uniqueId: Math.random() }));
@@ -33,14 +32,12 @@ const CryptidMatch = () => {
     shuffleCards();
   }, []);
 
-  // Handle Card Click
   const handleClick = (id) => {
     if (disabled || flipped.includes(id)) return;
 
     const newFlipped = [...flipped, id];
     setFlipped(newFlipped);
 
-    // If 2 cards are flipped, check for match
     if (newFlipped.length === 2) {
       setDisabled(true);
       const [firstId, secondId] = newFlipped;
@@ -65,26 +62,31 @@ const CryptidMatch = () => {
 
   return (
     <div className="memory-game glass-panel">
-      <h2>Cryptid Match</h2>
+      <h2>{t('match.title')}</h2>
       <div className="game-grid">
-        {cards.map((card) => (
-          <div 
-            key={card.uniqueId}
-            className={`card ${flipped.includes(card.uniqueId) || solved.includes(card.id) ? 'active' : ''}`}
-            onClick={() => !solved.includes(card.id) && handleClick(card.uniqueId)}
-          >
-            <div className="card-inner">
-              <div className="card-front">?</div>
-              <div className="card-back">{card.content}</div>
+        {cards.map((card) => {
+          const isFlipped = flipped.includes(card.uniqueId);
+          const isSolved = solved.includes(card.id);
+
+          return (
+            <div 
+              key={card.uniqueId}
+              className={`card ${isFlipped ? 'flipped' : ''} ${isSolved ? 'solved' : ''}`}
+              onClick={() => !isSolved && handleClick(card.uniqueId)}
+            >
+              <div className="card-inner">
+                <div className="card-front">?</div>
+                <div className="card-back">{card.content}</div>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       
       {isWon && (
         <div className="winner-message">
-          <h3>Uncanny Skill!</h3>
-          <button onClick={shuffleCards}>Play Again</button>
+          <h3>{t('match.uncanny')}</h3>
+          <button onClick={shuffleCards}>{t('common.playagain')}</button>
         </div>
       )}
     </div>

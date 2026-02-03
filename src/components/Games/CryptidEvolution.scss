@@ -85,6 +85,32 @@
       h3 { margin: 0 0 1rem 0; font-size: 2rem; font-family: 'Cinzel', serif; }
       &.win h3 { color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
       &.lose h3 { color: #ff5252; }
+
+      button {
+        margin-top: 1.5rem;
+        padding: 0.8rem 2rem;
+        background: #c28e42; /* Gold Accent */
+        color: #0f0b08;       /* Dark Text */
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: all 0.2s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+          filter: brightness(1.15);
+          box-shadow: 0 6px 20px rgba(194, 142, 66, 0.4);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
     }
 
     .grid-row {

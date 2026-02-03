@@ -3,7 +3,7 @@
   padding: 2rem;
   width: 600px;      
   max-width: 90vw;   
-  margin: 0 auto;
+  margin: 0 auto; 
 
   .game-grid {
     display: grid;
@@ -18,6 +18,8 @@
     aspect-ratio: 1;
     perspective: 1000px;
     cursor: pointer;
+    // Ensure cards don't create layout shifts
+    z-index: 1;
 
     .card-inner {
       position: relative;
@@ -30,8 +32,39 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
     }
 
+    // State: User is looking at the card (Flipped)
+    &.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    // State: Card is currently being flipped via click
     &.active .card-inner {
       transform: rotateY(180deg);
+    }
+
+    // --- REFACTORED SOLVED STATE ---
+    &.solved {
+      // 1. Keep the card flipped showing the icon
+      .card-inner {
+        transform: rotateY(180deg); 
+      }
+      
+      // 2. Style the back (the visible face)
+      .card-back {
+        // Use the new Ectoplasm Animation
+        animation: ectoPulse 2s infinite ease-in-out;
+        
+        // Force background/border to stay visible
+        background-color: rgba(20, 40, 20, 0.85) !important; 
+        border: 2px solid #00ff64 !important; 
+        
+        // Make the icon pop
+        color: #00ff64 !important; 
+        text-shadow: 0 0 10px rgba(0, 255, 100, 0.8);
+        
+        // Ensure opacity is full
+        opacity: 1;
+      }
     }
 
     .card-front, .card-back {
@@ -61,12 +94,7 @@
 
   .winner-message {
     margin-top: 3rem;
-    
-    h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
+    h3 { font-size: 2rem; margin-bottom: 1rem; }
     button {
       padding: 1rem 2rem; 
       font-size: 1.2rem;
@@ -77,10 +105,21 @@
       cursor: pointer;
       font-weight: bold;
       transition: opacity 0.2s;
-      
-      &:hover {
-        opacity: 0.9;
-      }
+      &:hover { opacity: 0.9; }
     }
+  }
+}
+
+/* --- NEW ECTOPLASM ANIMATION --- */
+@keyframes ectoPulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 100, 0.3);
+  }
+  50% {
+    // Glow expands outward
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.6), 0 0 10px rgba(0, 255, 100, 0.4) inset;
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 100, 0.3);
   }
 }
