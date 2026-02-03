@@ -76,7 +76,8 @@
       "error": "Something Uncanny Happened...",
       "error_text": "It seems a puca has been playing tricks on our code! The connection to the spirit world (or the server) was interrupted.",
       "error_details": "Technical Details",
-      "try_again": "Try Again (Reload)"
+      "try_again": "Try Again (Reload)",
+      "return_safety": "Return to Safety"
     },
     "navtext": {
       "home": "Home",

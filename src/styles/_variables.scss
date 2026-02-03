@@ -13,7 +13,7 @@ $brand-puca:     #557c66;
 $brand-ecto:     #5cb85c;
 $brand-mist:     #e0e6ed;
 $brand-ghost:    #e0e0e0;
-$brand-void:     #1a1a1a; 
+$brand-void:     #000000; 
 $brand-obsidian: #0A0A0B; 
 $color-error:    #de0909;
 
@@ -103,6 +103,7 @@ $bp-desktop:         1024px;
 
 :root {
   /* --- DEFAULT (DARK MODE) --- */
+  --app-bg: #{$brand-void};
   /* Dark, semi-transparent espresso background */
   --glass-bg: rgba(15, 11, 8, 0.75); 
   /* Subtle gold border to pop against the dark */
@@ -128,6 +129,7 @@ $bp-desktop:         1024px;
 
 html[data-theme='light'] {
   /* --- LIGHT MODE --- */
+  --app-bg: #fff;
   /* Milky white semi-transparent background */
   --glass-bg: rgba(255, 255, 255, 0.6); 
   /* White border looks very premium in light mode ("Apple" style) */
