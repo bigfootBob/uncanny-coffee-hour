@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Nippon 'Yokai' nuq, 'oH lalbogh 'oHbe'bogh lalDan 'ej 'oHbe'bogh?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "Tako Nyūdō 'oH 'yōkai' 'oH 'oHbe'bogh. lalDan rur, 'ach 'oH tIn 'Naga' 'oH."
+        },
+        {
+          "question": "Ahuizotl 'porgh' nuq?",
+          "options": ["Qib tel", "Du' ropDaq ghom", "qab", "'oH mup"],
+          "answerIndex": 1,
+          "lore": "Ahuizotl lo' ghom ropDaq Suq. targh rur, 'ach qu' law'."
+        },
+        {
+          "question": "Uncanny Coffee Hour 'lore' pab, qatlh Mitch tlhutlhbe' qa'vIn?",
+          "options": ["qa' 'oH", "Dargh maS", "'oH 'ung", "Qotlh 'oH"],
+          "answerIndex": 2,
+          "lore": "qa'vIn 'podcast' je', 'ach Mitch 'ung. Qagh."
+        },
+        {
+          "question": "Ireland 'folklore', 'Saoirse' nuq?",
+          "options": ["Banshee", "Púca", "Leprechaun", "Selkie"],
+          "answerIndex": 1,
+          "lore": "Púca 'oH Celtic 'folklore', 'tojo' qa' 'oH Do' 'ej Do'Ha'."
+        },
+        {
+          "question": "mI' qa' qab, nuq?",
+          "options": ["Espresso nob", "BaS 'ej NaH-nagh", "QoQ Qoy'", "tlhob"],
+          "answerIndex": 1,
+          "lore": "BaS 'oH tera' HoS, 'ej NaH-nagh 'oH. Hoch qab."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "'Iv latlh 'co-host' Odd Bob je?",
+          "options": ["Dr. Kitsune", "GhojmoHwI' Wolf", "HoD Cryptid", "Duy Mulder"],
+          "answerIndex": 0,
+          "lore": "Dr. Kitsune 'academic' 'ej 'native' vu' Coffee Hour."
+        },
+        {
+          "question": "'Fresno Nightcrawler' 'cryptid' chu', nuq?",
+          "options": ["mIl'oD", "yopwaH chIS", "tI tIn", "vIghro' qab"],
+          "answerIndex": 1,
+          "lore": "Fresno, California, 'CCTV' 'oH, 'qam chIS nI' 'oH."
+        },
+        {
+          "question": "Chay' Kappa Suvbe'?",
+          "options": ["'NaH' nob", "yIt", "yoD nIH", "Bom"],
+          "answerIndex": 1,
+          "lore": "Kappa 'civ'qu'. yItchugh, yIt, 'ej bIQ vIl."
+        },
+        {
+          "question": "NaH-nagh Qotlhchugh, nuq?",
+          "options": ["Do'Ha'", "veqlargh", "Pag", "vo'"],
+          "answerIndex": 3,
+          "lore": "pab, vo' poS 'uS, veqlargh Qan."
+        },
+        {
+          "question": "Nuq 'cryptid' 'tel' 'ej 'mIn Doq'?",
+          "options": ["Jersey Devil", "Mothman", "Flatwoods Monster", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Mothman Point Pleasant, WV, 'mIn Doq' 'ej Qagh."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "nIDmeH Qu'rIn",
+    "score": "mI' lIj {{score}} {{total}}",
+    "retake": "nIDmeH qa'",
+    "query": "Ghel",
+    "next": "Latlh Ghel",
+    "finish": "Mew",
+    "note": "QIn:"
+  },
+  "ranks": {
+    "grand": "Pat: tIn pIn",
+    "field": "Pat: yot",
+    "casual": "Pat: tlhutlh",
+    "winMsg": "Tu' lIj yaj.",
+    "loseMsg": "LaD 'ej chegh."
+  }
+}

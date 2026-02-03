@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Man Yokai Iapanui tol sui rhû dhol-gaer?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "I Tako Nyūdō gaer-úan, anírathol darthad sui aen. Schnî hên sui 'siob', dan mae gaer-vorn beleg."
+        },
+        {
+          "question": "Man gwanod narn e-Ahuizotl?",
+          "options": ["Rovail dhuath", "Cam na i-dhelu", "U-thîr", "Pada ad-bada"],
+          "answerIndex": 1,
+          "lore": "I Ahuizotl iuitha i-cham na i-dhelu anim maba. Hên sui hû egor rasg, dan delu 'nûr."
+        },
+        {
+          "question": "Na dhú Uncanny Coffee Hour, amman Mitch ú-sogo i-gahu?",
+          "options": ["E faer", "Aníra luss", "Hû chwîn", "Panta lust o kîl"],
+          "answerIndex": 2,
+          "lore": "Aen hû condir i-chû gahu, Mitch chwîn na i-ereb. Narn naegra."
+        },
+        {
+          "question": "Mi narn Iwerddon, man uan i 'Saoirse'?",
+          "options": ["Banshee", "Púca", "Leprechaun", "Selkie"],
+          "answerIndex": 1,
+          "lore": "I Púca gwath-e-gorf o narn Chelt, istanna sui faer-leutha i tola galu egor ú-alu."
+        },
+        {
+          "question": "Man i ven maer anim dartha faer dhu?",
+          "options": ["Anna espresso", "Ang a Hal", "Gling beleg", "Archad vaer"],
+          "answerIndex": 1,
+          "lore": "Ang tîra bell e-Coe, a Hal glêna. I rim úan ú-anírathar i-chem."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Man i condir dae na Odd Bob?",
+          "options": ["Hîr. Kitsune", "Ithron Wolf", "Hoth Cryptid", "Hîr Mulder"],
+          "answerIndex": 0,
+          "lore": "Hîr. Kitsune tola ist a gwedh na i-chû e-Coffee Hour."
+        },
+        {
+          "question": "I 'Fresno Nightcrawler' úan, man 'gwanod'?",
+          "options": ["Carab vîl", "Hamp glân", "Loch vorn", "Porog ú-dhol"],
+          "answerIndex": 1,
+          "lore": "Tirnen minui mi Fresno, California, in-rim hin siila sui telch glân padol ereb pen-rhaw."
+        },
+        {
+          "question": "Manen dagra Kappa pen-dagor?",
+          "options": ["Anna 'cumber'", "Suilanna", "Maba i-gyl", "Linna laer"],
+          "answerIndex": 1,
+          "lore": "Kappa vaer. Pi suilannach, suilannathar ad, a i-nen cuil mi i-felf panta."
+        },
+        {
+          "question": "Man tola pi pantach hal?",
+          "options": ["Ú-alu", "Tola raug", "U-nad", "Hado thar amnc"],
+          "answerIndex": 3,
+          "lore": "Fui aníra haded nîf thar i-amnc hair anim dartha i-raug."
+        },
+        {
+          "question": "Man úan istanna na rovail voth a hin cair?",
+          "options": ["Jersey Devil", "Mothman", "Flatwoods Monster", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Mothman o Point Pleasant, WV, istanna na hin cair a palan-dir naeg."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Carnen",
+    "score": "Teithant {{score}} o {{total}}",
+    "retake": "Ad-carno",
+    "query": "Penth",
+    "next": "Penth Iar",
+    "finish": "Meto",
+    "note": "Narn e-Ithron:"
+  },
+  "ranks": {
+    "grand": "Caun: Ithron Beleg",
+    "field": "Caun: Pador-Parth",
+    "casual": "Caun: Sogor-Vîr",
+    "winMsg": "I-Dhelu suilanna ist lîn.",
+    "loseMsg": "Tiro in-Charch a ad-tolo ir pheriannen."
+  }
+}

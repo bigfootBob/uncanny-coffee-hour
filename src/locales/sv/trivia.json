@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Vilken japansk Yokai visar sig som en skallig munk med bläckfiskhuvud?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "Tako Nyūdō är en bläckfisk-yōkai som tar en vagt humanoid form. Trots att han ser ut som en präst är han egentligen en jätteblötdjur i förklädnad."
+        },
+        {
+          "question": "Vilket specifikt fysiskt drag utmärker Ahuizotl?",
+          "options": ["Vingar gjorda av skuggor", "En hand i änden av svansen", "Inget ansikte", "Den går baklänges"],
+          "answerIndex": 1,
+          "lore": "Ahuizotl använder handen på sin svans för att rycka byten från vattenbrynet. Den liknar en hund eller bäver men är mycket mer hotfull."
+        },
+        {
+          "question": "Enligt Uncanny Coffee Hour lore, varför dricker inte Mitch kaffet?",
+          "options": ["Han är ett spöke", "Han föredrar te", "Han är allergisk", "Han spiller ut det varje gång"],
+          "answerIndex": 2,
+          "lore": "Trots att han är medvärd för en kaffepodcast är stackars Mitch allergisk mot själva bönan. En tragisk ironi."
+        },
+        {
+          "question": "Vilken typ av varelse är 'Saoirse' i irländsk folktro?",
+          "options": ["En Banshee", "En Púca", "En Leprechaun", "En Selkie"],
+          "answerIndex": 1,
+          "lore": "En Púca är en hamnskiftare från keltisk folktro, känd för att vara en luring-ande som kan föra med sig både tur och otur."
+        },
+        {
+          "question": "Vad är det bästa sättet att avvärja en vanlig illvillig ande?",
+          "options": ["Erbjud den espresso", "Järn och Salt", "Hög technomusik", "En artig begäran"],
+          "answerIndex": 1,
+          "lore": "Järn representerar jordens styrka, och salt är en renare. De flesta väsen finner denna kombination ganska motbjudande."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Vem är den andra huvudvärden tillsammans med Odd Bob?",
+          "options": ["Dr. Kitsune", "Professor Varg", "Kapten Cryptid", "Agent Mulder"],
+          "answerIndex": 0,
+          "lore": "Dr. Kitsune tar med sig ett akademiskt och infött perspektiv till Coffee Hours kaos."
+        },
+        {
+          "question": "'Fresno Nightcrawler' är en modern kryptid känd för att likna vilket föremål?",
+          "options": ["En svävande hatt", "Ett par vita byxor", "En jättelik tumbleweed", "En huvudlös kyckling"],
+          "answerIndex": 1,
+          "lore": "Först fångad på CCTV i Fresno, Kalifornien, verkar dessa väsen inte vara något annat än ett par långa, vita ben som går av sig själva utan överkropp."
+        },
+        {
+          "question": "Hur kan man besegra en Kappa utan att använda våld?",
+          "options": ["Mata den med en gurka", "Buga för den", "Stjäla dess skal", "Sjunga en vaggvisa för den"],
+          "answerIndex": 1,
+          "lore": "Kappas är besatt artiga. Om du bugar för dem tvingas de buga tillbaka, vilket gör att det livgivande vattnet i skålen på deras huvud rinner ut."
+        },
+        {
+          "question": "Vad händer om du spiller salt?",
+          "options": ["Otur", "Du kallar på en demon", "Ingenting", "Kasta det över axeln"],
+          "answerIndex": 3,
+          "lore": "Skrock säger att du måste kasta en nypa över din vänstra axel för att förblinda djävulen som väntar där."
+        },
+        {
+          "question": "Vilken kryptid är känd för sina nattfjärilsliknande vingar och röda ögon?",
+          "options": ["Jersey Devil", "Mothman", "Flatwoods Monster", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Mothman från Point Pleasant, WV, är känd för sina lysande röda ögon och för att förutsäga katastrofer."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Utvärdering Slutförd",
+    "score": "Du fick {{score}} av {{total}}",
+    "retake": "Gör om Utvärdering",
+    "query": "Fråga",
+    "next": "Nästa Fråga",
+    "finish": "Avsluta Utvärdering",
+    "note": "Arkivariens Notering:"
+  },
+  "ranks": {
+    "grand": "Rang: Storarkivarie",
+    "field": "Rang: Fältforskare",
+    "casual": "Rang: Tillfällig Smuttare",
+    "winMsg": "Logen välkomnar din expertis.",
+    "loseMsg": "Konsultera arkiven och återkom när du är redo."
+  }
+}

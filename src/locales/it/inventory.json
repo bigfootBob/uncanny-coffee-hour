@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Maglie a Maniche Lunghe",
+    "desc": "Questa t-shirt da baseball triblend presenta una morbida combinazione di cotone, poliestere e rayon.",
+    "price": "NUOVO!"
+  },
+  "2": {
+    "name": "Cappelli e Tazze",
+    "desc": "Cappelli, Adesivi, Tazze, Spille, Borse, Magneti...",
+    "price": "NUOVO!"
+  },
+  "3": {
+    "name": "Adesivi",
+    "desc": "Gli adesivi sono stampati su vinile bianco lucido da 3 mil.",
+    "price": "NUOVO!"
+  },
+  "4": {
+    "name": "Felpe",
+    "desc": "Calde e morbide per quelle storie da brivido.",
+    "price": "CALDO!"
+  },
+  "5": {
+    "name": "Canotte",
+    "desc": "Incredibili canotte sono qui per l'estate!",
+    "price": "NUOVO!"
+  },
+  "6": {
+    "name": "T-Shirt",
+    "desc": "Una vestibilità unisex comoda rende la normale t-shirt perfetta per ogni corpo.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "T-Shirt scollo a V",
+    "desc": "Se preferisci lo scollo a V abbiamo le magliette per te!",
+    "price": "HOT!"
+  }
+}

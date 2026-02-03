@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Long Sleeve Tees",
+    "desc": "This baseball triblend t-shirt features a soft combination of cotton, polyester, and rayon blend.",
+    "price": "NEW!"
+  },
+  "2": {
+    "name": "Hats and Mugs",
+    "desc": "Hats, Stickers, Mugs, Buttons, Bags, Magnets...",
+    "price": "NEW!"
+  },
+  "3": {
+    "name": "Stickers",
+    "desc": "Stickers are printed on 3 mil. glossy white vinyl.",
+    "price": "NEW!"
+  },
+  "4": {
+    "name": "Sweatshirts",
+    "desc": "Warm and soft for those chilly stories.",
+    "price": "WARM!"
+  },
+  "5": {
+    "name": "Tanktops",
+    "desc": "Amazing tanktops are here for summer!",
+    "price": "NEW!"
+  },
+  "6": {
+    "name": "Tee Shirts",
+    "desc": "An easy-wearing unisex fit.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "V-Neck Tees",
+    "desc": "If you prefer the v-neck we have the shirts for you!",
+    "price": "HOT!"
+  }
+}

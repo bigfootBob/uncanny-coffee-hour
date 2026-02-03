@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Quale Yokai giapponese appare come un monaco calvo con la testa di polpo?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "Il Tako Nyūdō è uno yōkai polpo che assume una forma vagamente umanoide. Nonostante sembri un prete, in realtà è un mollusco gigante sotto mentite spoglie."
+        },
+        {
+          "question": "Quale tratto fisico specifico distingue l'Ahuizotl?",
+          "options": ["Ali fatte di ombre", "Una mano alla fine della coda", "Nessuna faccia", "Cammina all'indietro"],
+          "answerIndex": 1,
+          "lore": "L'Ahuizotl usa la mano sulla coda per afferrare la preda dal bordo dell'acqua. Assomiglia a un cane o a un castoro, ma è molto più minaccioso."
+        },
+        {
+          "question": "Secondo la lore dell'Uncanny Coffee Hour, perché Mitch non beve il caffè?",
+          "options": ["È un fantasma", "Preferisce il tè", "È allergico", "Lo rovescia ogni volta"],
+          "answerIndex": 2,
+          "lore": "Nonostante sia co-conduttore di un podcast sul caffè, il povero Mitch è allergico al chicco stesso. Una tragica ironia."
+        },
+        {
+          "question": "Nel folklore irlandese, che tipo di creatura è 'Saoirse'?",
+          "options": ["Una Banshee", "Un Púca", "Un Leprechaun", "Una Selkie"],
+          "answerIndex": 1,
+          "lore": "Un Púca è un mutaforma del folklore celtico, noto per essere uno spirito imbroglione che può portare sia buona che cattiva sorte."
+        },
+        {
+          "question": "Qual è il modo migliore per allontanare uno spirito malevolo standard?",
+          "options": ["Offrirgli un espresso", "Ferro e Sale", "Musica Techno ad alto volume", "Una richiesta educata"],
+          "answerIndex": 1,
+          "lore": "Il ferro rappresenta la forza della terra e il sale è un purificatore. La maggior parte delle entità trova questa combinazione piuttosto sgradevole."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Chi è l'altro co-conduttore principale insieme a Odd Bob?",
+          "options": ["Dr. Kitsune", "Professor Wolf", "Capitano Cryptid", "Agente Mulder"],
+          "answerIndex": 0,
+          "lore": "La Dr.ssa Kitsune porta una prospettiva accademica e nativa nel caos del Coffee Hour."
+        },
+        {
+          "question": "Il 'Fresno Nightcrawler' è un criptide moderno famoso per assomigliare a quale oggetto?",
+          "options": ["Un cappello fluttuante", "Un paio di pantaloni bianchi", "Un cespuglio rotolante gigante", "Un pollo senza testa"],
+          "answerIndex": 1,
+          "lore": "Catturate per la prima volta dalle telecamere a circuito chiuso a Fresno, in California, queste entità sembrano non essere altro che un paio di lunghe gambe bianche che camminano da sole senza busto."
+        },
+        {
+          "question": "Come si può sconfiggere un Kappa senza usare la violenza?",
+          "options": ["Dargli un cetriolo", "Inchinarvisi davanti", "Rubare il suo guscio", "Cantargli una ninna nanna"],
+          "answerIndex": 1,
+          "lore": "I Kappa sono ossessivamente educati. Se ti inchini a loro, sono costretti a inchinarsi a loro volta, facendo rovesciare l'acqua vitale che si trova nella scodella sulla loro testa."
+        },
+        {
+          "question": "Cosa succede se rovesci il sale?",
+          "options": ["Sfortuna", "Evochi un demone", "Niente", "Gettalo sopra la spalla"],
+          "answerIndex": 3,
+          "lore": "La superstizione impone di gettarne un pizzico sopra la spalla sinistra per accecare il diavolo che aspetta lì."
+        },
+        {
+          "question": "Quale criptide è noto per le sue ali simili a falena e gli occhi rossi?",
+          "options": ["Diavolo del Jersey", "Mothman", "Mostro di Flatwoods", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Il Mothman di Point Pleasant, WV, è famoso per i suoi occhi rossi luminosi e per predire disastri."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Valutazione Completa",
+    "score": "Hai totalizzato {{score}} su {{total}}",
+    "retake": "Ripeti Valutazione",
+    "query": "Domanda",
+    "next": "Prossima Domanda",
+    "finish": "Termina Valutazione",
+    "note": "Nota dell'Archivista:"
+  },
+  "ranks": {
+    "grand": "Rango: Grande Archivista",
+    "field": "Rango: Ricercatore sul Campo",
+    "casual": "Rango: Sorseggiatore Occasionale",
+    "winMsg": "La Loggia accoglie la tua esperienza.",
+    "loseMsg": "Consulta gli archivi e torna quando sarai pronto."
+  }
+}

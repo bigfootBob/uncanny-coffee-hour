@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Lamp-Anann",
+    "desc": "Hamp-echor 'baseball' 'triblend' hîl gwathel vaer o 'cotton', 'polyester', a 'rayon'.",
+    "price": "GWÍN!"
+  },
+  "2": {
+    "name": "Karab a Ylp",
+    "desc": "Karab, Himp, Ylp, Tolo, Pysg, Magnet...",
+    "price": "GWÍN!"
+  },
+  "3": {
+    "name": "Himp",
+    "desc": "Himp teithannen erin 'vinyl' glân silivren.",
+    "price": "GWÍN!"
+  },
+  "4": {
+    "name": "Hamp-Laug",
+    "desc": "Laug a moe anim nern ring.",
+    "price": "LAUG!"
+  },
+  "5": {
+    "name": "Hamp-Laer",
+    "desc": "Hamp-Laer daer tolar anim laer!",
+    "price": "GWÍN!"
+  },
+  "6": {
+    "name": "Hamp",
+    "desc": "Hamp maer anim rhaw pen-chîr.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "Hamp V-Aek",
+    "desc": "Pi anírach i 'v-neck' garam i-hamp anim le!",
+    "price": "URN!"
+  }
+}

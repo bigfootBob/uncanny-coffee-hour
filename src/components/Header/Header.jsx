@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE */}
       <div className={`mobile-nav-overlay ${isMobileOpen ? 'open' : ''}`}>
         <nav className="mobile-links">
           <Link to="/" onClick={closeMobile}>{t('navtext.home') || 'Home'}</Link>
@@ -78,7 +78,6 @@ const Header = () => {
           <Link to="/games" onClick={closeMobile}>{t('navtext.games')}</Link>
           <Link to="/shop" onClick={closeMobile}>{t('navtext.shop')}</Link>
           <Link to="/submit" onClick={closeMobile}>{t('navtext.submit_story')}</Link>
-          <Link to="/contact" onClick={closeMobile}>{t('navtext.contact') || 'Contact'}</Link>
         </nav>
       </div>
     </header>

@@ -7,7 +7,8 @@ import './Shop.scss';
 
 const Shop = () => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation(['translation', 'inventory']);
+
   return (
     <>
 
@@ -30,14 +31,14 @@ const Shop = () => {
 
             <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-image-link">
               <div className="card-image-wrapper">
-                <img src={`/assets/images/inventory/${item.image}`} alt={item.name} />
-                <span className="price-tag">{item.price}</span>
+                <img src={`/assets/images/inventory/${item.image}`} alt={t(`inventory:${item.id}.name`)} />
+                <span className="price-tag">{t(`inventory:${item.id}.price`)}</span>
               </div>
             </a>
             
             <div className="card-content">
-              <h3>{item.name}</h3>
-              <p>{item.desc}</p>
+              <h3>{t(`inventory:${item.id}.name`)}</h3>
+              <p>{t(`inventory:${item.id}.desc`)}</p>
  
               <a 
                 href={item.link} 

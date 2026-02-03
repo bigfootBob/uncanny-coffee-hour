@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Langarm-Shirts",
+    "desc": "Dieses Baseball-Triblend-T-Shirt besteht aus einer weichen Kombination aus Baumwolle, Polyester und Rayon.",
+    "price": "NEU!"
+  },
+  "2": {
+    "name": "Mützen und Tassen",
+    "desc": "Mützen, Aufkleber, Tassen, Buttons, Taschen, Magnete...",
+    "price": "NEU!"
+  },
+  "3": {
+    "name": "Aufkleber",
+    "desc": "Aufkleber gedruckt auf 3 mil glänzendem weißen Vinyl.",
+    "price": "NEU!"
+  },
+  "4": {
+    "name": "Sweatshirts",
+    "desc": "Warm und weich für diese kühlen Geschichten.",
+    "price": "WARM!"
+  },
+  "5": {
+    "name": "Tanktops",
+    "desc": "Fantastische Tanktops sind hier für den Sommer!",
+    "price": "NEU!"
+  },
+  "6": {
+    "name": "T-Shirts",
+    "desc": "Eine bequeme Unisex-Passform macht das normale T-Shirt perfekt für jeden Körper.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "V-Ausschnitt T-Shirts",
+    "desc": "Wenn Sie den V-Ausschnitt bevorzugen, haben wir die Shirts für Sie!",
+    "price": "HEISS!"
+  }
+}

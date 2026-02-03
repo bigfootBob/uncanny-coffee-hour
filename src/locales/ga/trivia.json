@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Cén Yokai Seapánach a bhfuil cuma manach maol le ceann ochtapas air?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "Is yōkai ochtapas é an Tako Nyūdō a ghlacann foirm dhaonna doiléir. In ainneoin go bhfuil cuma sagart air, is moileasc ollmhór é faoi cheilt."
+        },
+        {
+          "question": "Cén tréith fhisiciúil shonrach a dhéanann idirdhealú ar an Ahuizotl?",
+          "options": ["Sciatháin déanta as scáthanna", "Lámh ag deireadh a eireaball", "Gan aghaidh", "Siúlann sé ar gcúl"],
+          "answerIndex": 1,
+          "lore": "Úsáideann an Ahuizotl an lámh ar a eireaball chun creach a sciobadh ó imeall an uisce. Tá cosúlacht aige le madra nó bébhar ach tá sé i bhfad níos bagraí."
+        },
+        {
+          "question": "De réir béaloideas Uncanny Coffee Hour, cén fáth nach n-ólann Mitch an caife?",
+          "options": ["Is taibhse é", "Is fearr leis tae", "Tá ailléirge air", "Doirteann sé é gach uair"],
+          "answerIndex": 2,
+          "lore": "In ainneoin go bhfuil sé ina chomh-óstach ar phodchraoladh caife, tá ailléirge ar an mbochtán Mitch leis an pónaire féin. Íoróin thragóideach."
+        },
+        {
+          "question": "I mbéaloideas na hÉireann, cén cineál créatúr é 'Saoirse'?",
+          "options": ["Bean Sí", "Púca", "Leipreachán", "Selkie"],
+          "answerIndex": 1,
+          "lore": "Is cruth-aistritheoir é Púca ó bhéaloideas Ceilteach, a bhfuil aithne air mar spiorad cleasaí ar féidir leis an t-ádh maith agus an t-ádh olc a thabhairt."
+        },
+        {
+          "question": "Cad é an bealach is fearr chun spiorad mailíseach caighdeánach a choinneáil amach?",
+          "options": ["Espresso a thairiscint dó", "Iarann agus Salann", "Ceol Teicneolaíochta Ard", "Iarratas dea-bhéasach"],
+          "answerIndex": 1,
+          "lore": "Léiríonn iarann neart na talún, agus is íonaitheoir é salann. Is fuath le formhór na n-aonán an meascán seo."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Cé hé an príomh-chomh-óstach eile in éineacht le Odd Bob?",
+          "options": ["Dr. Kitsune", "An tOllamh Wolf", "Captaen Cryptid", "Gníomhaire Mulder"],
+          "answerIndex": 0,
+          "lore": "Tugann Dr. Kitsune peirspictíocht acadúil agus Dúchasach go dtí anord an Coffee Hour."
+        },
+        {
+          "question": "Tá cáil ar an gcrioptach nua-aimseartha 'Fresno Nightcrawler' as a bheith cosúil le cén rud?",
+          "options": ["Hata ar snámh", "Péire bríste bán", "Fiaile rollach ollmhór", "Sicín gan cheann"],
+          "answerIndex": 1,
+          "lore": "Gabhadh den chéad uair ar CCTV i Fresno, California, is cosúil nach bhfuil sna heintitis seo ach péire cosa fada bána ag siúl leo féin gan aon chorp."
+        },
+        {
+          "question": "Conas is féidir Kappa a chloí gan foréigean a úsáid?",
+          "options": ["Cúcamar a thabhairt dó", "Umhlaigh dó", "Goid a shliogán", "Suantraithe a chanadh dó"],
+          "answerIndex": 1,
+          "lore": "Tá Kappas an-bhéasach. Má umhlaíonn tú dóibh, tá iallach orthu umhlú ar ais, rud a fhágann go ndoirteann an t-uisce atá ag cothú na beatha sa mhias ar a gceann."
+        },
+        {
+          "question": "Cad a tharlaíonn má dhoirteann tú salann?",
+          "options": ["Mí-ádh", "Glaonn tú deamhan", "Nekat", "Caith thar do ghualainn é"],
+          "answerIndex": 3,
+          "lore": "De réir piseoige, caithfidh tú grabhóg a chaitheamh thar do ghualainn chlé chun an diabhal atá ag fanacht ann a dhalladh."
+        },
+        {
+          "question": "Cén crioptach a bhfuil aithne air as a sciatháin leamhain agus a shúile dearga?",
+          "options": ["Diabhal Jersey", "Mothman", "Ollphéist Flatwoods", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Tá cáil ar Mothman ó Point Pleasant, WV, as a shúile dearga geala agus as tubaistí a thuar."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Measúnú Críochnaithe",
+    "score": "Scór: {{score}} as {{total}}",
+    "retake": "Déan an Measúnú Arís",
+    "query": "Ceist",
+    "next": "An Chéad Cheist Eile",
+    "finish": "Críochnaigh an Measúnú",
+    "note": "Nóta ón gCartlannaí:"
+  },
+  "ranks": {
+    "grand": "Céim: Ard-Chartlannaí",
+    "field": "Céim: Taighdeoir Allamuigh",
+    "casual": "Céim: Súmaire Corr",
+    "winMsg": "Cuireann an Lóiste fáilte roimh do shaineolas.",
+    "loseMsg": "Téigh i gcomhairle leis na cartlanna agus fill ar ais nuair atá tú réidh."
+  }
+}

@@ -1,0 +1,49 @@
+{ 
+  "oracle": {
+    "title": "The Oracle Cup",
+    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
+    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+  },
+  "conspiracy": {
+    "title": "Conspiracy Board",
+    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
+    "instructions": "Click 4 items that belong in the same category and click submit.",
+    "short-instructions": "Group the 16 items into 4 categories.",
+    "mistakes": "Mistakes Remaining: ",
+    "btn-deselect": "Deselect",
+    "btn-submit": "Submit",
+    "btn-tryanother": "Try Another",
+    "btn-nextcase": "Next Case",
+    "lost": "The Truth Escaped You.",
+    "won": "Case Closed. Excellent Work."
+  },
+  "evolution": {
+    "title": "Cryptid Evolution",
+    "description": "Capture photographic evidence of the paranormal before it vanishes.",
+    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+  },
+  "trivia": {
+    "title": "Lore Master Trivia",
+    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
+    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+  },
+  "match": {
+    "title": "Cryptid Match",
+    "description": "Escape the Pacific Northwest forest before your coffee spills.",
+    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+  },
+  "saucer": {
+    "title": "Midnight Harvest",
+    "description": "Pilot the saucer. Abduct the livestock.",
+    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+  },
+  "page": {
+    "title": "The Arcade",
+    "subtitle": "Pass the time while your coffee brews.",
+    "instructionsLabel": "How to Play"
+  },
+  "status": {
+    "comingSoon": "Coming Soon",
+    "close": "Close"
+  }
+}

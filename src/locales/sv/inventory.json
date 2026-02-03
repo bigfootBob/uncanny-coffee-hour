@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Långärmade T-shirts",
+    "desc": "Denna baseball-triblend t-shirt har en mjuk kombination av bomull, polyester och rayon.",
+    "price": "NY!"
+  },
+  "2": {
+    "name": "Hattar och Muggar",
+    "desc": "Hattar, Klistermärken, Muggar, Knappar, Väskor, Magneter...",
+    "price": "NY!"
+  },
+  "3": {
+    "name": "Klistermärken",
+    "desc": "Klistermärken tryckta på 3 mil blank vit vinyl.",
+    "price": "NY!"
+  },
+  "4": {
+    "name": "Sweatshirts",
+    "desc": "Varm och mjuk för de där kyliga berättelserna.",
+    "price": "VARM!"
+  },
+  "5": {
+    "name": "Linnen",
+    "desc": "Fantastiska linnen är här för sommaren!",
+    "price": "NY!"
+  },
+  "6": {
+    "name": "T-shirts",
+    "desc": "En lättburen unisex-passform gör den vanliga t-shirten perfekt för alla kroppar.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "V-ringade T-shirts",
+    "desc": "Om du föredrar v-ringat har vi tröjorna för dig!",
+    "price": "HET!"
+  }
+}

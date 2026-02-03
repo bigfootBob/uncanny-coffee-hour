@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Which Japanese Yokai appears as a bald, octopus-headed monk?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "The Tako Nyūdō is an octopus yōkai that takes a vaguely humanoid form. Despite looking like a priest, it is actually a giant mollusk in disguise."
+        },
+        {
+          "question": "What specific physical trait distinguishes the Ahuizotl?",
+          "options": ["Wings made of shadows", "A hand at the end of its tail", "No face", "It walks backward"],
+          "answerIndex": 1,
+          "lore": "The Ahuizotl uses the hand on its tail to snatch prey from the water's edge. It resembles a dog or beaver but is far more menacing."
+        },
+        {
+          "question": "According to Uncanny Coffee Hour lore, why doesn't Mitch drink the coffee?",
+          "options": ["He is a ghost", "He prefers tea", "He is allergic", "He spills it every time"],
+          "answerIndex": 2,
+          "lore": "Despite co-hosting a coffee podcast, poor Mitch is allergic to the bean itself. A tragic irony."
+        },
+        {
+          "question": "In Irish folklore, what type of creature is 'Saoirse'?",
+          "options": ["A Banshee", "A Púca", "A Leprechaun", "A Selkie"],
+          "answerIndex": 1,
+          "lore": "A Púca is a shape-shifter from Celtic folklore, known for being a trickster spirit that can bring both good and bad fortune."
+        },
+        {
+          "question": "What is the best way to ward off a standard malevolent spirit?",
+          "options": ["Offer it espresso", "Iron and Salt", "Loud Techno Music", "A polite request"],
+          "answerIndex": 1,
+          "lore": "Iron represents the strength of the earth, and salt is a purifier. Most entities find this combination quite distasteful."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Who is the other main co-host alongside Odd Bob?",
+          "options": ["Dr. Kitsune", "Professor Wolf", "Captain Cryptid", "Agent Mulder"],
+          "answerIndex": 0,
+          "lore": "Dr. Kitsune brings an academic and Native perspective to the chaos of the Coffee Hour."
+        },
+        {
+          "question": "The 'Fresno Nightcrawler' is a modern cryptid famous for resembling which object?",
+          "options": ["A floating hat", "A pair of white pants", "A giant tumbleweed", "A headless chicken"],
+          "answerIndex": 1,
+          "lore": "First captured on CCTV in Fresno, California, these entities appear to be nothing more than a pair of long, white legs walking on their own with no torso."
+        },
+        {
+          "question": "How can one defeat a Kappa without using violence?",
+          "options": ["Feed it a cucumber", "Bow to it", "Steal its shell", "Sing it a lullaby"],
+          "answerIndex": 1,
+          "lore": "Kappas are obsessively polite. If you bow to them, they are compelled to bow back, causing the life-sustaining water in the dish on their head to spill out."
+        },
+        {
+          "question": "What happens if you spill salt?",
+          "options": ["Bad luck", "You summon a demon", "Nothing", "Throw it over your shoulder"],
+          "answerIndex": 3,
+          "lore": "Superstition dictates you must throw a pinch over your left shoulder to blind the devil waiting there."
+        },
+        {
+          "question": "Which cryptid is known for its moth-like wings and red eyes?",
+          "options": ["Jersey Devil", "Mothman", "Flatwoods Monster", "Thunderbird"],
+          "answerIndex": 1,
+          "lore": "Mothman of Point Pleasant, WV, is famous for his glowing red eyes and predicting disasters."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Assessment Complete",
+    "score": "You scored {{score}} out of {{total}}",
+    "retake": "Retake Assessment",
+    "query": "Query",
+    "next": "Next Query",
+    "finish": "Finish Assessment",
+    "note": "Archivist Note:"
+  },
+  "ranks": {
+    "grand": "Rank: Grand Archivist",
+    "field": "Rank: Field Researcher",
+    "casual": "Rank: Casual Sipper",
+    "winMsg": "The Lodge welcomes your expertise.",
+    "loseMsg": "Consult the archives and return when ready."
+  }
+}

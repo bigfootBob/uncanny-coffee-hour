@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
-import PatreonData from '../data/patreon.json';
+import PatreonData from '../data/patreon.json'; 
 import SEO from '../components/SEO/SEO';
 import './lodge.scss';
 

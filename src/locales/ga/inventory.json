@@ -1,0 +1,37 @@
+{
+  "1": {
+    "name": "Téine muinchille fada",
+    "desc": "Tá meascán bog de chadás, poileistear agus réón sa t-léine baseball triblend seo.",
+    "price": "NUA!"
+  },
+  "2": {
+    "name": "Hataí agus Mugaí",
+    "desc": "Hataí, Greamáin, Mugaí, Cnaipí, Málaí, Maighnéid...",
+    "price": "NUA!"
+  },
+  "3": {
+    "name": "Greamáin",
+    "desc": "Priontáiltear greamáin ar vinil bán snasta 3 mhíle.",
+    "price": "NUA!"
+  },
+  "4": {
+    "name": "Geansaithe",
+    "desc": "Te agus bog do na scéalta fuara sin.",
+    "price": "TE!"
+  },
+  "5": {
+    "name": "Veisteanna",
+    "desc": "Tá veisteanna iontacha anseo don samhradh!",
+    "price": "NUA!"
+  },
+  "6": {
+    "name": "T-Léinte",
+    "desc": "Déanann feisteas unisex éasca an gnáth-th-léine foirfe do gach corp.",
+    "price": "$22.95+"
+  }, 
+  "7": {
+    "name": "Téine V-mhuineál",
+    "desc": "Más fearr leat an v-mhuineál tá na léinte againn duit!",
+    "price": "TE!"
+  }
+}

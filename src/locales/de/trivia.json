@@ -1,0 +1,90 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "Welcher japanische Yōkai erscheint als glatzköpfiger Mönch mit Oktopuskopf?",
+          "options": ["Kappa", "Tako Nyūdō", "Tengu", "Tanuki"],
+          "answerIndex": 1,
+          "lore": "Der Tako Nyūdō ist ein Oktopus-Yōkai, der eine vage humanoide Form annimmt. Obwohl er wie ein Priester aussieht, ist er eigentlich eine riesige Molluske in Verkleidung."
+        },
+        {
+          "question": "Welches spezifische körperliche Merkmal unterscheidet den Ahuizotl?",
+          "options": ["Flügel aus Schatten", "Eine Hand am Ende seines Schwanzes", "Kein Gesicht", "Er läuft rückwärts"],
+          "answerIndex": 1,
+          "lore": "Der Ahuizotl benutzt die Hand an seinem Schwanz, um Beute vom Uferrand zu schnappen. Er ähnelt einem Hund oder Biber, ist aber weitaus bedrohlicher."
+        },
+        {
+          "question": "Laut der Uncanny Coffee Hour Lore, warum trinkt Mitch den Kaffee nicht?",
+          "options": ["Er ist ein Geist", "Er bevorzugt Tee", "Er ist allergisch", "Er verschüttet ihn jedes Mal"],
+          "answerIndex": 2,
+          "lore": "Obwohl er einen Kaffee-Podcast moderiert, ist der arme Mitch allergisch gegen die Bohne selbst. Eine tragische Ironie."
+        },
+        {
+          "question": "Welche Art von Kreatur ist 'Saoirse' in der irischen Folklore?",
+          "options": ["Eine Banshee", "Ein Púca", "Ein Leprechaun", "Ein Selkie"],
+          "answerIndex": 1,
+          "lore": "Ein Púca ist ein Gestaltwandler aus der keltischen Folklore, bekannt als Trickster-Geist, der sowohl Glück als auch Unglück bringen kann."
+        },
+        {
+          "question": "Was ist der beste Weg, um einen gewöhnlichen böswilligen Geist abzuwehren?",
+          "options": ["Biete ihm Espresso an", "Eisen und Salz", "Laute Techno-Musik", "Eine höfliche Bitte"],
+          "answerIndex": 1,
+          "lore": "Eisen repräsentiert die Stärke der Erde und Salz ist ein Reinigungsmittel. Die meisten Wesen finden diese Kombination ziemlich geschmacklos."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "Wer ist der andere Hauptmoderator neben Odd Bob?",
+          "options": ["Dr. Kitsune", "Professor Wolf", "Captain Cryptid", "Agent Mulder"],
+          "answerIndex": 0,
+          "lore": "Dr. Kitsune bringt eine akademische und indigene Perspektive in das Chaos der Coffee Hour."
+        },
+        {
+          "question": "Der 'Fresno Nightcrawler' ist ein moderner Kryptid, der für seine Ähnlichkeit mit welchem Objekt bekannt ist?",
+          "options": ["Ein schwebender Hut", "Eine weiße Hose", "Ein riesiges Tumbleweed", "Ein kopfloses Huhn"],
+          "answerIndex": 1,
+          "lore": "Erstmals auf CCTV in Fresno, Kalifornien, festgehalten, scheinen diese Wesen nichts weiter als ein Paar langer, weißer Beine zu sein, die ohne Torso von selbst laufen."
+        },
+        {
+          "question": "Wie kann man einen Kappa besiegen, ohne Gewalt anzuwenden?",
+          "options": ["Füttere ihn mit einer Gurke", "Verbeuge dich vor ihm", "Stiehl seinen Panzer", "Sing ihm ein Schlaflied"],
+          "answerIndex": 1,
+          "lore": "Kappas sind zwanghaft höflich. Wenn du dich vor ihnen verbeugst, sind sie gezwungen, sich zurückzuverbeugen, wodurch das lebenswichtige Wasser in der Schale auf ihrem Kopf verschüttet wird."
+        },
+        {
+          "question": "Was passiert, wenn man Salz verschüttet?",
+          "options": ["Pech", "Du beschwörst einen Dämon", "Nichts", "Wirf es über deine Schulter"],
+          "answerIndex": 3,
+          "lore": "Der Aberglaube besagt, dass du eine Prise über deine linke Schulter werfen musst, um den Teufel zu blenden, der dort wartet."
+        },
+        {
+          "question": "Welcher Kryptid ist bekannt für seine mottenartigen Flügel und roten Augen?",
+          "options": ["Jersey Devil", "Mothman", "Flatwoods Monster", "Donnervogel"],
+          "answerIndex": 1,
+          "lore": "Mothman aus Point Pleasant, WV, ist berühmt für seine leuchtenden roten Augen und das Vorhersagen von Katastrophen."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "complete": "Bewertung Abgeschlossen",
+    "score": "Du hast {{score}} von {{total}} erreicht",
+    "retake": "Bewertung wiederholen",
+    "query": "Frage",
+    "next": "Nächste Frage",
+    "finish": "Bewertung beenden",
+    "note": "Notiz des Archivars:"
+  },
+  "ranks": {
+    "grand": "Rang: Großarchivar",
+    "field": "Rang: Feldforscher",
+    "casual": "Rang: Gelegenheits-Schlürfer",
+    "winMsg": "Die Loge begrüßt deine Expertise.",
+    "loseMsg": "Konsultiere die Archive und kehre zurück, wenn du bereit bist."
+  }
+}
