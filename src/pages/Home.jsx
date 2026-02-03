@@ -5,7 +5,7 @@ import Hero from '../components/Hero/Hero';
 import Team from '../components/Team/Team';
 import './Home.scss';
 
-import coffeeIcon from '../assets/images/bmc-logo-no-background.png'; 
+import coffeeIcon from '../assets/images/bmc-logo-no-background.png';
 import mugProduct from '../assets/images/emporium-coffeemug.png';
 
 const Home = () => {
@@ -43,42 +43,35 @@ const Home = () => {
 
   return (
     <>
-    <Hero />
-    <div className="home-dashboard">
-      <section className="hero-text-layer page-header">
-        <h1>{t('hero.title')}</h1>
-        <p>
-          {t('hero.subtext')}
-        </p>
-      </section>
+      <Hero />
+      <div className="home-dashboard">
+        <section className="hero-text-layer page-header">
+          <h1>{t('hero.title')}</h1>
+          <p>
+            {t('hero.subtext')}
+          </p>
+        </section>
 
-      <section className="dashboard-row team-row">
-        <Team />
-      </section>
+        <section className="dashboard-row team-row">
+          <Team />
+        </section>
 
-      <section className="dashboard-row player-row glass-panel">
-        
-        {latestEpisode && (
-          <audio 
-            ref={audioRef} 
-            src={latestEpisode.audioUrl} 
-            onEnded={() => setIsPlaying(false)} 
-          />
-        )}
+        <section className="dashboard-row player-row glass-panel">
 
-        {latestEpisode && (
-            <audio 
-              ref={audioRef} 
-              src={latestEpisode.audioUrl} 
-              onEnded={() => setIsPlaying(false)} 
+          {latestEpisode && (
+            // eslint-disable-next-line jsx-a11y/media-has-caption
+            <audio
+              ref={audioRef}
+              src={latestEpisode.audioUrl}
+              onEnded={() => setIsPlaying(false)}
             />
           )}
 
           <div className="player-info">
-             {latestEpisode ? (
-              <img 
-                src={latestEpisode.coverArt} 
-                alt="Episode Art" 
+            {latestEpisode ? (
+              <img
+                src={latestEpisode.coverArt}
+                alt="Episode Art"
                 className="player-art"
               />
             ) : (
@@ -92,99 +85,99 @@ const Home = () => {
             </div>
           </div>
 
-        <div className="player-controls">
-          <button 
-            className="play-btn" 
-            onClick={toggleAudio}
-            disabled={!latestEpisode}
-            style={{ cursor: latestEpisode ? 'pointer' : 'wait' }}
-            aria-label={isPlaying ? "Pause" : "Play"}
-          >
-            {isPlaying ? '⏸' : '▶'}
-          </button>
+          <div className="player-controls">
+            <button
+              className="play-btn"
+              onClick={toggleAudio}
+              disabled={!latestEpisode}
+              style={{ cursor: latestEpisode ? 'pointer' : 'wait' }}
+              aria-label={isPlaying ? "Pause" : "Play"}
+            >
+              {isPlaying ? '⏸' : '▶'}
+            </button>
 
-          <div className="waveform-visualizer">
-            {Array.from({ length: 50 }).map((_, i) => (
-              <span 
-                  key={i} 
+            <div className="waveform-visualizer">
+              {Array.from({ length: 50 }).map((_, i) => (
+                <span
+                  key={i}
                   className={isPlaying ? "bar active" : "bar"}
-                  style={{ animationDelay: `${i * 0.05}s` }} 
-              ></span>
-            ))}
-          </div>
-        </div>
-
-      </section>
-
-      <section className="dashboard-row action-grid">
-        <div className="action-card glass-panel patreon-card">
-          <h3>{t("homepage.innercircle")}</h3>
-          <span className="sub-label">{t("homepage.subpatreon")}</span>
-          <div className="tier-list">
-            <div className="tier-list">
-              <Link 
-                to="/lodge" 
-                state={{ selectedTier: '3' }} 
-                className="tier-btn active"
-              >
-                {t("homepage.pata")}
-              </Link>
-              
-              <Link 
-                to="/lodge" 
-                state={{ selectedTier: '6' }} 
-                className="tier-btn"
-              >
-                {t("homepage.patb")}
-              </Link>
-              
-              <Link 
-                to="/lodge" 
-                state={{ selectedTier: '18' }} 
-                className="tier-btn"
-              >
-                {t("homepage.patc")}
-              </Link>
+                  style={{ animationDelay: `${i * 0.05}s` }}
+                ></span>
+              ))}
             </div>
           </div>
-        </div>
 
-        <div className="action-card glass-panel coffee-card">
-          <h3>{t("homepage.buycoffee")}</h3>
-          <span className="sub-label">{t("homepage.buycoffeesub")}</span>
-          <a 
-            href="https://buymeacoffee.com/uncannycoffee" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="coffee-icon-container"
-            aria-label={t("homepage.buycoffeesupport")}
-          >
-            <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" />
-          </a>
-        </div>
+        </section>
 
-        <div className="action-card glass-panel shop-card">
-          <div className="shop-text">
-            <h3>{t("homepage.emporium")}</h3>
-            <p className="sub-label">{t("homepage.odditiesetc")}</p>
-            <Link to="/shop" className="shop-btn">{t("homepage.shopnow")}</Link>
+        <section className="dashboard-row action-grid">
+          <div className="action-card glass-panel patreon-card">
+            <h3>{t("homepage.innercircle")}</h3>
+            <span className="sub-label">{t("homepage.subpatreon")}</span>
+            <div className="tier-list">
+              <div className="tier-list">
+                <Link
+                  to="/lodge"
+                  state={{ selectedTier: '3' }}
+                  className="tier-btn active"
+                >
+                  {t("homepage.pata")}
+                </Link>
+
+                <Link
+                  to="/lodge"
+                  state={{ selectedTier: '6' }}
+                  className="tier-btn"
+                >
+                  {t("homepage.patb")}
+                </Link>
+
+                <Link
+                  to="/lodge"
+                  state={{ selectedTier: '18' }}
+                  className="tier-btn"
+                >
+                  {t("homepage.patc")}
+                </Link>
+              </div>
+            </div>
           </div>
-          <img src={mugProduct} alt="Uncanny Mug" className="shop-image" />
-        </div>
-      </section>
 
-      <section id="whispering-well" className="dashboard-row parchment-panel">
-        <div className="panel-content">
-          <h1>{t("homepage.whisperwellhead")}</h1>
-          <h2>{t("homepage.whisperwellsubhead")}</h2>
-          
-          <Link to="/submit" className="parchment-btn">
-            {t("homepage.whisperwellsubform")}
-          </Link>
-        </div>
-      </section>
+          <div className="action-card glass-panel coffee-card">
+            <h3>{t("homepage.buycoffee")}</h3>
+            <span className="sub-label">{t("homepage.buycoffeesub")}</span>
+            <a
+              href="https://buymeacoffee.com/uncannycoffee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="coffee-icon-container"
+              aria-label={t("homepage.buycoffeesupport")}
+            >
+              <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" />
+            </a>
+          </div>
 
-    </div>
+          <div className="action-card glass-panel shop-card">
+            <div className="shop-text">
+              <h3>{t("homepage.emporium")}</h3>
+              <p className="sub-label">{t("homepage.odditiesetc")}</p>
+              <Link to="/shop" className="shop-btn">{t("homepage.shopnow")}</Link>
+            </div>
+            <img src={mugProduct} alt="Uncanny Mug" className="shop-image" />
+          </div>
+        </section>
+
+        <section id="whispering-well" className="dashboard-row parchment-panel">
+          <div className="panel-content">
+            <h1>{t("homepage.whisperwellhead")}</h1>
+            <h2>{t("homepage.whisperwellsubhead")}</h2>
+
+            <Link to="/submit" className="parchment-btn">
+              {t("homepage.whisperwellsubform")}
+            </Link>
+          </div>
+        </section>
+
+      </div>
     </>
   );
 };

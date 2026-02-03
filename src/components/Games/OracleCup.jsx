@@ -13,7 +13,7 @@ const OracleCup = () => {
   const handleConsult = () => {
     if (status === 'consulting') {
       setStatus('idle');
-      setTimeout(() => setAnswer(null), 500); 
+      setTimeout(() => setAnswer(null), 500);
       return;
     }
 
@@ -40,24 +40,31 @@ const OracleCup = () => {
     <div className="oracle-wrapper">
       <h2 className="oracle-title">{t('oracle.title')}</h2>
       <p className="oracle-instructions">
-        {status === 'idle' 
+        {status === 'idle'
           ? t('oracle.idle-new')
           : t('oracle.idle-reset')}
       </p>
 
       <div className="art-scale-container">
-        <article 
-          className="oracle-css-art" 
-          role="img" 
+        <div
+          className="oracle-css-art"
+          role="button"
+          tabIndex={0}
           aria-label="Oracle Cup"
           onClick={handleConsult}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleConsult();
+            }
+          }}
         >
 
           <section className="stain">
             <div className="main-stain"></div>
             <div className="splash-stain"></div>
             <div className={`oracle-msg ${status === 'consulting' ? 'visible' : ''}`}>
-                {answer}
+              {answer}
             </div>
           </section>
 
@@ -79,7 +86,7 @@ const OracleCup = () => {
               </div>
             </div>
           </section>
-        </article>
+        </div>
       </div>
     </div>
   );

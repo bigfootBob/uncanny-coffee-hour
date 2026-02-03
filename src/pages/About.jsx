@@ -20,7 +20,7 @@ const About = () => {
     const targetId = location.state?.selectedSection;
     if (targetId) {
       const element = document.getElementById(targetId);
-      
+
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       } else {
@@ -31,14 +31,14 @@ const About = () => {
 
   return (
     <>
-      <SEO 
-        title="About the Hosts" 
+      <SEO
+        title="About the Hosts"
         description="Meet Odd Bob and Dr. Kitsune, the voices behind the madness."
       />
-      
+
       <div id="about-page" className="page-container">
         <Hero />
-        
+
         <section className="page-header glass-panel">
           <h1>{t('app.title')}</h1>
           <p>{t('aboutpage.subhead')}</p>
@@ -46,7 +46,7 @@ const About = () => {
 
         <section id="aboutus" className="about-text glass-panel">
           <h1>{t('aboutpage.about')}</h1>
-          
+
           {safeAboutText.map((paragraph, i) => (
             <p key={i} className="about-paragraph">
               {paragraph}
@@ -61,9 +61,9 @@ const About = () => {
           </p>
 
           <div className="friends-grid">
-            
+
             {FriendData.map((friend, index) => (
-              <a 
+              <a
                 key={friend.id || index}
                 href={friend.link}
                 target="_blank"
@@ -79,7 +79,7 @@ const About = () => {
                   {friend.icon ? (
                     <img src={`/assets/images/icons/${friend.icon}`} alt="" />
                   ) : (
-                    <span className="generic-arrow">➔</span> 
+                    <span className="generic-arrow">➔</span>
                   )}
                 </div>
               </a>
@@ -108,24 +108,24 @@ const About = () => {
 
         <section className="outro-toon">
           <picture>
-            <source 
-              media="(max-width: 767px)" 
-              srcSet={aboutPicMobile} 
-              type="image/webp" 
+            <source
+              media="(max-width: 767px)"
+              srcSet={aboutPicMobile}
+              type="image/webp"
             />
-            <source 
-              srcSet={aboutPicDesktop} 
-              type="image/webp" 
+            <source
+              srcSet={aboutPicDesktop}
+              type="image/webp"
             />
-            <img 
-              src={aboutPicDesktop} 
-              alt="Cartoon outro image of the team."
+            <img
+              src={aboutPicDesktop}
+              alt="Cartoon team portrait"
               className="about-image"
               loading="eager"
             />
           </picture>
         </section>
-    
+
       </div>
     </>
   );

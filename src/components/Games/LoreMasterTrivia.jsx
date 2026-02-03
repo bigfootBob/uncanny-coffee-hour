@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import './LoreMasterTrivia.scss';
 
 const LoreMasterTrivia = () => {
   const { t } = useTranslation('trivia');
-  
+
   const [activeQuestions, setActiveQuestions] = useState([]);
   const [currentQ, setCurrentQ] = useState(0);
   const [score, setScore] = useState(0);
@@ -13,25 +13,28 @@ const LoreMasterTrivia = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    initGame();
-  }, [t]);
-
-  const initGame = () => {
+  const initGame = useCallback(() => {
     const sessions = t('sessions', { returnObjects: true });
-    
+
     if (sessions && sessions.length > 0) {
       const randomSession = sessions[Math.floor(Math.random() * sessions.length)];
       setActiveQuestions(randomSession.questions);
     }
-    
+
     setScore(0);
     setCurrentQ(0);
     setShowScore(false);
     setIsAnswered(false);
     setSelectedOptionIndex(null);
     setIsLoading(false);
-  };
+  }, [t]);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    initGame();
+  }, [initGame]);
+
+
 
   const handleAnswer = (index) => {
     if (isAnswered) return;
@@ -85,7 +88,7 @@ const LoreMasterTrivia = () => {
             <span className="q-count">{t('ui.query')} {currentQ + 1}/{activeQuestions.length}</span>
             <span className="q-score">Score: {score}</span>
           </div>
-          
+
           <h3 className="question-text">{currentQuestionData.question}</h3>
 
           <div className="options-grid">
@@ -98,9 +101,9 @@ const LoreMasterTrivia = () => {
               }
 
               return (
-                <button 
-                  key={index} 
-                  className={btnClass} 
+                <button
+                  key={index}
+                  className={btnClass}
                   onClick={() => handleAnswer(index)} // Pass da index
                   disabled={isAnswered}
                 >
