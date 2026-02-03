@@ -12,13 +12,8 @@ const Footer = () => {
   return (
     <>
       <div className="collaboration-stamp">
-        <Link 
-          to="/about" 
-          state={{ selectedSection: 'ai' }} 
-        >
-          <img src={badgeImage} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-dark" />
-          <img src={badgeImageBlk} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-light" />
-        </Link>
+        <img src={badgeImage} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-dark" />
+        <img src={badgeImageBlk} alt={t('footer.humanai_alt')} className="human-ai-img logo-for-light" />
         
         <span className="stamp-label">{t('footer.humanai')}</span>
         <span className="stamp-label">{t('footer.collaboration')}</span>

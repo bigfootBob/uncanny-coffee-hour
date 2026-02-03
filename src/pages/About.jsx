@@ -95,13 +95,6 @@ const About = () => {
           </p>
         </section>
 
-        <section id="ai" className="about-text glass-panel">
-          <h1>{t('aboutpage.aititle')}</h1>
-          <p>
-            {t('aboutpage.aitext')}
-          </p>
-        </section>
-
         <section className="team-section-wrapper">
           <Team limit={3} />
         </section>
