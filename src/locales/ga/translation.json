@@ -1,88 +1,126 @@
 {
   "aboutpage": {
-    "subhead": "D'éalú caiféinithe ón ngnáthshaol.",
-    "about": "Faoi an Seó",
+    "subhead": "Do éalú caiféinithe ón ngnáthshaol.",
+    "about": "Faoin Seó",
     "about_text": [
-      "Fáilte go dtí an Uncanny Coffee Hour. Is áit chruinnithe muid don aisteachas ard sa domhan—áit a dtrasnaíonn cosáin ársa na Sióg le réimse leathsholais na Yokai.",
-      "Óstáilte ag Odd Bob agus an Dr. Kitsuné (Mitch), tá ár bpeirspictíochtaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas na Seapáine. Tugann Odd Bob croí fánaí Meiriceánach leis, le hanam ceangailte do rúndiamhra na gCeilteach. In éineacht le Saoirse, ár bPúca cónaitheach, siúlaimid an líne idir an méid atá taighde déanta air agus an rud dodhéanta.",
-      "Creidimid go bhfuil buille croí na fírinne i ngach finscéal. Le meascán d'easpa urraime agus meas domhain, tugaimid tús áite do na guthanna is sine inár measc. Táimid anseo chun guth a thabhairt dóibh siúd gan ghuth.",
+      "Fáilte go dtí an Uncanny Coffee Hour, áit a gcasann an gal ónár gcupáin le ceocháin na rudaí anaithnid. Is áit chruinnithe muid d'aisteachas ard an domhain—áit a dtrasnaíonn seanchosáin na Sióga le réimse leathsholais na Yokai.",
+      "Á chur i láthair ag Odd Bob agus an Dr. Kitsuné (Mitch), tá ár ndearcaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas lán le spioraid na Seapáine, á dtreorú tríd domhan na Yokai agus finscéalta Dúchasacha. Tugann Odd Bob croí fánaí Meiriceánach le hanam ceangailte leis na rúndiamhra Ceilteacha, i gcónaí sa tóir ar dhraíocht dhochreidte na Sióga. In éineacht le Saoirse, ár bPúca cónaitheach, siúlaimid an líne idir an taighde agus an dodhéanta.",
+      "Creidimid go bhfuil buille croí na fírinne i ngach finscéal. Le meascán de neamhmheas agus ómós domhain, tugaimid tús áite do na guthanna is sine inár measc, ag spreagadh súil dhomhain ar dhearcaí Dúchasacha. Táimid anseo chun guth a thabhairt dóibh siúd gan ghuth agus iniúchadh a dhéanamh ar na snáitheanna fealsúnachta a cheanglaíonn muid go léir.",
       "Tá an tionscadal seo á ghrúdú inár n-intinn le blianta. Tá na deochanna te, na scáileanna fada, agus na scéalta ag fanacht.",
       "Tarraing chugat cathaoir."
     ],
-    "friendo_title": "Cairde agus Moltaí",
-    "friendo_desc": "Seo cúpla cara den seó ar mhaith linn aitheantas a thabhairt dóibh:",
-    "aititle": "Cé mhéad cabhair intleachta saorga a úsáideann sibh?",
-    "aitext": "Braitheann sé. Faoi láthair, tá dualgais lánaimseartha orainn. Inár gcás foirfe... dhéanfaimis é seo go lánaimseartha, ach caithfimid bealaí a lorg chun bogadh níos tapúla. Chabhraigh IS linn go mór le cuid den scéalaíocht agus fuaimeanna speisialta.",
+    "friendo_title": "Cairde agus moltaí",
+    "friendo_desc": "Seo cúpla cara den seó nó eintitis riachtanacha eile ar mhaith linn aitheantas a thabhairt dóibh:",
+    "aititle": "Cé mhéad cabhair ón intleacht shaorga a úsáideann sibh?",
+    "aitext": "Braitheann sé sin. Tá oibleagáidí lánaimseartha againn (go fóill) chun bia agus foscadh a choinneáil i ndomhan cruálach. Inár gcás foirfe... dhéanfaimis é seo go lánaimseartha, ach caithfimid bealaí a lorg chun bogadh níos tapúla anseo agus ansiúd agus chabhraigh IS go mór linn luas a chur le cuid den scéalaíocht & maisíochtaí fuaime speisialta a mbaineann tú taitneamh astu. Is meascán de chabhair dhaonna agus IS é ealaín na heipeasóide de ghnáth agus athraíonn sé ó eipeasóid go heipeasóid.",
     "what_podcast": "Cad is podchraoladh ann?",
-    "what_podtext": "Smaoinigh air mar sheó raidió ón am atá thart... cosúil le suí timpeall an raidió. Ach in ionad éisteacht ag am faoi leith, is féidir leat éisteacht aon uair is mian leat!"
+    "what_podtext": "Smaoinigh air mar sheó raidió ó laethanta a chuaigh thart… cosúil le suí timpeall an raidió agus éisteacht le Buck Rogers nó The Shadow… ach in ionad tiúnadh isteach ag am ar leith, is féidir leat éisteacht aon uair is mian leat! Mar sin cruinnigh timpeall an tseanríomhaire nó an fhóin phóca… téigh na feadáin fholúis sin… agus éist!"
   },
-  "lodgepage": {
-    "title": "Bígí Linn! Tacaigh leis an Seó!",
-    "subhead": "Éiríonn gach ball ina chuid den choven agus tacaíonn siad leis na scéalta a theastaíonn uainn go léir a insint.",
-    "btn": "SIÚL LINN"
+  "app": {
+    "title": "Uncanny Coffee Hour",
+    "tagline": "Scéalta an Osnádúrtha & An Grúdaireacht Fhoirfe",
+    "skip_link": "Léim go dtí an príomhábhar"
   },
   "eppage": {
     "title": "An Bailiúchán Iomlán",
+    "transcript": "Tá tras-scríbhinní ar fáil ar buzzsprout (cuardaigh an nasc tras-scríbhinne ar an eipeasóid).",
     "subhead": "Gach scéal aisteach agus cupán doirte, liostaithe in ord croineolaíoch."
   },
+  "footer": {
+    "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+    "rights": "Gach ceart ar cosaint.",
+    "humanai": "Samhlaíocht Dhaonna × Intleacht Shaorga",
+    "humanai_alt": "Comhchruthaithe ag Daoine & IS",
+    "collaboration": "Comhoibriú",
+    "hosted": "Óstáilte ag"
+  },
+  "hero": {
+    "title": "Scéalta Cois Tine Nua-Aimseartha",
+    "subtext": "Is éabhlóid dhigiteach den traidisiún béil é podchraoladh. Nascann Uncanny Coffee Hour béaloideas ársa agus fiosracht nua-aimseartha... sip amháin ag an am."
+  },
   "homepage": {
-    "latestbrew": "An Grúdú Is Déanaí",
+    "latestbrew": "Grúdaireacht Is Déanaí",
     "allep": "gach eipeasóid",
     "innercircle": "An Ciorcal Istigh",
     "subpatreon": "(Patreon)",
     "pata": "$3/mí. Longma Grámhar",
     "patb": "$6/mí. Spiorad Cothaitheach!",
-    "patc": "$18/mí. Síoga (Brownie) Tacaíochta!",
+    "patc": "$18/mí. Tacaí Brownie!",
     "buycoffee": "Ceannaigh Babhta don Chriú",
     "buycoffeesub": "(Buy Me a Coffee)",
     "buycoffeesupport": "Tacaigh linn ar Buy Me a Coffee",
     "emporium": "Emporium",
-    "odditiesetc": "Rudaí Aisteacha, Nithe Iontacha & Earraí",
+    "odditiesetc": "Fiosracht, Rudaí Aisteacha & Earraí",
     "shopnow": "Siopa Anois",
     "whisperwellhead": "An bhfuil Scéal Aisteach Agat Féin?",
-    "whisperwellsubhead": "Úsáid ár dTobar Cogar agus b'fhéidir go n-úsáidfimid é sa phodchraoladh.",
+    "whisperwellsubhead": "Úsáid ár dTobar Cogair agus b'fhéidir go n-úsáidfimid é ar an bpodchraoladh.",
     "whisperwellsubform": "Foirm Aighneachta"
   },
-  "shop": {
-    "title": "Soláthairtí don Chorp, Earraí Aisteacha don Intinn",
-    "subhead": "Scéalta Osnádúrtha & An Grúdú Foirfe",
-    "details": "Sonraí"
-  },
-  "app": {
-    "title": "Uncanny Coffee Hour",
-    "tagline": "Scéalta Osnádúrtha & An Grúdú Foirfe",
-    "skip_link": "Léim go dtí an príomhábhar"
-  },
-  "episode": {
-    "hosts_label": "Óstaigh",
-    "read_transcript": "Léigh an Tras-scríbhinn",
-    "hide_transcript": "Folaigh an Tras-scríbhinn",
-    "transcript_a11y": "le haghaidh {{title}}"
-  },
-  "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Óstáilte ag Odd Bob, Dr Kitsuné, & Saoirse.",
-    "rights": "Gach ceart ar cosaint."
-  },
-  "hero": {
-    "title": "Scéalta Nua-Aimseartha Cois Tine",
-    "subtext": "Is é an podchraoladh éabhlóid dhigiteach an bhéaloideis. Droichead idir béaloideas ársa agus fiosracht nua-aimseartha... sip amháin ag an am."
+  "lodgepage": {
+    "title": "Bí linn! Tacaigh leis an seó!",
+    "subhead": "Déantar ball den lóiste de gach ball agus tacaíonn sé leis na scéalta a theastaíonn uainn go léir faoi láthair a insint.",
+    "btn": "Bí linn, nach mbeidh?"
   },
   "misctext": {
     "return": "Fill ar an Leathanach Baile",
     "lostroute": "Caillte sa cheo",
-    "error": "Tharla Rud Aisteach...",
-    "error_text": "Is cosúil go raibh púca ag imirt cleasanna ar ár gcód!",
+    "error": "Tharla Rud Éigin Aisteach...",
+    "error_text": "Is cosúil go bhfuil Púca ag imirt cleasanna ar ár gcód! Cuireadh isteach ar an nasc leis an domhan spioradálta (nó an freastalaí).",
     "error_details": "Sonraí Teicniúla",
-    "try_again": "Bain Triail Arís"
+    "try_again": "Bain Triail Arís (Athlódáil)",
+    "return_safety": "Fill ar an tSábháilteacht"
   },
   "navtext": {
+    "home": "Baile",
     "about": "Fúinn",
-    "lodge": "lodge",
+    "lodge": "Lóiste",
     "episodes": "Eipeasóidí",
     "shop": "Siopa",
+    "games": "Cluichí",
     "submit_story": "Cuir Scéal Isteach"
   },
-  "team": {
-    "title": "Buail leis na hÓstaigh"
+  "patreon": {
+    "common": {
+      "month": "/ mí",
+      "join": "Tuilleadh Eolais"
+    },
+    "1": {
+      "title": "An Longma Grámhar",
+      "desc": "Eipeasóidí gan fógraí, rochtain ar Discord an Lóiste, aitheantas ar an aer."
+    },
+    "2": {
+      "title": "An Spiorad Cothaitheach",
+      "desc": "Buntáistí Leibhéal 1 PLUS: Stór Rúnda Saoirse (eipeasóidí bónais), Caint Sióga leathnaithe & vóta ar ábhair."
+    },
+    "3": {
+      "title": "An Tacaí Brownie",
+      "desc": "Buntáistí Leibhéal 1 & 2 PLUS: Creidiúint ó bhéal Léiritheoir Feidhmiúcháin, Earraí Fisiciúla (Dhá Uair sa Bhliain), Caife leis na hÓstaigh (cruinniú ráithiúil Zoom)."
+    },
+    "4": {
+      "title": "Cairde Kitsune agus Tanuki!",
+      "desc": "Gach buntáiste leibhéil PLUS: Cruthaímid Yokai saincheaptha duit agus fógraímid a mhiotas ar an aer."
+    }
+  },
+  "shop": {
+    "title": "Soláthairtí don Chorp, Rudaí Aisteacha don Intinn",
+    "subhead": "Scéalta an Osnádúrtha & An Grúdaireacht Fhoirfe",
+    "details": "Sonraí"
+  },
+  "storypage": {
+    "title": "Cuir Do Scéal Osnádúrtha Isteach",
+    "subhead": "An bhfaca tú an Púca? An raibh blas ectoplasma ar do chaife? Inis dúinn",
+    "submit_status": "Faighte.",
+    "submit_message": "Cogarnaíodh do scéal isteach sa duibheagán.",
+    "btn_another": "Seol Ceann Eile",
+    "whis_well": "Tobar Cogair",
+    "instructions": "Fág do scéal don duibheagán...",
+    "form_name": "D'Ainm (nó Ailias)",
+    "form_name_ph": "Taistealaí Anaithnid",
+    "form_story": "Do Scéal",
+    "form_ie": "Oíche dhorcha stoirmiúil a bhí ann...",
+    "form_btn": "Seol go dtí an Cruinneachán",
+    "form_btn_send": "Ag seoladh...",
+    "form_blank": "Scríobh scéal ar dtús, le do thoil.",
+    "form_error": "Dhiúltaigh na spioraid do theachtaireacht. Bain triail arís."
   }
 }

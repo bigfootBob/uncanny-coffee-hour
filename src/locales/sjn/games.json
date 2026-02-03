@@ -1,49 +1,84 @@
 { 
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "title": "Yl-e-Aphed",
+    "description": "Tíro i-dovn. Daro i-dû gwanod dhîn.",
+    "instructions": "Pedo ma, law? Tago i-yl a tíro!",
+    "answers": [
+      "I Púca pent 'Ma'.",
+      "Bigfoot bron.",
+      "Tiw tenna Mothman.",
+      "Baaaaa... BAAAAAA!!",
+      "Man Bigfoot mena eryn?",
+      "Hen naegra Bigfoot.",
+      "Hemp milk maer.",
+      "Ú-nauth... savo luss.",
+      "Peno Dr. Kitsune.",
+      "Gil-en-el lu!",
+      "Av-gwesto.",
+      "Dû amarth.",
+      "Hîth delu.",
+      "Ú-bain!",
+      "Edhil ú-niphred...",
+      "Naug pent 'Ma'!",
+      "Mitch pent 'Law'."
+    ],
+    "idle-new": "Tago i-yl...",
+    "idle-reset": "Tago i-gwath ad-echad."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "Pamas Gwaith-Thol",
+    "description": "Nato i-luyg. Commo i-levain. Tíro i-thandar.",
+    "instructions": "Tago 4 ganad en-sâdh a tago ment.",
+    "short-instructions": "Commo 16 ganad na 4 sâdh.",
+    "mistakes": "Teith-pén: ",
+    "btn-deselect": "Daro",
+    "btn-submit": "Mento",
+    "btn-tryanother": "Savo min",
+    "btn-nextcase": "Sâdh tâd",
+    "lost": "I-thandar wan.",
+    "won": "Sâdh dhol. Maer."
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "Guil-e-Levain",
+    "description": "Erio levain, carro úhuir, a hebo hain!",
+    "instructions": "Maetho i-philinn a erio tâd levain.",
+    "containment": "Hebo-dâf",
+    "reset": "Ad-echad",
+    "overrun": "Ú-hebo",
+    "escape": "I-levain wan.",
+    "tryagain": "Ad-savo",
+    "playagain": "Ad-telio",
+    "contained": "Hebo maer!",
+    "summoned": "Canich i-Phúca!",
+    "control-hint": "Maetho Philinn"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "Iston-e-Nern",
+    "description": "Hen i-chîr en-nern Uncanny Coffee Hour.",
+    "instructions": "Iston-dâf o Uncanny Coffee Hour!"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "Gwanod Levain",
+    "uncanny": "Curú ú-bain!",
+    "description": "Gwanod i-levain a tiro i-thandar.",
+    "instructions": "Gwanod tâd parff levain."
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "Yav-Fuinas",
+    "description": "Maetho i-bamas. Mabo i-lavan.",
+    "beam": "GLAW",
+    "instructions": "Mabo yf, sav lu i-bamas. Danno yf o aphadon."
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "Echad-Telio",
+    "subtitle": "Daro lu, savo miruvor.",
+    "instructionsLabel": "Manen Telio"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "Telia",
+    "close": "Hol"
+  },
+  "common": {
+    "playagain": "Ad-telio"
   }
 }

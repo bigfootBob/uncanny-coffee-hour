@@ -1,49 +1,84 @@
 { 
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "title": "Orakelkoppen",
+    "description": "Skåda i kaffesumpen. Låt bottensatsen avslöja ditt öde.",
+    "instructions": "Ställ en ja/nej-fråga och klicka på koppen för att se vad tomheten svarar!",
+    "answers": [
+      "Púcan nickar ja.",
+      "Bigfoot tror.",
+      "Tecknen pekar på Mothman.",
+      "Bääh... BÄÄÄÄH!!",
+      "Går Bigfoot i skogen?",
+      "Detta gör Bigfoot ledsen.",
+      "Hampamjölk är toppen.",
+      "Oklart... prova te.",
+      "Fråga Dr. Kitsune.",
+      "Stjärnorna står rätt!",
+      "Satsa inte på det.",
+      "Ett mörkt varsel.",
+      "Dimman är tjock.",
+      "Kusligt!",
+      "Älvor fruktar inget...",
+      "Gnomer pekar på ja!",
+      "Mitch säger nej."
+    ],
+    "idle-new": "Klicka på koppen...",
+    "idle-reset": "Klicka på fläcken för att återställa."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "Konspirationstavlan",
+    "description": "Koppla ledtrådarna. Gruppera kryptiderna. Avslöja sanningen.",
+    "instructions": "Klicka på 4 objekt som tillhör samma kategori och klicka på skicka.",
+    "short-instructions": "Gruppera de 16 objekten i 4 kategorier.",
+    "mistakes": "Misstag kvar: ",
+    "btn-deselect": "Avmarkera",
+    "btn-submit": "Skicka",
+    "btn-tryanother": "Prova en annan",
+    "btn-nextcase": "Nästa Fall",
+    "lost": "Sanningen undkom dig.",
+    "won": "Fallet avslutat. Utmärkt arbete."
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "Kryptid Evolution",
+    "description": "Slå samman kryptider för att utveckla dem till mer kusliga varelser och håll dem i kryptan!",
+    "instructions": "Använd pilarna för att slå ihop 2 likadana kryptider.",
+    "containment": "Inneslutningsnivå",
+    "reset": "Återställ",
+    "overrun": "Överränd",
+    "escape": "Kryptiderna har rymt.",
+    "tryagain": "Försök Igen",
+    "playagain": "Spela Igen",
+    "contained": "Inneslutning Lyckades!",
+    "summoned": "Du frammanade Púcan!",
+    "control-hint": "Pilar eller Svep för att Slå Ihop"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "Lore-Mästare",
+    "description": "Testa din kunskap om Uncanny Coffee Hours djupa lore.",
+    "instructions": "Trivia-test om Uncanny Coffee Hour och våra vänner!"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "Kryptid-Matchning",
+    "uncanny": "Kuslig Skicklighet!",
+    "description": "Matcha dina kryptider och avslöja sanningen.",
+    "instructions": "Matcha 2 kryptid-kort som ser likadana ut."
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "Midnattsskörd",
+    "description": "Styr tefatet. Bortför boskapen.",
+    "beam": "STRÅLE",
+    "instructions": "Bortför kor för att driva ditt tefat. Släpp kor på bönder för att minska deras antal."
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "Arkaden",
+    "subtitle": "Slå ihjäl tid medan kaffet bryggs.",
+    "instructionsLabel": "Hur man spelar"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "Kommer Snart",
+    "close": "Stäng"
+  },
+  "common": {
+    "playagain": "Spela Igen"
   }
 }

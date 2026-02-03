@@ -3,86 +3,124 @@
     "subhead": "La tua fuga caffeinata dall'ordinario.",
     "about": "Informazioni sullo Show",
     "about_text": [
-      "Benvenuti all'Uncanny Coffee Hour, dove il vapore delle nostre tazze turbina con le nebbie dell'ignoto.",
-      "Condotto da Odd Bob e Dr. Kitsuné (Mitch). Dr. Kitsune cammina sul ponte tra la saggezza dei nativi e il folklore pieno di spiriti del Giappone. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici. Insieme a Saoirse, il nostro Puca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
-      "Crediamo che ogni leggenda contenga un battito di verità. Con una miscela di irriverenza e profondo rispetto, diamo priorità alle voci più antiche tra noi. Siamo qui per dare voce a chi non ne ha.",
-      "Questo progetto sta fermentando nelle nostre menti da anni. Le bevande sono calde, le ombre lunghe e le storie in attesa.",
+      "Benvenuti all'Uncanny Coffee Hour, dove il vapore delle nostre tazze turbina con le nebbie dell'ignoto. Siamo un luogo di ritrovo per l'alta stranezza del mondo, dove gli antichi sentieri dei Fae si incrociano con il regno crepuscolare degli Yokai.",
+      "Condotto da Odd Bob e Dr. Kitsuné (Mitch), le nostre prospettive sono profonde quanto le nostre radici. Il Dr. Kitsuné cammina sul ponte tra la saggezza nativa e il folklore pieno di spiriti del Giappone, guidandoci attraverso il mondo degli Yokai e delle leggende indigene. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici, inseguendo per sempre la magia impazzita dei Fae. Insieme a Saoirse, il nostro Púca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
+      "Crediamo che ogni leggenda contenga un battito di verità. Con una miscela di irriverenza e profondo rispetto, diamo priorità alle voci più antiche tra noi, incoraggiando uno sguardo profondo alle prospettive indigene. Siamo qui per dare voce a chi non ha voce ed esplorare i fili filosofici che ci collegano tutti.",
+      "Questo progetto fermenta nelle nostre menti da anni. Le bevande sono calde, le ombre lunghe e le storie in attesa.",
       "Prendi una sedia."
     ],
-    "friendo_title": "Amici e Raccomandazioni",
-    "friendo_desc": "Ecco alcuni amici dello show che vorremmo salutare:",
-    "aititle": "Quanto aiuto AI usate?",
-    "aitext": "Dipende. Per ora abbiamo obblighi a tempo pieno. Nel nostro scenario ideale... faremmo questo a tempo pieno, tuttavia, l'AI ci ha davvero aiutato a velocizzare parte della narrazione e degli effetti audio speciali.",
+    "friendo_title": "Amici e raccomandazioni",
+    "friendo_desc": "Ecco alcuni amici dello show o altre entità essenziali a cui vorremmo fare un saluto:",
+    "aititle": "Quanto aiuto dell'IA usate?",
+    "aitext": "Dipende. Abbiamo (per ora) obblighi a tempo pieno per mantenere cibo e alloggio in un mondo crudele. Nel nostro scenario perfetto... faremmo questo a tempo pieno, tuttavia, dobbiamo cercare modi per muoverci più velocemente qua e là e l'IA ci ha davvero aiutato ad accelerare alcune delle narrazioni e degli effetti sonori speciali che vi piacciono. L'arte dell'episodio è tipicamente una combinazione di aiuto umano e IA e varia da episodio a episodio.",
     "what_podcast": "Cos'è un podcast?",
-    "what_podtext": "Pensalo come uno spettacolo radiofonico dei tempi passati... ma invece di sintonizzarti a un'ora specifica, puoi ascoltare quando vuoi!"
-  },
-  "lodgepage": {
-    "title": "Unisciti a noi! Sostieni lo show!",
-    "subhead": "Ogni membro diventa parte della congrega e supporta il racconto delle storie di cui tutti abbiamo bisogno.",
-    "btn": "CAMMINA CON NOI"
-  },
-  "eppage": {
-    "title": "La Collezione Completa",
-    "subhead": "Ogni strana storia e tazza versata, elencate in ordine cronologico."
-  },
-  "homepage": {
-    "latestbrew": "Ultima Miscela",
-    "allep": "tutti gli episodi",
-    "innercircle": "Il Cerchio Interno",
-    "subpatreon": "(Patreon)",
-    "pata": "$3/mese. Longma Amorevole",
-    "patb": "$6/mese. Spirito Nutriente!",
-    "patc": "$18/mese. Benefattore Brownie!",
-    "buycoffee": "Offri un giro alla Crew",
-    "buycoffeesub": "(Buy Me a Coffee)",
-    "buycoffeesupport": "Sostienici su Buy Me a Coffee",
-    "emporium": "Emporio",
-    "odditiesetc": "Curiosità, Stranezze & Merci",
-    "shopnow": "Acquista Ora",
-    "whisperwellhead": "Hai una storia misteriosa tutta tua?",
-    "whisperwellsubhead": "Usa il nostro Pozzo dei Sussurri e potremmo usarla nel podcast.",
-    "whisperwellsubform": "Modulo di Invio"
-  },
-  "shop": {
-    "title": "Provviste per il Corpo, Curiosità per la Mente",
-    "subhead": "Racconti del Paranormale & La Miscela Perfetta",
-    "details": "Dettagli"
+    "what_podtext": "Pensalo come uno spettacolo radiofonico dei giorni passati... come sedersi intorno alla radio e ascoltare Buck Rogers o The Shadow... ma invece di sintonizzarti a un orario specifico, puoi ascoltare quando vuoi! Quindi radunatevi intorno al vecchio computer o al cellulare... scaldate quei tubi a vuoto... e ascoltate!"
   },
   "app": {
     "title": "Uncanny Coffee Hour",
-    "tagline": "Racconti del Paranormale & La Miscela Perfetta",
+    "tagline": "Racconti del Paranormale & La Birra Perfetta",
     "skip_link": "Vai al contenuto principale"
   },
-  "episode": {
-    "hosts_label": "Conduttori",
-    "read_transcript": "Leggi Trascrizione",
-    "hide_transcript": "Nascondi Trascrizione",
-    "transcript_a11y": "per {{title}}"
+  "eppage": {
+    "title": "La Collezione Completa",
+    "transcript": "Le trascrizioni sono disponibili su buzzsprout (cerca il link della trascrizione nell'episodio).",
+    "subhead": "Ogni strana storia e tazza versata, elencate in ordine cronologico."
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Condotto da Odd Bob, Dr Kitsuné, & Saoirse.",
-    "rights": "Tutti i diritti riservati."
+    "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+    "rights": "Tutti i diritti riservati.",
+    "humanai": "Immaginazione Umana × Intelligenza Artificiale",
+    "humanai_alt": "Co-creato da Umani & IA",
+    "collaboration": "Collaborazione",
+    "hosted": "Ospitato da"
   },
   "hero": {
     "title": "Storie Moderne del Focolare",
-    "subtext": "Un podcast è l'evoluzione digitale della tradizione orale. Uncanny Coffee Hour unisce folklore antico e curiosità moderna... un sorso alla volta."
+    "subtext": "Un podcast è l'evoluzione digitale della tradizione orale. Uncanny Coffee Hour unisce l'antico folklore e la curiosità moderna... un sorso alla volta."
+  },
+  "homepage": {
+    "latestbrew": "Appena Preparato",
+    "allep": "tutti gli episodi",
+    "innercircle": "Il Circolo Interno",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/mese. Longma Amorevole",
+    "patb": "$6/mese. Spirito Sostenitore!",
+    "patc": "$18/mese. Benefattore Brownie!",
+    "buycoffee": "Offri un giro alla ciurma",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Supportaci su Buy Me a Coffee",
+    "emporium": "Emporium",
+    "odditiesetc": "Curiosità, Stranezze & Merci",
+    "shopnow": "Acquista Ora",
+    "whisperwellhead": "Hai una storia inquietante tua?",
+    "whisperwellsubhead": "Usa il nostro Pozzo dei Sussurri e potremmo usarla nel podcast.",
+    "whisperwellsubform": "Modulo di Invio"
+  },
+  "lodgepage": {
+    "title": "Unisciti a noi! Sostieni lo show!",
+    "subhead": "Ogni membro diventa parte della loggia e sostiene il racconto delle storie di cui tutti abbiamo bisogno in questo momento.",
+    "btn": "Ti unirai a noi?"
   },
   "misctext": {
     "return": "Ritorna alla Home",
     "lostroute": "Perso nella nebbia",
-    "error": "Qualcosa di strano è accaduto...",
-    "error_text": "Sembra che un puca stia giocando brutti scherzi al nostro codice!",
+    "error": "È successo qualcosa di inquietante...",
+    "error_text": "Sembra che un Púca abbia giocato brutti scherzi al nostro codice! La connessione con il mondo degli spiriti (o il server) è stata interrotta.",
     "error_details": "Dettagli Tecnici",
-    "try_again": "Riprova"
+    "try_again": "Riprova (Ricarica)",
+    "return_safety": "Ritorna al Sicuro"
   },
   "navtext": {
+    "home": "Home",
     "about": "Chi Siamo",
-    "lodge": "Congrega",
+    "lodge": "Loggia",
     "episodes": "Episodi",
     "shop": "Negozio",
-    "submit_story": "Invia Storia"
+    "games": "Giochi",
+    "submit_story": "Invia una Storia"
   },
-  "team": {
-    "title": "Incontra i Conduttori"
+  "patreon": {
+    "common": {
+      "month": "/ mese",
+      "join": "Scopri di più"
+    },
+    "1": {
+      "title": "Il Longma Amorevole",
+      "desc": "Episodi senza pubblicità, accesso al Discord della Loggia, ringraziamento in onda."
+    },
+    "2": {
+      "title": "Lo Spirito Sostenitore",
+      "desc": "Benefici del Livello 1 PIÙ: La Scorta Segreta di Saoirse (episodi bonus), chiacchiere Fae estese & voto sugli argomenti."
+    },
+    "3": {
+      "title": "Il Benefattore Brownie",
+      "desc": "Benefici dei Livelli 1 & 2 PIÙ: Credito verbale come produttore esecutivo, Merch Fisico (Semestrale), Caffè con i Conduttori (ritrovo trimestrale su Zoom)."
+    },
+    "4": {
+      "title": "Amici di Kitsune e Tanuki!",
+      "desc": "Tutti i benefici dei livelli PIÙ: Creiamo uno Yokai personalizzato per te e annunciamo il suo mito in onda."
+    }
+  },
+  "shop": {
+    "title": "Provviste per il Corpo, Curiosità per la Mente",
+    "subhead": "Racconti del Paranormale & La Birra Perfetta",
+    "details": "Dettagli"
+  },
+  "storypage": {
+    "title": "Invia il tuo Racconto Paranormale",
+    "subhead": "Hai visto il Púca? Il tuo caffè sapeva di ectoplasma? Raccontacelo.",
+    "submit_status": "Ricevuto.",
+    "submit_message": "Il tuo racconto è stato sussurrato nel vuoto.",
+    "btn_another": "Iniviane un Altro",
+    "whis_well": "Pozzo dei Sussurri",
+    "instructions": "Lascia la tua storia per il vuoto...",
+    "form_name": "Il Tuo Nome (o Alias)",
+    "form_name_ph": "Viaggiatore Sconosciuto",
+    "form_story": "La Tua Storia",
+    "form_ie": "Era una notte buia e tempestosa...",
+    "form_btn": "Invia al Caveau",
+    "form_btn_send": "Invio in corso...",
+    "form_blank": "Per favore scrivi prima una storia.",
+    "form_error": "Gli spiriti hanno rifiutato il tuo messaggio. Riprova."
   }
 }

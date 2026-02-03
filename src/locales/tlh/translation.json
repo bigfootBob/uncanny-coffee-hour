@@ -1,88 +1,126 @@
 {
   "aboutpage": {
-    "subhead": "nItebHa' qa'vIn.",
-    "about": "lut",
+    "subhead": "boghvIlIj Dalo'be'bogh 'oH.",
+    "about": "Lutmey",
     "about_text": [
-      "nuqneH. naDev Uncanny Coffee Hour.",
-      "Odd Bob Dr. Kitsuné (Mitch) je. Dr. Kitsune leng. Odd Bob leng. Saoirse, Puca, maH tlhej.",
-      "maH Har.",
-      "qa'vIn tuj, Hurgh nI'.",
-      "yIba'."
+      "Uncanny Coffee Hour yI'el, naDev qa'vIn HIvje'maj seS tlhej Hurgh mI'. yuQ Hujqu' wIbuS - naDev nItebHesh He chen Yokai Hurgh juH je.",
+      "Odd Bob Dr. Kitsuné (Mitch) je, nIteb lutmey wIqel. Dr. Kitsuné DevwI', Japan qa'mey lutmey je Native Sov je. Odd Bob 'oH American ghojmoHwI' 'e', Celtic Hurgh tIq ghaj, reH Fae magic tlha'. Saoirse, maH Puca, wItlhej, 'ej qeS je lormey je wIqel.",
+      "Hoch lut vIt ghaj 'e' wIHar. tIqmo' je vuvqu'mo', qanwI'pu' wIqel, Native lutmey wIleghqu'. naDev maH, ghogh ghajbe'bogh nuvpu'vaD ghogh wInob 'ej Hoch maHvaD rarqangbogh qeS wIqel.",
+      "ben law' Qu'vam wIqel. Hat tlhIl, nI' QI', 'ej loS lutmey.",
+      "quS yItlhap."
     ],
-    "friendo_title": "jup",
-    "friendo_desc": "naDev jup:",
-    "aititle": "De'wI' boQ?",
-    "aitext": "De'wI' lut boQ.",
-    "what_podcast": "nuq 'oH?",
-    "what_podtext": "QIn rur. bI'reS."
-  },
-  "lodgepage": {
-    "title": "yImuv! yIboQ!",
-    "subhead": "Hoch boQ.",
-    "btn": "yIleng"
-  },
-  "eppage": {
-    "title": "Hoch",
-    "subhead": "Hoch lut, poH."
-  },
-  "homepage": {
-    "latestbrew": "qa'vIn chu'",
-    "allep": "Hoch lut",
-    "innercircle": "jup",
-    "subpatreon": "(Patreon)",
-    "pata": "Longma parmaq",
-    "patb": "qa' boQ!",
-    "patc": "Brownie!",
-    "buycoffee": "qa'vIn yIje'",
-    "buycoffeesub": "(Buy Me a Coffee)",
-    "buycoffeesupport": "yIboQ",
-    "emporium": "beQ'a'",
-    "odditiesetc": "Haj, Huj & Dochmey",
-    "shopnow": "DaH yIje'",
-    "whisperwellhead": "bIghung'a'?",
-    "whisperwellsubhead": "yIja'.",
-    "whisperwellsubform": "yIngeH"
-  },
-  "shop": {
-    "title": "Soj, De'",
-    "subhead": "lut & qa'vIn",
-    "details": "De'"
+    "friendo_title": "juppu' je Chovnatlh",
+    "friendo_desc": "naDev lut juppu' Daghaj, pagh latlh potlh nuvpu':",
+    "aititle": "'ar De'wI' QaH Dalo'?",
+    "aitext": "pIm. (DaH) Soj juH je wIghajmeH Qu' nI' wIghaj. maH vIndo' maj... Qu'vam wIghajlaH, 'ach nom maH, 'ej De'wI' QaH wIlo'pu' 'ej lutmey se' je nom wIchenmoH. lut mIllogh chenmoHmeH Human De'wI' je wIlo', 'ej pIm lutmey.",
+    "what_podcast": "nuq 'oH Podcast?",
+    "what_podtext": "ben QIn Duj rur... QIn Duj retlhDaq ba' 'ej Buck Rogers The Shadow ghap yI'Ij... 'ach poH pIm Dalo'laH! vaj De'wI' tlhIngan Hol ghap talpu' Dalo'... vacuum tubes yItu'... 'ej yI'Ij!"
   },
   "app": {
     "title": "Uncanny Coffee Hour",
-    "tagline": "lut & qa'vIn",
-    "skip_link": "yIghoS"
+    "tagline": "Huj Lutmey & qa'vIn Maj",
+    "skip_link": "De' potlh yIghoS"
   },
-  "episode": {
-    "hosts_label": "ra'wI'",
-    "read_transcript": "yIlaD",
-    "hide_transcript": "So'",
-    "transcript_a11y": "vaD {{title}}"
+  "eppage": {
+    "title": "Hoch Lutmey",
+    "transcript": "buzzsproutDaq transcriptmey tu'lu' (lutDaq transcript lung yInej).",
+    "subhead": "Hoch Huj lut HIvje' chagh, poH pIm."
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Saoirse.",
-    "rights": "Hoch."
+    "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+    "rights": "Hoch pey' tlhIngan wo'.",
+    "humanai": "Human Nauth × De'wI' Val",
+    "humanai_alt": "Human & De'wI' chenmoH",
+    "collaboration": "Muv",
+    "hosted": "PerwI'"
   },
   "hero": {
-    "title": "qul lut",
-    "subtext": "lut De'wI'."
+    "title": "DaHjaj Lutmey Qul Retlh",
+    "subtext": "Podcast 'oH nItebHesh lut ghojmoHwI'. Uncanny Coffee Hour tlhIngan Hol lutmey DaHjaj ghojmoHwI' je... wa' HIvje' lo'."
+  },
+  "homepage": {
+    "latestbrew": "Chu' vut",
+    "allep": "Hoch lutmey",
+    "innercircle": "Botlh Ghom",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/jar. MuSHa' Longma",
+    "patb": "$6/jar. TaH Qa'",
+    "patc": "$18/jar. Brownie BoQ!",
+    "buycoffee": "nuvpu'vaD HIvje' yIje'",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Buy Me a CoffeeDaq maH yIboQ",
+    "emporium": "Uy'",
+    "odditiesetc": "Huj, Huj & Dochmey",
+    "shopnow": "DaH yIje'",
+    "whisperwellhead": "SoH Huj Lut Daghaj'a'?",
+    "whisperwellsubhead": "Whispering Well yIlo' 'ej podcastDaq wIlo'laH.",
+    "whisperwellsubform": "Chagh GhItlh"
+  },
+  "lodgepage": {
+    "title": "MaH yImuv! Lut yIboQ!",
+    "subhead": "Hoch muvwI' juH 'ay' moj 'ej lutmey wIja'bogh wIboQ.",
+    "btn": "SoH maH yImuv'a'?"
   },
   "misctext": {
-    "return": "juH",
-    "lostroute": "lIgh",
-    "error": "Qagh...",
-    "error_text": "Puca!",
-    "error_details": "De'",
-    "try_again": "qaqa"
+    "return": "JuH yIchegh",
+    "lostroute": "ChImDaq chIl",
+    "error": "Huj Doch qaS...",
+    "error_text": "Puca ghItlhmajDaq Qu'vam ta'! qa'pu' (pagh De'wI') rarwI' qIl.",
+    "error_details": "De' 'Itlh",
+    "try_again": "yInIDqa' (yIteq)",
+    "return_safety": "QanDaq yIchegh"
   },
   "navtext": {
-    "about": "De'",
-    "lodge": "boQ",
-    "episodes": "lut",
-    "shop": "beQ",
-    "submit_story": "lut"
+    "home": "JuH",
+    "about": "Ghot",
+    "lodge": "JuH",
+    "episodes": "Lutmey",
+    "shop": "Uy'",
+    "games": "Qu'mey",
+    "submit_story": "Lut yInob"
   },
-  "team": {
-    "title": "ra'wI'"
+  "patreon": {
+    "common": {
+      "month": "/ jar",
+      "join": "Latlh yIghoj"
+    },
+    "1": {
+      "title": "MuSHa' Longma",
+      "desc": "QeD HUtlh lutmey, Lodge Discord 'el, Se'Daq pong."
+    },
+    "2": {
+      "title": "TaH Qa'",
+      "desc": "Tier 1 potlh PLUS: Saoirse Pegh Pol (lutmey chel), Fae Jatlh nI' & Qu'mey wIv."
+    },
+    "3": {
+      "title": "Brownie BoQ",
+      "desc": "Tier 1 & 2 potlh PLUS: Executive producer jatlh, Physical Merch (loS jar), Hosts qa'vIn (loS jar Zoom ghom)."
+    },
+    "4": {
+      "title": "Kitsune Tanuki je juppu'!",
+      "desc": "Hoch tier potlh PLUS: Yokai pIm wIchenmoH 'ej Se'Daq lut wIja'."
+    }
+  },
+  "shop": {
+    "title": "PorghvaD Soj, YabvaD Huj",
+    "subhead": "Huj Lutmey & qa'vIn Maj",
+    "details": "De'"
+  },
+  "storypage": {
+    "title": "Huj LutlIj yInob",
+    "subhead": "Puca Dalegh'a'? qa'vInlIj ectoplasm rur'a'? maH yIja'.",
+    "submit_status": "Hev.",
+    "submit_message": "LutlIj chImDaq saj.",
+    "btn_another": "Latlh yIngeH",
+    "whis_well": "Saj yIn",
+    "instructions": "ChImDaq lutlIj yIchagh...",
+    "form_name": "PonglIj (pagh Pong pIm)",
+    "form_name_ph": "LengwI' Sovbe'",
+    "form_story": "LutlIj",
+    "form_ie": "Hurgh 'ej jev ram...",
+    "form_btn": "PolDaq yIngeH",
+    "form_btn_send": "NgeH...",
+    "form_blank": "Lut yIghItlh.",
+    "form_error": "Qa'pu' QInlIj luy. yInIDqa'."
   }
 }

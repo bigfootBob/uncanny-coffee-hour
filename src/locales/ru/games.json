@@ -1,49 +1,84 @@
 { 
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "title": "Чаша Оракула",
+    "description": "Вглядись в кофейную гущу. Пусть осадок откроет твою судьбу.",
+    "instructions": "Задай вопрос (да/нет) и нажми на чашку, чтобы узнать, что ответит бездна!",
+    "answers": [
+      "Пука кивает да.",
+      "Бигфут верит.",
+      "Знаки указывают на Человека-мотылька.",
+      "Беее... БЕЕЕЕ!!",
+      "Ходит ли Бигфут в лес?",
+      "Это печалит Бигфута.",
+      "Конопляное молоко великолепно.",
+      "Неясно... попробуй чай.",
+      "Спроси доктора Кицунэ.",
+      "Звезды сошлись!",
+      "Не ставь на это.",
+      "Темное предзнаменование.",
+      "Туман густой.",
+      "Жутко!",
+      "Фейри не боятся...",
+      "Гномы указывают на да!",
+      "Митч говорит нет."
+    ],
+    "idle-new": "Нажми на чашку...",
+    "idle-reset": "Нажми на пятно, чтобы сбросить."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "Доска Заговора",
+    "description": "Соедини улики. Сгруппируй криптидов. Раскрой правду.",
+    "instructions": "Выберите 4 предмета из одной категории и нажмите «Отправить».",
+    "short-instructions": "Сгруппируйте 16 предметов в 4 категории.",
+    "mistakes": "Осталось ошибок: ",
+    "btn-deselect": "Снять выбор",
+    "btn-submit": "Отправить",
+    "btn-tryanother": "Попробовать другую",
+    "btn-nextcase": "Следующее дело",
+    "lost": "Истина ускользнула от вас.",
+    "won": "Дело закрыто. Отличная работа."
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "Эволюция Криптидов",
+    "description": "Объединяй криптидов, чтобы превратить их в более жутких существ и удержать в склепе!",
+    "instructions": "Используйте стрелки, чтобы соединить двух одинаковых криптидов.",
+    "containment": "Уровень сдерживания",
+    "reset": "Сброс",
+    "overrun": "Наводнение",
+    "escape": "Криптиды сбежали.",
+    "tryagain": "Попробовать снова",
+    "playagain": "Играть снова",
+    "contained": "Сдерживание достигнуто!",
+    "summoned": "Вы призвали Пуку!",
+    "control-hint": "Стрелки или свайп для слияния"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "Знаток Лора",
+    "description": "Проверьте свои знания глубинного лора Uncanny Coffee Hour.",
+    "instructions": "Викторина о Uncanny Coffee Hour и наших друзьях!"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "Пары Криптидов",
+    "uncanny": "Жуткий навык!",
+    "description": "Сопоставь криптидов и открой правду.",
+    "instructions": "Найди две одинаковые карты с криптидами."
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "Полуночный Урожай",
+    "description": "Пилотируй тарелку. Похищай скот.",
+    "beam": "ЛУЧ",
+    "instructions": "Похищайте коров для энергии тарелки. Сбрасывайте коров на фермеров."
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "Аркада",
+    "subtitle": "Убей время, пока варится кофе.",
+    "instructionsLabel": "Как играть"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "Скоро",
+    "close": "Закрыть"
+  },
+  "common": {
+    "playagain": "Играть снова"
   }
 }

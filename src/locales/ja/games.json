@@ -1,49 +1,84 @@
 { 
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "title": "オラクルカップ",
+    "description": "コーヒーの粉を見つめてください。底の澱があなたの運命を明らかにします。",
+    "instructions": "はい/いいえの質問をして、コーヒーカップをクリックして、虚空からの答えを見てください！",
+    "answers": [
+      "プーカはイエスと頷いた。",
+      "ビッグフットは信じている。",
+      "モスマンの兆候がある。",
+      "メェェェ... メェェェェ！！",
+      "ビッグフットは森に行く？",
+      "それはビッグフットを悲しませる。",
+      "ヘンプミルクは最高だ。",
+      "不明確... お茶を試して。",
+      "キツネ博士に聞いて。",
+      "星が並んだ！",
+      "賭けないほうがいい。",
+      "暗い前兆。",
+      "霧が深い。",
+      "不気味だ！",
+      "妖精は何も恐れない...",
+      "ノームはイエスを指している！",
+      "ミッチはノーと言っている。"
+    ],
+    "idle-new": "カップをタップして運命を明らかに...",
+    "idle-reset": "染みをタップしてリセット。"
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "陰謀のボード",
+    "description": "手がかりを繋げ。クリプティッドを分類せよ。真実を暴け。",
+    "instructions": "同じカテゴリに属する4つのアイテムをクリックして送信してください。",
+    "short-instructions": "16のアイテムを4つのカテゴリに分類してください。",
+    "mistakes": "残りのミス: ",
+    "btn-deselect": "選択解除",
+    "btn-submit": "送信",
+    "btn-tryanother": "別を試す",
+    "btn-nextcase": "次の事件",
+    "lost": "真実は逃げ去った。",
+    "won": "解決済み。素晴らしい仕事だ。"
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "クリプティッドの進化",
+    "description": "クリプティッドを合体させて、より不気味な生物に進化させ、地下室に封じ込めろ！",
+    "instructions": "矢印キーを使用して、同じクリプティッドを2つ結合します。",
+    "containment": "封じ込めレベル",
+    "reset": "リセット",
+    "overrun": "オーバーラン",
+    "escape": "クリプティッドが逃げ出した。",
+    "tryagain": "再試行",
+    "playagain": "もう一度プレイ",
+    "contained": "封じ込め達成！",
+    "summoned": "プーカを召喚しました！",
+    "control-hint": "矢印キーまたはスワイプで合体"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "ロア・マスター",
+    "description": "Uncanny Coffee Hourの深い知識をテストします。",
+    "instructions": "Uncanny Coffee Hourと仲間たちに関するトリビアテスト！"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "クリプティッド・マッチ",
+    "uncanny": "不気味なスキル！",
+    "description": "クリプティッドをマッチさせて真実を暴け。",
+    "instructions": "同じに見える2枚のクリプティッドカードをマッチさせます。"
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "真夜中の収穫",
+    "description": "円盤を操縦せよ。家畜を誘拐せよ。",
+    "beam": "ビーム",
+    "instructions": "牛を誘拐して円盤の動力にします。牛を農夫に落として数を減らしてください。"
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "アーケード",
+    "subtitle": "コーヒーを淹れている間の暇つぶし。",
+    "instructionsLabel": "遊び方"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "近日公開",
+    "close": "閉じる"
+  },
+  "common": {
+    "playagain": "もう一度プレイ"
   }
 }

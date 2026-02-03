@@ -1,88 +1,126 @@
 {
   "aboutpage": {
-    "subhead": "Edraith lîn o'n raew.",
-    "about": "O Narn",
+    "subhead": "Echad lín o'n raiw.",
+    "about": "O'n Nern",
     "about_text": [
-      "Mae govannen na Uncanny Coffee Hour. Im gwaith e-dú.",
-      "Gwaith Odd Bob a Dr. Kitsuné (Mitch). Dr. Kitsune pada i-iant im ist a narn. Odd Bob togo gûr e-randir. Ma Saoirse, i-Puca, padathanc i-raew a i-ú-raew.",
-      "Savanc i narn garb vîn.",
-      "I-yulna 'lûg, i-dú land.",
+      "Mae govannen na Uncanny Coffee Hour, ias i-thû o yl vín hwindia na chîth en-dhu. Im sâdh com-maethad an-ngurth ann-dhu en-Arda—ias i-mên iaur en-Edhil govadia i-ardh dhúath en-Yokai.",
+      "Horthannen o Odd Bob a Dr. Kitsuné (Mitch), i-chîr vín nûm sui thond vín. Dr. Kitsuné padra i-iant im ist iaur a'n nern faer-bain en-Japan, toga men trî i-ardh en-Yokai a nern iaur. Odd Bob toga hûn randir American go faer nwedhannen na rûth Celtic, ui-aphada i-gûl gwanu en-Edhil. Go Saoirse, i-Phúca vín, padra men i-lîr im i-ist a'n ú-car.",
+      "Savo men i nern-bain gar hûn-dring en-then. Go nîdh a ar-faer, savo men i-lamm iaur im men, a hortho tîr nûm na ist iaur. Im sí an-anno lam na pen-lam a cened i-lîr faer i nwedha men bain.",
+      "I-tam has, gwîa im ind vín an-idhrinn. I-yl urn, i-gwath ann, a'n nern dartho.",
       "Havo."
     ],
-    "friendo_title": "Mellyn",
-    "friendo_desc": "Hen mellyn e-narn:",
-    "aititle": "Man I-Golodh?",
-    "aitext": "Ú-iston. Si, ma gwaith. I-Golodh (AI) togo narn vîn.",
-    "what_podcast": "Man i-Ghogh?",
-    "what_podtext": "Sui narn e-iaur. Lasto lû a lû."
-  },
-  "lodgepage": {
-    "title": "Gwaith! Berio Narn!",
-    "subhead": "Gwaith a narn.",
-    "btn": "PADO AS GWAITH"
-  },
-  "eppage": {
-    "title": "Gwaith Pân",
-    "subhead": "Narn a yulna, ne lû."
-  },
-  "homepage": {
-    "latestbrew": "Yulna Set",
-    "allep": "Narn Pân",
-    "innercircle": "E-Gwaith",
-    "subpatreon": "(Patreon)",
-    "pata": "Longma Mel",
-    "patb": "Faer Berio!",
-    "patc": "Hiry ann!",
-    "buycoffee": "Yulna na Gwaith",
-    "buycoffeesub": "(Buy Me a Coffee)",
-    "buycoffeesupport": "Berio Gwaith",
-    "emporium": "Boch",
-    "odditiesetc": "Ingem, Ú-raew & Bach",
-    "shopnow": "Bango Si",
-    "whisperwellhead": "Garog Narn Dú?",
-    "whisperwellsubhead": "Peth i-eithel.",
-    "whisperwellsubform": "Ment Narn"
-  },
-  "shop": {
-    "title": "Boch na Rhaw, I-Ist na Ind",
-    "subhead": "Narn e-Dú & Yulna Maer",
-    "details": "De"
+    "friendo_title": "Mellyn a maer-peth",
+    "friendo_desc": "Sin mellyn en-nern a hûd maer i savo men anno suil:",
+    "aititle": "Manen gûl-nauth lo sâf?",
+    "aitext": "Pen-tîr. Gar men (si) qu'ann-lu an-garo aes a sâdh im ardh balch. Im i-tam maer... car men hen ann-lu, ach, boe cened mên an-padra ceint sí a ennas a gûl-nauth sta savo men horto i-nern a lamm-gûl i mel sâf. I-cerm nern na gwanod en-adan a gûl-nauth a prest o nern na nern.",
+    "what_podcast": "Man te nern-lam?",
+    "what_podtext": "Nautho hen sui nern-radio o'n lu gwann... sui havad o-galadh a lastad Buck Rogers egor The Shadow... ach ú-lastad na lu-cîw, tur lastad ir anír sâf! Ar-commo o-gûl-nauth egor palantir-beg... urno i-thû... a lasto!"
   },
   "app": {
     "title": "Uncanny Coffee Hour",
-    "tagline": "Narn e-Dú & Yulna Maer",
-    "skip_link": "Pado na De"
+    "tagline": "Nern en-Ú-vân & I-Miruvor Maer",
+    "skip_link": "Lacho na dâf"
   },
-  "episode": {
-    "hosts_label": "Hîr",
-    "read_transcript": "Trenarno",
-    "hide_transcript": "Ceno Trenarn",
-    "transcript_a11y": "an {{title}}"
+  "eppage": {
+    "title": "I-Gwanod Pain",
+    "transcript": "Tec-lam ennas na buzzsprout (tiro i-tec-lam luyg na nern).",
+    "subhead": "Nern-bain ú-vân a yl pant, teithannen na lu-dâf."
   },
   "footer": {
-    "copyright": "© {{year}} Uncanny Coffee Hour. Odd Bob, Dr Kitsuné, & Saoirse.",
-    "rights": "Pân tûr."
+    "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",
+    "rights": "Dâf-bain horthannen.",
+    "humanai": "Nauth-Adan × Gûl-Nauth",
+    "humanai_alt": "Echain o Adan & Gûl-Nauth",
+    "collaboration": "Gwanod",
+    "hosted": "Horthannen o"
   },
   "hero": {
-    "title": "Narn e-Ruinhu",
-    "subtext": "I-ghogh narn e-iaur."
+    "title": "Nern-Ruist Gwain",
+    "subtext": "Nern-lam te i-prest gûl o nern-lamm. Uncanny Coffee Hour lacha nern iaur a rûth gwain... min yl na lu."
+  },
+  "homepage": {
+    "latestbrew": "Yl-Gwain",
+    "allep": "nern-bain",
+    "innercircle": "I-Ring-Im",
+    "subpatreon": "(Patreon)",
+    "pata": "$3/ril. Longma Mel!",
+    "patb": "$6/ril. Faer Bron!",
+    "patc": "$18/ril. Brownie Maer!",
+    "buycoffee": "Bacho yl an-gwanod",
+    "buycoffeesub": "(Buy Me a Coffee)",
+    "buycoffeesupport": "Tugo men na Buy Me a Coffee",
+    "emporium": "Bamas-Cerm",
+    "odditiesetc": "Huj, Ú-vân & Cerm",
+    "shopnow": "Bacho Si",
+    "whisperwellhead": "Gar sâf Nern Ú-vân o anim?",
+    "whisperwellsubhead": "Lo i-Eithel Luss a ma savo men hen na nern-lam.",
+    "whisperwellsubform": "Tec-Dâf"
+  },
+  "lodgepage": {
+    "title": "Mento men! Tugo i-nern!",
+    "subhead": "Gwanod-bain car sâdh en-thâm a tugo pedo i-nern i anír men bain si.",
+    "btn": "Mento men, ma?"
   },
   "misctext": {
-    "return": "Ad-bado",
-    "lostroute": "Misty",
-    "error": "Ú-maer...",
-    "error_text": "Puca!",
-    "error_details": "Ist",
-    "try_again": "Ad-echad"
+    "return": "Dandol na Bamas",
+    "lostroute": "Misten na hîth",
+    "error": "Tam ú-vân car...",
+    "error_text": "Thêl Púca car rî en-tec men! I-luyg na ardh-faer (egor gûl-dâf) carannen.",
+    "error_details": "Dâf Gûl",
+    "try_again": "Ad-savo (Ad-to)",
+    "return_safety": "Dandol na Varn"
   },
   "navtext": {
-    "about": "O Gwaith",
-    "lodge": "Gwaith",
-    "episodes": "Narn",
-    "shop": "Bach",
-    "submit_story": "Narn"
+    "home": "Bamas",
+    "about": "O-Men",
+    "lodge": "Thâm",
+    "episodes": "Nern",
+    "shop": "Bacho",
+    "games": "Telio",
+    "submit_story": "Mento Nern"
   },
-  "team": {
-    "title": "Hîr Narn"
+  "patreon": {
+    "common": {
+      "month": "/ ril",
+      "join": "Isto Am"
+    },
+    "1": {
+      "title": "I-Longma Mel",
+      "desc": "Nern pen-dâf, lacha na Thâm-Palantir, suil na nern-lam."
+    },
+    "2": {
+      "title": "I-Faer Bron",
+      "desc": "Maer 1 AM: Sâdh-Holl Saoirse (nern-am), pedo-Edhil ann & i-dâf bo nern."
+    },
+    "3": {
+      "title": "I-Brownie Maer",
+      "desc": "Maer 1 & 2 AM: Suil-lam sui Hîr-Car, Cerm-Pân (Tâd-lo-Ennin), Yl go Hîr (Palantir-Gwanod)."
+    },
+    "4": {
+      "title": "Mellyn Kitsune a Tanuki!",
+      "desc": "Maer-bain AM: Car men Yokai o-anim a can nern dîn na nern-lam."
+    }
+  },
+  "shop": {
+    "title": "Aes an-Rhaw, Huj an-Ind",
+    "subhead": "Nern en-Ú-vân & I-Miruvor Maer",
+    "details": "Dâf"
+  },
+  "storypage": {
+    "title": "Mento Nern Ú-vân Lín",
+    "subhead": "Cennich i-Phúca? I-yl lín sav sui faer-hûl? Peno men.",
+    "submit_status": "Mabannen.",
+    "submit_message": "I-nern lín lussannen na coe.",
+    "btn_another": "Mento Min",
+    "whis_well": "Eithel Luss",
+    "instructions": "Daro nern lín an-coe...",
+    "form_name": "Eneth Lín (egor Haer-Eneth)",
+    "form_name_ph": "Randir Pen-Ist",
+    "form_story": "Nern Lín",
+    "form_ie": "Fuinas dûr a alagos...",
+    "form_btn": "Mento na Sâdh-Holl",
+    "form_btn_send": "Menta...",
+    "form_blank": "Teco nern min, ma?",
+    "form_error": "I-faer av-gar dâf lín. Ad-savo."
   }
 }

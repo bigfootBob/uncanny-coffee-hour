@@ -1,49 +1,84 @@
 { 
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!"
+    "title": "La Coppa dell'Oracolo",
+    "description": "Guarda nei fondi di caffè. Lascia che i residui rivelino il tuo destino.",
+    "instructions": "Fai una domanda sì o no e clicca sulla tazza per vedere cosa risponde il vuoto!",
+    "answers": [
+      "Il Púca annuisce sì.",
+      "Bigfoot ci crede.",
+      "I segni indicano Mothman.",
+      "Baaaaa... BAAAAAA!!",
+      "Bigfoot va nei boschi?",
+      "Questo rende triste Bigfoot.",
+      "Il latte di canapa è grandioso.",
+      "Non chiaro... prova col tè.",
+      "Chiedi al Dr. Kitsune.",
+      "Le stelle si allineano!",
+      "Non scommetterci.",
+      "Un oscuro presagio.",
+      "La nebbia è fitta.",
+      "Inquietante!",
+      "Le fate non temono nulla...",
+      "Gli gnomi indicano sì!",
+      "Mitch dice no."
+    ],
+    "idle-new": "Tocca la tazza...",
+    "idle-reset": "Tocca la macchia per resettare."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "La Lavagna delle Cospirazioni",
+    "description": "Collega gli indizi. Raggruppa i criptidi. Scopri la verità.",
+    "instructions": "Clicca su 4 elementi che appartengono alla stessa categoria e clicca invia.",
+    "short-instructions": "Raggruppa i 16 elementi in 4 categorie.",
+    "mistakes": "Errori Rimasti: ",
+    "btn-deselect": "Deseleziona",
+    "btn-submit": "Invia",
+    "btn-tryanother": "Provane un'altra",
+    "btn-nextcase": "Prossimo Caso",
+    "lost": "La Verità ti è sfuggita.",
+    "won": "Caso Chiuso. Lavoro Eccellente."
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "Evoluzione Criptide",
+    "description": "Unisci i criptidi per farli evolvere in creature più inquietanti e confinali nella cripta!",
+    "instructions": "Usa le frecce per unire 2 criptidi uguali.",
+    "containment": "Livello Contenimento",
+    "reset": "Reimposta",
+    "overrun": "Invaso",
+    "escape": "I criptidi sono scappati.",
+    "tryagain": "Riprova",
+    "playagain": "Gioca di nuovo",
+    "contained": "Contenimento Raggiunto!",
+    "summoned": "Hai evocato il Púca!",
+    "control-hint": "Usa Frecce o Swipe per Unire"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "Maestro del Lore",
+    "description": "Metti alla prova la tua conoscenza del lore profondo di Uncanny Coffee Hour.",
+    "instructions": "Quiz su Uncanny Coffee Hour e i nostri amici!"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "Coppie Criptide",
+    "uncanny": "Abilità Inquietante!",
+    "description": "Abbina i tuoi criptidi e scopri la verità.",
+    "instructions": "Abbina 2 carte criptide che sembrano uguali."
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "Raccolto di Mezzanotte",
+    "description": "Pilota il disco volante. Rapisci il bestiame.",
+    "beam": "RAGGIO",
+    "instructions": "Rapisci mucche per alimentare il tuo disco. Lancia mucche sui contadini per ridurre il loro numero."
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "La Sala Giochi",
+    "subtitle": "Passa il tempo mentre il caffè è in preparazione.",
+    "instructionsLabel": "Come Giocare"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "Prossimamente",
+    "close": "Chiudi"
+  },
+  "common": {
+    "playagain": "Gioca di nuovo"
   }
 }

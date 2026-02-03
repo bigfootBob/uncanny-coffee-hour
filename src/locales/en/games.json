@@ -40,7 +40,7 @@
   },
   "evolution": {
     "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
+    "description": "Merge cryptids to evolve into more uncanny creatures and contain them within the crypt!",
     "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!",
     "containment": "Containment Level",
     "reset": "Reset",
@@ -60,7 +60,7 @@
   "match": {
     "title": "Cryptid Match",
     "uncanny": "Uncanny Skill!",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
+    "description": "Match your cryptids and uncover the thruth.",
     "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
   },
   "saucer": {

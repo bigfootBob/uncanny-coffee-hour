@@ -1,68 +1,84 @@
-{ 
+{
   "oracle": {
-    "title": "The Oracle Cup",
-    "description": "Gaze into the coffee grounds. Let the dregs reveal your fortune.",
-    "instructions": "Ask a yes no question and click the coffee cup to see what the is returned from the void!",
+    "title": "Die Orakel-Tasse",
+    "description": "Blicke in den Kaffeesatz. Lass den Bodensatz dein Schicksal enthüllen.",
+    "instructions": "Stelle eine Ja/Nein-Frage und klicke auf die Tasse, um zu sehen, was aus der Leere zurückkehrt!",
     "answers": [
-      "The Puca nods yes.",
-      "Bigfoot believes.",
-      "Signs point to Mothman",
-      "Baaaaa... BAAAAAA!!",
-      "Does bigfoot go in the woods?",
-      "This makes Bigfoot sad.",
-      "Hemp milk is grand.",
-      "Unclear... try tea.",
-      "Ask Dr. Kitsune.",
-      "Stars align!",
-      "Don't bet on it.",
-      "A dark omen.",
-      "Mists are thick.",
-      "Uncanny!",
-      "Fae fear nae...",
-      "Gnomes point to yes!",
-      "Mitch says no."
-    ]
+      "Der Púca nickt ja.",
+      "Bigfoot glaubt daran.",
+      "Die Zeichen deuten auf Mothman.",
+      "Määäh... MÄÄÄÄH!!",
+      "Geht Bigfoot in den Wald?",
+      "Das macht Bigfoot traurig.",
+      "Hanfmilch ist großartig.",
+      "Unklar... versuch es mit Tee.",
+      "Frag Dr. Kitsune.",
+      "Die Sterne stehen gut!",
+      "Wette nicht darauf.",
+      "Ein dunkles Omen.",
+      "Der Nebel ist dicht.",
+      "Unheimlich!",
+      "Feen fürchten nichts...",
+      "Gnome deuten auf Ja!",
+      "Mitch sagt nein."
+    ],
+    "idle-new": "Tippe auf die Tasse...",
+    "idle-reset": "Tippe auf den Fleck zum Zurücksetzen."
   },
   "conspiracy": {
-    "title": "Conspiracy Board",
-    "description": "Connect the clues. Group the cryptids. Uncover the truth.",
-    "instructions": "Click 4 items that belong in the same category and click submit.",
-    "short-instructions": "Group the 16 items into 4 categories.",
-    "mistakes": "Mistakes Remaining: ",
-    "btn-deselect": "Deselect",
-    "btn-submit": "Submit",
-    "btn-tryanother": "Try Another",
-    "btn-nextcase": "Next Case",
-    "lost": "The Truth Escaped You.",
-    "won": "Case Closed. Excellent Work."
+    "title": "Das Verschwörungsbrett",
+    "description": "Verbinde die Hinweise. Gruppiere die Kryptiden. Enthülle die Wahrheit.",
+    "instructions": "Klicke auf 4 Gegenstände, die zur gleichen Kategorie gehören, und klicke auf Senden.",
+    "short-instructions": "Gruppiere die 16 Gegenstände in 4 Kategorien.",
+    "mistakes": "Verbleibende Fehler: ",
+    "btn-deselect": "Abwählen",
+    "btn-submit": "Senden",
+    "btn-tryanother": "Anderes versuchen",
+    "btn-nextcase": "Nächster Fall",
+    "lost": "Die Wahrheit ist dir entgangen.",
+    "won": "Fall geschlossen. Ausgezeichnete Arbeit."
   },
   "evolution": {
-    "title": "Cryptid Evolution",
-    "description": "Capture photographic evidence of the paranormal before it vanishes.",
-    "instructions": "Use the arrow keys to join 2 of the same cryptid. They evelove into new beasts as you go!"
+    "title": "Kryptiden-Evolution",
+    "description": "Verschmelze Kryptiden, um sie zu unheimlicheren Kreaturen zu entwickeln und sie in der Gruft einzudämmen!",
+    "instructions": "Benutze die Pfeiltasten, um 2 gleiche Kryptiden zu verbinden.",
+    "containment": "Eindämmungsstufe",
+    "reset": "Zurücksetzen",
+    "overrun": "Überrannt",
+    "escape": "Die Kryptiden sind entkommen.",
+    "tryagain": "Nochmal versuchen",
+    "playagain": "Nochmal spielen",
+    "contained": "Eindämmung erreicht!",
+    "summoned": "Du hast den Púca beschworen!",
+    "control-hint": "Pfeiltasten oder Wischen zum Verschmelzen"
   },
   "trivia": {
-    "title": "Lore Master Trivia",
-    "description": "Test your knowledge of the Uncanny Coffee Hour deep lore.",
-    "instructions": "Trivia test of the Uncanny Coffee Hour and our friends!"
+    "title": "Lore-Meister Trivia",
+    "description": "Teste dein Wissen über die tiefen Hintergründe der Uncanny Coffee Hour.",
+    "instructions": "Trivia-Test über die Uncanny Coffee Hour und unsere Freunde!"
   },
   "match": {
-    "title": "Cryptid Match",
-    "description": "Escape the Pacific Northwest forest before your coffee spills.",
-    "instructions": "Match 2 cryptid cards that look the same. Rinse, repeat until the board is full."
+    "title": "Kryptiden-Paare",
+    "uncanny": "Unheimliches Geschick!",
+    "description": "Finde die Kryptiden-Paare und enthülle die Wahrheit.",
+    "instructions": "Finde 2 Kryptiden-Karten, die gleich aussehen."
   },
   "saucer": {
-    "title": "Midnight Harvest",
-    "description": "Pilot the saucer. Abduct the livestock.",
-    "instructions": "Abduct cows to power your saucer. The more cows you abduct, the more farmers are called in to battle you! Drop cows on farmers to reduce their numbers."
+    "title": "Mitternachtsernte",
+    "description": "Steuere die Untertasse. Entführe das Vieh.",
+    "beam": "BEAMEN",
+    "instructions": "Entführe Kühe, um deine Untertasse anzutreiben. Wirf Kühe auf Bauern ab, um ihre Anzahl zu reduzieren."
   },
   "page": {
-    "title": "The Arcade",
-    "subtitle": "Pass the time while your coffee brews.",
-    "instructionsLabel": "How to Play"
+    "title": "Die Spielhalle",
+    "subtitle": "Vertreibe dir die Zeit, während dein Kaffee brüht.",
+    "instructionsLabel": "Spielanleitung"
   },
   "status": {
-    "comingSoon": "Coming Soon",
-    "close": "Close"
+    "comingSoon": "Demnächst",
+    "close": "Schließen"
+  },
+  "common": {
+    "playagain": "Nochmal spielen"
   }
 }
