@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
+import klingonLogo from '../../assets/images/klingon-logo.png';
 import './LanguageSwitcher.scss';
 
 const GlobeIcon = () => (
@@ -25,6 +27,7 @@ const languages = [
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [showQapla, setShowQapla] = useState(false); 
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -46,9 +49,15 @@ const LanguageSwitcher = () => {
   const handleLanguageChange = (code) => {
     i18n.changeLanguage(code);
     setIsOpen(false);
+
+    if (code === 'tlh') {
+      setShowQapla(true);
+      setTimeout(() => setShowQapla(false), 3000);
+    }
   };
 
   return (
+    <>
     <div className="language-switcher" ref={wrapperRef}>
       <button 
         className={`globe-btn ${isOpen ? 'active' : ''}`}
@@ -73,7 +82,19 @@ const LanguageSwitcher = () => {
           ))}
         </ul>
       </div>
+
     </div>
+      {/* Easter Egg */}
+      {showQapla && createPortal(
+        <div className="qapla-overlay">
+          <div className="klingon-insignia">
+            <img src={klingonLogo} alt="Klingon Empire" />
+          </div>
+          <span className="qapla-text">Qapla'</span>
+        </div>,
+        document.body
+      )}
+    </>
   );
 };
 
