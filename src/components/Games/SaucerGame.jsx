@@ -43,8 +43,6 @@ const SaucerGame = () => {
     bullets: []
   });
 
-
-
   const saucerRef = useRef({ x: 350, y: 100, width: 80, height: 40 });
   const cowsRef = useRef([]);
   const farmersRef = useRef([]);
@@ -75,20 +73,22 @@ const SaucerGame = () => {
 
     // Cleanup
     return () => {
-      hoverAudio.current.pause();
-      hoverAudio.current.currentTime = 0;
-      beamAudio.current.pause();
-      beamAudio.current.currentTime = 0;
-      crashAudio.current.pause();
-      crashAudio.current.currentTime = 0;
-      gunshotAudio.current.pause();
-      gunshotAudio.current.currentTime = 0;
-      splatAudio.current.pause();
-      splatAudio.current.currentTime = 0;
-      mooAudio.current.pause();
-      mooAudio.current.currentTime = 0;
-      screamAudio.current.pause();
-      screamAudio.current.currentTime = 0;
+      const audioRefs = [
+        hoverAudio, 
+        beamAudio, 
+        crashAudio, 
+        gunshotAudio, 
+        splatAudio, 
+        mooAudio, 
+        screamAudio
+      ];
+
+      audioRefs.forEach(ref => {
+        if (ref.current) {
+          ref.current.pause();
+          ref.current.currentTime = 0;
+        }
+      });
     };
   }, []);
 
