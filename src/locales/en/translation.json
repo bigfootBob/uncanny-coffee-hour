@@ -22,9 +22,14 @@
       "skip_link": "Skip to main content"
     },
     "eppage": {
-      "title":"The Complete Collection",
+      "title":"The Uncanny Archives",
+      "search": "Search by cryptid, folklore, or coffee...",
+      "found": "episodes found.",
+      "foundnone": "The mists have cleared... but we found nothing matching your search.",
+      "less": "Show Less",
+      "readfull": "Read Full Description",
       "transcript": "Transcripts are available on buzzsprout (look for the transcript link on the episode).",
-      "subhead": "Every strange tale and spilled cup, listed in chronological order."
+      "seo": "Listen to all the episodes. Strange tales, Yokai, Ghosts, Cryptids, Sasquatch, Uncanny, Spooky, Podcast, Native, Uncanny coffee hour"
     },
     "footer": {
       "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

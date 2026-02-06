@@ -22,9 +22,14 @@
     "skip_link": "Vai al contenuto principale"
   },
   "eppage": {
-    "title": "La Collezione Completa",
-    "transcript": "Le trascrizioni sono disponibili su buzzsprout (cerca il link della trascrizione nell'episodio).",
-    "subhead": "Ogni strana storia e tazza versata, elencate in ordine cronologico."
+    "title": "Gli Archivi dell'Innominabile",
+    "search": "Cerca per criptide, folklore o caffè...",
+    "found": "episodi trovati.",
+    "foundnone": "Le nebbie si sono diradate... ma non abbiamo trovato nulla che corrisponda alla tua ricerca.",
+    "less": "Mostra meno",
+    "readfull": "Leggi la descrizione completa",
+    "transcript": "Le trascrizioni sono disponibili su Buzzsprout (cerca il link della trascrizione nell'episodio).",
+    "seo": "Ascolta tutti gli episodi. Storie strane, Yokai, Fantasmi, Criptidi, Sasquatch, Inquietante, Spettrale, Podcast, Nativo, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

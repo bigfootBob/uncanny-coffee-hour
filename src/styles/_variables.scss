@@ -3,19 +3,23 @@
 // =========================================
 // BRAND PALETTE 
 // =========================================
+$brand-void:     #000000;
+$brand-obsidian: #0A0A0B;
+$brand-darksoul: #1a1a1a;
+$brand-dkroast:  #333333;
 $brand-espresso: #2c241b; 
 $brand-roast:    #4a3b32;
 $brand-latte:    #fdfbf7;
-$brand-foam:     #cccccc;
-$brand-homer :   #ffbf75;
-$brand-kitsune:  #d9534f;
-$brand-puca:     #557c66;
-$brand-ecto:     #5cb85c;
 $brand-mist:     #e0e6ed;
 $brand-ghost:    #e0e0e0;
-$brand-void:     #000000; 
-$brand-obsidian: #0A0A0B; 
+$brand-foam:     #cccccc;
+$brand-parchment:#D9D2C5;
+$brand-homer :   #ffbf75;
+$brand-kitsune:  #d9534f; 
 $color-error:    #de0909;
+$brand-moss:     #5b8266;
+$brand-puca:     #557c66;
+$brand-ecto:     #5cb85c;
 
 // =========================================
 // THEMES & CSS VARIABLES
@@ -35,7 +39,7 @@ $color-error:    #de0909;
   --obsidian-dark:   #0A0A0B;       
   --forest-noir:     #141814;         
   --roasted-bean:    #2C1B14;        
-  --espresso-gold:   #C28E42;       
+  --espresso-gold:   #C28E42;     
   --latte-parchment: #D9D2C5;     
   --puca-teal:       #1E4D4E;           
   --spectral-cyan:   #7FFFD4;       
@@ -99,11 +103,13 @@ $spacing-unit:       8px;
 $bp-tablet:          768px;
 $bp-desktop:         1024px;
 
-// glass
-
 :root {
   /* --- DEFAULT (DARK MODE) --- */
   --app-bg: #{$brand-void};
+  --btn-text-sec: #{$brand-moss};
+  --btn-border-sec: color-mix(in srgb, #{$brand-moss}, transparent 50%);
+  --mix-adjust: #fff;
+
   /* Dark, semi-transparent espresso background */
   --glass-bg: rgba(15, 11, 8, 0.75); 
   /* Subtle gold border to pop against the dark */
@@ -130,6 +136,11 @@ $bp-desktop:         1024px;
 html[data-theme='light'] {
   /* --- LIGHT MODE --- */
   --app-bg: #fff;
+  --btnbk: #{$brand-homer};
+  --btn-text-sec: #{$brand-espresso}; 
+  --btn-border-sec: color-mix(in srgb, #{$brand-espresso}, transparent 60%);
+  --mix-adjust: #{$brand-obsidian};
+
   /* Milky white semi-transparent background */
   --glass-bg: rgba(255, 255, 255, 0.6); 
   /* White border looks very premium in light mode ("Apple" style) */
@@ -139,7 +150,7 @@ html[data-theme='light'] {
   /* Dark text */
   --glass-text: #1a1a1a;
 
-  --cta-border: #ffbf75;
+  --cta-border: #{$brand-homer};
   --cta-button: #{$brand-espresso};
   --footer-hosts: #{$brand-roast};
   --font-bodytext: #{$brand-obsidian};

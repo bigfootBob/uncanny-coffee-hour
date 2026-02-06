@@ -1,64 +1,113 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero/Hero'; 
 import { useTranslation } from 'react-i18next';
+import episodesData from '../data/episodes.json';
 import SEO from '../components/SEO/SEO';
 import './Episodes.scss';
 
-const Episodes = () => {
-  const { t } = useTranslation();
-  useEffect(() => {
-    if (document.getElementById('buzzsprout-script')) return;
+const EpisodePage = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [expandedId, setExpandedId] = useState(null);
+  const { t } = useTranslation('translation');
 
-    const script = document.createElement('script');
-    script.id = 'buzzsprout-script';
-    script.src = 'https://www.buzzsprout.com/2450457.js?container_id=buzzsprout-large-player&player=large';
-    script.type = 'text/javascript';
-    script.charset = 'utf-8';
-    script.async = true;
+  // Seconds to MM:SS
+  const formatDuration = (sec) => {
+    const mins = Math.floor(sec / 60);
+    const remainingSecs = sec % 60;
+    return `${mins}:${remainingSecs.toString().padStart(2, '0')}`;
+  };
 
-    const container = document.getElementById('buzzsprout-script-container');
-    if (container) {
-      container.appendChild(script);
-    }
+  // Format Date
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  };
 
-    return () => {
-      if (container) {
-        const existingScript = document.getElementById('buzzsprout-script');
-        if (existingScript) existingScript.remove();
-      }
-    };
-  }, []);
+  // Filter & Sort 
+  const filteredEpisodes = episodesData
+    .filter(ep => 
+      ep.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+      ep.description.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
 
   return (
     <>
+    <SEO
+      title="Uncanny Coffee Hour Archives"
+      description={t('eppage.seo')}
+    />
 
-      <SEO 
-        title="Uncanny Coffee Hour Past Episodes" 
-        description="Listen to Odd Bob, Dr. Kitsune & Saoirse, the voices behind the madness."
-      />
+    <main className="uncanny-archives">
 
       <Hero />
-      
-      <div className="episodes-page">
-        <div className="page-header glass-panel">
-          <h1>{t('eppage.title')}</h1>
-          <p>{t('eppage.subhead')}</p>
-        </div>
 
-        <div className="player-wrapper glass-panel">
-          {/* Buzzsprout looks for */}
-          <div id='buzzsprout-large-player'></div>
-          <div id='buzzsprout-script-container' style={{ display: 'none' }}></div>
+      <header className="archives-header page-header">
+        <h1>{t('eppage.title')}</h1>
+        <div className="search-wrapper">
+          <input 
+            type="text" 
+            placeholder={t('eppage.search')}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+          {searchTerm && <p className="search-results-count"> {filteredEpisodes.length} {t('eppage.found')}</p>}
         </div>
+      </header>
 
-        <a href="https://uncannycoffeehour.buzzsprout.com/2450457/episodes" target="_blank" rel="noopener noreferrer" className="transcript-link">
-          <div className='transcript-note'>
-            {t('eppage.transcript')}
+      <div className="episode-list">
+        {filteredEpisodes.length > 0 ? (
+          filteredEpisodes.map((ep) => (
+            <section key={ep.id} className="episode-card">
+              <div className="episode-main">
+                <img 
+                  src={ep.artwork_url} 
+                  alt={ep.title} 
+                  className="episode-art" 
+                />
+                
+                <div className="episode-details">
+                  <div className="episode-meta">
+                    <span className="ep-tag">S{ep.season_number} : E{ep.episode_number}</span>
+                    <span className="ep-duration"> 🕒 {formatDuration(ep.duration)}</span>
+                  </div>
+                  
+                  <h2>{ep.title}</h2>
+                  <p className="publish-date">{formatDate(ep.published_at)}</p>
+
+                  <div className="audio-section">
+                    <audio controls src={ep.audio_url} className="custom-player" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="description-wrapper">
+                <div 
+                  className={`episode-description ${expandedId === ep.id ? 'expanded' : 'collapsed'}`}
+                  dangerouslySetInnerHTML={{ __html: ep.description }} 
+                />
+                <button 
+                  className="toggle-desc-btn" 
+                  onClick={() => setExpandedId(expandedId === ep.id ? null : ep.id)}
+                >
+                  {expandedId === ep.id ? t('eppage.less') : t('eppage.readfull')}
+                </button>
+              </div>
+            </section>
+          ))
+        ) : (
+          <div className="no-results">
+            <p>{t('eppage.foundnone')}</p>
           </div>
-        </a>
+        )}
       </div>
+    </main>
     </>
   );
 };
 
-export default Episodes;
+export default EpisodePage;

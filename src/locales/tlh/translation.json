@@ -22,9 +22,14 @@
     "skip_link": "De' potlh yIghoS"
   },
   "eppage": {
-    "title": "Hoch Lutmey",
-    "transcript": "buzzsproutDaq transcriptmey tu'lu' (lutDaq transcript lung yInej).",
-    "subhead": "Hoch Huj lut HIvje' chagh, poH pIm."
+    "title": "ghom'a' vogh",
+    "search": "yInej: Ha'DIba'mey, lutmey, pagh qa'vI'...",
+    "found": "lutmey tu'lu'.",
+    "foundnone": "chuv tlhoy... pagh nejmeH tu'lu'.",
+    "less": "mach yIbej",
+    "readfull": "lut yIlaD",
+    "transcript": "BuzzsproutDaq ghItlhmey tu'lu'.",
+    "seo": "Hoch lutmey yI'Ij. lutmey Haba', Yokai, Sasquatch, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

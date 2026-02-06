@@ -22,9 +22,14 @@
     "skip_link": "Léim go dtí an príomhábhar"
   },
   "eppage": {
-    "title": "An Bailiúchán Iomlán",
-    "transcript": "Tá tras-scríbhinní ar fáil ar buzzsprout (cuardaigh an nasc tras-scríbhinne ar an eipeasóid).",
-    "subhead": "Gach scéal aisteach agus cupán doirte, liostaithe in ord croineolaíoch."
+    "title": "Na hOllchartlanna",
+    "search": "Cuardaigh de réir cripteoid, béaloideas, nó caife...",
+    "found": "eipeasóid aimsithe.",
+    "foundnone": "Tá an ceo glanta... ach ní bhfuaireamar aon rud a mheaitseálann do chuardach.",
+    "less": "Taispeáin níos lú",
+    "readfull": "Léigh an tuairisc iomlán",
+    "transcript": "Tá tras-scríbhinní ar fáil ar Buzzsprout (lorg an nasc tras-scríbhinne ar an eipeasóid).",
+    "seo": "Éist leis na heipeasóidí go léir. Scéalta aisteacha, Yokai, Taibhsí, Cripteoidí, Sasquatch, Neamhshaolta, Scanrúil, Podchraoladh, Dúchasach, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

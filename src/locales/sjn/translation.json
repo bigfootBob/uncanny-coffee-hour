@@ -22,9 +22,14 @@
     "skip_link": "Lacho na dâf"
   },
   "eppage": {
-    "title": "I-Gwanod Pain",
-    "transcript": "Tec-lam ennas na buzzsprout (tiro i-tec-lam luyg na nern).",
-    "subhead": "Nern-bain ú-vân a yl pant, teithannen na lu-dâf."
+    "title": "I Baradh Thanc",
+    "search": "Cered na chith, narth, eb gwaeth...",
+    "found": "idhrinn hirn.",
+    "foundnone": "I hith dhenin... ach ú-hirnim nad thanc.",
+    "less": "Tiro thanc",
+    "readfull": "Tiro i narth pant",
+    "transcript": "Teith hirn nan Buzzsprout.",
+    "seo": "Lasto ana idhrinn bain. Nali thanc, Yokai, Gwaith, Sasquatch, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

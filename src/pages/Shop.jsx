@@ -27,7 +27,7 @@ const Shop = () => {
 
       <div className="shop-grid">
         {products.map((item) => (
-          <article key={item.id} className="product-card">
+          <article key={item.id} className="product-card glass-panel">
 
             <a href={item.link} target="_blank" rel="noopener noreferrer" className="card-image-link">
               <div className="card-image-wrapper">

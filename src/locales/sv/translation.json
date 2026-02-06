@@ -22,9 +22,14 @@
     "skip_link": "Hoppa till huvudinnehåll"
   },
   "eppage": {
-    "title": "Den Kompletta Samlingen",
-    "transcript": "Transkript finns tillgängliga på buzzsprout (leta efter transkriptlänken på episoden).",
-    "subhead": "Varje märklig berättelse och spilld kopp, listad i kronologisk ordning."
+    "title": "De Kusliga Archiven",
+    "search": "Sök efter kryptider, folklore eller kaffe...",
+    "found": "avsnitt hittades.",
+    "foundnone": "Dimman har lättat... men vi hittade inget som matchade din sökning.",
+    "less": "Visa mindre",
+    "readfull": "Läs hela beskrivningen",
+    "transcript": "Transkriptioner finns på Buzzsprout (leta efter länken för transkription på avsnittet).",
+    "seo": "Lyssna på alla avsnitt. Märkliga berättelser, Yokai, Spöken, Kryptider, Sasquatch, Kusligt, Läskigt, Podcast, Native, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

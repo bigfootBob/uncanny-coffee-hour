@@ -22,9 +22,14 @@
     "skip_link": "Zum Hauptinhalt springen"
   },
   "eppage": {
-    "title": "Die komplette Sammlung",
-    "transcript": "Transkripte sind auf Buzzsprout verfügbar (suche nach dem Transkript-Link in der Episode).",
-    "subhead": "Jede seltsame Geschichte und jede verschüttete Tasse, chronologisch aufgelistet."
+    "title": "Das Unheimliche Archiv",
+    "search": "Suche nach Kryptiden, Folklore oder Kaffee...",
+    "found": "Episoden gefunden.",
+    "foundnone": "Der Nebel hat sich gelichtet... aber wir haben nichts passendes zu deiner Suche gefunden.",
+    "less": "Weniger anzeigen",
+    "readfull": "Vollständige Beschreibung lesen",
+    "transcript": "Transkripte sind auf Buzzsprout verfügbar (suche nach dem Transkript-Link bei der Episode).",
+    "seo": "Höre alle Episoden. Seltsame Geschichten, Yokai, Geister, Kryptiden, Sasquatch, unheimlich, gruselig, Podcast, Native, Uncanny Coffee Hour"
   },
   "footer": {
     "copyright": "The Dr Kitsuné & Odd Bob Uncanny Coffee Hour",

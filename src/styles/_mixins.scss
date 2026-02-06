@@ -12,7 +12,7 @@
     border-radius: 4px;
   }
 }
-  
+
 // Screen Reader Only (Standard utility)
 @mixin sr-only {
   position: absolute;
@@ -40,6 +40,62 @@
     border-color 0.3s ease, 
     box-shadow 0.3s ease,
     color 0.3s ease;
+}
+
+@mixin brand-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+@mixin brand-btn-primary {
+  background-color: var(--btnbk);
+  color: var(--btncolor);
+  
+  &:hover {
+    background-color: lighten(var(--btnbk), 5%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@mixin brand-btn-secondary {
+  background: transparent;
+  color: var(--btn-text-sec);
+  border: 1.5px solid var(--btn-border-sec);
+  font-weight: 700; 
+  letter-spacing: 0.02em;
+
+  &:hover {
+    border-color: var(--btn-text-sec);
+    background: color-mix(in srgb, var(--btn-text-sec), transparent 94%);
+    color: color-mix(in srgb, var(--btn-text-sec), var(--mix-adjust) 20%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@mixin brand-btn-ghost {
+  background: transparent;
+  color: $brand-ghost;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.05);
+  }
 }
 
 @mixin glass($blur: 12px) {
