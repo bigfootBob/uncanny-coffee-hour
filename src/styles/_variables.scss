@@ -24,18 +24,15 @@ $brand-ecto:     #5cb85c;
 // =========================================
 // THEMES & CSS VARIABLES
 // =========================================
+
 :root {
-  /* use for headers */
-  // --font-serif: 'Alegreya', serif;     
+  /* --- TYPOGRAPHY --- */
   --font-serif: 'Cinzel Decorative', cursive;
-  /* Nav, Subheads, Buttons */
-  --font-sans: 'Alegreya Sans', sans-serif;
-  /* Artifacts */
-  --font-mono: 'Special Elite', monospace;
-  // "Necto Mono"
-  --font-body: 'Space Mono', sans-serif;
+  --font-sans:  'Alegreya Sans', sans-serif;
+  --font-mono:  'Special Elite', monospace;
+  --font-body:  'Space Mono', sans-serif;
   
-  /* Uncanny Coffee Hour - Official Brand Palette */
+  /* --- UNCANNY BRAND PALETTE (Always Available) --- */
   --obsidian-dark:   #0A0A0B;       
   --forest-noir:     #141814;         
   --roasted-bean:    #2C1B14;        
@@ -46,7 +43,49 @@ $brand-ecto:     #5cb85c;
   --mist-glass:      rgba(255, 255, 255, 0.1); 
   --copper-accent:   #8B4513;   
 
-  // --- LIGHT THEME (Default) ---
+  /* --- CORE THEME: DEFAULT (DARK MODE) --- */
+  --app-bg:         #{$brand-void};
+  --bg-body:        #{$brand-obsidian};
+  --bg-surface:     #{$brand-espresso};
+  --bg-surface-alt: #{$brand-roast};
+  
+  --text-primary:   #{$brand-latte}; 
+  --text-secondary: #{$brand-mist};
+  --text-inverse:   #{$brand-mist};
+  
+  --border-color:   #{$brand-roast};
+  --accent-color:   #{$brand-homer}; 
+  --select-background: rgba(0, 0, 0, 0.3);
+
+  /* --- COMPONENT SPECIFICS (DARK) --- */
+  --btn-text-sec:   #{$brand-moss};
+  --btn-border-sec: #{color-mix(in srgb, #{$brand-moss}, transparent 50%)};
+  --mix-adjust:     #fff;
+
+  --glass-bg:       rgba(15, 11, 8, 0.75); 
+  --glass-border:   rgba(194, 142, 66, 0.25); 
+  --glass-shadow:   0 8px 32px rgba(0, 0, 0, 0.5);
+  --glass-text:     #e0e0e0;
+
+  --cta-border:     #{$brand-puca};
+  --cta-button:     #{$brand-ecto};
+  --footer-hosts:   #{$brand-ghost};
+
+  --font-bodytext:     #{$brand-ghost};
+  --header-color:      #{$brand-ghost};
+  --subheader-color:   #{$brand-mist};
+  --smalltext-color:   #{$brand-foam};
+  --team-header:       #C28E42;
+  --player-label-text: #ffbf75;
+  --game-title:        #{$brand-ecto};
+  --game-shadow:       rgba(92, 184, 92, 0.3);
+}
+
+// =========================================
+// LIGHT THEME OVERRIDES
+// =========================================
+html[data-theme='light'] {
+  --app-bg:         #fff;
   --bg-body:        #{$brand-latte};
   --bg-surface:     #ffffff;
   --bg-surface-alt: #f5f5f5;
@@ -58,107 +97,26 @@ $brand-ecto:     #5cb85c;
   --border-color:   #ddd;
   --accent-color:   #{$brand-puca};
   --select-background: rgba(255, 255, 255, 0.5);
-}
 
-// DARK THEME
-[data-theme='dark'] {
-  --bg-body:        #{$brand-obsidian};
-  --bg-surface:     #{$brand-espresso};
-  --bg-surface-alt: #{$brand-roast};
-  
-  --text-primary:   #{$brand-latte}; 
-  --text-secondary: #{$brand-mist};
-  --text-inverse:   #{$brand-mist};
-  
-  --border-color:   #{$brand-roast};
-  --accent-color:   #{$brand-homer}; 
-  --select-background:  rgba(0, 0, 0, 0.3);
-}
+  --btnbk:          #{$brand-homer};
+  --btn-text-sec:   #{$brand-espresso}; 
+  --btn-border-sec: #{color-mix(in srgb, #{$brand-espresso}, transparent 60%)};
+  --mix-adjust:     #{$brand-obsidian};
 
-// =========================================
-// HELPER VARS (SCSS to CSS Mapping)
-// =========================================
-$bg-body:        var(--bg-body);
-$bg-surface:     var(--bg-surface);
-$text-primary:   var(--text-primary);
-$text-secondary: var(--text-secondary);
-$text-inverse:   var(--text-inverse);
-$color-focus:    #005fcc; 
+  --glass-bg:       rgba(255, 255, 255, 0.6); 
+  --glass-border:   rgba(255, 255, 255, 0.6); 
+  --glass-shadow:   0 8px 32px rgba(0, 0, 0, 0.1);
+  --glass-text:     #1a1a1a;
 
-// --- FONT STACKS ---
-// Use this for H1, H2, and long paragraphs of story text
-$font-stack-heading: var(--font-serif); 
-// Use this for Nav, H3/H4, Buttons, and UI Labels
-$font-stack-ui:      var(--font-sans);   
-// typewriter for the form
-$font-stack-mono:    var(--font-mono);
-
-$font-stack-body:    var(--font-body);   
-
-$border-radius-md:   8px;
-$border-radius-lg:   12px;
-
-$spacing-unit:       8px;
-
-$bp-tablet:          768px;
-$bp-desktop:         1024px;
-
-:root {
-  /* --- DEFAULT (DARK MODE) --- */
-  --app-bg: #{$brand-void};
-  --btn-text-sec: #{$brand-moss};
-  --btn-border-sec: color-mix(in srgb, #{$brand-moss}, transparent 50%);
-  --mix-adjust: #fff;
-
-  /* Dark, semi-transparent espresso background */
-  --glass-bg: rgba(15, 11, 8, 0.75); 
-  /* Subtle gold border to pop against the dark */
-  --glass-border: rgba(194, 142, 66, 0.25); 
-  /* Deep shadow for depth */
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  /* Text color */
-  --glass-text: #e0e0e0;
-
-  --cta-border: #{$brand-puca};
-  --cta-button: #{$brand-ecto};
-  --footer-hosts: #{$brand-ghost};
-
-  --font-bodytext: #{$brand-ghost};
-  --header-color: #{$brand-ghost};
-  --subheader-color: #{$brand-mist};
-  --smalltext-color: #{$brand-foam};
-  --team-header: #C28E42;
-  --player-label-text: #ffbf75;
-  --game-title: #{$brand-ecto};
-  --game-shadow: rgba(92, 184, 92, 0.3);
-}
-
-html[data-theme='light'] {
-  /* --- LIGHT MODE --- */
-  --app-bg: #fff;
-  --btnbk: #{$brand-homer};
-  --btn-text-sec: #{$brand-espresso}; 
-  --btn-border-sec: color-mix(in srgb, #{$brand-espresso}, transparent 60%);
-  --mix-adjust: #{$brand-obsidian};
-
-  /* Milky white semi-transparent background */
-  --glass-bg: rgba(255, 255, 255, 0.6); 
-  /* White border looks very premium in light mode ("Apple" style) */
-  --glass-border: rgba(255, 255, 255, 0.6); 
-  /* Softer, more diffused shadow */
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  /* Dark text */
-  --glass-text: #1a1a1a;
-
-  --cta-border: #{$brand-homer};
-  --cta-button: #{$brand-espresso};
-  --footer-hosts: #{$brand-roast};
-  --font-bodytext: #{$brand-obsidian};
-  --header-color: #{$brand-obsidian};
-  --subheader-color: #{$brand-obsidian};
-  --smalltext-color: #{$brand-espresso};
-  --team-header: #{$brand-espresso};
+  --cta-border:     #{$brand-homer};
+  --cta-button:     #{$brand-espresso};
+  --footer-hosts:   #{$brand-roast};
+  --font-bodytext:  #{$brand-obsidian};
+  --header-color:   #{$brand-obsidian};
+  --subheader-color:#{$brand-obsidian};
+  --smalltext-color:#{$brand-espresso};
+  --team-header:    #{$brand-espresso};
   --player-label-text: #{$brand-puca};
-  --game-title: #{$brand-obsidian};
-  --game-shadow: rgba(2, 2, 2, 0.8);
+  --game-title:     #{$brand-obsidian};
+  --game-shadow:    rgba(2, 2, 2, 0.8);
 }

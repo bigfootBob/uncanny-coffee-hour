@@ -16,6 +16,10 @@
       margin-bottom: 0.5rem;
       color: var(--game-title);
       text-shadow: 0 0 10px var(--game-shadow);
+      
+      @media (max-width: 600px) {
+        font-size: 2rem;
+      }
     }
     
     .page-subtitle {

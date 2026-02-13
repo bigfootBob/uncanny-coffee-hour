@@ -1,40 +1,41 @@
 @import 'variables';
 @import 'mixins';
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--app-bg); 
-  color: $text-primary;
-  font-family: $font-stack-body;
+  background-color: var(--app-bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
 
   .cta-button {
     background-color: var(--espresso-gold);
     color: var(--obsidian-dark);
-    font-family: $font-stack-heading; 
+    font-family: var(--font-serif);
     border: 1px solid var(--copper-accent);
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: var(--spectral-cyan);
-        box-shadow: 0 0 15px var(--puca-teal);
-        color: var(--forest-noir);
+      background-color: var(--spectral-cyan);
+      box-shadow: 0 0 15px var(--puca-teal);
+      color: var(--forest-noir);
     }
   }
 
   #root {
     min-height: 100vh;
-    background: transparent; 
+    background: transparent;
   }
-  
+
   a {
     text-decoration: none;
     color: inherit;
   }
-  
+
   .app-container {
     position: relative;
     z-index: 1;
@@ -54,15 +55,15 @@ html, body {
       @include glass-panel;
       text-align: center;
       padding: 2.5rem 1.5rem;
-      
+
       h1 {
-        font-family: $font-stack-heading;
+        font-family: var(--font-serif);
         font-size: 2.5rem;
         margin: 0 0 0.5rem 0;
         color: var (--header-color);
-        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       }
-      
+
       p {
         color: var(--subheader-color);
         font-size: 1.1rem;
@@ -74,14 +75,19 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif; /* Your current default */
+  font-family: 'Open Sans', sans-serif;
+  /* Your current default */
 }
+
 :lang(sjn) {
   font-family: 'Cinzel Decorative', cursive;
-  letter-spacing: 0.5px; /* Looks better slightly spaced */
+  letter-spacing: 0.5px;
+  /* Looks better slightly spaced */
 }
+
 :lang(tlh) {
   font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase; /* Klingon looks more aggressive in caps */
+  text-transform: uppercase;
+  /* Klingon looks more aggressive in caps */
   letter-spacing: 1px;
 }
