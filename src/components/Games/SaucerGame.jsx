@@ -65,6 +65,8 @@ const SaucerGame = () => {
   const gunshotAudio = useRef(new Audio(AUDIO_SRC.gunshot));
   const screamAudio = useRef(new Audio(AUDIO_SRC.scream));
 
+  const activeAudioClones = useRef([]);
+
   useEffect(() => {
     hoverAudio.current.loop = true;
     hoverAudio.current.volume = 0.3;
@@ -74,12 +76,12 @@ const SaucerGame = () => {
     // Cleanup
     return () => {
       const audioRefs = [
-        hoverAudio, 
-        beamAudio, 
-        crashAudio, 
-        gunshotAudio, 
-        splatAudio, 
-        mooAudio, 
+        hoverAudio,
+        beamAudio,
+        crashAudio,
+        gunshotAudio,
+        splatAudio,
+        mooAudio,
         screamAudio
       ];
 
@@ -89,8 +91,34 @@ const SaucerGame = () => {
           ref.current.currentTime = 0;
         }
       });
+
+      // Cleanup clones
+      activeAudioClones.current.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+      activeAudioClones.current = [];
     };
   }, []);
+
+  // ... (rest of the file) ...
+
+  const playSound = (audioRef) => {
+    if (audioRef.current) {
+      const clone = audioRef.current.cloneNode();
+      clone.volume = audioRef.current.volume;
+
+      // Track the clone
+      activeAudioClones.current.push(clone);
+
+      // Remove from tracking when done
+      clone.onended = () => {
+        activeAudioClones.current = activeAudioClones.current.filter(a => a !== clone);
+      };
+
+      clone.play().catch(() => { });
+    }
+  };
 
   const handleTouchStart = (e, key) => {
     if (e.cancelable) e.preventDefault();
@@ -385,6 +413,15 @@ const SaucerGame = () => {
       if (audioRef.current) {
         const clone = audioRef.current.cloneNode();
         clone.volume = audioRef.current.volume;
+
+        // Track the clone
+        activeAudioClones.current.push(clone);
+
+        // Remove from tracking when done
+        clone.onended = () => {
+          activeAudioClones.current = activeAudioClones.current.filter(a => a !== clone);
+        };
+
         clone.play().catch(() => { });
       }
     };
