@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Team.scss';
 
 const Team = ({ limit = null }) => {
-  const { t } = useTranslation('bios'); 
+  const { t } = useTranslation('bios');
   const teamData = t('teamMembers', { returnObjects: true });
   const members = Array.isArray(teamData) ? teamData : [];
   const membersToDisplay = limit ? members.slice(0, limit) : members;
@@ -17,11 +17,12 @@ const Team = ({ limit = null }) => {
   return (
     <section className="team-section" aria-labelledby="team-heading">
       <div className="container">
+        <h2 id="team-heading" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>Team</h2>
         <ul className="team-grid">
           {membersToDisplay.map((member, index) => (
             <li key={index} className="team-card">
-              <Link 
-                to={`/about#${member.id}`} 
+              <Link
+                to={`/about#${member.id}`}
                 className="team-card-link"
                 aria-label={`Read more about ${member.name}`}
               >
@@ -33,16 +34,16 @@ const Team = ({ limit = null }) => {
                     </div>
                   ) : (
                     <div className="avatar-img">
-                      <img 
+                      <img
                         src={`/assets/images/bios/${member.avatar}`}
-                        alt={member.name} 
+                        alt={member.name}
                         className="avatar-img-element"
                         onError={() => handleImageError(index)}
                       />
                     </div>
                   )}
                 </div>
-                
+
                 <div className="team-card__content">
                   <h3 className="team-card__name">{member.name}</h3>
                   <p className="team-card__role">{member.role}</p>
