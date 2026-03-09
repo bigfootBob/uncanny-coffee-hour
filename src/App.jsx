@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import SEO from './components/SEO/SEO';
+import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics';
+import SEO from './components/SEO/Seo';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
     
+    <GoogleAnalytics />
     <SEO />
 
     <div className="app-container">
