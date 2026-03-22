@@ -28,6 +28,7 @@ const CryptidEvolution = () => {
   const [gameOver, setGameOver] = useState(false);
   const [won, setWon] = useState(false);
 
+   
   useEffect(() => {
     initGame();
   }, []);
@@ -54,6 +55,12 @@ const CryptidEvolution = () => {
     const { r, c } = emptyTiles[Math.floor(Math.random() * emptyTiles.length)];
     currentBoard[r][c] = Math.random() < 0.9 ? 2 : 4;
   };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    initGame();
+  }, []);
 
   const move = (direction) => {
     if (!board || board.length !== SIZE) return;
@@ -151,6 +158,7 @@ const CryptidEvolution = () => {
     trackMouse: true 
   });
 
+   
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (gameOver || won) return;

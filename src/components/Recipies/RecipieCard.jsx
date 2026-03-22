@@ -18,6 +18,12 @@ const RecipeCard = ({ recipe, onClick }) => {
       onClick={() => onClick(recipe)}
       role="button"
       tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick(recipe);
+        }
+      }}
     >
       <div className="recipe-icon-wrapper">
         <span className="recipe-emoji">{getEmoji(recipe.category)}</span>

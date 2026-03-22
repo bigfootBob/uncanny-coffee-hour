@@ -59,7 +59,9 @@ const AudioPlayer = ({ src, className = '' }) => {
 
     return (
         <div className={`uncanny-audio-player ${className}`}>
-            <audio ref={audioRef} src={src} preload="metadata" />
+            <audio ref={audioRef} src={src} preload="metadata">
+                <track kind="captions" />
+            </audio>
 
             <button
                 className={`play-btn ${isPlaying ? 'playing' : ''}`}

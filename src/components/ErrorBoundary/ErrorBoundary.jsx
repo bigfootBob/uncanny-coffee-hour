@@ -48,4 +48,5 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default withTranslation()(ErrorBoundary);

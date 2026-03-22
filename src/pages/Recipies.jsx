@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
 import RecipieData from '../data/recipies.json';

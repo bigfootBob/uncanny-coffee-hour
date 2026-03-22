@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './CryptidMatch.scss';
 
@@ -13,7 +13,11 @@ const CARDS = [
 
 const CryptidMatch = () => {
   const { t } = useTranslation('games');
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState(() => {
+    return [...CARDS, ...CARDS]
+      .sort(() => Math.random() - 0.5)
+      .map((card) => ({ ...card, uniqueId: Math.random() }));
+  });
   const [flipped, setFlipped] = useState([]);
   const [solved, setSolved] = useState([]);
   const [disabled, setDisabled] = useState(false);
@@ -28,9 +32,6 @@ const CryptidMatch = () => {
     setSolved([]);
   };
 
-  useEffect(() => {
-    shuffleCards();
-  }, []);
 
   const handleClick = (id) => {
     if (disabled || flipped.includes(id)) return;
@@ -72,7 +73,15 @@ const CryptidMatch = () => {
             <div 
               key={card.uniqueId}
               className={`card ${isFlipped ? 'flipped' : ''} ${isSolved ? 'solved' : ''}`}
+              role="button"
+              tabIndex={0}
               onClick={() => !isSolved && handleClick(card.uniqueId)}
+              onKeyDown={(e) => {
+                if (!isSolved && (e.key === 'Enter' || e.key === ' ')) {
+                  e.preventDefault();
+                  handleClick(card.uniqueId);
+                }
+              }}
             >
               <div className="card-inner">
                 <div className="card-front">?</div>

@@ -42,6 +42,7 @@ const ConspiracyBoard = () => {
     setGridItems(allItems);
   };
 
+   
   useEffect(() => {
     initGame();
   }, []);

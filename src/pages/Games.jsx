@@ -146,7 +146,6 @@ const Games = () => {
         )}
 
         {instructionData && (
-          // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
           <div
             className="instruction-modal-overlay"
             onClick={() => setInstructionData(null)}
