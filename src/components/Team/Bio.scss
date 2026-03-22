@@ -1,0 +1,81 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.team-bio-section {
+  @include glass-panel;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  scroll-margin-top: 100px; // Gives space for sticky header when linking via anchor
+  
+  h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: var(--brand-puca, #5cb85c);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  .bio-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+
+    .bio-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        transform: scale(1.5);
+        z-index: 10;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      }
+    }
+  }
+
+  .bio-details {
+    p {
+      color: var(--glass-text);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      strong {
+        color: var(--accent-color, #c28e42);
+        margin-right: 0.5rem;
+      }
+
+      .bio-link {
+        color: #fff;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--brand-puca, #5cb85c);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    
+    .bio-images {
+      justify-content: center;
+      
+      .bio-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

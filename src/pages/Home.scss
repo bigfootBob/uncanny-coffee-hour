@@ -151,6 +151,26 @@
           }
         }
       }
+
+      .recipe-link {
+        display: inline-block;
+        padding: 8px 24px;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        background: transparent;
+
+        &:hover {
+          background: var(--accent-color);
+          color: #1a1a1a;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(255, 191, 117, 0.3);
+        }
+      }
     }
   }
 
@@ -346,7 +366,7 @@
     }
   }
 
-  #whispering-well, #recipes-section {
+  #whispering-well {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,4 +425,38 @@
     }
   }
 
+  #recipes-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+
+    .player-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      
+      .player-label {
+        font-size: 0.95rem; 
+      }
+      
+      .player-title {
+        font-size: 1.8rem; 
+      }
+    }
+
+    .player-controls {
+      position: static;
+      margin-top: 0;
+      width: auto;
+      flex: none;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      padding-bottom: 2rem;
+    }
+  }
 }

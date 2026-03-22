@@ -37,6 +37,9 @@ const Header = () => {
               />
             </picture>
           </Link>
+          <Link to="/" className="desktop-home-link" onClick={closeMobile}>
+            {t('navtext.home') || 'HOME'}
+          </Link>
         </div>
         
         {/* DESKTOP NAV */}

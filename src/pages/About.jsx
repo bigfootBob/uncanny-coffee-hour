@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero';
 import Team from '../components/Team/Team';
+import Bio from '../components/Team/Bio';
 import FriendData from '../data/friends.json';
 import SEO from '../components/SEO/SEO';
 import './About.scss';
@@ -12,20 +13,27 @@ import aboutPicMobile from '../assets/images/about-toon-mobile.webp';
 
 const About = () => {
   const { t } = useTranslation('translation');
+  const { t: tBios } = useTranslation('bios');
   const location = useLocation();
   const aboutText = t('aboutpage.about_text', { returnObjects: true });
   const safeAboutText = Array.isArray(aboutText) ? aboutText : [];
+  
+  const teamData = tBios('teamMembers', { returnObjects: true });
+  const members = Array.isArray(teamData) ? teamData : [];
 
   useEffect(() => {
-    const targetId = location.state?.selectedSection;
+    const targetId = location.state?.selectedSection || location.hash?.replace('#', '');
     if (targetId) {
-      const element = document.getElementById(targetId);
+      // Adding a small timeout ensures the Bio cards have finished rendering in the DOM
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
 
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        console.warn(`Attempted to scroll to ID "${targetId}" but it was not found.`);
-      }
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn(`Attempted to scroll to ID "${targetId}" but it was not found.`);
+        }
+      }, 100);
     }
   }, [location]);
 
@@ -97,6 +105,12 @@ const About = () => {
 
         <section className="team-section-wrapper">
           <Team limit={3} />
+        </section>
+
+        <section id="bios-section" className="full-bios container" style={{ marginTop: '4rem' }}>
+          {members.slice(0, 3).map((member) => (
+            <Bio key={member.id} member={member} />
+          ))}
         </section>
 
         <section className="outro-toon">

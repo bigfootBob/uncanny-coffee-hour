@@ -177,10 +177,13 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="recipes-section" className="dashboard-row parchment-panel">
-          <div className="panel-content">
-            <h1>Recipies from the podcast</h1>
-            <Link to="/recipies" className="parchment-btn">
+        <section id="recipes-section" className="dashboard-row player-row glass-panel">
+          <div className="player-text">
+            <span className="player-title">Recipies from the podcast</span>
+            <span className="player-label">Drinks & Elixirs</span>
+          </div>
+          <div className="player-controls">
+            <Link to="/recipies" className="recipe-link">
               View All
             </Link>
           </div>
