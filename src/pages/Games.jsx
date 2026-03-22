@@ -9,6 +9,7 @@ import CryptidMatch from '../components/Games/CryptidMatch';
 import ConspiracyBoard from '../components/Games/ConspiracyBoard';
 import CryptidEvolution from '../components/Games/CryptidEvolution';
 import SaucerGame from '../components/Games/SaucerGame';
+import Announcement from '../components/Announcement/Announcement';
 import './Games.scss';
 
 const Games = () => {
@@ -79,8 +80,16 @@ const Games = () => {
       />
 
       <Hero />
-
+      
       <div className="games-page container">
+
+        <Announcement 
+          icon="🐘" 
+          message="Need to clear your mind? Feed your nightmares to the Baku."
+          linkText="Visit the Worry Eater"
+          linkUrl="https://silvanian.art/"
+        />
+
         <div className="games-header">
           <h1 className="page-title">{t(`page.title`)}</h1>
           <p className="page-subtitle">{t(`page.subtitle`)}</p>
