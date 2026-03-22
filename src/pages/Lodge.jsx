@@ -4,7 +4,7 @@ import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
 import PatreonData from '../data/patreon.json';
 import SEO from '../components/SEO/SEO';
-import './lodge.scss';
+import './Lodge.scss';
 
 const Lodge = () => {
   const { t } = useTranslation();

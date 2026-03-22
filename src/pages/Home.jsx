@@ -177,6 +177,15 @@ const Home = () => {
           </div>
         </section>
 
+        <section id="recipes-section" className="dashboard-row parchment-panel">
+          <div className="panel-content">
+            <h1>Recipies from the podcast</h1>
+            <Link to="/recipies" className="parchment-btn">
+              View All
+            </Link>
+          </div>
+        </section>
+
       </div>
     </>
   );

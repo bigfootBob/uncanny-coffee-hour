@@ -1,16 +1,16 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics';
-import SEO from './components/SEO/Seo';
+import SEO from './components/SEO/SEO';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Lodge from './pages/lodge';
+import Lodge from './pages/Lodge';
 import Episodes from './pages/Episodes';
+import Recipies from './pages/Recipies';
 import Shop from './pages/Shop';
 import Games from './pages/Games';
 import SubmitStory from './pages/SubmitStory';
@@ -41,6 +41,7 @@ function App() {
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/recipies" element={<Recipies />} />
           <Route path="/submit" element={<SubmitStory />} />
           <Route path="*" element={
             <div className='four-oh-four'>

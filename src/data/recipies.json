@@ -1,0 +1,96 @@
+[
+  {
+    "id": "hemp-milk-latte",
+    "name": "Simple Hemp Milk Latte",
+    "category": "Coffee",
+    "pairing": {
+      "name": "Bigfoot",
+      "reason": "Earthy, nutty, and elusive. Best enjoyed while trekking through the Cascades."
+    },
+    "description": "A creamy, nutty alternative for those who want a plant-based boost without the typical almond or oat profile.",
+    "ingredients": [
+      "2 shots of espresso (or 1/2 cup strong brewed coffee)",
+      "1 cup unsweetened hemp milk",
+      "1 tsp maple syrup or agave (optional)",
+      "A pinch of sea salt"
+    ],
+    "instructions": [
+      "Brew your espresso and pour into a large mug.",
+      "Heat the hemp milk until steaming (do not boil).",
+      "Froth and pour over the coffee.",
+      "Add a tiny pinch of salt to enhance the nuttiness."
+    ],
+    "vibe": "Earthbound and grounding."
+  },
+  {
+    "id": "green-matcha-tea",
+    "name": "Ceremonial Green Matcha",
+    "category": "Tea",
+    "pairing": {
+      "name": "Tako nyūdō",
+      "reason": "A disciplined drink for a scholarly yōkai. Keeps the mind sharp for ancient scrolls."
+    },
+    "description": "A vibrant, whisked tea that provides a calm, focused energy—the Kitsune's choice.",
+    "ingredients": [
+      "1.5 tsp ceremonial grade matcha powder",
+      "2 oz hot water (approx. 175°F)",
+      "6 oz additional hot water",
+      "Optional: Bamboo whisk (Chasen)"
+    ],
+    "instructions": [
+      "Sift the matcha into a bowl.",
+      "Add 2 oz of hot water.",
+      "Whisk in a 'W' motion until frothy.",
+      "Add remaining water and enjoy."
+    ],
+    "vibe": "The Kitsune's Choice."
+  },
+  {
+    "id": "verdant-bulleit-sour",
+    "name": "Verdant Bulleit Sour",
+    "category": "Cocktail",
+    "pairing": {
+      "name": "Ahuizotl",
+      "reason": "Has a bite like a mackinaw. The green hue matches the murky depths of the water-monkey's home."
+    },
+    "description": "A herbaceous twist on the classic whiskey sour, bringing a botanical edge to the bite of Bulleit Bourbon.",
+    "ingredients": [
+      "2 oz Bulleit Bourbon",
+      "1 oz fresh lemon juice",
+      "3/4 oz simple syrup",
+      "2-3 fresh basil leaves",
+      "1 egg white (optional)"
+    ],
+    "instructions": [
+      "Muddle basil in a shaker.",
+      "Add bourbon, lemon, syrup, and egg white.",
+      "Dry shake, then add ice and shake again.",
+      "Strain into a rocks glass."
+    ],
+    "vibe": "A late night in the Willamette woods."
+  },
+  {
+    "id": "puca-punch",
+    "name": "Saoirse’s Puca Punch",
+    "category": "Spirit-Free",
+    "pairing": {
+      "name": "Soercia",
+      "reason": "A mischievous blend that changes color with a squeeze of lime—just like a shapeshifter."
+    },
+    "description": "A shimmering, violet-hued botanical tea that’s as unpredictable as an Irish Puca.",
+    "ingredients": [
+      "1 cup Butterfly Pea Flower tea (brewed and chilled)",
+      "1/2 cup sparkling lemonade",
+      "A squeeze of fresh lime juice",
+      "Optional: Edible gold luster dust"
+    ],
+    "instructions": [
+      "Brew the pea flower tea until it is a deep, dark blue.",
+      "Fill a tall glass with ice and pour in the tea.",
+      "Add the sparkling lemonade.",
+      "Stir in the lime juice and watch the drink turn from deep blue to bright purple.",
+      "Add a pinch of luster dust for that supernatural shimmer."
+    ],
+    "vibe": "Shapeshifting and shimmering."
+  }
+]
