@@ -48,7 +48,16 @@ const Header = () => {
             <li><Link to="/episodes">{t('navtext.episodes')}</Link></li>
             <li><Link to="/lodge">{t('navtext.lodge')}</Link></li>
             <li><Link to="/about">{t('navtext.about')}</Link></li>
-            <li><Link to="/shop">{t('navtext.shop')}</Link></li>
+            {/* <li><Link to="/shop">{t('navtext.shop')}</Link></li> */}
+            <li>
+              <a 
+                href="https://uncanny-coffee-hour-shop.fourthwall.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                {t('navtext.shop')}
+              </a>
+            </li>
             <li><Link to="/games">{t('navtext.games')}</Link></li>
             <li><Link to="/submit" className="nav-cta">{t('navtext.submit_story')}</Link></li>
           </ul>
@@ -80,6 +89,14 @@ const Header = () => {
           <Link to="/about" onClick={closeMobile}>{t('navtext.about')}</Link>
           <Link to="/games" onClick={closeMobile}>{t('navtext.games')}</Link>
           <Link to="/shop" onClick={closeMobile}>{t('navtext.shop')}</Link>
+          <a 
+            href="https://uncanny-coffee-hour-shop.fourthwall.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={closeMobile}
+          >
+            {t('navtext.shop')}
+          </a>
           <Link to="/submit" onClick={closeMobile}>{t('navtext.submit_story')}</Link>
         </nav>
       </div>

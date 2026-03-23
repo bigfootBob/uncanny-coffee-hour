@@ -11,7 +11,6 @@ import About from './pages/About';
 import Lodge from './pages/Lodge';
 import Episodes from './pages/Episodes';
 import Recipies from './pages/Recipies';
-import Shop from './pages/Shop';
 import Games from './pages/Games';
 import SubmitStory from './pages/SubmitStory';
 import lostCryptid from './assets/images/four-oh-four.png';
@@ -39,7 +38,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/lodge" element={<Lodge />} />
           <Route path="/episodes" element={<Episodes />} />
-          <Route path="/shop" element={<Shop />} />
           <Route path="/games" element={<Games />} />
           <Route path="/recipies" element={<Recipies />} />
           <Route path="/submit" element={<SubmitStory />} />
