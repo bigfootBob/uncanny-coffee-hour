@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "O",
+    "favoriteCryptid": "Ithaear Vain",
+    "favoriteDrink": "Sûg Vain",
+    "favoriteEpisode": "Nend Vain"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -41,7 +47,7 @@
       "name": "Saoirse",
       "role": "I Púca",
       "bio": "Faer Íweri ah thûl i annûn. (Gwarth: Mel e uisge beatha)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
       "longBio": "Saoirse i taur a brith in peth. Tuio o i-tal en Eriodor, i faer thilia thûl, pen-nauth a gela.",
       "favoriteCryptid": "I Puca (im)",

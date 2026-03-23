@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "Über",
+    "favoriteCryptid": "Lieblings-Kryptid",
+    "favoriteDrink": "Lieblingsgetränk",
+    "favoriteEpisode": "Lieblingsepisode"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -49,7 +55,7 @@
       "name": "Saoirse",
       "role": "Der Púca",
       "bio": "Irischer Geist, der dem Jenseits eine Stimme verleiht. (Hinweis: Liebt Whiskey)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": [
         "saoirse-1.jpg",
         "saoirse-2.jpg",

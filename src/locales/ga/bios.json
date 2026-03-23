@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "Faoi",
+    "favoriteCryptid": "Criptead is fearr leat",
+    "favoriteDrink": "Deoch is fearr leat",
+    "favoriteEpisode": "Eipeasóid is fearr leat"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -41,7 +47,7 @@
       "name": "Saoirse",
       "role": "An Púca",
       "bio": "Spiorad na hÉireann A.K.A. glórtha ón anall. (Nóta: Is breá léi fuisce)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
       "longBio": "Is í Saoirse fórsa anordúil, ársa an phodchraolta. Ag eascairt ó ithir ré ársa na hÉireann, cuireann an t-eintiteas cruth-athraitheach seo peirspictíochtaí ar fáil a sháraíonn an loighic, rud a chruthaíonn deacrachtaí teicniúla agus léargais iontacha go minic.",
       "favoriteCryptid": "An Púca (í féin)",

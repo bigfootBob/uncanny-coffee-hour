@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "About",
+    "favoriteCryptid": "Favorite Cryptid",
+    "favoriteDrink": "Favorite Drink",
+    "favoriteEpisode": "Favorite Episode"
+  },
   "teamMembers": [
     {
       "id": "host-bob",

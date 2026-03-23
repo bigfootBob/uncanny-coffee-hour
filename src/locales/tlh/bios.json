@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "mIqwI'",
+    "favoriteCryptid": "parHa' cryptid",
+    "favoriteDrink": "parHa' tlhutlh",
+    "favoriteEpisode": "parHa' lut"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -41,7 +47,7 @@
       "name": "Saoirse",
       "role": "puqa'",
       "bio": "aIrIS qa' Joq yav pIm ghogh. (yIqIm: wISqI' parHa')",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
       "longBio": "Sa'orSe' wa'DIch HoS. 'IrIlang'a' yotlhDaq tlhej, nIb mIw 'ach lIS yIt. qatlh mIw Qaw'.",
       "favoriteCryptid": "pUqa' (be' nIv)",

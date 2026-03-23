@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "Informazioni",
+    "favoriteCryptid": "Criptide Preferito",
+    "favoriteDrink": "Bevanda Preferita",
+    "favoriteEpisode": "Episodio Preferito"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -49,7 +55,7 @@
       "name": "Saoirse",
       "role": "Il Puca",
       "bio": "Spirito irlandese noto anche come voce dall'aldilà. (Nota: Ama il whiskey)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": [
         "saoirse-1.jpg",
         "saoirse-2.jpg",

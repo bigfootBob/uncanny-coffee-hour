@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "概要",
+    "favoriteCryptid": "お気に入りの未確認生物",
+    "favoriteDrink": "お気に入りの飲み物",
+    "favoriteEpisode": "お気に入りのエピソード"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -49,7 +55,7 @@
       "name": "Saoirse",
       "role": "プーカ (The Puca)",
       "bio": "あの世に声を届けるアイルランドの精霊。(注: ウイスキー大好き)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": [
         "saoirse-1.jpg",
         "saoirse-2.jpg",

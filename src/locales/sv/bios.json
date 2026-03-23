@@ -1,4 +1,10 @@
 {
+  "labels": {
+    "about": "Om",
+    "favoriteCryptid": "Favoritkryptid",
+    "favoriteDrink": "Favoritdryck",
+    "favoriteEpisode": "Favoritavsnitt"
+  },
   "teamMembers": [
     {
       "id": "host-bob",
@@ -41,7 +47,7 @@
       "name": "Saoirse",
       "role": "The Puca",
       "bio": "Irländsk ande aka röster från andra sidan. (Obs: Älskar whisky)",
-      "avatar": "Saoirse-avatar.jpg",
+      "avatar": "saoirse-avatar.jpg",
       "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
       "longBio": "Saoirse är podcastens kaotiska, urgamla kraft. Detta formskiftande väsen härstammar från gammal irländsk jord och ger perspektiv som överskrider logiken, vilket ofta orsakar tekniska svårigheter och briljanta insikter.",
       "favoriteCryptid": "The Puca (hon själv)",
