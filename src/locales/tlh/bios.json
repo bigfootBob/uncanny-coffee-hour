@@ -3,29 +3,62 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "nejwI' 'ej lengwI'",
-      "bio": "Sam muS qabDaj. (De': qa'vIn parmaqqay)",
-      "avatar": "bob-avatar.jpg"
+      "role": "nejwI' 'ej yItwI'",
+      "bio": "bigfoot pegh nejnIS. (yIqIm: mIl'oD qogh parHa'wI')",
+      "avatar": "bob-avatar.jpg",
+      "images": ["bob-1.jpg", "bob-2.jpg", "bob-3.jpg"],
+      "longBio": "bob qIb yotlhDaq qet, bigfoot loDnI'Daj tlhej. nIn'a'vaD pegh jatlh. qo' vIt jatlhwI'. 'abIde' DuSaQ'a'Daq qelI'qam mIw.",
+      "favoriteCryptid": "bigfoot (qa')",
+      "favoriteDrink": {
+        "name": "bigfoot hemp nIn latte",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Hoch, 'ach yUre' tlhej",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "ra'wI' Sov",
-      "bio": "SovwI' vI'ram. (De': qa'vIn rop)",
-      "avatar": "kitsune-avatar.jpg"
+      "role": "yab DevwI'",
+      "bio": "pegh 'ej Huj po'wI'. (yIqIm: qogh ropnIS)",
+      "avatar": "kitsune-avatar.jpg",
+      "images": ["kitsune-1.jpg", "kitsune-2.jpg", "kitsune-3.jpg"],
+      "longBio": "devwI' qel. pI' rop, Huch 'ej latlh nIv. yab pIq. mutlhwI'. bIng qo' tuqwI'.",
+      "favoriteCryptid": "kItSune'",
+      "favoriteDrink": {
+        "name": "bIQtIq bIQ",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Hoch",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
-      "role": "Puca",
-      "bio": "qa' 'ay'lan, ghogh Hegh. (De': HIq parmaq)",
-      "avatar": "Saoirse-avatar.jpg"
+      "role": "puqa'",
+      "bio": "aIrIS qa' Joq yav pIm ghogh. (yIqIm: wISqI' parHa')",
+      "avatar": "Saoirse-avatar.jpg",
+      "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
+      "longBio": "Sa'orSe' wa'DIch HoS. 'IrIlang'a' yotlhDaq tlhej, nIb mIw 'ach lIS yIt. qatlh mIw Qaw'.",
+      "favoriteCryptid": "pUqa' (be' nIv)",
+      "favoriteDrink": {
+        "name": "pUqa' HIq",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "lut wa'maH: le'anan SIdhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",
-      "name": "meb",
+      "name": "tuqwI'",
       "role": "lut",
-      "bio": "Haj not Sov. De'lI' ghItlh naDev.",
+      "bio": "nov parHa'qu'. naDev ngerlIj.",
       "avatar": "guest-avatar.jpg"
     }
   ]

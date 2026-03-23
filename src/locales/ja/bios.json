@@ -5,21 +5,66 @@
       "name": "Odd Bob",
       "role": "冒険家 & ハイカー",
       "bio": "自分の中のビッグフットを探求中。(注: ヒッピーなコーヒー愛好家)",
-      "avatar": "bob-avatar.jpg"
+      "avatar": "bob-avatar.jpg",
+      "images": [
+        "bob-1.jpg",
+        "bob-2.jpg",
+        "bob-3.jpg"
+      ],
+      "longBio": "ボブはカスケード山脈の奥深くで育ち、森でビッグフットの兄弟たちと遊んでいました。古代の巨人たちに秘密を囁く者。自然界の語られざる真実を語る者。アバイド大学で形而上学の名誉博士号を取得。",
+      "favoriteCryptid": "ビッグフット（精神）",
+      "favoriteDrink": {
+        "name": "ビッグフットのヘンプミルクラテ",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "すべて、ただし特に幽霊が出るエピソード",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
       "role": "知的アンカー",
       "bio": "秘教と奇妙なものの専門家。(注: コーヒーアレルギー)",
-      "avatar": "kitsune-avatar.jpg"
+      "avatar": "kitsune-avatar.jpg",
+      "images": [
+        "kitsune-1.jpg",
+        "kitsune-2.jpg",
+        "kitsune-3.jpg"
+      ],
+      "longBio": "リーダーシップの博士号。民俗学、民族学、宗教学の証明書。心理学の学士号。国際研究における謎の男。遠隔領域の予見者。",
+      "favoriteCryptid": "キツネ",
+      "favoriteDrink": {
+        "name": "濡れたやつ",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "すべて",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
       "role": "プーカ (The Puca)",
       "bio": "あの世に声を届けるアイルランドの精霊。(注: ウイスキー大好き)",
-      "avatar": "Saoirse-avatar.jpg"
+      "avatar": "Saoirse-avatar.jpg",
+      "images": [
+        "saoirse-1.jpg",
+        "saoirse-2.jpg",
+        "saoirse-3.jpg"
+      ],
+      "longBio": "シアーシャはポッドキャストの混沌とした古代の力です。古代アイルランドの土壌に由来するこの変身する生命体は、論理を超越した視点を提供し、しばしば技術的な困難や素晴らしい洞察を引き起こします。",
+      "favoriteCryptid": "プーカ（彼女自身）",
+      "favoriteDrink": {
+        "name": "シアーシャのプーカパンチ",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "エピソード10：リャナンシー",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",

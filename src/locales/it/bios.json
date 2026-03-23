@@ -3,29 +3,74 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "L'Esploratore ed Escursionista",
-      "bio": "Trovare il Bigfoot dentro di sé. (Nota: amante del caffè hippie)",
-      "avatar": "bob-avatar.jpg"
+      "role": "L'Esploratore & Escursionista",
+      "bio": "Alla scoperta del bigfoot dentro di sé. (Nota: amante del caffè hippie)",
+      "avatar": "bob-avatar.jpg",
+      "images": [
+        "bob-1.jpg",
+        "bob-2.jpg",
+        "bob-3.jpg"
+      ],
+      "longBio": "Bob è cresciuto nelle profondità delle Cascate, giocando nella foresta con i suoi fratelli bigfoot. Sussurratore di segreti agli antichi giganti. Narratore delle verità inespresse del mondo naturale. Dottorato onorario in metafisica presso la Abide University.",
+      "favoriteCryptid": "Bigfoot (spirito)",
+      "favoriteDrink": {
+        "name": "Latte di Canapa di Bigfoot",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Tutti, ma soprattutto quelli con gli Yūrei",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
       "role": "L'Ancora Intellettuale",
-      "bio": "Esperta nell'esoterico e nello strano. (Nota: allergica al caffè)",
-      "avatar": "kitsune-avatar.jpg"
+      "bio": "Esperto di esoterico e del bizzarro. (Nota: Allergico al caffè)",
+      "avatar": "kitsune-avatar.jpg",
+      "images": [
+        "kitsune-1.jpg",
+        "kitsune-2.jpg",
+        "kitsune-3.jpg"
+      ],
+      "longBio": "Dottorato in leadership. Certificato in folclore, studi etnici e religione. Laurea in psicologia. Uomo di mistero negli studi internazionali. Veggente di regni lontani.",
+      "favoriteCryptid": "Kitsune",
+      "favoriteDrink": {
+        "name": "I bagnati",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Tutti",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
       "role": "Il Puca",
-      "bio": "Spirito irlandese che dà voce all'aldilà. (Nota: ama il whisky)",
-      "avatar": "Saoirse-avatar.jpg"
+      "bio": "Spirito irlandese noto anche come voce dall'aldilà. (Nota: Ama il whiskey)",
+      "avatar": "Saoirse-avatar.jpg",
+      "images": [
+        "saoirse-1.jpg",
+        "saoirse-2.jpg",
+        "saoirse-3.jpg"
+      ],
+      "longBio": "Saoirse è la forza caotica e antica del podcast. Originata dall'antico suolo irlandese, questa entità mutaforma offre prospettive che trascendono la logica, causando spesso difficoltà tecniche ma intuizioni brillanti.",
+      "favoriteCryptid": "Il Puca (se stessa)",
+      "favoriteDrink": {
+        "name": "Punch del Puca di Saoirse",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Episodio 10: Il Leannán Sídhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",
       "name": "Ospite",
       "role": "La Storia",
-      "bio": "Affascinato dall'ignoto. La tua foto qui.",
+      "bio": "Affascinato dall'ignoto. Inserisci la tua foto qui.",
       "avatar": "guest-avatar.jpg"
     }
   ]

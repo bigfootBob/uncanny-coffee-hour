@@ -3,23 +3,56 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "Upptäckaren & Vandraren",
-      "bio": "Hittar bigfoot inom sig själv. (Obs: älskar hippie-kaffe)",
-      "avatar": "bob-avatar.jpg"
+      "role": "Utforskaren & Vandraren",
+      "bio": "Finner bigfoot inom sig själv. (Obs: hippie-kaffeälskare)",
+      "avatar": "bob-avatar.jpg",
+      "images": ["bob-1.jpg", "bob-2.jpg", "bob-3.jpg"],
+      "longBio": "Bob växte upp djupt inne i Kaskadbergen och lekte i skogen med sina bigfoot-bröder. Viskare av hemligheter till de gamla jättarna. Berättare av naturens outtalade sanningar. Hedersdoktor i metafysik från Abide University.",
+      "favoriteCryptid": "Bigfoot (ande)",
+      "favoriteDrink": {
+        "name": "Bigfoots Hampamjölk-Latte",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Alla, men särskilt de med Yūrei",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "Det Intellektuella Ankaret",
-      "bio": "Expert på det esoteriska och det märkliga. (Obs: allergisk mot kaffe)",
-      "avatar": "kitsune-avatar.jpg"
+      "role": "Det intellektuella ankaret",
+      "bio": "Expert på det esoteriska och märkliga. (Obs: Allergisk mot kaffe)",
+      "avatar": "kitsune-avatar.jpg",
+      "images": ["kitsune-1.jpg", "kitsune-2.jpg", "kitsune-3.jpg"],
+      "longBio": "Doktorsexamen i ledarskap. Intyg i folklore, etniska studier och religion. Kandidatexamen i psykologi. Mystikens man i internationella studier. Siare av avlägsna riken.",
+      "favoriteCryptid": "Kitsune",
+      "favoriteDrink": {
+        "name": "De våta",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Alla av dem",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
-      "role": "Pukan",
-      "bio": "Irländsk ande som ger röst åt det bortomvärldsliga. (Obs: Älskar whisky)",
-      "avatar": "Saoirse-avatar.jpg"
+      "role": "The Puca",
+      "bio": "Irländsk ande aka röster från andra sidan. (Obs: Älskar whisky)",
+      "avatar": "Saoirse-avatar.jpg",
+      "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
+      "longBio": "Saoirse är podcastens kaotiska, urgamla kraft. Detta formskiftande väsen härstammar från gammal irländsk jord och ger perspektiv som överskrider logiken, vilket ofta orsakar tekniska svårigheter och briljanta insikter.",
+      "favoriteCryptid": "The Puca (hon själv)",
+      "favoriteDrink": {
+        "name": "Saoirses Puca Punch",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Avsnitt 10: The Leannán Sídhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",

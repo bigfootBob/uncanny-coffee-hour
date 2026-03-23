@@ -3,29 +3,62 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "An Taiscéalaí & An Siúlóir",
-      "bio": "Ag aimsiú an Bigfoot ann féin. (Nóta: hippie a bhfuil grá aige do chaifé)",
-      "avatar": "bob-avatar.jpg"
+      "role": "An Taiscéalaí & An Fánaí",
+      "bio": "Ag lorg an bigfoot laistigh dó féin. (Nóta: Is breá leis caife hiopí)",
+      "avatar": "bob-avatar.jpg",
+      "images": ["bob-1.jpg", "bob-2.jpg", "bob-3.jpg"],
+      "longBio": "D'fhás Bob aníos go domhain sna Cascáidí, ag imirt san fhoraois lena bhráithre bigfoot. Cogar rún le fathaigh ré ársa. Insteoir ar fhírinní diamhra an dúlra. PhD in onóir i réimse na meitifisice ó Ollscoil Abide.",
+      "favoriteCryptid": "Bigfoot (spiorad)",
+      "favoriteDrink": {
+        "name": "Latte Bainne Cnáibe Bigfoot",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Gach ceann acu, ach go háirithe na cinn le Yūrei",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
       "role": "An tAncaire Intleachtúil",
-      "bio": "Saineolaí ar an gcoimhthíoch agus ar an aisteach. (Nóta: Ailléirgeach le caifé)",
-      "avatar": "kitsune-avatar.jpg"
+      "bio": "Saineolaí ar an dhiamhair agus ar an aisteach. (Nóta: Ailléirgeach do chaife)",
+      "avatar": "kitsune-avatar.jpg",
+      "images": ["kitsune-1.jpg", "kitsune-2.jpg", "kitsune-3.jpg"],
+      "longBio": "PhD i gceannaireacht. Teastas i mbéaloideas, i staidéir eitneacha agus i reiligiún. BS Tú sa tsíceolaíocht. Fear mistéireach i staidéir idirnáisiúnta. Feiceálaí ríochtaí i bhfad i gcéin.",
+      "favoriteCryptid": "Kitsune",
+      "favoriteDrink": {
+        "name": "Na cinn fhliucha",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Iad go léir",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
       "role": "An Púca",
-      "bio": "Spiorad Éireannach a thugann guth don taobh thall. (Nóta: Is breá léi fuisce)",
-      "avatar": "Saoirse-avatar.jpg"
+      "bio": "Spiorad na hÉireann A.K.A. glórtha ón anall. (Nóta: Is breá léi fuisce)",
+      "avatar": "Saoirse-avatar.jpg",
+      "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
+      "longBio": "Is í Saoirse fórsa anordúil, ársa an phodchraolta. Ag eascairt ó ithir ré ársa na hÉireann, cuireann an t-eintiteas cruth-athraitheach seo peirspictíochtaí ar fáil a sháraíonn an loighic, rud a chruthaíonn deacrachtaí teicniúla agus léargais iontacha go minic.",
+      "favoriteCryptid": "An Púca (í féin)",
+      "favoriteDrink": {
+        "name": "Punc an Phúca le Saoirse",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Eipeasóid 10: An Leannán Sídhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",
       "name": "Aoi",
       "role": "An Scéal",
-      "bio": "Faoi dhraíocht ag an anaithnid. Do phictiúr anseo.",
+      "bio": "Suim agat sa doiléir. Do phictiúr anseo.",
       "avatar": "guest-avatar.jpg"
     }
   ]

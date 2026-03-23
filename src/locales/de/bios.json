@@ -5,21 +5,66 @@
       "name": "Odd Bob",
       "role": "Der Entdecker & Wanderer",
       "bio": "Findet den Bigfoot in sich selbst. (Hinweis: liebt Hippie-Kaffee)",
-      "avatar": "bob-avatar.jpg"
+      "avatar": "bob-avatar.jpg",
+      "images": [
+        "bob-1.jpg",
+        "bob-2.jpg",
+        "bob-3.jpg"
+      ],
+      "longBio": "Bob wuchs tief in den Kaskaden auf und spielte im Wald mit seinen Bigfoot-Brüdern. Flüsterer von Geheimnissen an die uralten Riesen. Erzähler der ungesagten Wahrheiten der Natur. Ehrendoktor der Metaphysik der Abide University.",
+      "favoriteCryptid": "Bigfoot (Geist)",
+      "favoriteDrink": {
+        "name": "Bigfoots Hanfmilch-Latte",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Alle, aber besonders die mit Yūrei",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
       "role": "Der intellektuelle Anker",
       "bio": "Expertin für das Esoterische und das Seltsame. (Hinweis: Allergisch gegen Kaffee)",
-      "avatar": "kitsune-avatar.jpg"
+      "avatar": "kitsune-avatar.jpg",
+      "images": [
+        "kitsune-1.jpg",
+        "kitsune-2.jpg",
+        "kitsune-3.jpg"
+      ],
+      "longBio": "Doktortitel in Führung. Zertifikat in Folklore, ethnischen Studien und Religion. BS in Psychologie. Mann der Mysterien in internationalen Studien. Seher ferner Welten.",
+      "favoriteCryptid": "Kitsune",
+      "favoriteDrink": {
+        "name": "Die Feuchten",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Alle von ihnen",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
       "role": "Der Púca",
       "bio": "Irischer Geist, der dem Jenseits eine Stimme verleiht. (Hinweis: Liebt Whiskey)",
-      "avatar": "Saoirse-avatar.jpg"
+      "avatar": "Saoirse-avatar.jpg",
+      "images": [
+        "saoirse-1.jpg",
+        "saoirse-2.jpg",
+        "saoirse-3.jpg"
+      ],
+      "longBio": "Saoirse ist die chaotische, uralte Kraft des Podcasts. Entsprungen aus altem irischem Boden, bietet dieses Gestaltwandler-Wesen Perspektiven jenseits der Logik – was oft zu technischen Problemen und genialen Einsichten führt.",
+      "favoriteCryptid": "Der Puca (sie selbst)",
+      "favoriteDrink": {
+        "name": "Saoirses Puca-Punsch",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Episode 10: Die Leannán Sídhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",

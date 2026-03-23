@@ -3,29 +3,62 @@
     {
       "id": "host-bob",
       "name": "Odd Bob",
-      "role": "I Randir a Padron",
-      "bio": "Hirad i Torog im. (Narn: Seron e-gwaith 'coru' dû)",
-      "avatar": "bob-avatar.jpg"
+      "role": "I Faron ah i Rhaun",
+      "bio": "Tiriad i bigfoot ned im. (Gwarth: mel e cofí eria)",
+      "avatar": "bob-avatar.jpg",
+      "images": ["bob-1.jpg", "bob-2.jpg", "bob-3.jpg"],
+      "longBio": "Bob olant ned i Ered Kaskád, teliad ned i taur ah gwedeir bigfoot dîn. Lathron o thurin an int in ithaear. Pethron o thenid al-beth gwaith in Arda. Herdir o neth Abide.",
+      "favoriteCryptid": "Bigfoot (faer)",
+      "favoriteDrink": {
+        "name": "Hemp Latte en Bigfoot",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "I-nathath, nant Yûrei",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-kitsune",
       "name": "Dr. Kitsune",
-      "role": "I-Sael",
-      "bio": "Iston a chollen. (Narn: Ú-vêl 'coru')",
-      "avatar": "kitsune-avatar.jpg"
+      "role": "I Nauth Gwîr",
+      "bio": "Iston in gwath ah i lhûg. (Gwarth: Al-mer i cofí)",
+      "avatar": "kitsune-avatar.jpg",
+      "images": ["kitsune-1.jpg", "kitsune-2.jpg", "kitsune-3.jpg"],
+      "longBio": "Iston o theled. Celeb o ithaear a valar. Iston o faer. Dír o fuin ned i fair in Elyn. Palantír in Ered.",
+      "favoriteCryptid": "Kitsune",
+      "favoriteDrink": {
+        "name": "I nîn",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Pân",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-Saoirse",
       "name": "Saoirse",
-      "role": "I Puca",
-      "bio": "Fëa Iverin, lam na i-gwaith. (Narn: Mel miruvor)",
-      "avatar": "Saoirse-avatar.jpg"
+      "role": "I Púca",
+      "bio": "Faer Íweri ah thûl i annûn. (Gwarth: Mel e uisge beatha)",
+      "avatar": "Saoirse-avatar.jpg",
+      "images": ["saoirse-1.jpg", "saoirse-2.jpg", "saoirse-3.jpg"],
+      "longBio": "Saoirse i taur a brith in peth. Tuio o i-tal en Eriodor, i faer thilia thûl, pen-nauth a gela.",
+      "favoriteCryptid": "I Puca (im)",
+      "favoriteDrink": {
+        "name": "I yôlf en Puca",
+        "link": "/recipies"
+      },
+      "favoriteEpisode": {
+        "name": "Nend 10: I Leannán Sídhe",
+        "link": "/episodes"
+      }
     },
     {
       "id": "host-guest",
-      "name": "Aot",
-      "role": "I Narn",
-      "bio": "Lítha na i-ú-ist. Card lîn sí.",
+      "name": "Rest",
+      "role": "I Peth",
+      "bio": "Glaer o thurin. Emaer lîn sî.",
       "avatar": "guest-avatar.jpg"
     }
   ]
