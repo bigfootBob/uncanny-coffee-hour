@@ -40,7 +40,7 @@ const Recipies = () => {
             </div>
 
             {selectedRecipe && (
-              <GameModal isOpen={!!selectedRecipe} onClose={() => setSelectedRecipe(null)}>
+              <GameModal isOpen={!!selectedRecipe} onClose={() => setSelectedRecipe(null)} showPrint={true}>
                 <div className="recipe-modal-content">
                   <h2>{selectedRecipe.name}</h2>
                   <p className="vibe-text">"{selectedRecipe.vibe}"</p>

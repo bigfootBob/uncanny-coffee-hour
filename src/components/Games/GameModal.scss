@@ -25,29 +25,37 @@
     padding: 0;
     width: auto;
     
-    .close-btn {
+    .action-icons {
       position: absolute;
       top: 15px; 
       right: 15px;
       z-index: 100;
-      
-      color: #3e2723; 
-      font-size: 2rem;
-      background: rgba(255, 255, 255, 0.5); 
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: none;
+      gap: 10px;
 
-      &:hover {
-        background: #fff;
-        transform: scale(1.1);
-        color: #d9534f;
+      button {
+        color: #3e2723; 
+        font-size: 1.5rem;
+        background: rgba(255, 255, 255, 0.7); 
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+          background: #fff;
+          transform: scale(1.1);
+          color: #d9534f;
+        }
+      }
+      
+      .close-btn {
+        font-size: 2rem;
       }
     }
   }

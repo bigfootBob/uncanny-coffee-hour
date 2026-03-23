@@ -10,7 +10,7 @@ const Team = ({ limit = null }) => {
   const membersToDisplay = limit ? members.slice(0, limit) : members;
   const [imageErrors, setImageErrors] = useState({});
 
-  const handleImageError = (index) => { // show letter on fail
+  const handleImageError = (index) => {
     setImageErrors((prev) => ({ ...prev, [index]: true }));
   };
 

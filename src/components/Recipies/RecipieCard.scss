@@ -1,19 +1,18 @@
 .recipe-tile {
-  position: relative; // Keeps it in its own stacking context
+  position: relative;
   display: flex;
   flex-direction: column;
   z-index: 1;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
-  backface-visibility: hidden; // Prevents "shaking" in Chrome/Safari
+  backface-visibility: hidden;
   cursor: pointer;
 
   &:hover {
-    z-index: 10; // Pops the hovered card to the front
-    transform: translateY(-10px) scale(1.02); // Clean, vertical-only movement
+    z-index: 10;
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
 
-  // This is the CRITICAL part to stop the "Coffee" oddity
   .recipe-icon-wrapper {
     background: transparent !important;
     border: none !important;
@@ -23,7 +22,6 @@
     align-items: center;
     margin-bottom: 1rem;
 
-    // This targets and hides that grey bar/pill shape from the first image
     &::before,
     &::after {
       display: none !important;

@@ -6,9 +6,13 @@
       "role": "The Explorer & Hiker",
       "bio": "Finding the bigfoot within himself. (Note: hippie coffee lover)",
       "avatar": "bob-avatar.jpg",
-      "images": ["bob-avatar.jpg", "bob-avatar.jpg", "bob-avatar.jpg"],
-      "longBio": "Bob grew up deep in the Cascades, where the trees whisper secrets of ancient giants. He's always had a passion for hiking and finding the unspoken truths of the natural world. He firmly believes Bigfoot is not just a cryptid, but a state of mind.",
-      "favoriteCryptid": "Bigfoot (obviously)",
+      "images": [
+        "bob-1.jpg",
+        "bob-2.jpg",
+        "bob-3.jpg"
+      ],
+      "longBio": "Bob grew up deep in the Cascades, playing in the forest with his bigfoot brethern. Whisperer of secrets to the ancient giants. Teller of the unspoken truths of the natural world. Honorary PhD in the field of metaphysics from Abide University.",
+      "favoriteCryptid": "Bigfoot (spirit)",
       "favoriteDrink": {
         "name": "Simple Hemp Milk Latte",
         "link": "/recipies"
@@ -24,15 +28,19 @@
       "role": "The Intellectual Anchor",
       "bio": "Expert in the esoteric and the strange. (Note: Allergic to coffee)",
       "avatar": "kitsune-avatar.jpg",
-      "images": ["kitsune-avatar.jpg", "kitsune-avatar.jpg", "kitsune-avatar.jpg"],
-      "longBio": "With a PhD in cryptozoological folklore, Dr. Kitsune provides the grounded, scholarly anchor to the podcast. They specialize in tracing the lineage of myths and how they manifest in modern society.",
-      "favoriteCryptid": "Tako nyūdō (The Octopus Monk)",
+      "images": [
+        "kitsune-1.jpg",
+        "kitsune-2.jpg",
+        "kitsune-3.jpg"
+      ],
+      "longBio": "PhD in leadership. Certificate in folklore, ethnic studies and religion. BS You in psychology. Man of mystery in international studies. Seer of remote realms.",
+      "favoriteCryptid": "Kitsune",
       "favoriteDrink": {
-        "name": "Ceremonial Green Matcha",
+        "name": "The wet ones",
         "link": "/recipies"
       },
       "favoriteEpisode": {
-        "name": "Episode 3: The Library of Shadows",
+        "name": "All of them",
         "link": "/episodes"
       }
     },
@@ -42,15 +50,19 @@
       "role": "The Puca",
       "bio": "Irish spirit A.K.A. voices of the beyond. (Note: Loves whiskey)",
       "avatar": "saoirse-avatar.jpg",
-      "images": ["saoirse-avatar.jpg", "saoirse-avatar.jpg", "saoirse-avatar.jpg"],
-      "longBio": "Saoirse is the chaotic force of the podcast. Originating from ancient Irish soil, this shapeshifting entity provides perspectives that transcend logic, often causing technical difficulties but brilliant insights.",
+      "images": [
+        "saoirse-1.jpg",
+        "saoirse-2.jpg",
+        "saoirse-3.jpg"
+      ],
+      "longBio": "Saoirse is the chaotic, ancient force of the podcast. Originating from ancient Irish soil, this shapeshifting entity provides perspectives that transcend logic, often causing technical difficulties & brilliant insights.",
       "favoriteCryptid": "The Puca (herself)",
       "favoriteDrink": {
         "name": "Saoirse’s Puca Punch",
         "link": "/recipies"
       },
       "favoriteEpisode": {
-        "name": "Episode 10: Spirits & Spirits",
+        "name": "Episode 10: The Leannán Sídhe",
         "link": "/episodes"
       }
     },

@@ -1,7 +1,7 @@
 [
   {
     "id": "hemp-milk-latte",
-    "name": "Simple Hemp Milk Latte",
+    "name": "Bigfoot's Hemp Milk Latte",
     "category": "Coffee",
     "pairing": {
       "name": "Bigfoot",
@@ -20,7 +20,7 @@
       "Froth and pour over the coffee.",
       "Add a tiny pinch of salt to enhance the nuttiness."
     ],
-    "vibe": "Earthbound and grounding."
+    "vibe": "Earthbound & grounding."
   },
   {
     "id": "green-matcha-tea",
@@ -30,7 +30,7 @@
       "name": "Tako nyūdō",
       "reason": "A disciplined drink for a scholarly yōkai. Keeps the mind sharp for ancient scrolls."
     },
-    "description": "A vibrant, whisked tea that provides a calm, focused energy—the Kitsune's choice.",
+    "description": "A vibrant, whisked tea that provides a calm, focused energy perfect for podcast listening.",
     "ingredients": [
       "1.5 tsp ceremonial grade matcha powder",
       "2 oz hot water (approx. 175°F)",
@@ -43,7 +43,7 @@
       "Whisk in a 'W' motion until frothy.",
       "Add remaining water and enjoy."
     ],
-    "vibe": "The Kitsune's Choice."
+    "vibe": "The Mind Cleanser. Add hemp milk for a creamy treat (Odd Bob variant)."
   },
   {
     "id": "verdant-bulleit-sour",
@@ -58,16 +58,18 @@
       "2 oz Bulleit Bourbon",
       "1 oz fresh lemon juice",
       "3/4 oz simple syrup",
-      "2-3 fresh basil leaves",
+      "1/2 oz prepared Matcha Paste",
       "1 egg white (optional)"
     ],
     "instructions": [
-      "Muddle basil in a shaker.",
-      "Add bourbon, lemon, syrup, and egg white.",
-      "Dry shake, then add ice and shake again.",
-      "Strain into a rocks glass."
+      "Prepare the Matcha: Create your matcha paste in a small bowl as described below.",
+      "Matcha Paste: Whisk 1 tsp matcha powder with 1 tsp hot water until smooth.",
+      "Combine: Add the bourbon, lemon juice, simple syrup, and matcha paste to a shaker.",
+      "The Foam (Optional): If using an egg white, perform a \"dry shake\" (shaking all ingredients without ice) for 15 seconds to build a thick foam.",
+      "Chill: Add ice to the shaker and shake vigorously for another 10–15 seconds until the tin is frosted.",
+      "Fine Strain: Double strain through a fine-mesh Hawthorne strainer into a chilled rocks glass or coupe. The fine mesh is crucial to catch any tiny matcha particulates."
     ],
-    "vibe": "A late night in the Willamette woods."
+    "vibe": "Mist rising over a mossy riverbank."
   },
   {
     "id": "puca-punch",

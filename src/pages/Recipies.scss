@@ -1,0 +1,51 @@
+.recipe-modal-content {
+  padding: 3rem;
+  width: 90vw;
+  max-width: 800px;
+  min-height: 400px;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+
+  /* Additional margins so text doesn't hit close button */
+  h2 {
+    padding-right: 60px;
+    margin-top: 0;
+  }
+}
+
+@media print {
+  /* Hide the rest of the site when printing */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Only show the modal overlay and children */
+  .game-modal-overlay,
+  .game-modal-overlay * {
+    visibility: visible;
+  }
+  
+  .game-modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: white !important;
+  }
+
+  /* Expand modal content for full width printing */
+  .game-modal-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  /* Hide UI elements inside modal */
+  .action-icons, .close-btn, .print-btn {
+    display: none !important;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './GameModal.scss';
 
-const GameModal = ({ isOpen, onClose, children }) => {
+const GameModal = ({ isOpen, onClose, showPrint, children }) => {
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === 'Escape') onClose();
@@ -29,7 +29,14 @@ const GameModal = ({ isOpen, onClose, children }) => {
         onClick={(e) => e.stopPropagation()}
         role="presentation"
       >
-        <button className="close-btn" onClick={onClose} aria-label="Close Modal">×</button>
+        <div className="action-icons">
+          {showPrint && (
+            <button className="print-btn" onClick={() => window.print()} aria-label="Print Modal" title="Print">
+              🖨️
+            </button>
+          )}
+          <button className="close-btn" onClick={onClose} aria-label="Close Modal">×</button>
+        </div>
         {children}
       </div>
     </div>
