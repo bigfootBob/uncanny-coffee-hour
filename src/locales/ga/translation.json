@@ -4,7 +4,7 @@
     "about": "Faoin Seó",
     "about_text": [
       "Fáilte go dtí an Uncanny Coffee Hour, áit a gcasann an gal ónár gcupáin le ceocháin na rudaí anaithnid. Is áit chruinnithe muid d'aisteachas ard an domhain—áit a dtrasnaíonn seanchosáin na Sióga le réimse leathsholais na Yokai.",
-      "Á chur i láthair ag Odd Bob agus an Dr. Kitsuné (Mitch), tá ár ndearcaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas lán le spioraid na Seapáine, á dtreorú tríd domhan na Yokai agus finscéalta Dúchasacha. Tugann Odd Bob croí fánaí Meiriceánach le hanam ceangailte leis na rúndiamhra Ceilteacha, i gcónaí sa tóir ar dhraíocht dhochreidte na Sióga. In éineacht le Saoirse, ár bPúca cónaitheach, siúlaimid an líne idir an taighde agus an dodhéanta.",
+      "Á chur i láthair ag Odd Bob agus an Dr. Kitsuné, tá ár ndearcaí chomh domhain lenár bhfréamhacha. Siúlann an Dr. Kitsuné an droichead idir eagna Dhúchasach agus béaloideas lán le spioraid na Seapáine, á dtreorú tríd domhan na Yokai agus finscéalta Dúchasacha. Tugann Odd Bob croí fánaí Meiriceánach le hanam ceangailte leis na rúndiamhra Ceilteacha, i gcónaí sa tóir ar dhraíocht dhochreidte na Sióga. In éineacht le Saoirse, ár bPúca cónaitheach, siúlaimid an líne idir an taighde agus an dodhéanta.",
       "Creidimid go bhfuil buille croí na fírinne i ngach finscéal. Le meascán de neamhmheas agus ómós domhain, tugaimid tús áite do na guthanna is sine inár measc, ag spreagadh súil dhomhain ar dhearcaí Dúchasacha. Táimid anseo chun guth a thabhairt dóibh siúd gan ghuth agus iniúchadh a dhéanamh ar na snáitheanna fealsúnachta a cheanglaíonn muid go léir.",
       "Tá an tionscadal seo á ghrúdú inár n-intinn le blianta. Tá na deochanna te, na scáileanna fada, agus na scéalta ag fanacht.",
       "Tarraing chugat cathaoir."
@@ -13,7 +13,7 @@
     "friendo_desc": "Seo cúpla cara den seó nó eintitis riachtanacha eile ar mhaith linn aitheantas a thabhairt dóibh:",
     "aititle": "Cé mhéad cabhair ón intleacht shaorga a úsáideann sibh?",
     "aitext": "Braitheann sé sin. Tá oibleagáidí lánaimseartha againn (go fóill) chun bia agus foscadh a choinneáil i ndomhan cruálach. Inár gcás foirfe... dhéanfaimis é seo go lánaimseartha, ach caithfimid bealaí a lorg chun bogadh níos tapúla anseo agus ansiúd agus chabhraigh IS go mór linn luas a chur le cuid den scéalaíocht & maisíochtaí fuaime speisialta a mbaineann tú taitneamh astu. Is meascán de chabhair dhaonna agus IS é ealaín na heipeasóide de ghnáth agus athraíonn sé ó eipeasóid go heipeasóid.",
-    "what_podcast": "Cad is podchraoladh ann?",
+    "what_podcast": "Cad is podchraoladh ann & cé hiad na hóstaigh?",
     "what_podtext": "Smaoinigh air mar sheó raidió ó laethanta a chuaigh thart… cosúil le suí timpeall an raidió agus éisteacht le Buck Rogers nó The Shadow… ach in ionad tiúnadh isteach ag am ar leith, is féidir leat éisteacht aon uair is mian leat! Mar sin cruinnigh timpeall an tseanríomhaire nó an fhóin phóca… téigh na feadáin fholúis sin… agus éist!"
   },
   "app": {
@@ -85,10 +85,6 @@
     "submit_story": "Cuir Scéal Isteach"
   },
   "patreon": {
-    "common": {
-      "month": "/ mí",
-      "join": "Tuilleadh Eolais"
-    },
     "1": {
       "title": "An Longma Grámhar",
       "desc": "Eipeasóidí gan fógraí, rochtain ar Discord an Lóiste, aitheantas ar an aer."
@@ -104,6 +100,10 @@
     "4": {
       "title": "Cairde Kitsune agus Tanuki!",
       "desc": "Gach buntáiste leibhéil PLUS: Cruthaímid Yokai saincheaptha duit agus fógraímid a mhiotas ar an aer."
+    },
+    "common": {
+      "month": "/ mí",
+      "join": "Tuilleadh Eolais"
     }
   },
   "shop": {

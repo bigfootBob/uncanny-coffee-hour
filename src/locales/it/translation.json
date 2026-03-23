@@ -4,7 +4,7 @@
     "about": "Informazioni sullo Show",
     "about_text": [
       "Benvenuti all'Uncanny Coffee Hour, dove il vapore delle nostre tazze turbina con le nebbie dell'ignoto. Siamo un luogo di ritrovo per l'alta stranezza del mondo, dove gli antichi sentieri dei Fae si incrociano con il regno crepuscolare degli Yokai.",
-      "Condotto da Odd Bob e Dr. Kitsuné (Mitch), le nostre prospettive sono profonde quanto le nostre radici. Il Dr. Kitsuné cammina sul ponte tra la saggezza nativa e il folklore pieno di spiriti del Giappone, guidandoci attraverso il mondo degli Yokai e delle leggende indigene. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici, inseguendo per sempre la magia impazzita dei Fae. Insieme a Saoirse, il nostro Púca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
+      "Condotto da Odd Bob e Dr. Kitsuné, le nostre prospettive sono profonde quanto le nostre radici. Il Dr. Kitsuné cammina sul ponte tra la saggezza nativa e il folklore pieno di spiriti del Giappone, guidandoci attraverso il mondo degli Yokai e delle leggende indigene. Odd Bob porta il cuore di un vagabondo americano con un'anima legata ai misteri celtici, inseguendo per sempre la magia impazzita dei Fae. Insieme a Saoirse, il nostro Púca residente, camminiamo sulla linea tra il ricercato e l'impossibile.",
       "Crediamo che ogni leggenda contenga un battito di verità. Con una miscela di irriverenza e profondo rispetto, diamo priorità alle voci più antiche tra noi, incoraggiando uno sguardo profondo alle prospettive indigene. Siamo qui per dare voce a chi non ha voce ed esplorare i fili filosofici che ci collegano tutti.",
       "Questo progetto fermenta nelle nostre menti da anni. Le bevande sono calde, le ombre lunghe e le storie in attesa.",
       "Prendi una sedia."
@@ -13,7 +13,7 @@
     "friendo_desc": "Ecco alcuni amici dello show o altre entità essenziali a cui vorremmo fare un saluto:",
     "aititle": "Quanto aiuto dell'IA usate?",
     "aitext": "Dipende. Abbiamo (per ora) obblighi a tempo pieno per mantenere cibo e alloggio in un mondo crudele. Nel nostro scenario perfetto... faremmo questo a tempo pieno, tuttavia, dobbiamo cercare modi per muoverci più velocemente qua e là e l'IA ci ha davvero aiutato ad accelerare alcune delle narrazioni e degli effetti sonori speciali che vi piacciono. L'arte dell'episodio è tipicamente una combinazione di aiuto umano e IA e varia da episodio a episodio.",
-    "what_podcast": "Cos'è un podcast?",
+    "what_podcast": "Cos'è un podcast e chi sono i conduttori?",
     "what_podtext": "Pensalo come uno spettacolo radiofonico dei giorni passati... come sedersi intorno alla radio e ascoltare Buck Rogers o The Shadow... ma invece di sintonizzarti a un orario specifico, puoi ascoltare quando vuoi! Quindi radunatevi intorno al vecchio computer o al cellulare... scaldate quei tubi a vuoto... e ascoltate!"
   },
   "app": {
@@ -85,10 +85,6 @@
     "submit_story": "Invia una Storia"
   },
   "patreon": {
-    "common": {
-      "month": "/ mese",
-      "join": "Scopri di più"
-    },
     "1": {
       "title": "Il Longma Amorevole",
       "desc": "Episodi senza pubblicità, accesso al Discord della Loggia, ringraziamento in onda."
@@ -104,6 +100,10 @@
     "4": {
       "title": "Amici di Kitsune e Tanuki!",
       "desc": "Tutti i benefici dei livelli PIÙ: Creiamo uno Yokai personalizzato per te e annunciamo il suo mito in onda."
+    },
+    "common": {
+      "month": "/ mese",
+      "join": "Scopri di più"
     }
   },
   "shop": {

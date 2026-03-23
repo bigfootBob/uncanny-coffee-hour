@@ -4,7 +4,7 @@
     "about": "Lutmey",
     "about_text": [
       "Uncanny Coffee Hour yI'el, naDev qa'vIn HIvje'maj seS tlhej Hurgh mI'. yuQ Hujqu' wIbuS - naDev nItebHesh He chen Yokai Hurgh juH je.",
-      "Odd Bob Dr. Kitsuné (Mitch) je, nIteb lutmey wIqel. Dr. Kitsuné DevwI', Japan qa'mey lutmey je Native Sov je. Odd Bob 'oH American ghojmoHwI' 'e', Celtic Hurgh tIq ghaj, reH Fae magic tlha'. Saoirse, maH Puca, wItlhej, 'ej qeS je lormey je wIqel.",
+      "Odd Bob Dr. Kitsuné je, nIteb lutmey wIqel. Dr. Kitsuné DevwI', Japan qa'mey lutmey je Native Sov je. Odd Bob 'oH American ghojmoHwI' 'e', Celtic Hurgh tIq ghaj, reH Fae magic tlha'. Saoirse, maH Puca, wItlhej, 'ej qeS je lormey je wIqel.",
       "Hoch lut vIt ghaj 'e' wIHar. tIqmo' je vuvqu'mo', qanwI'pu' wIqel, Native lutmey wIleghqu'. naDev maH, ghogh ghajbe'bogh nuvpu'vaD ghogh wInob 'ej Hoch maHvaD rarqangbogh qeS wIqel.",
       "ben law' Qu'vam wIqel. Hat tlhIl, nI' QI', 'ej loS lutmey.",
       "quS yItlhap."
@@ -13,7 +13,7 @@
     "friendo_desc": "naDev lut juppu' Daghaj, pagh latlh potlh nuvpu':",
     "aititle": "'ar De'wI' QaH Dalo'?",
     "aitext": "pIm. (DaH) Soj juH je wIghajmeH Qu' nI' wIghaj. maH vIndo' maj... Qu'vam wIghajlaH, 'ach nom maH, 'ej De'wI' QaH wIlo'pu' 'ej lutmey se' je nom wIchenmoH. lut mIllogh chenmoHmeH Human De'wI' je wIlo', 'ej pIm lutmey.",
-    "what_podcast": "nuq 'oH Podcast?",
+    "what_podcast": "podcast 'oH nuq & 'Iv DevwI'pu'?",
     "what_podtext": "ben QIn Duj rur... QIn Duj retlhDaq ba' 'ej Buck Rogers The Shadow ghap yI'Ij... 'ach poH pIm Dalo'laH! vaj De'wI' tlhIngan Hol ghap talpu' Dalo'... vacuum tubes yItu'... 'ej yI'Ij!"
   },
   "app": {
@@ -85,10 +85,6 @@
     "submit_story": "Lut yInob"
   },
   "patreon": {
-    "common": {
-      "month": "/ jar",
-      "join": "Latlh yIghoj"
-    },
     "1": {
       "title": "MuSHa' Longma",
       "desc": "QeD HUtlh lutmey, Lodge Discord 'el, Se'Daq pong."
@@ -104,6 +100,10 @@
     "4": {
       "title": "Kitsune Tanuki je juppu'!",
       "desc": "Hoch tier potlh PLUS: Yokai pIm wIchenmoH 'ej Se'Daq lut wIja'."
+    },
+    "common": {
+      "month": "/ jar",
+      "join": "Latlh yIghoj"
     }
   },
   "shop": {
