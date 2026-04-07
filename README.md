@@ -139,11 +139,11 @@ This fetches all published episodes and writes them to `src/data/episodes.json`.
 
 ## 🔗 Links
 
-- 🎙️ Podcast on Buzzsprout
-- 💜 Patreon — Join the Lodge
-- ☕ Buy Me a Coffee — Support the crew
-- 🛍️ Shop — Merch & wares
+- 🎙️ [Podcast on Buzzsprout](https://uncannycoffeehour.buzzsprout.com)
+- 💜 [Patreon — Join the Lodge](https://www.uncannycoffeepodcast.com/lodge)
+- ☕ [Buy Me a Coffee — Support the crew](https://buymeacoffee.com/uncannycoffee)
+- 🛍️ [Shop — Merch & wares](https://uncanny-coffee-hour-shop.fourthwall.com/)
 
 ---
-
+*Listen anywhere you get podcasts by searching for Uncanny Coffee Hour*
 *Pull up a chair. The drinks are hot, the shadows are long, and the stories are waiting.*
