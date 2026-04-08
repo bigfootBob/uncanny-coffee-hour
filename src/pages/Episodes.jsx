@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DOMPurify from 'dompurify';
 import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
 import episodesData from '../data/episodes.json';
@@ -91,7 +92,7 @@ const EpisodePage = () => {
                 <div className="description-wrapper">
                   <div
                     className={`episode-description ${expandedId === ep.id ? 'expanded' : 'collapsed'}`}
-                    dangerouslySetInnerHTML={{ __html: ep.description }}
+                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ep.description) }}
                   />
                   <button
                     className="toggle-desc-btn"
