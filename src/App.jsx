@@ -1,6 +1,12 @@
-import { Routes, Route } from 'react-router-dom'; 
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 
 import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics';
 import SEO from './components/SEO/SEO';
@@ -31,6 +37,7 @@ function App() {
         {t('app.skip_link')}
       </a>
       
+      <ScrollToTop />
       <Header />
 
       <main id="main-content">

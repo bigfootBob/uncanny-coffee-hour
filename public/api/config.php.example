@@ -1,0 +1,4 @@
+<?php
+// Copy this file to config.php and fill in your token.
+// config.php is git-ignored and must be created manually on the server.
+define('FOURTHWALL_TOKEN', 'your_storefront_token_here');

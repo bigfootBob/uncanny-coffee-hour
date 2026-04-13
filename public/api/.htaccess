@@ -1,0 +1,9 @@
+# Block direct access to the token config
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Serve merch-products without the .php extension
+RewriteEngine On
+RewriteRule ^merch-products$ merch-products.php [L]
