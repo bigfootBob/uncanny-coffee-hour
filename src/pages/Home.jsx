@@ -114,7 +114,6 @@ const Home = () => {
             <h3>{t("homepage.innercircle")}</h3>
             <span className="sub-label">{t("homepage.subpatreon")}</span>
             <div className="tier-list">
-              <div className="tier-list">
                 <Link
                   to="/lodge"
                   state={{ selectedTier: '3' }}
@@ -139,7 +138,6 @@ const Home = () => {
                   {t("homepage.patc")}
                 </Link>
               </div>
-            </div>
           </div>
 
           <div className="action-card glass-panel coffee-card">

@@ -6,7 +6,6 @@ import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import './Header.scss';
 
 import logoFull from '../../assets/images/UCHlogo.png';
-import logoMark from '../../assets/images/UCHlogo.png'; 
 
 const Header = () => {
   const { t } = useTranslation();
@@ -28,7 +27,7 @@ const Header = () => {
         <div className="header-logo">
           <Link to="/" aria-label={t('misctext.return')} onClick={closeMobile}>
             <picture>
-              <source media="(max-width: 768px)" srcSet={logoMark} />
+              <source media="(max-width: 768px)" srcSet={logoFull} />
               <img 
                 src={logoFull} 
                 alt="Uncanny Coffee Hour Logo" 

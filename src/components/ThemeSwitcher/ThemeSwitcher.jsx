@@ -12,7 +12,6 @@ const ThemeSwitcher = () => {
     document.documentElement.setAttribute('data-theme', theme);
     // local storage
     localStorage.setItem('theme', theme);
-    console.log(localStorage.theme);
   }, [theme]);
 
   const toggleTheme = () => {

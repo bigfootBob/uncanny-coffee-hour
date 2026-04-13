@@ -6,18 +6,12 @@ import episodesData from '../data/episodes.json';
 import SEO from '../components/SEO/SEO';
 import './Episodes.scss';
 import AudioPlayer from '../components/AudioPlayer/AudioPlayer';
+import { formatTime } from '../utils/formatTime';
 
 const EpisodePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedId, setExpandedId] = useState(null);
   const { t } = useTranslation('translation');
-
-  // Seconds to MM:SS
-  const formatDuration = (sec) => {
-    const mins = Math.floor(sec / 60);
-    const remainingSecs = sec % 60;
-    return `${mins}:${remainingSecs.toString().padStart(2, '0')}`;
-  };
 
   // Format Date
   const formatDate = (dateString) => {
@@ -75,7 +69,7 @@ const EpisodePage = () => {
                   <div className="episode-details">
                     <div className="episode-meta">
                       <span className="ep-tag">S{ep.season_number} : E{ep.episode_number}</span>
-                      <span className="ep-duration"> 🕒 {formatDuration(ep.duration)}</span>
+                      <span className="ep-duration"> 🕒 {formatTime(ep.duration)}</span>
                     </div>
 
                     <h2>{ep.title}</h2>
