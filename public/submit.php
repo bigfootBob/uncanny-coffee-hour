@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *"); 
+header("Access-Control-Allow-Origin: https://uncannycoffeehour.com");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
@@ -28,7 +28,7 @@ if (!empty($input['bot_field'])) {
     exit;
 }
 
-$name = htmlspecialchars(strip_tags(trim($input['name'])));
+$name = str_replace(["\r", "\n"], '', strip_tags(trim($input['name'])));
 $story = htmlspecialchars(strip_tags(trim($input['story'])));
 
 if (empty($story)) {
