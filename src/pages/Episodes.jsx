@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DOMPurify from 'dompurify';
 import Hero from '../components/Hero/Hero';
 import { useTranslation } from 'react-i18next';
-import episodesData from '../data/episodes.json';
 import SEO from '../components/SEO/SEO';
 import './Episodes.scss';
 import AudioPlayer from '../components/AudioPlayer/AudioPlayer';
@@ -11,7 +10,14 @@ import { formatTime } from '../utils/formatTime';
 const EpisodePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedId, setExpandedId] = useState(null);
+  const [episodesData, setEpisodesData] = useState([]);
   const { t } = useTranslation('translation');
+
+  useEffect(() => {
+    fetch('/data/episodes.json')
+      .then(res => res.json())
+      .then(data => setEpisodesData(data));
+  }, []);
 
   // Format Date
   const formatDate = (dateString) => {

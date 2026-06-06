@@ -15,7 +15,7 @@ load_env()
 PODCAST_ID = os.getenv("BUZZSPROUT_PODCAST_ID")
 API_TOKEN = os.getenv("BUZZSPROUT_API_TOKEN")
 URL = f"https://www.buzzsprout.com/api/{PODCAST_ID}/episodes.json"
-OUTPUT_FILE = "./src/data/episodes.json"
+OUTPUT_FILE = "./public/data/episodes.json"
 
 def fetch_episodes():
     headers = {
