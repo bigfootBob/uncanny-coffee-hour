@@ -44,16 +44,6 @@ import sjnGames from './locales/sjn/games.json';
 import svGames from './locales/sv/games.json';
 import tlhGames from './locales/tlh/games.json';
 
-import enInventory from './locales/en/inventory.json';
-import deInventory from './locales/de/inventory.json';
-import gaInventory from './locales/ga/inventory.json';
-import itInventory from './locales/it/inventory.json';
-import jaInventory from './locales/ja/inventory.json';
-import ruInventory from './locales/ru/inventory.json';
-import sjnInventory from './locales/sjn/inventory.json';
-import svInventory from './locales/sv/inventory.json';
-import tlhInventory from './locales/tlh/inventory.json';
-
 import enTrivia from './locales/en/trivia.json';
 import deTrivia from './locales/de/trivia.json';
 import gaTrivia from './locales/ga/trivia.json';
@@ -69,22 +59,22 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-        en: { translation: enTrans, bios: enBios, games: enGames, inventory: enInventory, trivia: enTrivia },
-        de: { translation: deTrans, bios: deBios, games: deGames, inventory: deInventory, trivia: deTrivia  },
-        ga: { translation: gaTrans, bios: gaBios, games: gaGames, inventory: gaInventory, trivia: gaTrivia  },
-        it: { translation: itTrans, bios: itBios, games: itGames, inventory: itInventory, trivia: itTrivia  },
-        ja: { translation: jaTrans, bios: jaBios, games: jaGames, inventory: jaInventory, trivia: jaTrivia  },
-        ru: { translation: ruTrans, bios: ruBios, games: ruGames, inventory: ruInventory, trivia: ruTrivia  },
-        sjn: { translation: sjnTrans, bios: sjnBios, games: sjnGames, inventory: sjnInventory, trivia: sjnTrivia  },
-        sv: { translation: svTrans, bios: svBios, games: svGames, inventory: svInventory, trivia: svTrivia  },
-        tlh: { translation: tlhTrans, bios: tlhBios, games: tlhGames, inventory: tlhInventory, trivia: tlhTrivia  }
+        en: { translation: enTrans, bios: enBios, games: enGames, trivia: enTrivia },
+        de: { translation: deTrans, bios: deBios, games: deGames, trivia: deTrivia  },
+        ga: { translation: gaTrans, bios: gaBios, games: gaGames, trivia: gaTrivia  },
+        it: { translation: itTrans, bios: itBios, games: itGames, trivia: itTrivia  },
+        ja: { translation: jaTrans, bios: jaBios, games: jaGames, trivia: jaTrivia  },
+        ru: { translation: ruTrans, bios: ruBios, games: ruGames, trivia: ruTrivia  },
+        sjn: { translation: sjnTrans, bios: sjnBios, games: sjnGames, trivia: sjnTrivia  },
+        sv: { translation: svTrans, bios: svBios, games: svGames, trivia: svTrivia  },
+        tlh: { translation: tlhTrans, bios: tlhBios, games: tlhGames, trivia: tlhTrivia  }
     },
     fallbackLng: 'en',
     debug: true, // Keep this on until verify
     interpolation: {
       escapeValue: false 
     },
-    ns: ['translation', 'bios', 'games', 'inventory', 'trivia'],
+    ns: ['translation', 'bios', 'games', 'trivia'],
     defaultNS: 'translation', 
   });
 

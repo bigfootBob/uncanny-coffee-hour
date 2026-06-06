@@ -1,5 +1,28 @@
 [
   {
+    "id": 19305112,
+    "title": "Episode 020 — Seasons Change (Beltane)",
+    "audio_url": "https://www.buzzsprout.com/2450457/episodes/19305112-episode-020-seasons-change-beltane.mp3",
+    "artwork_url": "https://storage.buzzsprout.com/rup7ahxvt4y6f70xdiey11iwnv1x",
+    "description": "<p>A bonfire can warm you up, light your face, and make you feel brave. It can also listen. We’re leaning into Beltane folklore with coffee in hand, starting with the real-world roots of the Celtic fire festival and sliding, on purpose, into the unsettling parts: cattle between twin fires, protection rites, burnt bannock, and the way old communities tried to keep the fair folk from getting too close.<br><br>From there, we step into the fae courts and talk about Nicknevin as more than a cartoon villain. We explore what she represents as a winter queen of the Unseelie Court, why the “hag” label misses the point, and how the seasonal handoff to Titania changes the whole emotional temperature of the myth. Beauty arrives, but it isn’t safe. Light shows up, but it can blind. Beltane becomes a doorway, not a party theme.<br><br>Then we give the spotlight to the Púca, the legendary Irish shape-shifting prankster who rides through stories as a black horse, a goat, a hound, and whatever else suits the night. And just when you think we’re done, we land in Oregon’s Coast Range for a modern campfire tale that answers one question clearly: what happens when you mock the woods and your fire turns purple?<br><br>If you like Celtic mythology, fae stories, supernatural horror, and folklore you can practically smell in the smoke, hit play, subscribe, share the episode with a friend, and leave us a review.</p>",
+    "summary": null,
+    "artist": "Uncanny Coffee Hour",
+    "tags": "Uncanny, Coffee, Paranormal, Yokai, Nicnevin, Titania",
+    "published_at": "2026-06-06T15:00:00.000-04:00",
+    "duration": 2218,
+    "hq": false,
+    "magic_mastering": true,
+    "guid": "Buzzsprout-19305112",
+    "inactive_at": null,
+    "custom_url": "https://www.uncannycoffeepodcast.com/episodes",
+    "episode_number": 3,
+    "season_number": 2,
+    "episode_type": "full",
+    "explicit": true,
+    "private": false,
+    "total_plays": 7
+  },
+  {
     "id": 18885714,
     "title": "Zombie Stories",
     "audio_url": "https://www.buzzsprout.com/2450457/episodes/18885714-zombie-stories.mp3",
@@ -20,7 +43,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 23
+    "total_plays": 152
   },
   {
     "id": 18679216,
@@ -43,7 +66,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 92
+    "total_plays": 139
   },
   {
     "id": 18484556,
@@ -66,7 +89,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 121
+    "total_plays": 163
   },
   {
     "id": 18121996,
@@ -89,7 +112,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 92
+    "total_plays": 134
   },
   {
     "id": 17880820,
@@ -112,7 +135,7 @@
     "episode_type": "full",
     "explicit": false,
     "private": false,
-    "total_plays": 67
+    "total_plays": 103
   },
   {
     "id": 17992373,
@@ -135,7 +158,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 91
+    "total_plays": 140
   },
   {
     "id": 17879977,
@@ -158,7 +181,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 120
+    "total_plays": 160
   },
   {
     "id": 17733996,
@@ -181,7 +204,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 91
+    "total_plays": 121
   },
   {
     "id": 17645990,
@@ -204,7 +227,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 83
+    "total_plays": 121
   },
   {
     "id": 17451173,
@@ -227,7 +250,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 94
+    "total_plays": 126
   },
   {
     "id": 17374373,
@@ -250,7 +273,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 112
+    "total_plays": 141
   },
   {
     "id": 17298515,
@@ -273,7 +296,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 94
+    "total_plays": 126
   },
   {
     "id": 17217034,
@@ -296,7 +319,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 105
+    "total_plays": 140
   },
   {
     "id": 17133279,
@@ -319,7 +342,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 147
+    "total_plays": 186
   },
   {
     "id": 17040621,
@@ -342,7 +365,7 @@
     "episode_type": "full",
     "explicit": false,
     "private": false,
-    "total_plays": 127
+    "total_plays": 162
   },
   {
     "id": 16956811,
@@ -365,7 +388,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 139
+    "total_plays": 171
   },
   {
     "id": 16877682,
@@ -388,7 +411,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 139
+    "total_plays": 173
   },
   {
     "id": 16787162,
@@ -411,7 +434,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 161
+    "total_plays": 196
   },
   {
     "id": 16701861,
@@ -434,7 +457,7 @@
     "episode_type": "full",
     "explicit": true,
     "private": false,
-    "total_plays": 191
+    "total_plays": 223
   },
   {
     "id": 16603080,
@@ -457,6 +480,6 @@
     "episode_type": "full",
     "explicit": false,
     "private": false,
-    "total_plays": 215
+    "total_plays": 253
   }
 ]
