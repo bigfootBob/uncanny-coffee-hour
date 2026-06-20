@@ -58,10 +58,11 @@ const Header = () => {
           <LanguageSwitcher /> 
           <ThemeSwitcher />
 
-          <button 
-            className={`hamburger ${isMobileOpen ? 'active' : ''}`} 
+          <button
+            className={`hamburger ${isMobileOpen ? 'active' : ''}`}
             onClick={toggleMobile}
             aria-label="Menu"
+            aria-expanded={isMobileOpen}
           >
             <span className="bar"></span>
             <span className="bar"></span>
@@ -71,7 +72,7 @@ const Header = () => {
       </div>
 
       {/* MOBILE */}
-      <div className={`mobile-nav-overlay ${isMobileOpen ? 'open' : ''}`}>
+      <div className={`mobile-nav-overlay ${isMobileOpen ? 'open' : ''}`} aria-hidden={!isMobileOpen}>
         <nav className="mobile-links">
           <Link to="/" onClick={closeMobile}>{t('navtext.home') || 'Home'}</Link>
           <Link to="/episodes" onClick={closeMobile}>{t('navtext.episodes')}</Link>

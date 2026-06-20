@@ -80,15 +80,6 @@ const Shop = () => {
                 <article
                   key={product.id}
                   className="product-card glass-panel"
-                  onClick={() => openProduct(product.slug)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      openProduct(product.slug);
-                    }
-                  }}
                 >
                   <div className="card-image-link">
                     <div className="card-image-wrapper">
@@ -106,10 +97,8 @@ const Shop = () => {
                     <p>{shortDesc}</p>
                     <button
                       className="buy-btn"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        openProduct(product.slug);
-                      }}
+                      onClick={() => openProduct(product.slug)}
+                      aria-label={`${t('shop.details')} – ${product.name}`}
                     >
                       {t('shop.details')}
                     </button>

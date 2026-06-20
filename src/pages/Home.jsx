@@ -59,12 +59,13 @@ const Home = () => {
         <section className="dashboard-row player-row glass-panel">
 
           {latestEpisode && (
-            // eslint-disable-next-line jsx-a11y/media-has-caption
             <audio
               ref={audioRef}
               src={latestEpisode.audioUrl}
               onEnded={() => setIsPlaying(false)}
-            />
+            >
+              <track kind="captions" />
+            </audio>
           )}
 
           <div className="player-info">
@@ -111,7 +112,7 @@ const Home = () => {
 
         <section className="dashboard-row action-grid">
           <div className="action-card glass-panel patreon-card">
-            <h3>{t("homepage.innercircle")}</h3>
+            <h2>{t("homepage.innercircle")}</h2>
             <span className="sub-label">{t("homepage.subpatreon")}</span>
             <div className="tier-list">
                 <Link
@@ -141,7 +142,7 @@ const Home = () => {
           </div>
 
           <div className="action-card glass-panel coffee-card">
-            <h3>{t("homepage.buycoffee")}</h3>
+            <h2>{t("homepage.buycoffee")}</h2>
             <span className="sub-label">{t("homepage.buycoffeesub")}</span>
             <a
               href="https://buymeacoffee.com/uncannycoffee"
@@ -156,7 +157,7 @@ const Home = () => {
 
           <div className="action-card glass-panel shop-card">
             <div className="shop-text">
-              <h3>{t("homepage.emporium")}</h3>
+              <h2>{t("homepage.emporium")}</h2>
               <p className="sub-label">{t("homepage.odditiesetc")}</p>
               <Link to="/shop" className="shop-btn">{t("homepage.shopnow")}</Link>
             </div>
@@ -166,8 +167,8 @@ const Home = () => {
 
         <section id="whispering-well" className="dashboard-row parchment-panel">
           <div className="panel-content">
-            <h1>{t("homepage.whisperwellhead")}</h1>
-            <h2>{t("homepage.whisperwellsubhead")}</h2>
+            <h2>{t("homepage.whisperwellhead")}</h2>
+            <h3>{t("homepage.whisperwellsubhead")}</h3>
 
             <Link to="/submit" className="parchment-btn">
               {t("homepage.whisperwellsubform")}
@@ -181,7 +182,7 @@ const Home = () => {
             <span className="player-label">Drinks & Elixirs</span>
           </div>
           <div className="player-controls">
-            <Link to="/recipies" className="recipe-link">
+            <Link to="/recipies" className="recipe-link" aria-label="View all recipes">
               View All
             </Link>
           </div>

@@ -53,7 +53,7 @@ const About = () => {
         </section>
 
         <section id="aboutus" className="about-text glass-panel">
-          <h1>{t('aboutpage.about')}</h1>
+          <h2>{t('aboutpage.about')}</h2>
 
           {safeAboutText.map((paragraph, i) => (
             <p key={i} className="about-paragraph">
@@ -63,7 +63,7 @@ const About = () => {
         </section>
 
         <section id="friends" className="about-text glass-panel">
-          <h1>{t('aboutpage.friendo_title')}</h1>
+          <h2>{t('aboutpage.friendo_title')}</h2>
           <p>
             {t('aboutpage.friendo_desc')}
           </p>
@@ -97,7 +97,7 @@ const About = () => {
         </section>
 
         <section id="whatisit" className="about-text glass-panel">
-          <h1>{t('aboutpage.what_podcast')}</h1>
+          <h2>{t('aboutpage.what_podcast')}</h2>
           <p>
             {t('aboutpage.what_podtext')}
           </p>

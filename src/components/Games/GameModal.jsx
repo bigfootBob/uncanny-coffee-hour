@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './GameModal.scss';
 
-const GameModal = ({ isOpen, onClose, showPrint, children }) => {
+const GameModal = ({ isOpen, onClose, showPrint, title = 'Game', children }) => {
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === 'Escape') onClose();
@@ -21,6 +21,7 @@ const GameModal = ({ isOpen, onClose, showPrint, children }) => {
       onClick={onClose}
       role="dialog"
       aria-modal="true"
+      aria-label={title}
       tabIndex={-1}
       onKeyDown={(e) => { if (e.key === 'Escape') onClose(); }}
     >

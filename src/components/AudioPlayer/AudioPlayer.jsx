@@ -83,6 +83,8 @@ const AudioPlayer = ({ src, className = '' }) => {
                     value={progress}
                     onChange={handleProgressChange}
                     className="progress-bar"
+                    aria-label="Seek"
+                    aria-valuetext={formatTime(progress)}
                     style={{
                         backgroundSize: `${(progress / duration) * 100}% 100%`
                     }}

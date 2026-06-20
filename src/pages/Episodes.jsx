@@ -53,6 +53,7 @@ const EpisodePage = () => {
             <input
               type="text"
               placeholder={t('eppage.search')}
+              aria-label={t('eppage.search')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="search-input"
@@ -92,7 +93,7 @@ const EpisodePage = () => {
                 <div className="description-wrapper">
                   <div
                     className={`episode-description ${expandedId === ep.id ? 'expanded' : 'collapsed'}`}
-                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ep.description) }}
+                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ep.description, { ALLOWED_TAGS: ['p', 'a', 'em', 'strong', 'ul', 'ol', 'li', 'br'], ALLOWED_ATTR: ['href', 'target', 'rel'] }) }}
                   />
                   <button
                     className="toggle-desc-btn"
