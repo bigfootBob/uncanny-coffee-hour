@@ -4,6 +4,7 @@ import './Bio.scss';
 
 const Bio = ({ member }) => {
   const { t } = useTranslation('bios');
+  const { t: tMain } = useTranslation();
 
   return (
     <div id={member.id} className="team-bio-section glass-panel">
@@ -23,7 +24,7 @@ const Bio = ({ member }) => {
              <img
               key={i}
               src={`/assets/images/bios/${img}`}
-              alt={`${member.name} ${i + 1}`}
+              alt={tMain('a11y.photo_of', { name: member.name })}
               className="bio-image"
               onError={(e) => { e.target.style.display = 'none'; }}
              />

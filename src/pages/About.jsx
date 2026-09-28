@@ -29,7 +29,8 @@ const About = () => {
         const element = document.getElementById(targetId);
 
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          element.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
         } else {
           console.warn(`Attempted to scroll to ID "${targetId}" but it was not found.`);
         }
@@ -87,7 +88,7 @@ const About = () => {
                   {friend.icon ? (
                     <img src={`/assets/images/icons/${friend.icon}`} alt="" />
                   ) : (
-                    <span className="generic-arrow">➔</span>
+                    <span className="generic-arrow" aria-hidden="true">➔</span>
                   )}
                 </div>
               </a>

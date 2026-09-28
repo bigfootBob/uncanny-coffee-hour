@@ -77,7 +77,8 @@
         &:focus {
           background: rgba(255, 248, 240, 0.6);
           border-color: #2c1a12;
-          box-shadow: 0 0 0 2px rgba(44, 26, 18, 0.1);
+          outline: 3px solid #2c1a12;
+          outline-offset: 2px;
         }
       }
 

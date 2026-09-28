@@ -30,7 +30,6 @@ function App() {
     <>
     
     <GoogleAnalytics />
-    <SEO />
 
     <div className="app-container">
       <a href="#main-content" className="skip-link">
@@ -52,6 +51,7 @@ function App() {
           <Route path="/submit" element={<SubmitStory />} />
           <Route path="*" element={
             <div className='four-oh-four'>
+              <SEO title={t('misctext.lostroute')} />
               <h1>404 - {t('misctext.lostroute')}</h1>
               <img src={lostCryptid} alt="Lost in the void" className="error-img" />
               <Link to="/" className="home-btn">{t('misctext.return_safety')}</Link>

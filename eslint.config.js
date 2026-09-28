@@ -6,7 +6,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(['dist', '.claude']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [
@@ -27,5 +27,9 @@ export default defineConfig([
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
+  },
+  {
+    files: ['vite.config.js', 'api/**/*.js'],
+    languageOptions: { globals: globals.node },
   },
 ])

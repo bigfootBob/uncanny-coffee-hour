@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero';
 import SEO from '../components/SEO/SEO';
@@ -16,6 +16,20 @@ const Games = () => {
   const { t } = useTranslation('games');
   const [activeGame, setActiveGame] = useState(null);
   const [instructionData, setInstructionData] = useState(null);
+  const instructionCloseRef = useRef(null);
+
+  // Instruction dialog: focus the close button on open, Escape closes, focus returns on close
+  useEffect(() => {
+    if (!instructionData) return;
+    const previouslyFocused = document.activeElement;
+    instructionCloseRef.current?.focus();
+    const handleEsc = (e) => { if (e.key === 'Escape') setInstructionData(null); };
+    window.addEventListener('keydown', handleEsc);
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+      if (previouslyFocused instanceof HTMLElement) previouslyFocused.focus();
+    };
+  }, [instructionData]);
 
   const games = [
     {
@@ -75,7 +89,7 @@ const Games = () => {
     <>
 
       <SEO
-        title="Uncanny Coffee Hour Past Episodes"
+        title="Games"
         description="Listen to Odd Bob, Dr. Kitsune & Saoirse, the voices behind the madness."
       />
 
@@ -97,32 +111,38 @@ const Games = () => {
 
         <div className="games-grid">
           {games.map((game) => (
+            // Whole tile is clickable for mouse users; keyboard users use the title button
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <div
               key={game.id}
               className={`game-tile ${game.status}`}
               onClick={() => handleOpenGame(game)}
-              role="button"
-              tabIndex={game.status === 'active' ? 0 : -1}
-              onKeyDown={(e) => {
-                if (game.status === 'active' && (e.key === 'Enter' || e.key === ' ')) {
-                  handleOpenGame(game);
-                }
-              }}
             >
               <div className="tile-icon">
                 <img
                   src={game.image}
-                  alt={t(`${game.id}.title`)}
+                  alt=""
                   className="game-icon-img"
                 />
               </div>
 
               <div className="tile-content">
-                <h3>{t(`${game.id}.title`)}</h3>
+                <h3>
+                  {game.status === 'active' ? (
+                    <button
+                      type="button"
+                      className="tile-title-btn"
+                      onClick={(e) => { e.stopPropagation(); handleOpenGame(game); }}
+                    >
+                      {t(`${game.id}.title`)}
+                    </button>
+                  ) : t(`${game.id}.title`)}
+                </h3>
                 <p>{t(`${game.id}.description`)}</p>
                 {game.status === 'coming-soon' && <span className="badge">{t('status.comingSoon')}</span>}
                 {game.status === 'active' && (
                   <button
+                    type="button"
                     className='instruction-link'
                     onClick={(e) => handleOpenInstructions(e, game)}
                   >
@@ -135,7 +155,7 @@ const Games = () => {
         </div>
 
         {activeGame && (
-          <GameModal isOpen={!!activeGame} onClose={closeGame}>
+          <GameModal isOpen={!!activeGame} onClose={closeGame} title={t(`${activeGame.id}.title`)}>
             {activeGame.id === 'conspiracy' && <ConspiracyBoard />}
             {activeGame.id === 'evolution' && <CryptidEvolution />}
             {activeGame.id === 'match' && <CryptidMatch />}
@@ -146,20 +166,16 @@ const Games = () => {
         )}
 
         {instructionData && (
+          // Backdrop click closes; keyboard users close with Escape or the close button
+          // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
           <div
             className="instruction-modal-overlay"
             onClick={() => setInstructionData(null)}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === 'Escape' || e.key === 'Enter') setInstructionData(null);
-            }}
           >
-            {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+            {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
             <div
               className="instruction-modal"
               onClick={(e) => e.stopPropagation()}
-              onKeyDown={(e) => e.stopPropagation()}
               role="dialog"
               aria-modal="true"
               aria-labelledby="modal-title"
@@ -168,7 +184,7 @@ const Games = () => {
               <div className="instruction-body">
                 <p>{t(`${instructionData.id}.instructions`)}</p>
               </div>
-              <button className="close-btn" onClick={() => setInstructionData(null)}>
+              <button ref={instructionCloseRef} className="close-btn" onClick={() => setInstructionData(null)}>
                 {t('status.close')}
               </button>
             </div>

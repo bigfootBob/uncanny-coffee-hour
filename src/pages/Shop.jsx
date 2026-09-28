@@ -24,7 +24,7 @@ const Shop = () => {
   const { t } = useTranslation('translation');
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -35,7 +35,7 @@ const Shop = () => {
         setProducts(Array.isArray(data.results) ? data.results : []);
       } catch (err) {
         if (import.meta.env.DEV) console.error('Failed to fetch products:', err);
-        setError('Could not load products. Please try again later.');
+        setError(true);
       } finally {
         setLoading(false);
       }
@@ -64,8 +64,10 @@ const Shop = () => {
           <p>{t('shop.subhead')}</p>
         </header>
 
-        {loading && <p className="shop-status">Loading products...</p>}
-        {error && <p className="shop-status shop-status--error">{error}</p>}
+        <div role="status">
+          {loading && <p className="shop-status">{t('shop.loading')}</p>}
+          {error && <p className="shop-status shop-status--error">{t('shop.error')}</p>}
+        </div>
 
         {!loading && !error && (
           <div className="shop-grid">

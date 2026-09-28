@@ -40,17 +40,17 @@ const Recipies = () => {
             </div>
 
             {selectedRecipe && (
-              <GameModal isOpen={!!selectedRecipe} onClose={() => setSelectedRecipe(null)} showPrint={true}>
+              <GameModal isOpen={!!selectedRecipe} onClose={() => setSelectedRecipe(null)} showPrint={true} title={selectedRecipe.name}>
                 <div className="recipe-modal-content">
                   <h2>{selectedRecipe.name}</h2>
                   <p className="vibe-text">"{selectedRecipe.vibe}"</p>
                   
-                  <h4>Ingredients</h4>
+                  <h3>{t('recipiepage.ingredients')}</h3>
                   <ul>
                     {selectedRecipe.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
                   </ul>
 
-                  <h4>Instructions</h4>
+                  <h3>{t('recipiepage.instructions')}</h3>
                   <ol>
                     {selectedRecipe.instructions.map((step, i) => <li key={i}>{step}</li>)}
                   </ol>

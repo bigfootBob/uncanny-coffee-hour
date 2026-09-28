@@ -16,7 +16,8 @@ const Lodge = () => {
       const tierId = location.state.selectedTier;
       const element = document.getElementById(`tier-${tierId}`);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        element.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
       }
     }
   }, [location]);
@@ -47,7 +48,7 @@ const Lodge = () => {
               <div className="tier-visual">
                 <img
                   src={`/assets/images/tiers/${tier.image}`}
-                  alt={t(`patreon.${tier.id}.title`)}
+                  alt=""
                   className="tier-image"
                 />
               </div>

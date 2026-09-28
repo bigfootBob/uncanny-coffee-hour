@@ -72,10 +72,20 @@
       line-height: 1.5;
     }
 
+    .tile-title-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
+
     &.active {
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus-within {
         background: rgba(30, 30, 30, 0.9);
         transform: translateY(-5px);
         border-color: var(--brand-puca, #5cb85c);

@@ -17,6 +17,13 @@ const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    if (!isMobileOpen) return;
+    const handleEsc = (e) => { if (e.key === 'Escape') setIsMobileOpen(false); };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [isMobileOpen]);
+
   const closeMobile = () => setIsMobileOpen(false);
   const toggleMobile = () => setIsMobileOpen(!isMobileOpen);
 
@@ -42,7 +49,7 @@ const Header = () => {
         </div>
         
         {/* DESKTOP NAV */}
-        <nav className="header-nav desktop-nav">
+        <nav className="header-nav desktop-nav" aria-label={t('a11y.main_nav')}>
           <ul className="nav-list">
             <li><Link to="/episodes">{t('navtext.episodes')}</Link></li>
             <li><Link to="/lodge">{t('navtext.lodge')}</Link></li>
@@ -61,19 +68,20 @@ const Header = () => {
           <button
             className={`hamburger ${isMobileOpen ? 'active' : ''}`}
             onClick={toggleMobile}
-            aria-label="Menu"
+            aria-label={t('a11y.menu')}
             aria-expanded={isMobileOpen}
+            aria-controls="mobile-nav"
           >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+            <span className="bar" aria-hidden="true"></span>
+            <span className="bar" aria-hidden="true"></span>
+            <span className="bar" aria-hidden="true"></span>
           </button>
         </div>
       </div>
 
       {/* MOBILE */}
-      <div className={`mobile-nav-overlay ${isMobileOpen ? 'open' : ''}`} aria-hidden={!isMobileOpen}>
-        <nav className="mobile-links">
+      <div id="mobile-nav" className={`mobile-nav-overlay ${isMobileOpen ? 'open' : ''}`} aria-hidden={!isMobileOpen}>
+        <nav className="mobile-links" aria-label={t('a11y.mobile_nav')}>
           <Link to="/" onClick={closeMobile}>{t('navtext.home') || 'Home'}</Link>
           <Link to="/episodes" onClick={closeMobile}>{t('navtext.episodes')}</Link>
           <Link to="/lodge" onClick={closeMobile}>{t('navtext.lodge')}</Link>

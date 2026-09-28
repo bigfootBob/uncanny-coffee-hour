@@ -70,7 +70,7 @@ i18n
         tlh: { translation: tlhTrans, bios: tlhBios, games: tlhGames, trivia: tlhTrivia  }
     },
     fallbackLng: 'en',
-    debug: true, // Keep this on until verify
+    debug: import.meta.env.DEV,
     interpolation: {
       escapeValue: false 
     },

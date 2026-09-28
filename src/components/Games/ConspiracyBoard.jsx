@@ -1,17 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import puzzleData from '../../data/conspiracyPuzzles.json';
 import './ConspiracyBoard.scss';
 
+// Pick a random puzzle and return its groups plus the shuffled grid
+const buildBoard = () => {
+  const randomBoardIndex = Math.floor(Math.random() * puzzleData.length);
+  const selectedBoard = puzzleData[randomBoardIndex].groups;
+
+  let allItems = selectedBoard.flatMap(group => 
+    group.items.map(item => ({ 
+      word: item, 
+      group: group.category, 
+      diff: group.difficulty 
+    }))
+  );
+
+  for (let i = allItems.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
+  }
+
+  return { puzzle: selectedBoard, items: allItems };
+};
+
 const ConspiracyBoard = () => {
   const { t } = useTranslation('games');
   
-  const [gridItems, setGridItems] = useState([]);
+  const [initialBoard] = useState(buildBoard);
+  const [gridItems, setGridItems] = useState(initialBoard.items);
   const [selected, setSelected] = useState([]);
   const [solvedGroups, setSolvedGroups] = useState([]);
   const [mistakes, setMistakes] = useState(4);
   const [gameStatus, setGameStatus] = useState('playing');
-  const [activePuzzle, setActivePuzzle] = useState([]);
+  const [activePuzzle, setActivePuzzle] = useState(initialBoard.puzzle);
 
   const initGame = () => {
     // Reset game states
@@ -20,32 +42,10 @@ const ConspiracyBoard = () => {
     setGameStatus('playing');
     setSelected([]);
 
-    // random puzzle
-    const randomBoardIndex = Math.floor(Math.random() * puzzleData.length);
-    const selectedBoard = puzzleData[randomBoardIndex].groups;
-    
-    setActivePuzzle(selectedBoard);
-
-    let allItems = selectedBoard.flatMap(group => 
-      group.items.map(item => ({ 
-        word: item, 
-        group: group.category, 
-        diff: group.difficulty 
-      }))
-    );
-
-    for (let i = allItems.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
-    }
-    
-    setGridItems(allItems);
+    const board = buildBoard();
+    setActivePuzzle(board.puzzle);
+    setGridItems(board.items);
   };
-
-   
-  useEffect(() => {
-    initGame();
-  }, []);
 
   const handleReset = () => {
     initGame();

@@ -20,20 +20,15 @@ export default async function handler(req, res) {
     });
 
     if (!upstreamRes.ok) {
-      const errorText = await upstreamRes.text();
-      return res.status(upstreamRes.status).json({
-        error: 'Failed to fetch products from storefront',
-        details: errorText.slice(0, 500),
-      });
+      console.error('Storefront API error', upstreamRes.status, (await upstreamRes.text()).slice(0, 500));
+      return res.status(502).json({ error: 'Failed to fetch products from storefront' });
     }
 
     const data = await upstreamRes.json();
     const results = Array.isArray(data?.results) ? data.results : [];
     return res.status(200).json({ results });
   } catch (error) {
-    return res.status(500).json({
-      error: 'Unexpected error while loading products',
-      details: error instanceof Error ? error.message : 'Unknown error',
-    });
+    console.error('Unexpected error while loading products', error);
+    return res.status(500).json({ error: 'Unexpected error while loading products' });
   }
 }
