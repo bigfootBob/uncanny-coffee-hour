@@ -4,7 +4,7 @@ const Announcement = ({ message, linkText, linkUrl, icon }) => {
   return (
     <div className="announcement-banner">
       <div className="announcement-content">
-        {icon && <span className="announcement-icon">{icon}</span>}
+        {icon && <span className="announcement-icon" aria-hidden="true">{icon}</span>}
         <p className="announcement-text">{message}</p>
         <a 
           href={linkUrl} 

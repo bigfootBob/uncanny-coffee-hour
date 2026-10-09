@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero/Hero';
+import SEO from '../components/SEO/SEO';
 import Team from '../components/Team/Team';
 import './Home.scss';
 
@@ -15,19 +16,19 @@ const Home = () => {
   const audioRef = useRef(null); // hidden <audio> tag
 
   useEffect(() => {
-    const FEED_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://feeds.buzzsprout.com/2450457.rss';
-    fetch(FEED_URL)
+    fetch('/data/episodes.json')
       .then(r => r.json())
       .then(data => {
-        const newest = data.items[0];
+        const newest = [...data].sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0];
+        if (!newest) return;
         setLatestEpisode({
           title: newest.title,
-          coverArt: newest.thumbnail || '/default-cover.jpg',
-          audioUrl: newest.enclosure.link,
-          pubDate: new Date(newest.pubDate).toLocaleDateString()
+          coverArt: newest.artwork_url,
+          audioUrl: newest.audio_url,
+          pubDate: new Date(newest.published_at).toLocaleDateString()
         });
       })
-      .catch(err => console.error("Error fetching RSS:", err));
+      .catch(err => console.error("Error loading episodes:", err));
   }, []);
 
   const toggleAudio = () => {
@@ -35,14 +36,17 @@ const Home = () => {
 
     if (isPlaying) {
       audioRef.current.pause();
+      setIsPlaying(false);
     } else {
-      audioRef.current.play();
+      audioRef.current.play()
+        .then(() => setIsPlaying(true))
+        .catch(() => setIsPlaying(false));
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
     <>
+      <SEO />
       <Hero />
       <div className="home-dashboard">
         <section className="hero-text-layer page-header">
@@ -72,16 +76,16 @@ const Home = () => {
             {latestEpisode ? (
               <img
                 src={latestEpisode.coverArt}
-                alt="Episode Art"
+                alt={t('a11y.episode_cover', { title: latestEpisode.title })}
                 className="player-art"
               />
             ) : (
-              <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.1)', borderRadius: 4 }}></div>
+              <div aria-hidden="true" style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.1)', borderRadius: 4 }}></div>
             )}
             <div className="player-text">
               <span className="player-label">{t("homepage.latestbrew")} ({latestEpisode?.pubDate || '...'}) • <Link to="/episodes">{t("homepage.allep")}</Link></span>
               <span className="player-title">
-                {latestEpisode ? latestEpisode.title : 'Loading latest episode...'}
+                {latestEpisode ? latestEpisode.title : t('homepage.loading_episode')}
               </span>
             </div>
           </div>
@@ -92,12 +96,12 @@ const Home = () => {
               onClick={toggleAudio}
               disabled={!latestEpisode}
               style={{ cursor: latestEpisode ? 'pointer' : 'wait' }}
-              aria-label={isPlaying ? "Pause" : "Play"}
+              aria-label={isPlaying ? t('a11y.pause') : t('a11y.play')}
             >
-              {isPlaying ? '⏸' : '▶'}
+              <span aria-hidden="true">{isPlaying ? '⏸' : '▶'}</span>
             </button>
 
-            <div className="waveform-visualizer">
+            <div className="waveform-visualizer" aria-hidden="true">
               {Array.from({ length: 50 }).map((_, i) => (
                 <span
                   key={i}
@@ -151,7 +155,7 @@ const Home = () => {
               className="coffee-icon-container"
               aria-label={t("homepage.buycoffeesupport")}
             >
-              <img src={coffeeIcon} alt="Coffee Cup" className="action-icon" />
+              <img src={coffeeIcon} alt="" className="action-icon" />
             </a>
           </div>
 
@@ -178,12 +182,12 @@ const Home = () => {
 
         <section id="recipes-section" className="dashboard-row player-row glass-panel">
           <div className="player-text">
-            <span className="player-title">Recipies from the podcast</span>
-            <span className="player-label">Drinks & Elixirs</span>
+            <h2 className="player-title">{t('homepage.recipes_title')}</h2>
+            <span className="player-label">{t('homepage.recipes_sub')}</span>
           </div>
           <div className="player-controls">
-            <Link to="/recipies" className="recipe-link" aria-label="View all recipes">
-              View All
+            <Link to="/recipies" className="recipe-link" aria-label={t('homepage.recipes_view_label')}>
+              {t('homepage.recipes_view')}
             </Link>
           </div>
         </section>

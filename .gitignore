@@ -24,3 +24,6 @@ public/api/config.php
 *.njsproj
 *.sln
 *.sw?
+
+# Claude local settings and worktrees
+.claude/

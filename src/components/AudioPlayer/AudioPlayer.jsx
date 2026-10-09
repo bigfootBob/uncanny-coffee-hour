@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { formatTime } from '../../utils/formatTime';
 import './AudioPlayer.scss';
 
 const AudioPlayer = ({ src, className = '' }) => {
+    const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     const [duration, setDuration] = useState(0);
@@ -39,10 +41,12 @@ const AudioPlayer = ({ src, className = '' }) => {
     const togglePlay = () => {
         if (isPlaying) {
             audioRef.current.pause();
+            setIsPlaying(false);
         } else {
-            audioRef.current.play();
+            audioRef.current.play()
+                .then(() => setIsPlaying(true))
+                .catch(() => setIsPlaying(false));
         }
-        setIsPlaying(!isPlaying);
     };
 
     const handleProgressChange = (e) => {
@@ -60,12 +64,12 @@ const AudioPlayer = ({ src, className = '' }) => {
             <button
                 className={`play-btn ${isPlaying ? 'playing' : ''}`}
                 onClick={togglePlay}
-                aria-label={isPlaying ? "Pause" : "Play"}
+                aria-label={isPlaying ? t('a11y.pause') : t('a11y.play')}
             >
                 {isPlaying ? (
-                    <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" /></svg>
                 ) : (
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z" /></svg>
                 )}
             </button>
 
@@ -83,10 +87,10 @@ const AudioPlayer = ({ src, className = '' }) => {
                     value={progress}
                     onChange={handleProgressChange}
                     className="progress-bar"
-                    aria-label="Seek"
-                    aria-valuetext={formatTime(progress)}
+                    aria-label={t('a11y.seek')}
+                    aria-valuetext={t('a11y.seek_value', { current: formatTime(progress), total: formatTime(duration) })}
                     style={{
-                        backgroundSize: `${(progress / duration) * 100}% 100%`
+                        backgroundSize: `${duration ? (progress / duration) * 100 : 0}% 100%`
                     }}
                 />
             </div>

@@ -1,7 +1,6 @@
 # Block direct access to the token config
 <Files "config.php">
-    Order Allow,Deny
-    Deny from all
+    Require all denied
 </Files>
 
 # Serve merch-products without the .php extension

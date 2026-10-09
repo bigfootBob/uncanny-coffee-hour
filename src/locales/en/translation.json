@@ -59,7 +59,12 @@
     "shopnow": "Shop Now",
     "whisperwellhead": "Have An Uncanny Tale Of Your Own?",
     "whisperwellsubhead": "Use our Whispering Well and we may use it on the podcast.",
-    "whisperwellsubform": "Submission Form"
+    "whisperwellsubform": "Submission Form",
+    "loading_episode": "Loading latest episode...",
+    "recipes_title": "Recipes from the podcast",
+    "recipes_sub": "Drinks & Elixirs",
+    "recipes_view": "View All",
+    "recipes_view_label": "View all recipes"
   },
   "lodgepage": {
     "title": "Join us! Support the show!",
@@ -108,12 +113,17 @@
   },
   "recipiepage": {
     "title": "Our Recipies",
-    "subhead": "Paranormaly Perfect Stews & Brews"
+    "subhead": "Paranormaly Perfect Stews & Brews",
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "view_guide": "View Brew Guide"
   },
   "shop": {
     "title": "Provisions for the Body, Curios for the Mind",
     "subhead": "Tales of the Paranormal & The Perfect Brew",
-    "details": "Details"
+    "details": "Details",
+    "loading": "Loading products...",
+    "error": "Could not load products. Please try again later."
   },
   "storypage": {
     "title": "Submit Your Paranormal Tale",
@@ -130,6 +140,25 @@
     "form_btn": "Send to the Vault",
     "form_btn_send": "Sending...",
     "form_blank": "Please write a story first.",
-    "form_error": "The spirits rejected your message. Try again."
+    "form_error": "The spirits rejected your message. Try again.",
+    "form_too_many": "The well is overflowing. Please try again in a little while."
+  },
+  "a11y": {
+    "menu": "Menu",
+    "main_nav": "Main navigation",
+    "mobile_nav": "Mobile navigation",
+    "play": "Play",
+    "pause": "Pause",
+    "seek": "Episode progress",
+    "seek_value": "{{current}} of {{total}}",
+    "close_dialog": "Close",
+    "print": "Print",
+    "select_language": "Select language",
+    "read_more_about": "Read more about {{name}}",
+    "team": "Team",
+    "episode_cover": "Cover art for {{title}}",
+    "photo_of": "Photo of {{name}}",
+    "switch_to_dark": "Switch to dark mode",
+    "switch_to_light": "Switch to light mode"
   }
 }

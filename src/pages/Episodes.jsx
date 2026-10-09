@@ -11,7 +11,7 @@ const EpisodePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedId, setExpandedId] = useState(null);
   const [episodesData, setEpisodesData] = useState([]);
-  const { t } = useTranslation('translation');
+  const { t, i18n } = useTranslation('translation');
 
   useEffect(() => {
     fetch('/data/episodes.json')
@@ -21,7 +21,7 @@ const EpisodePage = () => {
 
   // Format Date
   const formatDate = (dateString) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    return new Date(dateString).toLocaleDateString(i18n.resolvedLanguage, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
@@ -43,7 +43,7 @@ const EpisodePage = () => {
         description={t('eppage.seo')}
       />
 
-      <main className="uncanny-archives">
+      <div className="uncanny-archives">
 
         <Hero />
 
@@ -58,7 +58,9 @@ const EpisodePage = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="search-input"
             />
-            {searchTerm && <p className="search-results-count"> {filteredEpisodes.length} {t('eppage.found')}</p>}
+            <div role="status">
+              {searchTerm && <p className="search-results-count"> {filteredEpisodes.length} {t('eppage.found')}</p>}
+            </div>
           </div>
         </header>
 
@@ -69,14 +71,14 @@ const EpisodePage = () => {
                 <div className="episode-main">
                   <img
                     src={ep.artwork_url}
-                    alt={ep.title}
+                    alt=""
                     className="episode-art"
                   />
 
                   <div className="episode-details">
                     <div className="episode-meta">
                       <span className="ep-tag">S{ep.season_number} : E{ep.episode_number}</span>
-                      <span className="ep-duration"> 🕒 {formatTime(ep.duration)}</span>
+                      <span className="ep-duration"> <span aria-hidden="true">🕒</span> {formatTime(ep.duration)}</span>
                     </div>
 
                     <h2>{ep.title}</h2>
@@ -92,11 +94,14 @@ const EpisodePage = () => {
 
                 <div className="description-wrapper">
                   <div
+                    id={`ep-desc-${ep.id}`}
                     className={`episode-description ${expandedId === ep.id ? 'expanded' : 'collapsed'}`}
                     dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ep.description, { ALLOWED_TAGS: ['p', 'a', 'em', 'strong', 'ul', 'ol', 'li', 'br'], ALLOWED_ATTR: ['href', 'target', 'rel'] }) }}
                   />
                   <button
                     className="toggle-desc-btn"
+                    aria-expanded={expandedId === ep.id}
+                    aria-controls={`ep-desc-${ep.id}`}
                     onClick={() => setExpandedId(expandedId === ep.id ? null : ep.id)}
                   >
                     {expandedId === ep.id ? t('eppage.less') : t('eppage.readfull')}
@@ -110,7 +115,7 @@ const EpisodePage = () => {
             </div>
           )}
         </div>
-      </main >
+      </div>
     </>
   );
 };

@@ -91,3 +91,29 @@ body {
   /* Klingon looks more aggressive in caps */
   letter-spacing: 1px;
 }
+
+// =========================================
+// ACCESSIBILITY
+// =========================================
+
+// Visible keyboard focus everywhere (components can still override)
+:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+// Honour the OS "reduce motion" setting for every animation and transition
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

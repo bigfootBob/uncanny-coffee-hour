@@ -5,7 +5,7 @@ import klingonLogo from '../../assets/images/klingon-logo.png';
 import './LanguageSwitcher.scss';
 
 const GlobeIcon = () => (
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="12" r="10"></circle>
     <line x1="2" y1="12" x2="22" y2="12"></line>
     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
@@ -25,7 +25,7 @@ const languages = [
 ];
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [showQapla, setShowQapla] = useState(false); 
   const wrapperRef = useRef(null);
@@ -40,9 +40,14 @@ const LanguageSwitcher = () => {
         setIsOpen(false);
       }
     }
+    function handleEsc(event) {
+      if (event.key === 'Escape') setIsOpen(false);
+    }
     document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEsc);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEsc);
     };
   }, [wrapperRef]);
 
@@ -62,19 +67,22 @@ const LanguageSwitcher = () => {
       <button 
         className={`globe-btn ${isOpen ? 'active' : ''}`}
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Select Language"
+        aria-label={t('a11y.select_language')}
         aria-expanded={isOpen}
+        aria-controls="lang-dropdown"
       >
         <GlobeIcon />
       </button>
 
-      <div className={`lang-dropdown ${isOpen ? 'open' : ''}`}>
+      <div id="lang-dropdown" className={`lang-dropdown ${isOpen ? 'open' : ''}`}>
         <ul>
           {languages.map((lang) => (
             <li key={lang.code}>
               <button
                 className={i18n.resolvedLanguage === lang.code ? 'current' : ''}
                 onClick={() => handleLanguageChange(lang.code)}
+                lang={lang.code}
+                aria-current={i18n.resolvedLanguage === lang.code ? 'true' : undefined}
               >
                 {lang.label}
               </button>

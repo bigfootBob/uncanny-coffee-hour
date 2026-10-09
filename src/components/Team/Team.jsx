@@ -5,6 +5,7 @@ import './Team.scss';
 
 const Team = ({ limit = null }) => {
   const { t } = useTranslation('bios');
+  const { t: tMain } = useTranslation();
   const teamData = t('teamMembers', { returnObjects: true });
   const members = Array.isArray(teamData) ? teamData : [];
   const membersToDisplay = limit ? members.slice(0, limit) : members;
@@ -17,14 +18,14 @@ const Team = ({ limit = null }) => {
   return (
     <section className="team-section" aria-labelledby="team-heading">
       <div className="container">
-        <h2 id="team-heading" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>Team</h2>
+        <h2 id="team-heading" className="sr-only">{tMain('a11y.team')}</h2>
         <ul className="team-grid">
           {membersToDisplay.map((member, index) => (
             <li key={index} className="team-card">
               <Link
                 to={`/about#${member.id}`}
                 className="team-card-link"
-                aria-label={`Read more about ${member.name}`}
+                aria-label={tMain('a11y.read_more_about', { name: member.name })}
               >
                 <div className="team-card__avatar">
 
@@ -36,7 +37,7 @@ const Team = ({ limit = null }) => {
                     <div className="avatar-img">
                       <img
                         src={`/assets/images/bios/${member.avatar}`}
-                        alt={member.name}
+                        alt=""
                         className="avatar-img-element"
                         onError={() => handleImageError(index)}
                       />
