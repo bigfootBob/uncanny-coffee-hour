@@ -1,3 +1,8 @@
+# Never serve dotfiles (.DS_Store, .env, etc.) that may end up in the deploy
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
