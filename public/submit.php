@@ -57,7 +57,8 @@ $rawName = is_string($input['name'] ?? null) ? $input['name'] : '';
 $rawStory = is_string($input['story'] ?? null) ? $input['story'] : '';
 
 $name = mb_substr(str_replace(["\r", "\n"], '', strip_tags(trim($rawName))), 0, 100);
-$story = htmlspecialchars(strip_tags(trim($rawStory)));
+// Plain-text email: strip tags only; HTML-escaping here would mangle & < > in the story.
+$story = strip_tags(trim($rawStory));
 
 if (empty($story)) {
     http_response_code(400);
