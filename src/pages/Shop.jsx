@@ -46,7 +46,7 @@ const Shop = () => {
   const openProduct = (slug) => {
     const base = import.meta.env.VITE_FOURTHWALL_STOREFRONT_URL;
     if (!base || !slug) return;
-    window.open(`${base}/products/${slug}`, '_blank', 'noopener,noreferrer');
+    window.open(`${base}/products/${encodeURIComponent(slug)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
