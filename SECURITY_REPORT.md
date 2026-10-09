@@ -134,3 +134,21 @@ These are things you're doing right — worth noting so they don't accidentally 
 3. 🟡 **Restrict CORS in `submit.php`** to your domain only
 4. 🔵 Add rate limiting or CAPTCHA to the Whispering Well form
 5. 🔵 Add a Content Security Policy header to your server config
+
+---
+
+## Re-scan — October 9, 2026
+
+**Previously reported items:** all resolved (`VITE_` Buzzsprout token removed, DOMPurify on episode descriptions, CORS locked to the site origin, rate limiting on `submit.php`, CSP and security headers in `.htaccess`).
+
+**Checks run:** `npm audit` (prod + dev), secret search across full git history, secret search in the built `dist/` bundle, review of `submit.php`, `api/merch-products.php`, `api/merch-products.js`, `.htaccess` files, and all `dangerouslySetInnerHTML` / `target="_blank"` / `window.open` uses.
+
+| Finding | Severity | Fix |
+|---|---|---|
+| `source-map-js` advisory GHSA-68fv-2mgg-jv7q (dev/build-time only) | Low | `npm audit fix` |
+| `.DS_Store` files present in `dist/` and would be served if uploaded | Low | `.htaccess` denies all dotfiles |
+| Product slug not URL-encoded in `Shop.jsx` `window.open` | Low | `encodeURIComponent(slug)` |
+| `submit.php` HTML-escaped a plain-text email body (mangled `&`, quotes) | Bug | Removed `htmlspecialchars` (tags still stripped) |
+| `.claude/settings.local.json` untracked but not ignored | Hygiene | Added to `.gitignore` |
+
+**Passing:** 0 production vulnerabilities; no tokens in git history or in the built bundle; `config.php` and `.env` git-ignored and blocked; all external links use `rel="noopener noreferrer"`.
