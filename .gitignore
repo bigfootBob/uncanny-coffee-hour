@@ -27,3 +27,4 @@ public/api/config.php
 
 # Claude Code worktrees
 .claude/worktrees
+.claude/settings.local.json
