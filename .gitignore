@@ -25,6 +25,5 @@ public/api/config.php
 *.sln
 *.sw?
 
-# Claude Code worktrees
-.claude/worktrees
-.claude/settings.local.json
+# Claude local settings and worktrees
+.claude/
