@@ -64,7 +64,9 @@
     "recipes_title": "Recipes from the podcast",
     "recipes_sub": "Drinks & Elixirs",
     "recipes_view": "View All",
-    "recipes_view_label": "View all recipes"
+    "recipes_view_label": "View all recipes",
+    "mediasite_msg": "Phantom Signal",
+    "mediasite_link": "Our new media site"
   },
   "lodgepage": {
     "title": "Join us! Support the show!",

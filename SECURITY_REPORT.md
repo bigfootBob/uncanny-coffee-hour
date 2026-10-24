@@ -152,3 +152,21 @@ These are things you're doing right — worth noting so they don't accidentally 
 | `.claude/settings.local.json` untracked but not ignored | Hygiene | Added to `.gitignore` |
 
 **Passing:** 0 production vulnerabilities; no tokens in git history or in the built bundle; `config.php` and `.env` git-ignored and blocked; all external links use `rel="noopener noreferrer"`.
+
+---
+
+## Re-scan — October 24, 2026
+
+**Code changes since last scan:** none to application or server code (only `.gitignore`). New findings all came from dependency advisories published since October 9.
+
+**Checks run:** `npm audit` (prod + dev), secret search across full git history, secret search in the built `dist/` bundle, review of `submit.php`, `api/merch-products.php`, `api/merch-products.js`, `.htaccess` files, and all `dangerouslySetInnerHTML` / `target="_blank"` / `window.open` uses.
+
+| Finding | Severity | Fix |
+|---|---|---|
+| `dompurify` ≤3.4.16 — GHSA-cg2g-xh64-v4q7, GHSA-mrv2-3pqr-j5jr, GHSA-c6gr-qvv4-5v3f (**production dependency**) | Critical (advisory) / Low (actual) | Bumped to 3.4.17 via `npm audit fix` |
+| `vite` 7.0.0–7.3.6 — dev-server advisories incl. GHSA-9jrq-w75r-8gcw (dev/build-time only) | High (advisory) / Low (actual) | Bumped to 7.3.7 |
+| `zod` <4.6.6 — GHSA-mrhx-c7xc-m3w5 (pulled in by `eslint-plugin-react-hooks`, dev only) | High (advisory) / Low (actual) | Bumped to 4.6.7 |
+
+**Why the actual risk is low:** the DOMPurify bugs need `SAFE_FOR_TEMPLATES`, `IN_PLACE` hooks, or the XHTML parser mode, none of which `Episodes.jsx` uses (it sanitizes a string with a strict tag/attribute allowlist). The Vite and Zod issues affect only the local dev server and linting, not the deployed site.
+
+**Passing:** 0 vulnerabilities after the update (prod + dev); no tokens in git history or the built bundle; `config.php` and `.env` git-ignored and blocked; CSP, HSTS and security headers still set in `.htaccess`; `submit.php` CORS, rate limit, size limits and honeypot unchanged; all external links (including the new Phantom Signal banner on the home page) use `rel="noopener noreferrer"`.

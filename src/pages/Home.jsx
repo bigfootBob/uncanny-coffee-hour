@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Announcement from '../components/Announcement/Announcement';
 import Hero from '../components/Hero/Hero';
 import SEO from '../components/SEO/SEO';
 import Team from '../components/Team/Team';
@@ -55,6 +56,13 @@ const Home = () => {
             {t('hero.subtext')}
           </p>
         </section>
+
+        <Announcement
+          icon="📡"
+          message={t('homepage.mediasite_msg')}
+          linkText={t('homepage.mediasite_link')}
+          linkUrl="https://phantomsignal.online/"
+        />
 
         <section className="dashboard-row team-row">
           <Team />
