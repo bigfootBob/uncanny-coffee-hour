@@ -2,30 +2,34 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './ThemeSwitcher.scss';
 
+// Only written when the visitor clicks the toggle. The old 'theme' key was
+// saved on every visit, so it can't tell a real choice from the old dark default.
+const STORAGE_KEY = 'theme-choice';
+
 const ThemeSwitcher = () => {
   const { t } = useTranslation();
   const [theme, setTheme] = useState(() => {
     try {
-      const savedTheme = localStorage.getItem('theme');
+      const savedTheme = localStorage.getItem(STORAGE_KEY);
       if (savedTheme) return savedTheme;
     } catch {
       // storage unavailable (private mode, blocked cookies)
     }
-    return 'dark';
+    return 'light';
   });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    // local storage
-    try {
-      localStorage.setItem('theme', theme);
-    } catch {
-      // storage unavailable (private mode, blocked cookies)
-    }
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    const next = theme === 'light' ? 'dark' : 'light';
+    setTheme(next);
+    try {
+      localStorage.setItem(STORAGE_KEY, next);
+    } catch {
+      // storage unavailable (private mode, blocked cookies)
+    }
   };
 
   return (

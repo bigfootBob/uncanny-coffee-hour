@@ -17,7 +17,7 @@ import heroMobileLtJpg from '../../assets/images/hero-mobile-lt.jpg';
 
 const Hero = () => {
   const [theme, setTheme] = useState(
-    document.documentElement.getAttribute('data-theme') || 'dark'
+    document.documentElement.getAttribute('data-theme') || 'light'
   );
 
   useEffect(() => {

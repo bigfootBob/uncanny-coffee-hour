@@ -10,6 +10,11 @@
   border-left: 5px solid var(--cta-button);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
+  // The banner is always dark, so keep the dark-theme link colors in light mode too
+  --cta-border: #{$brand-puca};
+  --cta-button: #{$brand-ecto};
+  --glass-text: #e0e0e0;
+
   .announcement-content {
     display: flex;
     align-items: center;
