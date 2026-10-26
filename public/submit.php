@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: https://uncannycoffeehour.com");
+header("Access-Control-Allow-Origin: https://www.uncannycoffeepodcast.com");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
@@ -77,8 +77,8 @@ file_put_contents($rateFile, implode(',', $recent), LOCK_EX);
 
 $to = "uncanny.coffee.story@gmail.com";
 $subject = "New Tale from web: " . ($name ?: "Unknown");
-$headers = "From: noreply@uncannycoffee.com\r\n";
-$headers .= "Reply-To: noreply@uncannycoffee.com\r\n";
+$headers = "From: noreply@uncannycoffeepodcast.com\r\n";
+$headers .= "Reply-To: noreply@uncannycoffeepodcast.com\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 $email_body = "Name: $name\n\nStory:\n$story\n\n----------------\nSent from Uncanny Coffee Hour Website";

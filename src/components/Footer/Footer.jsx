@@ -36,6 +36,7 @@ const Footer = () => {
           <div className="footer-legal">
             <p>&copy; {currentYear} {t('footer.copyright')}</p>
             <p>{t('footer.rights')}</p>
+            <p className="site-version">v{import.meta.env.VITE_SITE_VERSION}</p>
           </div>
 
         </div>

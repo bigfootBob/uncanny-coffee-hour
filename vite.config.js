@@ -1,5 +1,19 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
+import { execSync } from 'node:child_process'
+
+// Site version: yyyy-mm-dd-x, where the date is the latest commit's day and
+// x counts that day's commits (the second commit of a day gives -2)
+function siteVersion() {
+  try {
+    const days = execSync('git log --date=format-local:%Y-%m-%d --format=%cd', { encoding: 'utf8' })
+      .trim()
+      .split('\n')
+    return `${days[0]}-${days.filter((d) => d === days[0]).length}`
+  } catch {
+    return 'dev'
+  }
+}
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -8,6 +22,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
+    define: {
+      'import.meta.env.VITE_SITE_VERSION': JSON.stringify(siteVersion()),
+    },
     plugins: [
       react(),
       {

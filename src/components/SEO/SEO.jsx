@@ -3,8 +3,8 @@ import React from 'react';
 const SEO = ({ title, description, image, url }) => {
   const siteTitle = "Uncanny Coffee Hour";
   const defaultDescription = "Join Odd Bob and Dr. Kitsune for folklore, cryptids, and caffeine.";
-  const defaultImage = "https://uncannycoffeehour.com/og-preview.jpg";
-  const siteUrl = "https://uncannycoffeehour.com";
+  const defaultImage = "https://www.uncannycoffeepodcast.com/og-preview.jpg";
+  const siteUrl = "https://www.uncannycoffeepodcast.com";
 
   const finalTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const finalDesc = description || defaultDescription;
